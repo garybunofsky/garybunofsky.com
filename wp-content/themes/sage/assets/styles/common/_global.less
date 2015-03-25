@@ -1,0 +1,168 @@
+// overarching styles
+html {
+	background: @neutral;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color: transparent;
+}
+.container-fluid {
+	padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+	overflow: hidden;
+}
+.main {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+@media (min-width: 1200px) { 
+  .container {
+    width: 1024px;
+  }
+}
+
+// h1, h2, h3, h4, h5, h6
+h1,h2,h3,h4,h5,h6,p, ul, ol, li {
+	color:@brand-primary;
+}
+h1 {
+  font-family: 'Kepler Std Semicondensed Caption',serif;
+  font-size: 3.24em;
+  line-height: 1.4em;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin-bottom: .35em;
+}
+h2 {
+  font-family: 'Franklin Gothic URW', sans-serif;
+  font-size: 1.75em;
+  line-height: 1.2em;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin-bottom: .25em;
+  a {
+  	&:hover {
+  		.tdn;
+  		color:@brand-secondary;
+  	}
+  }
+}
+.site_title { 
+  font-size:1.34em !important;
+  font-family: 'Kepler Std Semicondensed Caption',serif;
+  margin:1.5em 0 1.1em 0;  
+    font-weight:300;   
+    &:hover {
+      .tdn;
+      color:@brand-secondary;
+    }
+}
+h3 {
+  font-family: 'Franklin Gothic URW', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  font-weight: 700;
+  line-height: 1.55556em;
+  letter-spacing: -.01em;
+  margin-bottom: .15em;
+  a {
+  	&:hover {
+  		.tdn;
+  		color:@brand-secondary;
+  	}
+  }
+}
+h4 {
+  font-family: 'Franklin Gothic URW',sans-serif;
+  font-size: 1.68em;
+  font-weight: 700;
+  line-height: 1.55556em;
+  letter-spacing: -.01em;
+  margin-bottom: .15em;
+}
+h5 {
+  font-family: 'Kepler Std Semicondensed Caption', sans-serif;
+  font-size: 1.44em;
+  font-weight: 700;
+  line-height: 1.55556em;
+  letter-spacing: -.01em;
+  margin-bottom: .45em;
+}
+h6 {
+  font-family: 'Franklin Gothic URW',sans-serif;
+  font-size: 1.08em;
+  font-weight: 500;
+  line-height: 1.55556em;
+  letter-spacing: -.01em;
+  margin-bottom: .45em;
+}
+
+// p
+p {
+	font-family: 'Kepler Std Semicondensed Caption', serif;
+	font-size:1.34em;
+	line-height: 1.55556em;
+	margin-bottom:1.55556em;
+	letter-spacing: .015rem;
+		a {
+			border-bottom: 1px solid @brand-primary;
+			&:hover {
+				color:@brand-secondary;
+				border-bottom: 1px solid @brand-secondary;
+				.tdn;
+			}
+		}
+		span.caps {
+			-webkit-font-feature-settings: "c2sc" 1, "smcp" 1;
+ 			-moz-font-feature-settings: "c2sc" 1, "smcp" 1;
+  			font-feature-settings: "c2sc" 1, "smcp" 1;
+  		}
+	}
+	.sm {
+	font-size: 1.1em;
+	a {
+		border-bottom: 1px solid @brand-primary;
+		&:hover {
+			color:@brand-secondary;
+			border-bottom: 1px solid @brand-secondary;
+			.tdn;
+		}
+	}
+}
+// hr
+hr {
+	border-top:1px solid @brand-primary-light;
+}
+hr.sm {
+	width: 12.5%;
+	margin: 48px auto 48px auto;
+}
+
+// ul, ol, li
+ul, ol {
+	margin-left: -20px;
+	margin-bottom:1.55556em;
+	li {
+		font-family: 'Kepler Std', serif;
+		font-size:1.34em;
+		line-height: 1.55556em;
+		a {			
+			border-bottom: 1px solid @brand-primary;
+			&:hover {
+				color:@brand-secondary;
+				border-bottom: 1px solid @brand-secondary;
+				.tdn;
+			}
+		}
+		ul, ol {
+			li {
+				font-family: 'Kepler Std', serif;
+				font-size:inherit;
+				line-height: 1.55556em;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,41 @@
+.navbar-default {
+  border-color:rgba(0,0,0,0.0);
+  background-color: transparent;
+}
+
+hr.nav {
+	margin-bottom: 4px;
+	margin-top: 6px;
+}
+
+ul#menu-main.menu.menu  {
+	margin:0px 0px;
+	list-style-type: none;
+	margin-bottom: 32px;
+	margin-left: -40px;
+  li {
+    font-family: 'Franklin Gothic URW',sans-serif;
+    font-weight: 500;
+    font-size: 1.08em;
+    display: inline;
+    margin: 0px -4px 28px 0px;
+    a {
+      .tdn;
+      border-bottom:none;
+      color:@brand-primary;
+      padding: 8px 0px 0px 0px;
+      margin: 0px 3% 0px 0px;
+        &:hover {
+          color:@brand-secondary;
+        }
+    }
+  }
+}
+
+
+ul#menu-main.menu.menu li a:focus, 
+ul#menu-main.menu.menu li a:hover,
+ul#menu-main.menu.menu li.current-menu-item a {
+    color:@brand-secondary;
+		border-top:1px solid @brand-secondary !important;
+}
