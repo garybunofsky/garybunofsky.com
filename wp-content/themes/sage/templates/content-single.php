@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h2><?php the_title(); ?></h2>
+          <h1><?php the_title(); ?></h1>
           <div class="entry-content">
             <?php the_content(); ?>
           </div>
