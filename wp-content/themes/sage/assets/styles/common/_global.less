@@ -24,24 +24,18 @@ body {
 }
 
 // h1, h2, h3, h4, h5, h6
-h1,h2,h3,h4,h5,h6,p, ul, ol, li {
+h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
 	color:@brand-primary;
 }
 h1 {
+  .font-size(4.8);
   font-family: 'Kepler Std Semicondensed Caption',serif;
-  font-size: 3.24em;
-  line-height: 1.1em;
   font-weight: 700;
-  letter-spacing: -.01em;
-  margin-bottom: .35em;
 }
 h2 {
+  .font-size(2.8);
   font-family: 'Franklin Gothic URW', sans-serif;
-  font-size: 1.75em;
-  line-height: 1.2em;
   font-weight: 700;
-  letter-spacing: -.01em;
-  margin-bottom: .25em;
   a {
   	&:hover {
   		.tdn;
@@ -50,7 +44,7 @@ h2 {
   }
 }
 .site_title { 
-  font-size:1.34em !important;
+  .font-size(1.9);
   font-family: 'Kepler Std Semicondensed Caption',serif;
   margin:1.5em 0 1.1em 0;  
     font-weight:300;   
@@ -60,13 +54,9 @@ h2 {
     }
 }
 h3 {
+  .font-size(2.0);
   font-family: 'Franklin Gothic URW', sans-serif;
-  font-size: 1.4em;
-  line-height: 1.3em;
   font-weight: 700;
-  line-height: 1.55556em;
-  letter-spacing: -.01em;
-  margin-bottom: .15em;
   a {
   	&:hover {
   		.tdn;
@@ -76,36 +66,22 @@ h3 {
 }
 h4 {
   font-family: 'Franklin Gothic URW',sans-serif;
-  font-size: 1.68em;
   font-weight: 700;
-  line-height: 1.55556em;
-  letter-spacing: -.01em;
-  margin-bottom: .15em;
 }
 h5 {
   font-family: 'Kepler Std Semicondensed Caption', sans-serif;
-  font-size: 1.44em;
   font-weight: 700;
-  line-height: 1.55556em;
-  letter-spacing: -.01em;
-  margin-bottom: .45em;
 }
 h6 {
+  .font-size(1.9);
   font-family: 'Franklin Gothic URW',sans-serif;
-  font-size: 1.08em;
   font-weight: 500;
-  line-height: 1.55556em;
-  letter-spacing: -.01em;
-  margin-bottom: .45em;
 }
 
 // p
 p {
+  .font-size(1.9);
 	font-family: 'Kepler Std Semicondensed Caption', serif;
-	font-size:1.34em;
-	line-height: 1.55556em;
-	margin-bottom:1.55556em;
-	letter-spacing: .015rem;
 		a {
 			border-bottom: 1px solid @brand-primary;
 			&:hover {
@@ -114,14 +90,9 @@ p {
 				.tdn;
 			}
 		}
-		span.caps {
-			-webkit-font-feature-settings: "c2sc" 1, "smcp" 1;
- 			-moz-font-feature-settings: "c2sc" 1, "smcp" 1;
-  			font-feature-settings: "c2sc" 1, "smcp" 1;
-  		}
 	}
 	.sm {
-	font-size: 1.1em;
+	.font-size(1.6);
 	a {
 		border-bottom: 1px solid @brand-primary;
 		&:hover {
@@ -131,23 +102,13 @@ p {
 		}
 	}
 }
-// hr
-hr {
-	border-top:1px solid @brand-primary-light;
-}
-hr.sm {
-	width: 12.5%;
-	margin: 48px auto 48px auto;
-}
 
 // ul, ol, li
-ul, ol, label {
-	margin-left: -20px;
-	margin-bottom:1.55556em;
+ul, ol {
+  .font-size(1.9);
+  margin-left: -20px;
 	li {
 		font-family: 'Kepler Std', serif;
-		font-size:1.34em;
-		line-height: 1.55556em;
 		a {			
 			border-bottom: 1px solid @brand-primary;
 			&:hover {
@@ -160,9 +121,35 @@ ul, ol, label {
 			li {
 				font-family: 'Kepler Std', serif;
 				font-size:inherit;
-				line-height: 1.55556em;
 			}
 		}
 	}
 }
 
+// span
+span.date {
+  .font-size(1.6);
+  font-family: 'Franklin Gothic URW',sans-serif !important;
+  font-weight: 500;
+  margin: 0px -4px 80px 0px;
+}
+span.caps {
+  -webkit-font-feature-settings: "c2sc" 1, "smcp" 1;
+  -moz-font-feature-settings: "c2sc" 1, "smcp" 1;
+  font-feature-settings: "c2sc" 1, "smcp" 1;
+}
+
+// hr
+hr {
+  border-top:1px solid @brand-primary-light;
+}
+hr.sm {
+  width: 12.5%;
+  margin: 48px auto 48px auto;
+}
+
+label {
+  .font-size(1.6);
+  font-family: 'Franklin Gothic URW', sans-serif;
+  font-weight: 500;
+}

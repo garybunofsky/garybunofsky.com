@@ -19,3 +19,14 @@
   -o-transition: all 0.01s ease-in-out;
   transition: all 0.01s ease-in-out;
 }
+// Mix-in to make ems & rems consistent in size
+.font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  @line-height:(@sizeValue);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+  line-height: 0 + round(@doc-line-height / @size*10000) / 10000;
+  margin-bottom: 0px + @doc-line-height;
+	margin-bottom: 0rem + (@doc-line-height / @doc-font-size);
+}
