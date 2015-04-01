@@ -11,7 +11,7 @@
   	<div class="row center">
 			<div class="col-md-8 col-md-offset-2">
 				<div class="legal">
-						<p class="sm">&copy; <?php echo date("Y"); ?> <a href="#">Gary Bunofsky</a>, unless otherwise noted. <a href="http://garybunofsky.com/privacy-policy/">Privacy Policy</a></p>
+						<p class="sm">&copy; <?php echo date("Y"); ?> <a href="/">Gary Bunofsky</a>, unless otherwise noted. <a href="http://garybunofsky.com/privacy-policy/">Privacy Policy</a></p>
 					</div>
 				</div>
 			</div>
