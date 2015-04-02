@@ -9,8 +9,6 @@
     <!-- for your convenience, the source is located here https://github.com/garybunofsky/garybunofsky.com -->
 
     <!-- typography -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <script src="//use.typekit.net/tnp6jhg.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <?php wp_head(); ?>
@@ -35,5 +33,5 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- animate.css -->
-    <link href='../wp-content/themes/sage/bower_components/animate.css/animate.css' rel='stylesheet' type='text/css'>
+    <link href='../wp-content/themes/sage/bower_components/animate.css/animate.min.css' rel='stylesheet' type='text/css'>
   </head>
