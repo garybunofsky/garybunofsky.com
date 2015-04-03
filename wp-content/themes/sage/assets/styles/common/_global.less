@@ -1,5 +1,6 @@
 // overarching styles
 html {
+  font-size: 62.5%;
 	background: @neutral;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -82,7 +83,7 @@ h5 {
   font-weight: 700;
 }
 h6 {
-  .font-size(1.6);
+  .font-size(1.4);
   font-family: 'Franklin Gothic URW',sans-serif;
   font-weight: 300;
 }
@@ -101,7 +102,7 @@ p {
 		}
 	}
 	.sm {
-	.font-size(1.4);
+	.font-size(1.6);
 	a {
 		border-bottom: 1px solid @brand-primary;
 		&:hover {
@@ -174,4 +175,12 @@ label {
   .font-size(1.6);
   font-family: 'Franklin Gothic URW', sans-serif;
   font-weight: 300;
+}
+
+
+// media query
+@media (max-width: 860px){
+  html {
+    font-size: 54.5%;
+  }
 }

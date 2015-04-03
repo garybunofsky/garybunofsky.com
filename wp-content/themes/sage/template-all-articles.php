@@ -18,7 +18,7 @@
 						<div>
 							<h2><?php the_title(); ?></h2>
 							<span class="date"><?php the_date(); ?></span>
-							<?php the_excerpt(); ?>
+							<br />
 							<a class="btn"href="<?php echo get_permalink($post->ID); ?>">Continue Reading</a>
 						</div>
 						<hr class="sm" />
