@@ -3,7 +3,12 @@ html {
   font-size: 62.5%;
   font-family: 'Franklin Gothic URW', sans-serif;
   color: @brand-primary;
-	background: @neutral;
+	background: -webkit-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* FF3.6+ */
+  background:     -ms-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* IE10 */
+  background:      -o-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* Opera 11.10+ */
+  background:         linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* W3C */
+
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -52,6 +57,7 @@ h2 {
   a {
   	&:hover {
   		.tdn;
+      .ease;
   		color:@accent;
   	}
   }
@@ -76,7 +82,7 @@ h5 {
 h6 {
   .heading-font-size(1.5);
   color:@brand-secondary;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 // p
@@ -143,7 +149,7 @@ pre {
 span.date {
   color:@brand-secondary;
   .font-size(1.5);
-  font-weight: 500;
+  font-weight: 300;
   margin: 0px -4px 80px 0px;
 }
 span.caps {
@@ -166,7 +172,7 @@ label {
   font-family: 'Franklin Gothic URW', sans-serif;
   color:@brand-secondary;
   margin-bottom: 4px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 
