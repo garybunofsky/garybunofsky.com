@@ -14,19 +14,19 @@ ul#menu-main.menu.menu  {
 	margin-bottom: 32px;
 	margin-left: -40px;
   li {
-    .font-size(1.4);
+    .font-size(1.5);
     font-family: 'Franklin Gothic URW',sans-serif;
-    font-weight: 300;
     display: inline;
+    font-weight: 500;
     margin: 0px -4px 28px 0px;
     a {
       .tdn;
       border-bottom:none;
-      color:@brand-primary;
+      color:@brand-secondary;
       padding-top: 9px;
       margin: 0px 3% 0px 0px;
         &:hover {
-          color:@brand-secondary;
+          color:@accent;
         }
     }
   }
@@ -36,6 +36,6 @@ ul#menu-main.menu.menu  {
 ul#menu-main.menu.menu li a:focus, 
 ul#menu-main.menu.menu li a:hover,
 ul#menu-main.menu.menu li.current-menu-item a {
-    color:@brand-secondary;
+    color:@accent;
 		border-top:1px solid @brand-secondary !important;
 }

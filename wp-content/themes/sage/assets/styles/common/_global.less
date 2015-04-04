@@ -1,6 +1,7 @@
 // overarching styles
 html {
   font-size: 62.5%;
+  font-family: 'Franklin Gothic URW', sans-serif;
 	background: @neutral;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -38,18 +39,17 @@ h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
 	color:@brand-primary;
 }
 h1 {
-  .font-size(4.8);
+  .font-size(4.2);
   font-family: 'Kepler Std',serif;
   font-weight: 700;
 }
 h2 {
   .font-size(2.8);
-  font-family: 'Franklin Gothic URW', sans-serif;
   font-weight: 700;
   a {
   	&:hover {
   		.tdn;
-  		color:@brand-secondary;
+  		color:@accent;
   	}
   }
 }
@@ -60,22 +60,20 @@ h2 {
     font-weight:300;   
     &:hover {
       .tdn;
-      color:@brand-secondary;
+      color:@accent;
     }
 }
 h3 {
   .font-size(2.0);
-  font-family: 'Franklin Gothic URW', sans-serif;
   font-weight: 700;
   a {
   	&:hover {
   		.tdn;
-  		color:@brand-secondary;
+  		color:@accent;
   	}
   }
 }
 h4 {
-  font-family: 'Franklin Gothic URW',sans-serif;
   font-weight: 700;
 }
 h5 {
@@ -83,9 +81,9 @@ h5 {
   font-weight: 700;
 }
 h6 {
-  .font-size(1.4);
-  font-family: 'Franklin Gothic URW',sans-serif;
-  font-weight: 300;
+  .font-size(1.5);
+  color:@brand-secondary;
+  font-weight: 500;
 }
 
 // p
@@ -95,19 +93,19 @@ p {
 		a {
 			border-bottom: 1px solid @brand-primary;
 			&:hover {
-				color:@brand-secondary;
-				border-bottom: 1px solid @brand-secondary;
+				color:@accent;
+				border-bottom: 1px solid @accent;
 				.tdn;
 			}
 		}
 	}
 	.sm {
-	.font-size(1.6);
+	.font-size(1.5);
 	a {
 		border-bottom: 1px solid @brand-primary;
 		&:hover {
-			color:@brand-secondary;
-			border-bottom: 1px solid @brand-secondary;
+			color:@accent;
+			border-bottom: 1px solid @accent;
 			.tdn;
 		}
 	}
@@ -122,8 +120,8 @@ ul, ol {
 		a {			
 			border-bottom: 1px solid @brand-primary;
 			&:hover {
-				color:@brand-secondary;
-				border-bottom: 1px solid @brand-secondary;
+				color:@accent;
+				border-bottom: 1px solid @accent;
 				.tdn;
 			}
 		}
@@ -146,13 +144,12 @@ pre {
   word-wrap: break-word;
   color: @brand-primary;
   background-color: @neutral;
-  border: 1px solid @brand-primary-light;
+  border: 1px solid @grey;
   border-radius: 0px;
 }
 // span
 span.date {
-  .font-size(1.6);
-  font-family: 'Franklin Gothic URW',sans-serif !important;
+  .font-size(1.5);
   font-weight: 300;
   margin: 0px -4px 80px 0px;
 }
@@ -164,7 +161,7 @@ span.caps {
 
 // hr
 hr {
-  border-top:1px solid @brand-primary-light;
+  border-top:1px solid @grey;
 }
 hr.sm {
   width: 12.5%;
@@ -172,8 +169,7 @@ hr.sm {
 }
 
 label {
-  .font-size(1.6);
-  font-family: 'Franklin Gothic URW', sans-serif;
+  .font-size(1.5);
   font-weight: 300;
 }
 
