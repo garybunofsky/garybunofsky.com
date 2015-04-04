@@ -13,6 +13,7 @@
 // Reuseables
 .tdn {text-decoration: none}
 .mT48 {margin-top: 48px;}
+.mT4 { margin-top: 4.0em;}
 .center {text-align: center;}
 .ease {  
   -webkit-transition: all 0.01s ease-in-out;
@@ -28,6 +29,18 @@
   font-size: ~"@{remValue}rem";
 
   line-height: @sizeValue * 14.5 * 1px;
-  margin-top: @sizeValue * 4 * 1px;
+  margin-top: @sizeValue * 3 * 1px;
+  margin-bottom: 1.55556rem;
+}
+
+.heading-font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+
+  line-height: @sizeValue * 10 * 1px;
+  margin-top: @sizeValue * 10 * 1px;
+  margin-bottom: @sizeValue * 6 * 1px;
 }
 

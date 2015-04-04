@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Franklin Gothic URW', sans-serif;
+  color: @brand-primary;
 	background: @neutral;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -35,16 +36,18 @@ body {
 }
 
 // h1, h2, h3, h4, h5, h6
-h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
+h1,h2,h3,h4,h5,h6,p, ul, ol, li, span, p {
 	color:@brand-primary;
 }
+
 h1 {
-  .font-size(4.2);
+  .heading-font-size(4.2);
   font-family: 'Kepler Std',serif;
+  text-align: center;
   font-weight: 700;
 }
 h2 {
-  .font-size(2.8);
+  .heading-font-size(2.4);
   font-weight: 700;
   a {
   	&:hover {
@@ -53,18 +56,8 @@ h2 {
   	}
   }
 }
-.site_title { 
-  .font-size(1.9);
-  font-family: 'Kepler Std',serif;
-  margin-top:1.5em;
-    font-weight:300;   
-    &:hover {
-      .tdn;
-      color:@accent;
-    }
-}
 h3 {
-  .font-size(2.0);
+  .heading-font-size(2.0);
   font-weight: 700;
   a {
   	&:hover {
@@ -81,14 +74,14 @@ h5 {
   font-weight: 700;
 }
 h6 {
-  .font-size(1.5);
+  .heading-font-size(1.5);
   color:@brand-secondary;
   font-weight: 500;
 }
 
 // p
 p {
-  .font-size(1.9);
+  .font-size(1.8);
 	font-family: 'Kepler Std', serif;
 		a {
 			border-bottom: 1px solid @brand-primary;
@@ -113,7 +106,7 @@ p {
 
 // ul, ol, li
 ul, ol {
-  .font-size(1.9);
+  .font-size(1.8);
   margin-left: -24px;
 	li {
 		font-family: 'Kepler Std', serif;
@@ -142,15 +135,15 @@ pre {
   margin: 0 0 10px;
   word-break: break-all;
   word-wrap: break-word;
-  color: @brand-primary;
   background-color: @neutral;
   border: 1px solid @grey;
   border-radius: 0px;
 }
 // span
 span.date {
+  color:@brand-secondary;
   .font-size(1.5);
-  font-weight: 300;
+  font-weight: 500;
   margin: 0px -4px 80px 0px;
 }
 span.caps {
@@ -170,7 +163,10 @@ hr.sm {
 
 label {
   .font-size(1.5);
-  font-weight: 300;
+  font-family: 'Franklin Gothic URW', sans-serif;
+  color:@brand-secondary;
+  margin-bottom: 4px;
+  font-weight: 500;
 }
 
 
