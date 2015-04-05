@@ -110,6 +110,18 @@ p {
 	}
 }
 
+//sup
+  sup {
+    color:@accent;
+    a {
+      color:@accent;
+      border:0px;
+      &:hover {
+        border-bottom:1px solid @accent;
+      }
+    }
+  }
+
 // ul, ol, li
 ul, ol {
   .font-size(1.8);
@@ -174,8 +186,16 @@ label {
   margin-bottom: 4px;
   font-weight: 300;
 }
-
-
+// footnotes
+.footnotes {
+  ol {
+    font-family: 'Kepler Std', serif;
+    .font-size(1.5);
+    li {
+      color: @brand-secondary;
+    }
+  }
+}
 // media query
 @media (max-width: 860px){
   html {
