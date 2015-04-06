@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: All Articles Template
+ * Template Name: All Articles
  */
 ?>
 

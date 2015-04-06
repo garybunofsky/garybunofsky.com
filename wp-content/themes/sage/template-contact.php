@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contact Template
+ * Template Name: Contact
  */
 ?>
 

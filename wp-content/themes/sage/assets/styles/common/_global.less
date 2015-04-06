@@ -63,7 +63,7 @@ h2 {
   }
 }
 h3 {
-  .heading-font-size(2.0);
+  .heading-font-size(1.8);
   font-weight: 700;
   a {
   	&:hover {
@@ -179,7 +179,7 @@ hr.sm {
   margin: 36px auto;
 }
 
-label {
+label, figurecaption {
   .font-size(1.5);
   font-family: 'Franklin Gothic URW', sans-serif;
   color:@brand-secondary;
@@ -196,9 +196,35 @@ label {
     }
   }
 }
+//img
+img {
+  max-width: 100%;
+}
+.imgbleed {
+  width: 152%;
+  margin-left: -25%;
+}
+.alignleft {
+  width: 50%;
+  margin-left: -25%;
+}
+.alignright {
+  width: 50%;
+  margin-right: -25%;
+}
+
+
+
 // media query
 @media (max-width: 860px){
   html {
     font-size: 54.5%;
+  }
+}
+@media (max-width: 991px){
+  .imgbleed, .alignleft, .alignright {
+    width: auto;
+    margin-right: 0%;
+    margin-left: 0%;
   }
 }
