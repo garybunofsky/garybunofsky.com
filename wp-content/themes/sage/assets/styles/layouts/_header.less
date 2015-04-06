@@ -27,25 +27,58 @@ ul#menu-main.menu.menu  {
     .font-size(1.5);
     font-family: 'Franklin Gothic URW',sans-serif;
     display: inline;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0px -4px 28px 0px;
     a {
       .tdn;
       border-bottom:none;
       color:@brand-secondary;
-      padding-top: 7px;
-      margin: 0px 1.25em 0px 0px;
+      padding: 1.0em  0px 1.5em  0px;
+      margin: 0px 1.1em 0px 0px;
         &:hover {
           color:@accent;
         }
     }
   }
 }
-
+ul#menu-main.menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-24 a {
+  &:before {
+    font-family: 'FontAwesome';
+    content:"\f0e5 ";
+    margin-right:3px;
+  }
+}
+ul#menu-main.menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-25 a {
+  &:before {
+    font-family: 'FontAwesome';
+    content:"\f0f6 ";
+    margin-right:3px;
+  }
+}
+ul#menu-main.menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-23 a {
+  &:before {
+    font-family: 'FontAwesome';
+    content:"\f11c ";
+    margin-right:3px;
+  }
+}
+ul#menu-main.menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-21 a {
+  &:before {
+    font-family: 'FontAwesome';
+    content:"\f115 ";
+    margin-right:3px;
+  }
+}
+ul#menu-main.menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-22 a {
+  &:before {
+    font-family: 'FontAwesome';
+    content:"\f108 ";
+    margin-right:3px;
+  }
+}
 
 ul#menu-main.menu.menu li a:focus, 
 ul#menu-main.menu.menu li a:hover,
 ul#menu-main.menu.menu li.current-menu-item a {
     color:@accent;
-		border-top:1px solid @accent !important;
 }
