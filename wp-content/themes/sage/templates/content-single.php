@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1><?php the_title(); ?></h1>
+          <h1 class="animated fadeIn"><?php the_title(); ?></h1>
           <span class="date"><?php the_date(); ?></span>
           <div class="entry-content">
             <?php the_content(); ?>

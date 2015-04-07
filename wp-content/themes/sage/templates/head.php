@@ -29,7 +29,7 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- animate.css -->
-    <link href='../wp-content/themes/sage/bower_components/animate.css/animate.min.css' rel='stylesheet' type='text/css'>
+    <link href='http://garybunofsky.com/wp-content/themes/sage/bower_components/animate.css/animate.min.css' rel='stylesheet' type='text/css'>
     <!-- fontawesome.css -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- hotjar -->
