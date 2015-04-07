@@ -61,7 +61,7 @@ function display_sidebar() {
         'is_front_page',
         'is_single',
         ['is_page_template', 'template-custom.php'],
-        ['is_page_template', 'template-all-articles.php'],
+        ['is_page_template', 'template-all-blogs.php'],
         ['is_page_template', 'template-basic.php'],
         ['is_page_template', 'template-contact.php']
       ]
