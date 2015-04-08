@@ -20,7 +20,11 @@
 							<h2><?php the_title(); ?></h2>
 							<span class="date"><?php the_date(); ?></span>
 							<br />
-							<a class="btn"href="<?php echo get_permalink($post->ID); ?>">Read Article</a>
+							<div class="row">
+								<div class="col-xs-4">
+									<a class="btn"href="<?php echo get_permalink($post->ID); ?>">Read the Post</a>
+								</div>
+							</div>
 						</div>
 					<?php
 					endforeach; 
