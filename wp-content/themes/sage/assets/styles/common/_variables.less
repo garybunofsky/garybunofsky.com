@@ -10,6 +10,11 @@
 @neutral-secondary:  #d8d8d8;
 @grey:               #ccc;  
 
+
+//Fonts
+@sans-serif:"Franklin Gothic URW", sans-serif;
+@serif:"Kepler Std",serif;
+
 // Reuseables
 .tdn {text-decoration:none}
 .mT48 {margin-top:48px;}
@@ -27,10 +32,10 @@
   @pxValue:(@sizeValue * 10);
   font-size:~"@{pxValue}px"; 
   font-size:~"@{remValue}rem";
-
   line-height:@sizeValue * 14.5 * 1px;
   margin-top:@sizeValue * 3 * 1px;
   margin-bottom:1.55556rem;
+
 }
 
 .heading-font-size(@sizeValue) {

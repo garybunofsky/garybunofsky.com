@@ -50,6 +50,8 @@ h1 {
   font-family:'Kepler Std',serif;
   text-align:center;
   font-weight:700;
+  margin-top: 0px;
+  letter-spacing: -0.015em;
 }
 h2 {
   .heading-font-size(2.4);
@@ -89,6 +91,7 @@ h6 {
 p {
   .font-size(1.8);
 	font-family:'Kepler Std', serif;
+  letter-spacing:.015rem;
 		a {
 			border-bottom:1px solid @brand-primary;
 			&:hover {
@@ -161,6 +164,7 @@ pre {
 span.date {
   color:@brand-secondary;
   .font-size(1.6);
+  margin:-10px 0px 0px 0px;
   font-weight:400;
   display: block;
 }
@@ -205,33 +209,9 @@ bdi {
   }
 }
 
-//img
-img {
-  max-width:100%;
-}
-.imgbleed {
-  width:152%;
-  margin-left:-25%;
-}
-.alignleft {
-  width:50%;
-  margin-left:-25%;
-}
-.alignright {
-  width:50%;
-  margin-right:-25%;
-}
-
 // media query
 @media (max-width:860px){
   html {
     font-size:52%;
-  }
-}
-@media (max-width:991px){
-  .imgbleed, .alignleft, .alignright, bdi {
-    width:auto;
-    margin-right:0%;
-    margin-left:0%;
   }
 }
