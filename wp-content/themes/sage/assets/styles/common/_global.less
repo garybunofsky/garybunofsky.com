@@ -1,14 +1,13 @@
 // overarching styles
 html {
   font-size:62.5%;
-  font-family:'Franklin Gothic URW', sans-serif;
+  font-family:'franklin-gothic-urw', sans-serif;
   color:@brand-primary;
 	background:-webkit-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* Chrome 10+, Saf5.1+ */
   background:   -moz-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* FF3.6+ */
   background:    -ms-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* IE10 */
   background:     -o-linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* Opera 11.10+ */
   background:        linear-gradient(120deg, @neutral 100%, @neutral-secondary 50%); /* W3C */
-
   -moz-text-size-adjust:none;
   -ms-text-size-adjust:none;
   -webkit-text-size-adjust:none;
@@ -47,7 +46,7 @@ h1,h2,h3,h4,h5,h6,p, ul, ol, li, span, p {
 
 h1 {
   .heading-font-size(4.5);
-  font-family:'Kepler Std',serif;
+  font-family:'kepler-std',serif;
   text-align:center;
   font-weight:700;
   margin-top: 0.5em;
@@ -55,6 +54,7 @@ h1 {
   letter-spacing: -0.015em;
 }
 h2 {
+  font-family:'franklin-gothic-urw', sans-serif;
   .heading-font-size(2.4);
   font-weight:700;
   a {
@@ -66,6 +66,7 @@ h2 {
   }
 }
 h3 {
+  font-family:'franklin-gothic-urw', sans-serif;
   .heading-font-size(1.8);
   font-weight:700;
   a {
@@ -76,13 +77,15 @@ h3 {
   }
 }
 h4 {
+  font-family:'franklin-gothic-urw', sans-serif;
   font-weight:700;
 }
 h5 {
-  font-family:'Kepler Std', sans-serif;
+  font-family:'kepler-std', sans-serif;
   font-weight:700;
 }
 h6 {
+  font-family:'franklin-gothic-urw', sans-serif;
   .font-size(1.6);
   color:@brand-secondary;
   font-weight:400;
@@ -91,7 +94,7 @@ h6 {
 // p
 p {
   .font-size(1.8);
-	font-family:'Kepler Std', serif;
+	font-family:'kepler-std', serif;
   letter-spacing:.015rem;
 		a {
 			border-bottom:1px solid @brand-primary;
@@ -131,7 +134,7 @@ ul, ol {
   .font-size(1.8);
   margin-left:-24px;
 	li {
-		font-family:'Kepler Std', serif;
+		font-family:'kepler-std', serif;
 		a {			
 			border-bottom:1px solid @brand-primary;
 			&:hover {
@@ -142,7 +145,7 @@ ul, ol {
 		}
 		ul, ol {
 			li {
-				font-family:'Kepler Std', serif;
+				font-family:'kepler-std', serif;
 				font-size:inherit;
 			}
 		}
@@ -164,6 +167,7 @@ pre {
 // span
 span.date {
   color:@brand-secondary;
+  font-family:'franklin-gothic-urw', sans-serif;
   .font-size(1.6);
   margin:-10px 0px 0px 0px;
   font-weight:400;
@@ -186,7 +190,7 @@ hr.sm {
 
 label, figcaption {
   .font-size(1.6);
-  font-family:'Franklin Gothic URW', sans-serif;
+  font-family:'franklin-gothic-urw', sans-serif;
   color:@brand-secondary;
   margin-bottom:4px;
   font-weight:400;
@@ -194,7 +198,7 @@ label, figcaption {
 
 bdi {
   .heading-font-size(2.4);
-  font-family:'Kepler Std', serif;
+  font-family:'kepler-std', serif;
   font-style:italic;
   margin-left:-25%;
   margin-right:-25%;
@@ -202,7 +206,7 @@ bdi {
 // footnotes
 .footnotes {
   ol {
-    font-family:'Kepler Std', serif;
+    font-family:'kepler-std', serif;
     .font-size(1.6);
     li {
       color:@brand-secondary;
