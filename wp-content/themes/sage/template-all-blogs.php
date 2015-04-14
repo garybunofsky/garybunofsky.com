@@ -22,7 +22,7 @@
 							<br />
 							<div class="row">
 								<div class="col-xs-4">
-									<a class="btn"href="<?php echo get_permalink($post->ID); ?>">Read the Post</a>
+									<a class="btn"href="<?php echo get_permalink($post->ID); ?>">Read Post</a>
 								</div>
 							</div>
 						</div>
