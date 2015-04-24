@@ -18,7 +18,7 @@
 					  setup_postdata( $post ); ?> 
 						<div>
 							<h2><?php the_title(); ?></h2>
-							<span class="date"><?php the_date(); ?></span>
+							<span class="date"><?php the_date();?></span>
 							<br />
 							<div class="row">
 								<div class="col-xs-4">

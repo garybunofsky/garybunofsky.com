@@ -4,8 +4,8 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1 class="animated fadeIn"><?php the_title(); ?></h1>
-          <span class="date center"><?php the_date(); ?></span>
-          <div class="entry-content">
+          <span class="date center"><?php the_date(); ?> by Gary Bunofsky</span>
+          <div class="entry-content mT4">
             <?php the_content(); ?>
             <div class="row mT4">
               <div class="col-md-12">
