@@ -7,7 +7,7 @@
           <span class="date center"><?php the_date(); ?> by Gary Bunofsky</span>
           <div class="entry-content mT4">
             <?php the_content(); ?>
-            <div class="row mT4">
+            <div class="row mT5">
               <div class="col-md-12">
                 <h3>Share Post</h3>
               </div>

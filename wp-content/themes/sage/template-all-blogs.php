@@ -11,8 +11,9 @@
 			<div class="col-md-8 col-md-offset-2">
 				<h1 class="animated fadeIn"><?php echo get_the_title( $ID ); ?></h1>
 				<div class="mT4">
+					<?php get_template_part('templates/content', 'page'); ?>
 					<?php
-					$args = array( 'posts_per_page' => 10, 'order'=> 'DSC', 'orderby' => 'meta_value' );
+					$args = array( 'posts_per_page' => 25, 'order'=> 'DSC', 'orderby' => 'meta_value' );
 					$postslist = get_posts( $args );
 					foreach ( $postslist as $post ) :
 					  setup_postdata( $post ); ?> 

@@ -11,9 +11,6 @@
     <link href='http://garybunofsky.com/wp-content/themes/sage/bower_components/animate.css/animate.min.css' rel='stylesheet' type='text/css'>
     <!-- fontawesome.css -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- typography -->
-    <script src="//use.typekit.net/tnp6jhg.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
     <!-- hotjar -->
     <script>
         (function(f,b){
@@ -43,4 +40,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    
+    <!-- typography -->
+    <script src="//use.typekit.net/tnp6jhg.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
