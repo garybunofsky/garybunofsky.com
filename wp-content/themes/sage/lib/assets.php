@@ -122,6 +122,12 @@ function assets() {
   wp_enqueue_script('modernizr', asset_path('scripts/modernizr.js'), [], null, true);
   wp_enqueue_script('jquery');
   wp_enqueue_script('sage_js', asset_path('scripts/main.js'), [], null, true);
+
+  // aftermarket enqueues
+  wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+  wp_enqueue_style( 'animate', '//garybunofsky.com/wp-content/themes/sage/bower_components/animate.css/animate.min.css');
+  wp_enqueue_style( 'typekit', '//use.typekit.net/tnp6jhg.js');
+
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 

@@ -7,21 +7,6 @@
     <link rel="alternate" type="application/rss+xml" title="<?= get_bloginfo('name'); ?> Feed" href="<?= esc_url(get_feed_link()); ?>">
     <!-- for your convenience, the source is located here https://github.com/garybunofsky/garybunofsky.com -->
     <?php wp_head(); ?>
-    <!-- animate.css -->
-    <link href='http://garybunofsky.com/wp-content/themes/sage/bower_components/animate.css/animate.min.css' rel='stylesheet' type='text/css'>
-    <!-- fontawesome.css -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- hotjar -->
-    <script>
-        (function(f,b){
-            var c;
-            f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
-            f._hjSettings={hjid:18408, hjsv:3};
-            c=b.createElement("script");c.async=1;
-            c.src="//static.hotjar.com/c/hotjar-18408.js?sv=3";
-            b.getElementsByTagName("head")[0].appendChild(c); 
-        })(window,document);
-    </script>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -40,8 +25,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
     <!-- typography -->
-    <script src="//use.typekit.net/tnp6jhg.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
   </head>
