@@ -188,7 +188,7 @@ hr.sm {
   margin:36px auto;
 }
 
-label, figcaption {
+label, figurecaption {
   .font-size(1.6);
   font-family:'franklin-gothic-urw', sans-serif;
   color:@brand-secondary;
@@ -196,12 +196,25 @@ label, figcaption {
   font-weight:400;
 }
 
+
 bdi {
-  .heading-font-size(2.4);
+  .font-size(2.4);
   font-family:'kepler-std', serif;
   font-style:italic;
-  margin-left:-25%;
-  margin-right:-25%;
+  margin-top:1.5em;
+  margin-left: 0px;
+  margin-bottom:1.5em;
+  margin-right: -25%;
+  width: 150%;
+  float: right;
+}
+
+blockquote {
+  .font-size(1.8);
+  font-style: italic;
+  padding:0.75em 1.5em;
+  margin:2.0em 0em;
+  border-left: 1px solid #ccc;
 }
 // footnotes
 .footnotes {
