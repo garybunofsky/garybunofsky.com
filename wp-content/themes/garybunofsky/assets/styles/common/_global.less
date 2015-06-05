@@ -45,10 +45,10 @@ h1,h2,h3,h4,h5,h6,p, ul, ol, li, span, p {
 }
 
 h1 {
-  .heading-font-size(4.5);
-  font-family:'kepler-std',serif;
+  .heading-font-size(3.5);
+  font-family:@sans-serif; //used to be Kepler
   text-align:center;
-  font-weight:700;
+  font-weight:400;
   margin-top: 1.6em;
   margin-top: 1.6rem;
   letter-spacing: -0.015em;
@@ -56,7 +56,6 @@ h1 {
 h2 {
   font-family:'franklin-gothic-urw', sans-serif;
   .heading-font-size(2.4);
-  font-weight:700;
   a {
   	&:hover {
   		.tdn;
@@ -67,8 +66,7 @@ h2 {
 }
 h3 {
   font-family:'franklin-gothic-urw', sans-serif;
-  .heading-font-size(1.8);
-  font-weight:700;
+  .heading-font-size(2.0);
   a {
   	&:hover {
   		.tdn;
@@ -81,7 +79,7 @@ h4 {
   font-weight:700;
 }
 h5 {
-  font-family:'kepler-std', sans-serif;
+  font-family:@sans-serif; //used to be Kepler
   font-weight:700;
 }
 h6 {
@@ -94,10 +92,12 @@ h6 {
 // p
 p {
   .font-size(1.8);
-	font-family:'kepler-std', serif;
+  color:@brand-secondary;
+	font-family:@sans-serif; //used to be Kepler
   letter-spacing:.015rem;
 		a {
-			border-bottom:1px solid @brand-primary;
+      color:@brand-secondary;
+			border-bottom:1px solid @brand-secondary;
 			&:hover {
 				color:@accent;
 				border-bottom:1px solid @accent;
@@ -106,7 +106,7 @@ p {
 		}
 	}
 	.sm {
-	.font-size(1.6);
+	.font-size(1.5);
 	a {
 		border-bottom:1px solid @brand-primary;
 		&:hover {
@@ -134,7 +134,8 @@ ul, ol {
   .font-size(1.8);
   margin-left:-20px;
 	li {
-		font-family:'kepler-std', serif;
+		font-family:@sans-serif; //used to be Kepler
+    color:@brand-secondary;
 		a {			
 			border-bottom:1px solid @brand-primary;
 			&:hover {
@@ -145,7 +146,7 @@ ul, ol {
 		}
 		ul, ol {
 			li {
-				font-family:'kepler-std', serif;
+				font-family:@sans-serif; //used to be Kepler
 				font-size:inherit;
 			}
 		}
@@ -155,6 +156,7 @@ ul, ol {
 //pre 
 pre {
   .font-size(1.2);
+  color:@brand-secondary;
   display:block;
   padding:12px;
   margin:0 0 10px;
@@ -168,7 +170,7 @@ pre {
 span.date {
   color:@brand-secondary;
   font-family:'franklin-gothic-urw', sans-serif;
-  .font-size(1.6);
+  .font-size(1.5);
   margin:-10px 0px 0px 0px;
   font-weight:400;
   display: block;
@@ -199,7 +201,7 @@ label, figurecaption {
 
 bdi {
   .font-size(2.4);
-  font-family:'kepler-std', serif;
+  font-family:@sans-serif; //used to be Kepler
   font-style:italic;
   margin-top:1.5em;
   margin-left: 0px;
@@ -219,7 +221,7 @@ blockquote {
 // footnotes
 .footnotes {
   ol {
-    font-family:'kepler-std', serif;
+    font-family:@sans-serif; //used to be Kepler
     .font-size(1.6);
     li {
       color:@brand-secondary;
@@ -233,6 +235,6 @@ blockquote {
 // media query
 @media (max-width:860px){
   html {
-    font-size:52%;
+    font-size:56%;
   }
 }
