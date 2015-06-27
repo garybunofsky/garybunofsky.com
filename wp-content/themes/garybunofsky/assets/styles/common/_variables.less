@@ -12,7 +12,7 @@
 
 //Fonts
 @sans-serif:"franklin-gothic-urw", sans-serif;
-@serif:"Adriane Text",serif;
+@serif:"adriane",serif;
 
 @grid-columns:              24;
 
@@ -37,7 +37,7 @@
   line-height:@sizeValue * 14.5 * 1px;
   margin-top:@sizeValue * 3 * 1px;
   margin-bottom:1.55556rem;
-
+  font-weight:400;
 }
 
 .heading-font-size(@sizeValue) {
@@ -45,9 +45,9 @@
   @pxValue:(@sizeValue * 10);
   font-size:~"@{pxValue}px"; 
   font-size:~"@{remValue}rem";
-
   line-height:@sizeValue * 11 * 1px;
   margin-top:@sizeValue * 15 * 1px;
   margin-bottom:@sizeValue * 4 * 1px;
+  font-weight:400;
 }
 
