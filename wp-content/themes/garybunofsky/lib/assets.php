@@ -125,7 +125,6 @@ function assets() {
 
   // aftermarket enqueues
   wp_enqueue_style( 'animate', '//garybunofsky.com/wp-content/themes/garybunofsky/bower_components/animate.css/animate.min.css');
-  wp_enqueue_style( 'typekit', '//use.typekit.net/tnp6jhg.js');
 
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

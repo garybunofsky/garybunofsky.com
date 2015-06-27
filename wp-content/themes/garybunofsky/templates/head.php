@@ -26,5 +26,6 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- typography -->
+    <script src="//use.typekit.net/tnp6jhg.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
   </head>
