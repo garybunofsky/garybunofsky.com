@@ -2,7 +2,7 @@
   <article <?php post_class(); ?>>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-md-offset-6">
+        <div class="col-md-10 col-md-offset-7">
           <h1 class="animated fadeIn"><?php the_title(); ?></h1>
           <div class="entry-content mT4">
             <?php the_content(); ?>
