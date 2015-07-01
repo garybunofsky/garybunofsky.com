@@ -29,6 +29,10 @@ body {
   margin-left:auto;
 	overflow:hidden;
 }
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .main {
 	padding-left:0px !important;
 	padding-right:0px !important;
@@ -195,6 +199,7 @@ label, figurecaption {
 
 bdi {
   .font-size(2.2);
+  color:@brand-secondary;
   font-family:@sans-serif; //used to be Kepler
   margin-top:1.5em;
   margin-left: 0px;
@@ -206,6 +211,8 @@ bdi {
 
 blockquote {
   .font-size(1.7);
+  font-family:@sans-serif;
+  color:@brand-secondary;
   font-style: italic;
   padding:0.75em 1.5em;
   margin:2.0em 0em;
@@ -224,11 +231,78 @@ blockquote {
     }
   }
 }
-
+.block {
+  margin-bottom:.5rem;
+  .brand-primary {
+    padding:2em 2em;
+    background-color: @brand-primary;
+    height: 10.0em;
+    p {
+      color:@neutral;
+      .sm {
+        .font-size(1.5);
+      }
+    }
+  }
+  .brand-secondary {
+    padding:2em 2em;
+    background-color: @brand-secondary;
+    height: 10.0em;
+    p {
+      color:@neutral;
+      .sm {
+        .font-size(1.5);
+      }
+    }
+  }
+  .grey {
+    padding:2em 2em;
+    background-color: @grey;
+    height: 10.0em;
+    p {
+      color:@neutral;
+      .sm {
+      .font-size(1.5);
+      }
+    }
+  }
+  .neutral-secondary {
+    padding:2em 2em;
+    background-color: @neutral-secondary;
+    height: 10.0em;
+    p {
+      color:@brand-secondary;
+      .sm {
+        .font-size(1.5);
+      }
+    }
+  }
+  .accent {
+    padding:2em 2em;
+    background-color: @accent;
+    height: 10.0em;
+    p {
+      color:@neutral;
+      .sm {
+        .font-size(1.5);
+      }
+    }
+  }
+  .neutral {
+    padding:2em 2em;
+    background-color: @neutral;
+    height: 10.0em;
+    p {
+      color:@brand-secondary;
+      .sm {
+        .font-size(1.5);
+      }
+    }
+  }
+}
 // media query
 @media (max-width:860px){
   html {
     font-size:66% !important;
-    margin:0 6px 0 6px;
   }
 }
