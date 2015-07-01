@@ -60,10 +60,12 @@ function display_sidebar() {
         'is_404',
         'is_front_page',
         'is_single',
+        'is_search',
         ['is_page_template', 'template-custom.php'],
         ['is_page_template', 'template-all-blogs.php'],
         ['is_page_template', 'template-basic.php'],
-        ['is_page_template', 'template-contact.php']
+        ['is_page_template', 'template-contact.php'],
+        ['is_page_template', 'searchform.php']
       ]
     );
 
