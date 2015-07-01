@@ -8,7 +8,7 @@
     </div-->
     <div class="row">
       <div class="col-md-10 col-md-offset-7">
-        <h2 class="animated fadeIn site_title"><a href="<?php echo esc_url( home_url( '/' ) );?>">Gary Bunofsky, Designer &amp; Developer</a></h1>
+        <h2 class="site_title"><a href="<?php echo esc_url( home_url( '/' ) );?>">Gary Bunofsky, Designer &amp; Developer</a></h1>
         <div class="nav">
           <?php wp_nav_menu( array('menu' => 'Main Menu' )); ?>
         </div>
