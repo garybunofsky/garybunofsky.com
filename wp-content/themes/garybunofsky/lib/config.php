@@ -65,6 +65,7 @@ function display_sidebar() {
         ['is_page_template', 'template-all-blogs.php'],
         ['is_page_template', 'template-basic.php'],
         ['is_page_template', 'template-contact.php'],
+        ['is_page_template', 'template-style-guide.php'],
         ['is_page_template', 'searchform.php']
       ]
     );
