@@ -19,8 +19,7 @@
 					  setup_postdata( $post ); ?> 
 						<div>
 							<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-							<span class="date">Written on <?php the_date();?><br />
-							 by Gary Bunofsky</span>
+							<span class="date"><?php the_date();?></span>
 							<br />
 							<div class="row">
 								<div class="col-xs-8">
