@@ -29,8 +29,8 @@
 							</div-->
 					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_deb5a86031cefe2be60767bf5_84b423ba68" tabindex="-1" value=""></div>
 					    	<div class="row">
-					    		<div class="col-sm-8">
-					    			<input type="submit" value="Subscribe" name="subscribe" class="btn">
+					    		<div class="col-xs-8">
+					    			<input type="submit" value="Send" name="subscribe" class="btn">
 					    		</div>
 					    	</div>
 					    	<div id="mce-responses" class="clear">
