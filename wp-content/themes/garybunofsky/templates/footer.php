@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
   	<div class="row">
-			<div class="col-md-10 col-md-offset-7">
+			<div class="col-sm-24 col-md-10 col-md-offset-7">
 				<div class="colophon">
 					<!--h6>Colophon</h6-->
 					<h6>Newsletter</h6>
