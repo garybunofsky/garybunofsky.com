@@ -4,6 +4,9 @@ log/development.log
 log/*
 config/secrets.yml
 
+
+app/assets/images/*
+
 app/views/contact/
 app/views/portfolio/magenda.html.erb
 
