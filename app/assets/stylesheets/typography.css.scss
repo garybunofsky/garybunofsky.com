@@ -1,0 +1,243 @@
+@import "variables";
+// typography.css.scss
+
+// h1, h2, h3, h4, h5, h6
+h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
+  color:$brand-primary;
+}
+
+h1 {
+  @include serif(42);
+  font-weight:400;
+  text-align: center;
+  letter-spacing: -0.005em;
+}
+
+h2 {
+  @include sans-serif(34);
+  a {
+    &:visited {
+      color:$brand-secondary;
+    }
+    &:hover {
+      text-decoration: none;
+      color:$accent;
+    }
+  }
+}
+
+h3 {
+  @include sans-serif(32);
+  a {
+    &:hover {
+      text-decoration: none;;
+      color:$accent;
+    }
+  }
+}
+
+h4 {
+  @include sans-serif(29);
+}
+
+h5 {
+  @include sans-serif(24);
+}
+
+h6 {
+  @include sans-serif(18);
+  color:$brand-secondary;
+}
+
+p {
+  @include serif(29);
+  color:$brand-secondary;
+  letter-spacing:.015rem;
+  margin-bottom: 1.566666em;
+  .italic {
+   font-style: italic;
+  }
+    a {
+      text-decoration: none;
+      color:$brand-secondary;
+      text-decoration: underline;
+      &:hover {
+        color:$accent;
+        text-decoration: underline;
+      }
+      &:visited,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+  .sm {
+  @include serif(20);
+  a {
+    text-decoration: none;
+    text-decoration: underline;
+    &:hover {
+      color:$accent;
+      text-decoration: underline;
+    }
+    &:visited,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+sup {
+  color:$brand-secondary;
+  a {
+    color:$accent;
+    border:0px;
+    &:hover {
+      border-bottom:1px solid $accent;
+    }
+  }
+}
+
+ul, ol {
+  @include serif(29);
+  margin-left:-20px;
+  li {
+    color:$brand-secondary;
+
+    a {
+      color:$brand-secondary;
+      text-decoration: underline;
+      &:hover {
+        color:$accent;
+        text-decoration: underline;
+      }
+    }
+    ul, ol {
+      li {
+        font-size:inherit;
+      }
+    }
+  }
+}
+ul.checkbox {
+ li {
+   list-style-type: none;
+   input[type='checkbox'] {
+     margin-left: -20px;
+     margin-top: 8px;
+  }
+ }
+}
+pre {
+  @include sans-serif(20);
+  font-family: "Courier New";
+  @include border-radius(5px);
+  color:$brand-secondary;
+  display:block;
+  padding:12px;
+  margin:0 0 24px 0;
+  word-break:break-all;
+  word-wrap:break-word;
+  background-color:$neutral;
+  border:1px solid $grey;
+}
+
+hr {
+  border-top:1px solid $light;
+  margin-bottom: 12px;
+}
+hr.sm {
+  margin:36px auto;
+}
+
+label, figurecaption {
+  @include sans-serif(23);
+  color:$brand-secondary;
+  margin:0px;
+}
+
+blockquote.center {
+  @include serif(32);
+  text-align: center;
+  color:$brand-secondary;
+  font-style: italic;
+
+  margin-top:1.5em;
+  margin-left: 0px;
+  margin-bottom:1.5em;
+  margin-right: -25%;
+  width: 150%;
+  float: right;
+}
+
+blockquote.left {
+  @include serif(29);
+  color:$brand-secondary;
+  font-style: italic;
+  padding:0.75em 1.5em;
+  margin:2.0em 0em;
+  border-left: 1px solid $medium;
+}
+
+.footnotes {
+  ol {
+    @include sans-serif(20);
+    li {
+      color:$brand-secondary;
+      a {
+        color:$brand-secondary;
+      }
+    }
+  }
+}
+.block {
+  margin-bottom:24px;
+  display: block;
+  .brand-primary {
+    padding:2em 2em;
+    background-color: $brand-primary;
+    height: 10.0em;
+    p {
+      color:$neutral;
+      @include sans-serif(20);
+    }
+  }
+  .brand-secondary {
+    padding:2em 2em;
+    background-color: $brand-secondary;
+    height: 10.0em;
+    p {
+        color:$w;
+        @include sans-serif(20);
+    }
+  }
+  .light {
+    padding:2em 2em;
+    background-color: $light;
+    height: 10.0em;
+    p {
+      color:$neutral;
+      @include sans-serif(20);
+    }
+  }
+  .neutral {
+    padding:2em 2em;
+    background-color: $neutral;
+    height: 10.0em;
+    p {
+      color:$brand-secondary;
+      @include sans-serif(20);
+    }
+  }
+  .accent {
+    padding:2em 2em;
+    background-color: $accent;
+    height: 10.0em;
+    p {
+      color:$neutral;
+      @include sans-serif(20);
+    }
+  }
+}

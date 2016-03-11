@@ -1,0 +1,12 @@
+<% content_for :page_title, "Changelog" %>
+<% content_for :page_description, "This page lists the past 30 commits made to this site. It's built in Ruby with Rails and hosted on Heroku." %>
+
+<p>This page lists the past 30 commits made to this site. I am responsible for all design, development and maintenance. It's built in <a href="https://www.ruby-lang.org/en/">Ruby</a> with <a href="http://rubyonrails.org/">Rails</a> and hosted by <a href="http://heroku.com/">Heroku</a>. Typography is set in Georgia and Helvetica Neue. If you want to learn more you can check out the <a href="/style-guide/">style guide</a>, view the <a href="https://github.com/garybunofsky/garybunofsky.com/">git repo</a> or take a look at the <a href="view-source:https://garybunofsky.com/">source</a>.</p>
+<% @data.each do |item| %>
+  <section>
+    <h3><%= Time.parse(item['commit']['author']['date']).strftime("%B %d, %Y")%></h3>
+    <p>SHA: <%= item['sha'] %><br />
+    Message: <%= item['commit']['message'] %><br />
+    <a href="https://github.com/garybunofsky/garybunofsky.com/commit/<%= item['sha'] %>"><em>View Commit</em></a></p>
+  </section>
+<% end %>

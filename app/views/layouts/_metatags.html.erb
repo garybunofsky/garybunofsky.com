@@ -1,0 +1,8 @@
+<% content_for :name, "Gary Bunofsky" %>
+<% content_for :job_title, "Designer & Developer" %>
+<title><%= yield(:page_title) %> | <%= yield(:name) %>, <%= yield(:job_title) %></title>
+<meta property="og:title" content="<%= yield(:name) %>, <%= yield(:job_title) %>" />
+<meta property="og:description" content="<%= yield(:page_description) %>" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="<%= request.url %>" />
+<meta property="og:image" content="<%= image_path("meta_image.jpg") %>" />

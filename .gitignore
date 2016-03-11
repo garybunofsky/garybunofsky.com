@@ -1,17 +1,15 @@
-wp-config.php
 .DS_Store
-wp-content/uploads/
-*.log
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/wp-cache-config.php
-.htaccess
+tmp/*
+log/development.log
+log/*
+config/secrets.yml
 
+app/views/contact/
+app/views/portfolio/magenda.html.erb
 
+app/views/pay/
+app/views/process/
+app/controllers/process_controller.rb
+app/controllers/pay_controller.rb
+app/controllers/helpers/charges_helper.rb
+app/helpers/charges_helper.rb

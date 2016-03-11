@@ -1,0 +1,70 @@
+@import "variables";
+// nav.css.scss
+
+nav.navbar {
+  background:rgba(255, 255, 255, 0.95) !important;
+  background:$w;
+  border-top: 1px solid $light;
+  border-bottom: 1px solid $light;
+  padding:16px 0px 17px;
+  h1.brand {
+    @include sans-serif(23);
+    font-family:$sans-serif;
+    margin:0;
+    text-align: left;
+    a {
+      text-decoration: none;
+      color:$brand-primary;
+      &:hover {
+        color:$accent;
+        span {
+          color:$accent;
+        }
+      }
+      span {
+        &:hover {
+          color:$accent;
+        }
+      }
+    }
+  }
+  button {
+    float:right;
+    color:$brand-secondary;
+    font-size: 15px;
+    padding: 6px 12px;
+    font-weight: 700;
+    border-radius:0;
+    @include trans;
+    &:hover {
+      color:$accent;
+    }
+    &:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-image: none;
+      outline: 0;
+    }
+  }
+  ul.navbar-nav {
+    //text-align: center;
+    text-align: right;
+    margin-top:-23px;
+    li.nav-item {
+      float:none;
+      @include sans-serif(23);
+      display:inline;
+      a {
+        display: inline;
+        text-decoration: none;
+        border-bottom:none;
+        color:$brand-secondary;
+        padding:8px 6px;
+        @include trans;
+        &:hover {
+          color:$accent;
+        }
+      }
+    }
+  }
+}

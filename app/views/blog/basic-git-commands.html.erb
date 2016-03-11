@@ -1,0 +1,116 @@
+<% content_for :page_title, "Basic Git Commands" %>
+<% content_for :page_description, "Features are added. Files are refactored. Bugs are removed. Sourcecode changes often. For this reason the good developers use version control." %>
+<% content_for :date_posted, "July 29th, 2015" %>
+
+<p>Features are added. Files are refactored. Bugs are removed. Sourcecode changes often. For this reason the good developers use version control. With version control a team can continuously change, save and delete project files without interfering with workflow.</p>
+<p>One of the most popular flavors of version control is Git. There are applications help developers manage their codebase through Git. <a href="https://www.sourcetreeapp.com/" target="_blank">Sourcetree</a>, <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> and <a href="https://www.git-tower.com/" target="_blank">Tower</a> are a few that come to mind. But many prefer to use the command line. It can take some getting used to. It's easy to forget the commands that are not used often.</p>
+
+<h2>Benefits of version control</h2>
+<ul>
+	<li>
+		Revert back to previous versions.
+	</li>
+	<li>
+		Simultaneously work on the same file with others.
+	</li>
+	<li>
+		Maintain multiple versions of code.
+	</li>
+	<li>
+		See the difference between versions of &nbsp;code.
+	</li>
+	<li>
+		Prove a particular change broke or fixed a feature.
+	</li>
+	<li>
+		Examine the history of your project.
+	</li>
+	<li>
+		Submit a change on a collaborative project.
+	</li>
+	<li>
+		Share code.
+	</li>
+	<li>
+		Allow others to work on your code
+	</li>
+	<li>
+		View when work is being done and by whom.
+	</li>
+	<li>
+		Test a feature without interfering with working code.
+	</li>
+</ul>
+<figure class="center" >
+		<img src="/assets/code.jpg" alt="code" />
+		<figcaption class="pull-right">Looks like a form.</figcaption>
+</figure>
+
+<h2>Creating Repositories</h2>
+
+<h5>Create a local repo</h5>
+<pre>git init</pre>
+
+<h5>Download a repository and its history</h5>
+<pre>git clone https://github.com/user/repo</pre>
+
+<h5>Change the URI or URL for a remote repo</h5>
+<pre>git remote set-url origin https://your.new.url</pre>
+
+<h2>Making Changes</h2>
+<h5>List all files to be committed</h5>
+<pre>git status</pre>
+
+<h5>View file differences that are unstaged</h5>
+<pre>git diff</pre>
+
+<h5>Stage single file</h5>
+<pre>git add path/of/file</pre>
+
+<h5>Stage all files</h5>
+<pre>git add .</pre>
+
+<h5>Unstage single file, but retains contents</h5>
+<pre>git reset path/of/file</pre>
+
+<h5>Commit changes to repository</h5>
+<pre>git commit -m "message"</pre>
+
+<h2>Managing Branches</h2>
+<h5>View local branches</h5>
+<pre>git branch</pre>
+
+<h5>View remote branches</h5>
+<pre>git branch -r</pre>
+
+<h5>View all local and remote branches</h5>
+<pre>git branch -a</pre>
+
+<h5>Switch branches</h5>
+<pre>git checkout your-branch-name</pre>
+
+<h5>Merge specific commit to current branch</h5>
+<pre>git cherry-pick your-sha</pre>
+
+<h5>Merge a range of commits to current branch</h5>
+<pre>git cherry-pick your-first-sha^..your-second-sha</pre>
+
+<h2>Stashing and Unstashing</h2>
+<h5>Save changes as stash</h5>
+<pre>git stash save "message"</pre>
+
+<h5>Apply stash</h5>
+<pre>git stash apply stash@{#}</pre>
+
+<h5>View all stashes</h5>
+<pre>git stash list</pre>
+
+<h2>Others</h2>
+<h5>Change URL for remote git repository</h5>
+<pre>git remote set-url origin https://github.com/user/repo</pre>
+
+<h5>View existing remotes</h5>
+<pre>git remote -v</pre>
+
+<h5>Remove cached files</h5>
+<pre>git rm -r --cached .</pre>

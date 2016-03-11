@@ -1,0 +1,52 @@
+@import "variables";
+// forms.css.scss
+
+.form-control {
+  @include sans-serif(21);
+  @include border-radius(5px);
+  color:$brand-secondary;
+  border:1px solid $medium;
+  background:$w;
+  margin:2px 0 0 0;
+  padding:11px 12px;
+  height:auto;
+  -webkit-appearance: none;
+  outline: none;
+}
+.form-group {
+  margin:0 0 18px 0;
+}
+//focused
+.form-control:focus,
+.comment-form input[type=text]:focus,
+.comment-form input[type=email]:focus,
+.comment-form input[type=url]:focus,
+.comment-form textarea:focus {
+  border-color:$accent;
+  outline:0;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125, 90, 173,.1);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125, 90, 173,.1);
+}
+a.btn, button.btn, .btn {
+  @include sans-serif(21);
+  @include border-radius(5px);
+  @include trans;
+  font-weight: 400;
+  border:1px solid $brand-secondary;
+  color:$brand-secondary;
+  background:transparent;
+  padding:11px 12px;
+  width:100%;
+  &:hover {
+    color:$accent;
+    border:1px solid $accent;
+    background:transparent;
+    cursor:pointer;
+  }
+  &:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    outline: 0;
+  }
+}

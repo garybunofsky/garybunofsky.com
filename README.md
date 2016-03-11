@@ -1,5 +1,5 @@
 #GaryBunofsky.com
-This is <a href="http://garybunofsky.com">my website</a> – a medley of files often adjusted to improve performance, structure and functionality.
+This is [my website](http://garybunofsky.com) – a medley of files often adjusted to improve performance, structure, and functionality.		
 
 ##What is this repo for?
-Hosting my code on GitHub helps me sleep well at night. Therefore, this repository is primarily used by me. It is open-sourced so you can examine how it functions.
+Version control helps me sleep well at night. It is open-sourced so you can examine what makes it function.

@@ -1,0 +1,50 @@
+@import "variables";
+// basic.css.scss
+
+html {
+  font-size:62.5% !important;
+  color:$brand-primary;
+  background:$w;
+}
+body {
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+.container,
+.container-fluid {
+  padding-left:24px!important;
+  padding-right:24px!important;
+}
+.card {
+  @include border-radius(5px);
+  padding:24px;
+  border:1px solid $light;
+  background: $neutral !important;
+}
+
+// Photos
+figure.center {
+   img {
+     width: 100%;
+     overflow: hidden;
+     margin-bottom: 6px;
+   }
+   figcaption {
+     @include sans-serif(23);
+     color:$brand-secondary;
+     margin-bottom: 24px;
+   }
+}
+
+figure.over {
+    img {
+      overflow: hidden;
+      margin: 0 -25% 6px -25%;
+    }
+    figcaption {
+      @include sans-serif(23);
+      color:$brand-secondary;
+      margin: 0 -25% 0 -25%;
+      margin-bottom: 24px;
+    }
+}

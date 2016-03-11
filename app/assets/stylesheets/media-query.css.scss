@@ -1,0 +1,50 @@
+@import "variables";
+// media-query.css.scss
+
+@media (max-width:1199px){
+  html {
+    font-size:62.5% !important;
+  }
+}
+@media (max-width:767px){
+ html {
+   font-size:60% !important;
+ }
+  nav.navbar {
+   padding:12px 0 0 0 !important;
+    h1.brand {
+      margin:10px 0px 0px 0px !important;
+      a {
+        span {
+          display: none;
+        }
+      }
+    }
+    button {
+      margin-bottom: 13px;
+    }
+    ul.navbar-nav {
+      text-align:left !important;
+      margin-left:0;
+      margin-top:0 !important;
+      li.nav-item {
+        padding: 12px;
+        display: block !important;
+        margin:9px -15px 9px -15px !important;
+        &:nth-child {
+          border:0 !important;
+        }
+        a {
+          font-family: arial;
+          padding:12px 3px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:600px){
+ html {
+   font-size:56% !important;
+ }
+}
