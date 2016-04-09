@@ -6,7 +6,7 @@ nav.navbar {
   background:$w;
   border-top: 1px solid $light;
   border-bottom: 1px solid $light;
-  padding:16px 0px 17px;
+  padding:18px 0px 14px;
   h1.brand {
     @include sans-serif(23);
     font-family:$sans-serif;
@@ -55,12 +55,13 @@ nav.navbar {
       @include sans-serif(23);
       display:inline;
       a {
+				@include trans;
+				width: 100%;
         display: inline;
         text-decoration: none;
         border-bottom:none;
         color:$brand-secondary;
         padding:8px 6px;
-        @include trans;
         &:hover {
           color:$accent;
         }
