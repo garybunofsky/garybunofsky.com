@@ -2,7 +2,7 @@
 // nav.css.scss
 
 nav.navbar {
-  background:rgba(255, 255, 255, 0.95) !important;
+	background:rgba(255, 255, 255, 0.95) !important;
   background:$w;
   border-top: 1px solid $light;
   border-bottom: 1px solid $light;
@@ -36,6 +36,13 @@ nav.navbar {
     font-weight: 700;
     border-radius:0;
     @include trans;
+		.line {
+			width: 24px;
+			height: 8px;
+			margin:6px 0 2px 0;
+			border-top:1px solid $brand-secondary;
+			border-bottom:1px solid $brand-secondary;
+		}
     &:hover {
       color:$accent;
     }
