@@ -3,16 +3,21 @@
 <p>My most recent work outside of EmployStream is what you see in my portfolio. Websites, tools, simple applications; these are the things that I spend my free time working on.</p>
 
 <section>
-  <h2>Magenda</h2>
-  <p><a href="http://magenda.co/" target="_blank">Magenda</a> is a light, browser-based to do list. A quick, simple way to log items. <a href="http://magenda.co/" target="_blank">Visit the website</a> or <a href="https://github.com/garybunofsky/magenda.co" target="_blank">view the source</a>.</p>
-
+  <h2>Veronica</h2>
+	<p>Veronica is a simple chatbot. She doesn't have much of a personality at the moment. If you text her you'll see what I mean. I'll be adding more features/commands soon. <%= link_to "Add her to your contacts", "/veronica.vcf", :target => "_blank" %> or text her at (321)-233-9118.</p>
 </section>
+
+<section>
+  <h2>Magenda</h2>
+  <p><%= link_to "Magenda", "http://magenda.co", :target => "_blank" %> is a light, browser-based to do list. A quick, simple way to log items. <%= link_to "Visit the website", "http://magenda.co", :target => "_blank" %>, <%= link_to "view the source", "https://github.com/garybunofsky/magenda.co", :target => "_blank" %> or <%= link_to "see my process", subpage_path(:portfolio, 'magenda') %>.</p>
+</section>
+
 <section>
   <h2>Pass.js</h2>
-  <p>I wrote <a href="http://garybunofsky.github.io/pass.js/?campaign=your-campaign&medium=your-medium&source=your-source/" target="_blank">Pass.js</a> to help analyze conversion funnels. Pass captures URL parameters such as utm_source through hidden form fields. It’s very small and easy to install. <a href="http://garybunofsky.github.io/pass.js/?campaign=your-campaign&medium=your-medium&source=your-source/" target="_blank">Visit the webite</a> or <a href="https://github.com/garybunofsky/pass.js/" target="_blank">view the source</a>.</p>
+  <p>I wrote <%= link_to "Pass.js", "http://garybunofsky.github.io/pass.js", :target => "_blank" %> to help analyze conversion funnels. Pass captures URL parameters such as utm_source through hidden form fields. It’s very small and easy to install. <%= link_to "Visit the webite", "http://garybunofsky.github.io/pass.js/", :target => "_blank" %> or <%= link_to "view the source", "https://github.com/garybunofsky/pass.js", :target => "_blank" %>.</p>
 </section>
 
 <section>
   <h2>West Side Market</h2>
-  <p>Cleveland’s historic marketplace is home to some of the finest food in the area. If you’re like me you have trouble remembering when it is open. To help with this reoccurring inconvenience CJ and I built a site to reference. <a href="http://iswestsidemarketopen.com/" target="_blank">Visit the website</a>.</p>
+  <p>Cleveland’s historic marketplace is home to some of the finest food in the area. If you’re like me you have trouble remembering when it is open. To help with this reoccurring inconvenience I built a site to reference. <%= link_to "Visit the website", "http://iswestsidemarketopen.com/", :target => "_blank" %>.</p>
 </section>
