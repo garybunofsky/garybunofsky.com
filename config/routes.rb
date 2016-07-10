@@ -1,21 +1,14 @@
 Rails.application.routes.draw do
-  resources :process
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
+	root 'root#index'
 
-  root 'root#index'
-  get '/changelog' => 'changelog#index'
-  get '/:page' => 'static#index'
-  get '/:page/:subpage' => 'static#show'
-  get '/pay' => 'pay#index'
+	controller :changelog do
+		get '/changelog' => :index
+	end
 
-  # post "/process"
-  # get '/blog' => 'blog#index'
-  # get '/blog/:page' => 'blog#show'
-  # get '/portfolio' => 'portfolio#index'
-  # get '/contact' => 'contact#index'
-  # get '/services' => 'services#index'
-  # get '/privacy-policy' => 'privacy#index'
+	controller :static do
+		get '/:page' => :index, :as => :static
+		get '/:page/:subpage' => :show, :as => :subpage
+	end
+
 end

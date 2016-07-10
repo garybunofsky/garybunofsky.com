@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
        <hr />
-        <p class="sm">&copy; <%= Date.today.year %> <a href="/">Gary Bunofsky</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/resume.pdf" target="_blank">Résumé</a> | <a href="/style-guide">Style Guide</a></p>
+        <p class="sm">&copy; <%= Date.today.year %> <%= link_to "Gary Bunofsky", root_url %> | <%= link_to "Privacy Policy", static_path('privacy-policy') %> | <a href="/resume.pdf" target="_blank">Résumé</a> | <%= link_to "Style Guide", static_path('style-guide') %></p>
       </div>
     </div>
   </div>
