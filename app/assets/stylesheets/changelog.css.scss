@@ -1,0 +1,32 @@
+@import "variables";
+// graphs.css.scss
+
+.graph-container {
+	background:$light;
+	width: auto;
+  overflow-x: auto;
+	overflow-y: hidden;
+	height: 172px;
+	#graph {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		vertical-align: top;
+		overflow: visible;
+		path {
+			stroke: $accent;
+			stroke-width: 1;
+			fill: none;
+		}
+		.x.axis line {
+			stroke: $grey;
+		}
+		.x.axis path {
+			display: none;
+		}
+		.y.axis line, .y.axis path {
+			fill: none;
+			stroke: $grey;
+		}
+	}
+}
