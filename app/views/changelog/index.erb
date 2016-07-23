@@ -13,7 +13,7 @@
     <h3><%= Time.parse(item['commit']['author']['date']).strftime("%B %d, %Y")%></h3>
     <p>SHA: <%= item['sha'] %><br />
     Message: <%= item['commit']['message'] %><br />
-    <a href="https://github.com/garybunofsky/garybunofsky.com/commit/<%= item['sha'] %>"><em>View Commit</em></a></p>
+    <a href="https://github.com/garybunofsky/garybunofsky.com/commit/<%= item['sha'] %>">View Commit</a></p>
   </section>
 <% end %>
 
