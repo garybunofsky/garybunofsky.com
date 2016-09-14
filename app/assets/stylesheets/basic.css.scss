@@ -4,11 +4,12 @@
 html {
   font-size:62.5% !important;
   color:$brand-primary;
-  background:$w;
+  background: $neutral;
 }
 body {
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility;
+	background: $neutral !important;
 }
 .container,
 .container-fluid {

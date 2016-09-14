@@ -4,17 +4,25 @@ $sans-serif:"Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $serif:"Georgia", Times, serif;
 
 // Colors
-$brand-primary:         #3F4549;
+$brand-primary:         #494B4D;
 $brand-secondary:       #6f7c82;
 
 $medium:                #B0B5B8;
-$light:                 #e6ecf0;
+$light:                 #F0EFE9;
 $grey:                  #d4d4d4;
 $w:                     #ffffff;
-$neutral:               #E8EEF1;
-$accent:                #6492CE;
+$neutral:               #F8F7F2;
+$accent:                #ABAC91;
 $alert:                 #FF3A30;
 
+
+.background-medium { background: $medium; }
+.background-light { background: $light; }
+.background-grey { background: $grey; }
+.background-w { background: $w; }
+.background-neutral { background: $neutral; }
+.background-accent { background: $accent; }
+.background-alert { background: $alert; }
 
 
 @mixin trans { transition: all .3s; }
