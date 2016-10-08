@@ -12,7 +12,7 @@ $light:                 #F0EFE9;
 $grey:                  #d4d4d4;
 $w:                     #ffffff;
 $neutral:               #F8F7F2;
-$accent:                #ABAC91;
+$accent:                #BAB8A8;
 $alert:                 #FF3A30;
 
 
@@ -24,6 +24,8 @@ $alert:                 #FF3A30;
 .background-accent { background: $accent; }
 .background-alert { background: $alert; }
 
+
+.color-accent { color: $accent; }
 
 @mixin trans { transition: all .3s; }
 @mixin border-radius($radius) {
