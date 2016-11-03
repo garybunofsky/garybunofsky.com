@@ -13,6 +13,13 @@ h1 {
   letter-spacing: -0.005em;
 }
 
+h2.page-title {
+  @include serif(42);
+  font-weight:400;
+  text-align: center;
+  letter-spacing: -0.005em;
+}
+
 h2 {
   @include sans-serif(34);
   a {
