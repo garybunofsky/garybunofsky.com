@@ -8,7 +8,7 @@ This is [my website](http://garybunofsky.com) – a medley of files often adjust
 - [ ] Add payment page
 - [ ] Create environment variables
 - [ ] Correct image path
-- [ ] Change <pre> styling
+- [ ] Change pre styling
 - [ ] Contact form
 - [ ] Portfolio item page
 
