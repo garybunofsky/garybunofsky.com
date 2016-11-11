@@ -59,6 +59,7 @@ nav.navbar {
     li.nav-item {
       float:none;
       @include sans-serif(23);
+      margin:0 -3px 12px 0;
       display:inline;
       a {
 				@include trans;
@@ -67,9 +68,12 @@ nav.navbar {
         text-decoration: none;
         border-bottom:none;
         color:$brand-secondary;
-        padding:8px 6px;
-        &:hover {
-          color:$accent;
+        padding:20px 13px;
+        &:hover,
+        &:focus,
+        &:active {
+          color:$neutral;
+          background-color: $accent;
         }
       }
     }
