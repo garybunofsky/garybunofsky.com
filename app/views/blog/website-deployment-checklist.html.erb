@@ -64,7 +64,7 @@
 				<input type="checkbox">The rendered site matches the design.
 		</li>
 		<li>
-				<input type="checkbox">A favicon created and is linked<sup id="fn:1"><a href="#fnref:1">1</a></sup>.
+				<input type="checkbox">A favicon created and is linked<sup id="fn:1"><%= link_to "1", "#fnref:1" %></sup>.
 		</li>
 </ul>
 
@@ -103,7 +103,7 @@
 <h2>Load</h2>
 <ul class="checkbox">
 		<li>
-				<input type="checkbox">Page load time is tested.<sup id="fn:2"><a href="#fnref:2">2</a></sup>
+				<input type="checkbox">Page load time is tested.<sup id="fn:2"><%= link_to "2", "#fnref:2" %></sup>
 		</li>
 		<li>
 				<input type="checkbox">Image files are compressed.
@@ -138,10 +138,10 @@
 <div class="footnotes">
 		<ol>
 				<li id="fnref:1">
-						The website <%= link_to "realfavicongenerator.net", "http://realfavicongenerator.net/", :target => "_blank" %> helps.<a href="#fn:1">&uarr;</a>
+						The website <%= link_to "realfavicongenerator.net", "http://realfavicongenerator.net/", :target => "_blank" %> helps. <%= link_to "↑", "#fn:1" %>
 				</li>
 				<li id="fnref:2">
-						I typically use <%= link_to "loadimpact.com", "https://loadimpact.com/", :target => "_blank" %>.<a href="#fn:2">&uarr;</a>
+						I typically use <%= link_to "loadimpact.com", "https://loadimpact.com/", :target => "_blank" %>. <%= link_to "↑", "#fn:2" %>
 				</li>
 		</ol>
 </div>

@@ -189,6 +189,7 @@ blockquote.left {
 }
 
 .footnotes {
+  margin-top: 24px;
   ol {
     @include sans-serif(20);
     li {

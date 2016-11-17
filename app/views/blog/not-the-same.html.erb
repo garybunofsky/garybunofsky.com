@@ -1,0 +1,25 @@
+<% content_for :page_title, "Not the Same" %>
+<% content_for :page_description, "" %>
+<% content_for :date_posted, "November 17, 2016" %>
+
+<p>Library and frameworks both allow you to do more and write less. They share other similarities but shouldn't be used synonymously – although they often are. This creates confusion, so I'll try my best to clear things up.</p>
+
+<h3>Libraries</h3>
+<p>Libraries are <em>code that you call to</em>. Once you do, you're able to use it's prewritten functions, objects, and modules. Since most of the heavy lifting is up to the library, you end up with more succinct code.</p>
+
+<p>Typically libraries solve smaller, specific problems. There are libraries for getting weather data, for formatting time and for animating elements. Because of their focused objectives, libraries tend to have fewer dependencies than frameworks. They're less opinionated and leave you with more control over the structure of your code. A few examples of libraries are <%= link_to "Moment.js", "http://momentjs.com/" %>, <%= link_to "Animate.css", "https://daneden.github.io/animate.css/" %> and <%= link_to "D3.js", "https://d3js.org/" %>.</p>
+
+<p>While it's possible, you wouldn't want to build an medium-large sized application using just libraries. You would spend a great deal of time just getting the structure up and running. Frameworks make a much better launchpad for full-fledged applications.</p>
+
+<h3>Frameworks</h3>
+<p>A framework is like a blank page in a coloring book. The main structure is outlined, all that's left to do is to color inside the lines. The lines are the predetermined structure of the application. While the uncolored areas are the models, objects and functionality. Most often developers build an application or service with the help of a framework's predetermined architecture.</p>
+
+<p>Most importantly, frameworks <em>call to your code</em>. Therefore you must structure your codebase the way the framework intended. In turn this allows you to focus on writing the application or service, but also leave you with less control. When building an application it's likely best to use a framework. However, they have a lot of dependencies, so it'd be overkill for a trivial task – like getting the current temperature in Cleveland<sup id="fn:1"><%= link_to "1", "#fnref:1" %></sup>. A few examples of frameworks are <%= link_to "Laravel", "https://laravel.com/" %>, <%= link_to "Angular", "https://angularjs.org/" %> and <%= link_to "Ruby on rails", "http://rubyonrails.org/" %>.</p>
+
+<div class="footnotes">
+		<ol>
+				<li id="fnref:1">
+						Expect 40 degrees with precipitation. <%= link_to "↑", "#fn:1" %>
+				</li>
+		</ol>
+</div>
