@@ -32,6 +32,9 @@
 				width: 100%;
         display: inline-block !important;
         margin:0 -15px 0 -15px !important;
+        a.btn, button.btn, .btn { 
+          margin-left:0 !important;
+        }
         &:nth-child {
           border:0 !important;
         }

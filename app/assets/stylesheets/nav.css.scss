@@ -2,8 +2,7 @@
 // nav.css.scss
 
 nav.navbar {
-  background:$light;
-  border-top: 1px solid $light;
+  background:$white;
   border-bottom: 1px solid $light;
   padding:18px 0px 14px;
   h1.brand {
@@ -15,14 +14,14 @@ nav.navbar {
       text-decoration: none;
       color:$brand-primary;
       &:hover {
-        color:$accent;
+        color:$accent-primary;
         span {
-          color:$accent;
+          color:$accent-primary;
         }
       }
       span {
         &:hover {
-          color:$accent;
+          color:$accent-primary;
         }
       }
     }
@@ -43,7 +42,7 @@ nav.navbar {
 			border-bottom:1px solid $brand-secondary;
 		}
     &:hover {
-      color:$accent;
+      color:$accent-primary;
     }
     &:focus {
       -webkit-box-shadow: none;
@@ -72,8 +71,18 @@ nav.navbar {
         &:hover,
         &:focus,
         &:active {
-          color:$neutral;
-          background-color: $accent;
+          color:$white;
+          background-color: $accent-primary;
+        }
+      }
+      a.btn, button.btn, .btn { 
+        margin-left:4px;
+        color:$white;
+        padding:10px 6px;
+        &:hover,
+        &:active,
+        &:focus {
+          background: $accent-secondary;
         }
       }
     }

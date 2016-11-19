@@ -7,15 +7,15 @@ h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
 }
 
 h1 {
-  @include serif(42);
+  @include sans-serif(42);
   font-weight:400;
   text-align: center;
   letter-spacing: -0.005em;
 }
 
 h2.page-title {
-  @include serif(42);
-  font-weight:400;
+  @include sans-serif(48);
+  font-weight:600;
   text-align: center;
   letter-spacing: -0.005em;
 }
@@ -28,7 +28,7 @@ h2 {
     }
     &:hover {
       text-decoration: none;
-      color:$accent;
+      color:$accent-primary;
     }
   }
 }
@@ -38,7 +38,7 @@ h3 {
   a {
     &:hover {
       text-decoration: none;;
-      color:$accent;
+      color:$accent-primary;
     }
   }
 }
@@ -57,7 +57,7 @@ h6 {
 }
 
 p {
-  @include serif(29);
+  @include sans-serif(29);
   color:$brand-secondary;
   letter-spacing:.015rem;
   margin-bottom: 1.566666em;
@@ -69,7 +69,7 @@ p {
       color:$brand-secondary;
       text-decoration: underline;
       &:hover {
-        color:$accent;
+        color:$accent-primary;
         text-decoration: underline;
       }
       &:visited,
@@ -80,12 +80,12 @@ p {
     }
   }
   .sm {
-  @include serif(20);
+  @include sans-serif(20);
   a {
     text-decoration: none;
     text-decoration: underline;
     &:hover {
-      color:$accent;
+      color:$accent-primary;
       text-decoration: underline;
     }
     &:visited,
@@ -99,16 +99,17 @@ p {
 sup {
   color:$brand-secondary;
   a {
-    color:$accent;
+    color:$accent-primary;
     border:0px;
     &:hover {
-      border-bottom:1px solid $accent;
+      border-bottom:1px solid $accent-primary;
     }
   }
 }
 
 ul, ol {
-  @include serif(29);
+  @include sans-serif(29);
+  margin-bottom: 1.566666em;
   margin-left:-20px;
   li {
     color:$brand-secondary;
@@ -117,7 +118,7 @@ ul, ol {
       color:$brand-secondary;
       text-decoration: underline;
       &:hover {
-        color:$accent;
+        color:$accent-primary;
         text-decoration: underline;
       }
     }
@@ -147,7 +148,7 @@ pre {
   margin:0 0 24px 0;
   word-break:break-all;
   word-wrap:break-word;
-  background-color:$neutral;
+  background-color:$border;
   border:1px solid $grey;
 }
 
@@ -185,7 +186,7 @@ blockquote.left {
   font-style: italic;
   padding:0.75em 1.5em;
   margin:2.0em 0em;
-  border-left: 1px solid $medium;
+  border-left: 1px solid $border;
 }
 
 .footnotes {
@@ -202,13 +203,13 @@ blockquote.left {
 }
 .block {
   margin-bottom:24px;
-  display: block;
+  display: inline-block;
   .brand-primary {
     padding:2em 2em;
     background-color: $brand-primary;
     height: 10.0em;
     p {
-      color:$neutral;
+      color:$border;
       @include sans-serif(20);
     }
   }
@@ -217,8 +218,8 @@ blockquote.left {
     background-color: $brand-secondary;
     height: 10.0em;
     p {
-        color:$w;
-        @include sans-serif(20);
+      color:$white;
+      @include sans-serif(20);
     }
   }
   .light {
@@ -226,25 +227,52 @@ blockquote.left {
     background-color: $light;
     height: 10.0em;
     p {
-      color:$neutral;
+      color:$brand-secondary;
       @include sans-serif(20);
     }
   }
-  .neutral {
+  .grey {
     padding:2em 2em;
-    background-color: $neutral;
+    background-color: $grey;
     height: 10.0em;
     p {
       color:$brand-secondary;
       @include sans-serif(20);
     }
   }
-  .accent {
+  .eggshell {
     padding:2em 2em;
-    background-color: $accent;
+    background-color: $eggshell;
     height: 10.0em;
     p {
-      color:$neutral;
+      color:$brand-secondary;
+      @include sans-serif(20);
+    }  
+  }
+  .border {
+    padding:2em 2em;
+    background-color: $border;
+    height: 10.0em;
+    p {
+      color:$brand-secondary;
+      @include sans-serif(20);
+    }  
+  }
+  .accent-primary {
+    padding:2em 2em;
+    background-color: $accent-primary;
+    height: 10.0em;
+    p {
+      color:$white;
+      @include sans-serif(20);
+    }
+  }
+  .accent-secondary {
+    padding:2em 2em;
+    background-color: $accent-secondary;
+    height: 10.0em;
+    p {
+      color:$white;
       @include sans-serif(20);
     }
   }

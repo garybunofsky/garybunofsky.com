@@ -2,7 +2,9 @@
 // graphs.css.scss
 
 .graph-container {
-	background:$light;
+	border:1px solid $border;
+	background: $grey;
+	@include border-radius(5px);
 	width: auto;
   overflow-x: auto;
 	overflow-y: hidden;

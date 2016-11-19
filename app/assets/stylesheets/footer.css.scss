@@ -2,5 +2,11 @@
 // footer.css.scss
 
 footer {
- padding-bottom: 96px;
+  margin-top:128px;
+  background:$light;
+  padding: 30px 0 24px 0;
+  border-top:1px solid $border;
+  h4 {
+    color: $brand-secondary;
+  }
 }

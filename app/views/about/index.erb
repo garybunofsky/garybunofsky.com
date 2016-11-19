@@ -1,8 +1,22 @@
 <% content_for :page_title, "About" %>
 <% content_for :page_description, "." %>
-<p>As much as I love to design, push commits, and make things with a computer, I actually participate other activities too. I like to explore Cleveland, watch netflix, build side projects, read, and walk my dog – <%= link_to "Ruby", "https://www.instagram.com/p/BHr21RVh56e/?taken-by=garybunofsky", :target => "blank" %>.</p>
+<p>As much as I love to design, push commits, and make things with a computer, I actually participate other activities too. In my spare time I like to explore Cleveland, watch netflix, build side projects, read, and walk my dog – <%= link_to "Ruby", "https://www.instagram.com/p/BHr21RVh56e/?taken-by=garybunofsky", :target => "blank" %>.</p>
 
-<h3>Other Places</h3>
+<%= link_to "/resume.pdf", :target => "blank" do %>
+  <div class="card">
+    <div class="row">
+      <div class="col-xs-2">
+        <svg width="100%" height="100%" viewBox="0 0 30 30" style="fill: #ADADAD; display: block; opacity: 0.375; width: 42px; height: 36px; flex-shrink: 0; margin: 4px;"><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></svg>
+      </div>
+      <div class="col-xs-10">
+        <h4 class="pull-right mb0">Résumé</h4>
+        <p class="sm pull-right mb0">59KB</p>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<h3 class="pt24">Elsewhere</h3>
 <ul>
   <li>
     Github: <%= link_to "github.com/garybunofsky",  "https://github.com/garybunofsky", :target => "_blank" %>

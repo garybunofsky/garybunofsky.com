@@ -1,31 +1,26 @@
 // variables.css.scss
 
-$sans-serif:"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$sans-serif:-apple-system, "Microsoft YaHei", 微软雅黑, sans-serif;
 $serif:"Georgia", Times, serif;
 
 // Colors
-$brand-primary:         #212121;
-$brand-secondary:       #6d6e64;
+$brand-primary:         #121212;
+$brand-secondary:       #484646;
+$light:                 #f3f0ec;
+$grey:                  #FCFCFC;
+$white:                 #ffffff;
+$eggshell:              #FFFEFC;
+$border:                #E3E3E3;
+$accent-primary:        #F27C7C;
+$accent-secondary:      #D06969;
 
-$medium:                #B0B5B8;
-$light:                 #E4E0D1;
-$grey:                  #d4d4d4;
-$w:                     #ffffff;
-$neutral:               #EFEDE4;
-$accent:                #868477;
-$alert:                 #FF3A30;
 
-
-.background-medium { background: $medium; }
 .background-light { background: $light; }
 .background-grey { background: $grey; }
-.background-w { background: $w; }
-.background-neutral { background: $neutral; }
-.background-accent { background: $accent; }
-.background-alert { background: $alert; }
-
-
-.color-accent { color: $accent; }
+.background-w { background: $white; }
+.background-neutral { background: $border; }
+.background-accent { background: $accent-primary; }
+.color-accent { color: $accent-primary; }
 
 @mixin trans { transition: all .3s; }
 @mixin border-radius($radius) {
@@ -34,6 +29,9 @@ $alert:                 #FF3A30;
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+// Padding 
+.p12  {padding: 12px;}
+
 // Padding Top
 .pt12 {padding-top:12px;}
 .pt24 {padding-top:24px;}
@@ -62,6 +60,10 @@ $alert:                 #FF3A30;
 .pb132 {padding-bottom:132px;}
 .pb144 {padding-bottom:144px;}
 
+// Margin Bottom 
+.mb0 {margin-bottom:0px;}
+.mb24 {margin-bottom:24px;}
+.mb36 {margin-bottom:36px;}
 // Font size and line-height
 $doc-font-size:16;
 $doc-line-height:24;
@@ -81,6 +83,5 @@ $doc-line-height:24;
       line-height: ceil($size / $doc-line-height) * ($doc-line-height / $size);
       margin-bottom: 0px + ($doc-line-height / 2);
       font-family:$sans-serif;
-
       font-weight:400;
 }
