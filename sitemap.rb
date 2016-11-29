@@ -14,7 +14,7 @@ SitemapGenerator::Sitemap.create do
 	add '/blog/website-deployment-checklist', :changefreq => 'monthly', :priority => 0.6
 	add '/changelog', :changefreq => 'weekly', :priority => 0.4
 	add '/portfolio', :changefreq => 'weekly', :priority => 0.8
-	add '/libary', :changefreq => 'weekly', :priority => 0.5
+	add '/library', :changefreq => 'weekly', :priority => 0.5
 	add '/resume.pdf', :changefreq => 'weekly', :priority => 0.9
 	add '/style-guide', :changefreq => 'weekly', :priority => 0.3
 end
