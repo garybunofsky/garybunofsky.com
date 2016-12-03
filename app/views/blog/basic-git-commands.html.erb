@@ -2,10 +2,12 @@
 <% content_for :page_description, "Features are added. Files are refactored. Bugs are removed. Sourcecode changes often. For this reason the good developers use version control." %>
 <% content_for :date_posted, "July 29th, 2015" %>
 
-<p>Features are added. Files are refactored. Bugs are removed. Sourcecode changes often. For this reason the good developers use version control. With version control a team can continuously change, save and delete project files without interfering with workflow.</p>
-<p>One of the most popular flavors of version control is Git. There are applications help developers manage their codebase through Git. <%= link_to "Sourcetree", "https://www.sourcetreeapp.com/", :target => "_blank" %>, <%= link_to "GitHub Desktop", "https://desktop.github.com/", :target => "_blank" %> and <%= link_to "Tower", "https://www.git-tower.com/", :target => "_blank" %> are a few that come to mind. But many prefer to use the command line. It can take some getting used to. It's easy to forget the commands that are not used often.</p>
+<figure class="center">
+		<img src="https://s3.amazonaws.com/garybunofsky.com/code.jpg" alt="code" />
+</figure>
 
-<h2>Benefits of version control</h2>
+<p>Features are added, files are refactored and bugs are removed. For this reason seasoned developers use version control. There are plenty of benefits to using version control. Below you can find the main reasons I, as well as many others, love it.</p>
+<h4>Benefits of version control</h4>
 <ul>
 	<li>
 		Revert back to previous versions.
@@ -41,13 +43,10 @@
 		Test a feature without interfering with working code.
 	</li>
 </ul>
-<figure class="center" >
-		<img src="https://s3.amazonaws.com/garybunofsky.com/code.jpg" alt="code" />
-		<figcaption class="pull-right">Looks like code.</figcaption>
-</figure>
+
+<p>As much as I love Git. It never fails that I forget a command or two. It doesn't help that there's many ways to do the same thing. Regardless, when I forget one command I reference the list below.</p>
 
 <h2>Creating Repositories</h2>
-
 <h5>Create a local repo</h5>
 <pre>git init</pre>
 
@@ -114,3 +113,6 @@
 
 <h5>Remove cached files</h5>
 <pre>git rm -r --cached .</pre>
+
+<h5>Overwrite all local files and update to latest commit<h5>
+<pre>git reset --hard origin/master</pre>
