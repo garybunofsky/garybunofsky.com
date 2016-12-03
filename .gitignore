@@ -8,11 +8,13 @@ config/secrets.yml
 app/assets/images/*
 
 app/views/contact/
-app/views/portfolio/magenda.html.erb
-
-app/views/pay/
+app/views/payments/
 app/views/process/
 app/controllers/process_controller.rb
 app/controllers/pay_controller.rb
 app/controllers/helpers/charges_helper.rb
 app/helpers/charges_helper.rb
+design-files/*
+
+
+

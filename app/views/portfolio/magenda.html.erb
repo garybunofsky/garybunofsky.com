@@ -1,0 +1,57 @@
+<% content_for :page_title, "Magenda" %>
+<% content_for :page_description, "" %>
+
+<p>To-do list applications are perfect for realizing the potential of an uncharted language or framework. One reason I made <%= link_to "Magenda", "http://magenda.co" %> was to find out what Angular could do. You could call this a modern-day "<%= link_to "Hello World", "https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" %>". Below you'll see the design and develop process.</p>
+
+<h2>Requirements</h2>
+<p>The application needed to be browser-based, but I had no other specs. Thus, I needed to determine the other requirements. A few things came to mind.</p>
+	<ul>
+		<li>Allow users to create as many to-do items as they wish.</li>
+		<li>Allow users to delete items.</li>
+		<li>Allow users to mark items as complete.</li>
+		<li>Don't use a database.</li>
+		<li>Build it in an unfamilar framework – <em>(Angular was new to me)</em>.</li>
+</ul>
+
+<h2>Prototyping</h2>
+<p>With the requirements outlined I was ready to start sketching. I had an vague idea of how I wanted the app to look and function. I sketched a rough prototype to easily remind myself what I intended to create. You can view some of them below.</p>
+
+<figure class="center">
+		<%= image_tag 'https://s3.amazonaws.com/garybunofsky.com/magenda-sketch-closeup.jpg' %>
+		<figcaption>A few early sketches.</figcaption>
+</figure>
+
+<figure class="center">
+		<%= image_tag 'https://s3.amazonaws.com/garybunofsky.com/magenda-sketch-front.jpg' %>
+		<figcaption>A closeup of a rough prototype.</figcaption>
+</figure>
+
+<h2>Hosting</h2>
+<p>Three things came to mind when I thought about how to host Magenda.</p>
+<ul>
+	<li>It doesn't need to scale – only because it's a side project.</li>
+	<li>It doesn't need a database.</li>
+	<li>Performance is important.</li>
+</ul>
+
+<p>I heard deploying on Heroku was quick and simple. I hadn't used it before – so I decided to give it try. I signed up for an account and initialized a git repo. Deploying from the commandline was frightening, yet refreshing.</p>
+
+<h3>Coding</h3>
+<p>The repo was initialized. Hosting was set up. It was time to code. Form follows function, so I focused on only the later. The idea was to make it work first and table the appearance. It was a sound plan that yielded satisfying results.</p>
+
+<p>Coding with Angular for the first time was awesome. Kind of tricky at first, but the documentation and linked console messages helped a ton. I enjoyed struggling with it for a bit, that's how you get better at anything. But it wasn't long until I had something functioning properly.</p>
+
+<p>Yay! From there I referred to my initial sketches. Having my ideas on paper prior to development was beneficial. It made styling a piece of cake.</p>
+
+<h3>Conclusion</h3>
+<p>Building this single-page web app was awesome. I designed something new, coded with an unfamiliar frame work, and deployed with on a PaaS.</p>
+<p>Heroku's free tier forces the site to sleep after a certain period of inactivity. Magenda is often slow to load for this reason. In retrospect, a different hosting provider might have been more responsive to initial requests. No big deal, that's how you learn.</p>
+<div class="row">
+  <div class="col-sm-4">
+		<%= link_to "Visit the site", "http://magenda.co", :class => 'btn' %>
+  </div>
+	<div class="col-sm-4">
+		<%= link_to "Back to portfolio", static_path(:portfolio), :class => 'btn outline' %>
+	</div>
+</div>
+	

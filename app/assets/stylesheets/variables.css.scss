@@ -21,7 +21,6 @@ $accent-secondary:      #D06969;
 .background-neutral { background: $border; }
 .background-accent { background: $accent-primary; }
 .color-accent { color: $accent-primary; }
-
 @mixin trans { transition: all .3s; }
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;

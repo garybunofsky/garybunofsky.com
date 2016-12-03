@@ -35,13 +35,30 @@ a.btn, button.btn, .btn {
   border:1px solid $accent-primary;
   color:$white;
   background:$accent-primary;
-  padding:11px 12px;
+  padding:9px 8px;
   width:100%;
   &:hover,
   &:focus {
     background:$accent-secondary;
     border:1px solid $accent-secondary;
     cursor:pointer;
+  }
+  &:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    outline: 0;
+  }
+}
+
+a.btn.outline, button.btn.outline, .btn.outline {
+  color:$accent-primary;
+  background:$white;
+  &:hover,
+  &:focus {
+    border:1px solid $accent-secondary;
+    cursor:pointer;
+    color:$accent-secondary;
   }
   &:focus {
     -webkit-box-shadow: none;
