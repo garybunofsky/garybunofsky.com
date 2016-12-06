@@ -135,8 +135,14 @@ ul.checkbox {
    input[type='checkbox'] {
      margin-left: -20px;
      margin-top: 8px;
-  }
+   }
  }
+}
+ul.none {
+  margin-left:-40px;
+  li {
+    list-style-type: none !important;
+  }
 }
 pre {
   @include sans-serif(20);

@@ -1,30 +1,48 @@
 <% content_for :page_title, "About" %>
 <% content_for :page_description, "In my spare time I like to explore Cleveland, trade stocks, build side projects, read, and walk my dog – Ruby." %>
-
-<p>As much as I love to design, push commits, and make things with a computer, I participate other activities too. In my spare time I like to explore Cleveland, trade stocks, build side projects, read, and walk my dog – <%= link_to "Ruby", "https://www.instagram.com/p/BHr21RVh56e/?taken-by=garybunofsky", :target => "blank" %>.</p>
-<p>If you have any questions or would like to <%= link_to "schedule a meeting", "https://calendly.com/garybunofsky" %> you can always <%= mail_to "gary@garybunofsky.com", "email me" %>.</p>
-<div class="container">
-<div class="row">
-	<div class="col-xs-4 col-xs-offset-4">
-		<figure class="circle">
-			<%= image_tag '/garybunofsky.png' %>
-		</figure>
+<div class="container pb24">
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4">
+			<figure class="circle">
+				<%= image_tag '/garybunofsky.png' %>
+			</figure>
+		</div>
 	</div>
 </div>
-</div>
+<p>As much as I love to design, push commits, and make things with a computer, I participate in other activities too. In my spare time, I enjoy exploring Cleveland, trading stocks, building side projects, reading, and walking my dog – <%= link_to "Ruby", "https://www.instagram.com/p/BHr21RVh56e/?taken-by=garybunofsky", :target => "blank" %>.</p>
+<p>If you have any questions or would like to <%= link_to "schedule a meeting", "https://calendly.com/garybunofsky" %> you can always <%= mail_to "gary@garybunofsky.com", "email me" %>.</p>
 
+<h3 class="pt24">Education</h3>
+<ul class="none">
+	<li>Kent State University</li>
+	<li>B.A. Communication Studies</li>
+	<li>2008-2012</li>
+</ul>
+
+<h3 class="pt24">Skills &amp; Languages</h3>
+<p>Design with a focus on applications, typography and
+systems; proficient in HTML, CSS, LESS, SCSS, PHP, Ruby,
+Rails, Command line, Javascript/Angular; SQL and Postgres;
+full-stack development; API integrations; Git SCM; Agile,
+TDD and continuous integration; responsive frameworks;
+Vagrant; Sketch; Adobe CC; Google Analytics Certified.</p>
+
+<h3 class="pt24">Email</h3>
+<ul class="none">
+	<li><%= mail_to "gary@garybunofsky.com", "gary@garybunofsky.com" %></li>
+</ul>
 <h3 class="pt24">Elsewhere</h3>
-<ul>
+<ul class="none">
   <li>
-    Github: <%= link_to "github.com/garybunofsky",  "https://github.com/garybunofsky", :target => "_blank" %>
+    <%= link_to "Github",  "https://github.com/garybunofsky", :target => "_blank" %>
   </li>
   <li>
-    Instagram: <%= link_to "instagram.com/garybunofsky",  "https://instagram.com/garybunofsky", :target => "_blank" %>
+    <%= link_to "Instagram",  "https://instagram.com/garybunofsky", :target => "_blank" %>
   </li>
   <li>
-    LinkedIn: <%= link_to "linkedin.com/in/garybunofsky",  "https://linkedin.com/in/garybunofsky", :target => "_blank" %>
+    <%= link_to "LinkedIn",  "https://linkedin.com/in/garybunofsky", :target => "_blank" %>
   </li>
   <li>
-    Twitter: <%= link_to "twitter.com/garybunofsky",  "https://twitter.com/garybunofsky", :target => "_blank" %>
+    <%= link_to "Twitter",  "https://twitter.com/garybunofsky", :target => "_blank" %>
   </li>
 </ul>
