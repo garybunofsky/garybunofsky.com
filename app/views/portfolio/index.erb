@@ -13,10 +13,20 @@
 </section>
 <section class="mb36">
   <h3>Veronica</h3>
-  <p>Veronica is an SMS chatbot. She can tell you today's news, tomorrow's weather forecast, and plenty of other things. You can text Veronica at (321)-233-9118. Don't worry she won't spam you or anything sketchy like that. <%= link_to "Click here to save her number", "/veronica.vcf", :target => "_blank" %>.</p>
+  <p>Veronica is a chatbot that can text you news from various sources. For instance, if you want the news from CNN, just text her <em>CNN</em>. You can see all the sources by texting her the word <em>sources</em>. You can text Veronica at (321)-233-9118. Don't worry she won't spam you. <%= link_to "Click here to save her number", "/veronica.vcf", :target => "_blank" %>.</p>
   <div class="row">
     <div class="col-sm-4">
       <%= link_to "View source", "https://github.com/garybunofsky/veronica", :class => "btn" %>
+    </div>
+  </div>
+</section>
+
+<section class="mb36">
+  <h3>Pass.js</h3>
+  <p>I wrote <%= link_to "Pass.js", "http://garybunofsky.github.io/pass.js/", :target => "_blank" %> to help analyze conversion funnels. Pass captures URL parameters such as utm_source through hidden form fields. It’s very small and easy to install.</p>
+  <div class="row">
+    <div class="col-sm-4">
+      <%= link_to "Visit site", "http://garybunofsky.github.io/pass.js/", :class => 'btn outline', :target => "_blank" %>
     </div>
   </div>
 </section>
@@ -30,16 +40,6 @@
     </div>
     <div class="col-sm-4">
       <%= link_to "Visit site", "http://magenda.co/", :class => 'btn outline', :target => "_blank" %>
-    </div>
-  </div>
-</section>
-
-<section class="mb36">
-  <h3>Pass.js</h3>
-  <p>I wrote <%= link_to "Pass.js", "http://garybunofsky.github.io/pass.js/", :target => "_blank" %> to help analyze conversion funnels. Pass captures URL parameters such as utm_source through hidden form fields. It’s very small and easy to install.</p>
-  <div class="row">
-    <div class="col-sm-4">
-      <%= link_to "Visit site", "http://garybunofsky.github.io/pass.js/", :class => 'btn outline', :target => "_blank" %>
     </div>
   </div>
 </section>
