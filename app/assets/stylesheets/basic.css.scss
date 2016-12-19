@@ -62,6 +62,21 @@ figure.circle {
     }
 }
   
+// Carousel 
+ol.carousel-indicators {
+  bottom:-10px;
+}
+.carousel-item {
+  height:210px;
+}
+ol.carousel-indicators li {
+  border: 1px solid $brand-secondary;
+}
+ol.carousel-indicators li.active {
+  border: 1px solid $accent-primary;
+  background: $accent-primary;
+}
+
 .animated {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
