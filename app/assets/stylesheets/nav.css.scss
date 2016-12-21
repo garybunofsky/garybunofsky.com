@@ -71,8 +71,8 @@ nav.navbar {
         &:hover,
         &:focus,
         &:active {
-          color:$white;
-          background-color: $accent-primary;
+          color:$accent-primary;
+          background-color: $grey;
         }
       }
       a.btn, button.btn, .btn { 
