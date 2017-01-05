@@ -73,7 +73,10 @@ p {
         color:$accent-primary;
         text-decoration: underline;
       }
-      &:visited,
+      &:visited {
+        color:$accent-secondary !important;
+        text-decoration: underline;
+      }
       &:focus,
       &:active {
         text-decoration: none;

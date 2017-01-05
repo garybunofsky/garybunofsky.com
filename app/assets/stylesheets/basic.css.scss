@@ -31,16 +31,29 @@ body {
 
 // Photos
 figure.center {
-   img {
-     width: 100%;
-     overflow: hidden;
-     margin-bottom: 6px;
+  img {
+   width: 100%;
+   overflow: hidden;
+   margin-bottom: 6px;
+  }
+  img.project {
+  @include border-radius(5px);
+  border:1px solid $border;
+    &:hover {
+      @include trans;
+      border:1px solid $accent-primary;
+    }
+  }
+  img.no-link {
+  &:hover {
+    border:1px solid $border;
    }
-   figcaption {
-     @include sans-serif(23);
-     color:$brand-secondary;
-     margin-bottom: 24px;
-   }
+  }
+  figcaption {
+    @include sans-serif(23);
+    color:$brand-secondary;
+    margin-bottom: 24px;
+  }
 }
 
 figure.over {
@@ -61,7 +74,7 @@ figure.circle {
       border-radius: 50%;
     }
 }
-  
+
 // Carousel 
 ol.carousel-indicators {
   bottom:-10px;

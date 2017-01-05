@@ -4,43 +4,39 @@
 
 <section class="mb36">
   <h3>Lease Lightning</h3>
-  <p><%= link_to "Lease Lightning", "http://leaselightning.com", :target => "_blank" %> is a super fast way to send lease agreements to prospective residents. Once a lease is sent, the potential renter can then digitally sign the lease from any device. Please note that this is a work in progress.</p>
-  <div class="row">
-    <div class="col-sm-4">
-      <%= link_to "Visit site", "http://leaselightning.com", :class => 'btn outline', :target => "_blank" %>
-    </div>
-  </div>
+  <p><%= link_to "Lease Lightning", "http://leaselightning.com", :target => "_blank" %> is a fast way to send lease agreements to residents. Please note that this is a work in progress.</p>
+  <%= link_to "http://leaselightning.com", :target => "_blank" do %>
+  <figure class="center">
+  		<img src="https://s3.amazonaws.com/garybunofsky.com/lease-lightning.png" alt="Lease Lightning" class="project" />
+  </figure>
+  <% end %>
 </section>
+
 <section class="mb36">
   <h3>Veronica</h3>
-  <p>Veronica is a chatbot that can text you news from various sources. For instance, if you want the news from CNN, just text her <em>CNN</em>. You can see all the sources by texting her the word <em>sources</em>. You can text Veronica at (321)-233-9118. Don't worry she won't spam you. <%= link_to "Click here to save her number", "/veronica.vcf", :target => "_blank" %>.</p>
-  <div class="row">
-    <div class="col-sm-4">
-      <%= link_to "View source", "https://github.com/garybunofsky/veronica", :class => "btn" %>
-    </div>
-  </div>
+  <p>Veronica is a chatbot that texts you news. If you want the latest, just text <em>CNN</em>, <em>Time</em>, or something else to (321) 233-9118. Don't worry she won't spam you. <%= link_to "Click here to save her number", "/veronica.vcf", :target => "_blank" %>.</p>
+  <figure class="center">
+  		<img src="https://s3.amazonaws.com/garybunofsky.com/veronica.png" alt="Veronica" class="project no-link" />
+  </figure>
 </section>
 
 <section class="mb36">
   <h3>Pass.js</h3>
-  <p>I wrote <%= link_to "Pass.js", "http://garybunofsky.github.io/pass.js/", :target => "_blank" %> to help analyze conversion funnels. Pass captures URL parameters such as utm_source through hidden form fields. It’s very small and easy to install.</p>
-  <div class="row">
-    <div class="col-sm-4">
-      <%= link_to "Visit site", "http://garybunofsky.github.io/pass.js/", :class => 'btn outline', :target => "_blank" %>
-    </div>
-  </div>
+  <p><%= link_to "Pass.js", "http://garybunofsky.github.io/pass.js/", :target => "_blank" %> tracks referral traffic. It helps analyze conversion funnels by capturing URL parameters through hidden form fields. It’s very small and easy to install.</p>
+  <%= link_to "http://garybunofsky.github.io/pass.js", :target => "_blank" do %>
+  <figure class="center">
+  		<img src="https://s3.amazonaws.com/garybunofsky.com/pass.png" alt="Pass.js" class="project" />
+  </figure>
+  <% end %>
 </section>
 
 <section class="mb36">
   <h3>Magenda</h3>
-  <p><%= link_to "Magenda", "http://magenda.co/", :target => "_blank" %> is a light, browser-based to-do list. A quick, simple way to log items – no download required.</p>
-  <div class="row">
-    <div class="col-sm-4">
-      <%= link_to "View process", "portfolio/magenda", :class => "btn" %>
-    </div>
-    <div class="col-sm-4">
-      <%= link_to "Visit site", "http://magenda.co/", :class => 'btn outline', :target => "_blank" %>
-    </div>
-  </div>
+  <p><%= link_to "Magenda", "http://magenda.co/", :target => "_blank" %> is a light, browser-based to-do list. A quick, simple way to log items – no download required. <%= link_to "See how I made it.", "portfolio/magenda" %></p>
+  <%= link_to "http://magenda.co/", :target => "_blank" do %>
+  <figure class="center">
+  		<img src="https://s3.amazonaws.com/garybunofsky.com/magenda.png" alt="Magenda" class="project" />
+  </figure>
+  <% end %>
 </section>
 
