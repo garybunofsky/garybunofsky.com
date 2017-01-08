@@ -1,8 +1,9 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <p class="sm">&copy; <%= Date.today.year %> <%= link_to "Gary Bunofsky", root_url %> | <%= link_to "Privacy Policy", static_path('privacy-policy') %> | <%= link_to "Résumé", "/resume.pdf", :target => "blank" %> | <%= link_to "Style Guide", static_path('style-guide') %></p>
+      <div class="col-md-6 col-md-offset-3 text-xs-center">
+        <p class="sm"><%= link_to "Résumé", "/resume.pdf", :target => "blank" %> | <%= link_to "Style Guide", static_path('style-guide') %> | <%= link_to "Changelog", static_path(:changelog) %> | <%= link_to "Privacy Policy", static_path('privacy-policy') %></p>
+        <p class="sm">&copy; <%= Date.today.year %> <%= link_to "Gary Bunofsky", root_url %></p>
       </div>
     </div>
   </div>
