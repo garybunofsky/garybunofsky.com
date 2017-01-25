@@ -15,11 +15,6 @@ body {
   height: 100vh;
 }
 
-.container,
-.container-fluid {
-  padding-left:24px!important;
-  padding-right:24px!important;
-}
 .card {
   @include border-radius(5px);
   padding:24px;
