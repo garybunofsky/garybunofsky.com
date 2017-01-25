@@ -1,0 +1,10 @@
+@import "variables";
+// colors.css.scss
+
+.background-light { background: $light; }
+.background-grey { background: $grey; }
+.background-white { background: $white; }
+.background-neutral { background: $border; }
+.background-accent-primary { background: $accent-primary; }
+.color-accent-primary { color: $accent-primary; }
+.color-accent-secondary { color: $accent-secondary; }
