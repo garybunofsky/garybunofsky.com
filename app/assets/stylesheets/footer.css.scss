@@ -2,11 +2,28 @@
 // footer.css.scss
 
 footer {
-  margin-top:128px;
-  background:$light;
-  padding: 30px 0 24px 0;
-  border-top:1px solid $border;
+  background: $accent-primary;
+  background: -webkit-linear-gradient(135deg, $accent-primary 0, $accent-secondary 100%);
+  background: linear-gradient(135deg, $accent-primary 0, $accent-secondary 100%);
+  h3 {
+    color: $white;
+  }
   h4 {
-    color: $brand-secondary;
+    color: $white;
+    a {
+      color: $white !important;
+      font-weight: 600;
+      padding: 5px 4px;
+      margin: -2px -4px;
+      @include border-radius(3px);
+      @include trans;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $white;
+        color: $accent-primary !important;  
+      }
+    }  
   }
 }
+

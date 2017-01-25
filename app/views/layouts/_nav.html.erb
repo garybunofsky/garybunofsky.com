@@ -1,34 +1,30 @@
-<nav class="navbar navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-10 col-sm-10 col-md-5">
-        <h1 class="brand">
-					<%= link_to root_url do %>Gary Bunofsky<span>, Designer &amp; Developer</span><% end %>
-        </h1>
-      </div>
-      <div class="col-sm-2 pull-right">
-        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#collapsing-nav">
-					<div class="line">&nbsp;</div>
-				</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-4 collapse navbar-toggleable-sm" id="collapsing-nav">
-        <ul class="nav navbar-nav">
-          <li class="nav-item">
-            <%= link_to "About", static_path(:about) %>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-toggleable-md navbar-light fixed-top">
+      
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+      </button>
+      
+      <h1 class="brand"><%= link_to root_url do %>Gary Bunofsky<% end %></h1>
+      
+      <div class="collapse text-lg-right navbar-collapse" id="navbarText">
+        <ul class="navbar-nav text-lg-right">
+          <li class="nav-item text-lg-right">
+            <%= link_to "About", static_path(:about), :class => (current_page?(static_path(:about)) ? "active" : "") %>
           </li>
           <li class="nav-item">
-            <%= link_to "Blog", static_path(:blog) %>
           </li>
           <li class="nav-item">
-            <%= link_to "Library", static_path(:library) %>
+            <%= link_to "Blog", static_path(:blog), :class => (current_page?(static_path(:blog)) ? "active" : "") %>
           </li>
           <li class="nav-item">
-						<%= link_to "Portfolio", static_path(:portfolio), :class => "btn" %>
+            <%= link_to "Portfolio", static_path(:portfolio), :class => (current_page?(static_path(:portfolio)) ? "active" : "") %>
           </li>
         </ul>
       </div>
-    </div>
+      
+    </nav>
   </div>
-</nav>
+</div>
+

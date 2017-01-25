@@ -1,9 +1,14 @@
-<footer>
-  <div class="container">
+<footer class="full-height pt-14">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-xs-center">
-        <p class="sm"><%= link_to "Résumé", "/resume.pdf", :target => "blank" %> | <%= link_to "Style Guide", static_path('style-guide') %> | <%= link_to "Changelog", static_path(:changelog) %> | <%= link_to "Privacy Policy", static_path('privacy-policy') %></p>
-        <p class="sm">&copy; <%= Date.today.year %> <%= link_to "Gary Bunofsky", root_url %></p>
+      <div class="col-md-4 offset-md-4">
+        <h3 class="sm">Design</h3>
+        <h4><%= link_to "Tiny Notes", "/portfolio/tiny-notes", class: "color-accent-primary" %>, a note taking app.</h4>
+        <h4><%= link_to "Lease Lightning", "http://leaselightning.com", class: "color-accent-primary", :target => "_blank" %>, a leasing app.</h4>
+        
+        <h3 class="sm mt-6">Development</h3>
+        <h4><%= link_to "Veronica", "/portfolio/veronica", class: "color-accent-primary" %>, a news chatbot.</h4>
+        <h4><%= link_to "Pass.js", "http://garybunofsky.github.io/pass.js", class: "color-accent-primary", :target => "_blank" %>, a referal tracking library.</h4>
       </div>
     </div>
   </div>

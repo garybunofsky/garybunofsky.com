@@ -4,13 +4,17 @@
 html {
   font-size:62.5% !important;
   color:$brand-primary;
-  background: $white;
 }
+
 body {
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility;
-	background: $white !important;
 }
+
+.full-height {
+  height: 100vh;
+}
+
 .container,
 .container-fluid {
   padding-left:24px!important;
@@ -36,6 +40,12 @@ figure.center {
    overflow: hidden;
    margin-bottom: 6px;
   }
+  a img {
+    @include trans;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
   img.project {
   @include border-radius(5px);
   border:1px solid $border;
@@ -50,7 +60,7 @@ figure.center {
    }
   }
   figcaption {
-    @include sans-serif(23);
+    @include sans-serif(12);
     color:$brand-secondary;
     margin-bottom: 24px;
   }
@@ -62,7 +72,7 @@ figure.over {
       margin: 0 -25% 6px -25%;
     }
     figcaption {
-      @include sans-serif(23);
+      @include sans-serif(12);
       color:$brand-secondary;
       margin: 0 -25% 0 -25%;
       margin-bottom: 24px;
@@ -75,46 +85,14 @@ figure.circle {
     }
 }
 
-// Carousel 
-ol.carousel-indicators {
-  bottom:-10px;
-}
-.carousel-item {
-  height:210px;
-}
-ol.carousel-indicators li {
-  border: 1px solid $brand-secondary;
-}
-ol.carousel-indicators li.active {
-  border: 1px solid $accent-primary;
-  background: $accent-primary;
-}
-
-.animated {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
+.video-iphone {
+  background:url(/veronica-iphone-1.png) no-repeat;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  //padding:81px 303px;
+  video {
+    margin-left: 269px;
+    margin-top: 76px;
   }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
 }

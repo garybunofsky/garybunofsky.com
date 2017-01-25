@@ -1,86 +1,45 @@
 // variables.css.scss
-
-$sans-serif:-apple-system, "Microsoft YaHei", 微软雅黑, sans-serif;
+$sans-serif:"Libre Franklin", sans-serif;
 $serif:"Georgia", Times, serif;
 
 // Colors
-$brand-primary:         #121212;
-$brand-secondary:       #484646;
-$light:                 #f3f0ec;
-$grey:                  #FCFCFC;
+$brand-primary:         #3a3838;
+$brand-secondary:       #737171;
+$light:                 #f1f4f7;
+$grey:                  #696969;
 $white:                 #ffffff;
-$eggshell:              #FFFEFC;
+$eggshell:              #fdfbf8;
 $border:                #E3E3E3;
-$accent-primary:        #F27C7C;
-$accent-secondary:      #D06969;
+$accent-primary:        #6772e5;
+$accent-secondary:      #7795f8;
 
-
-.background-light { background: $light; }
-.background-grey { background: $grey; }
-.background-w { background: $white; }
-.background-neutral { background: $border; }
-.background-accent { background: $accent-primary; }
-.color-accent { color: $accent-primary; }
-@mixin trans { transition: all .3s; }
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-// Padding 
-.p12  {padding: 12px;}
-
-// Padding Top
-.pt12 {padding-top:12px;}
-.pt24 {padding-top:24px;}
-.pt36 {padding-top:36px;}
-.pt48 {padding-top:48px;}
-.pt60 {padding-top:60px;}
-.pt72 {padding-top:72px;}
-.pt84 {padding-top:84px;}
-.pt96 {padding-top:96px;}
-.pt108 {padding-top:108px;}
-.pt120 {padding-top:120px;}
-.pt132 {padding-top:132px;}
-.pt144 {padding-top:144px;}
-
-// Padding Bottom
-.pb12 {padding-bottom:12px;}
-.pb24 {padding-bottom:24px;}
-.pb36 {padding-bottom:36px;}
-.pb48 {padding-bottom:48px;}
-.pb60 {padding-bottom:60px;}
-.pb72 {padding-bottom:72px;}
-.pb84 {padding-bottom:84px;}
-.pb96 {padding-bottom:96px;}
-.pb108 {padding-bottom:108px;}
-.pb120 {padding-bottom:120px;}
-.pb132 {padding-bottom:132px;}
-.pb144 {padding-bottom:144px;}
-
-// Margin Bottom 
-.mb0 {margin-bottom:0px;}
-.mb24 {margin-bottom:24px;}
-.mb36 {margin-bottom:36px;}
 // Font size and line-height
-$doc-font-size:16;
-$doc-line-height:24;
+$base-font-size:16;
+$base-line-height:1.5;
 
-// Font Mixins
+// Mixins
 @mixin serif($size) {
-      font-size: 10px * ($size / $doc-font-size);
-      font-size: 0rem + $size / $doc-font-size;
-      line-height: ceil($size / $doc-line-height) * ($doc-line-height / $size);
-      margin-bottom: 0px + ($doc-line-height / 2);
-      font-family:$serif;
+  font-size: (1px * ($size));
+  line-height: (1px * ($size * $base-line-height));
+  margin-bottom: ($base-line-height / 2);
+  font-family:$serif;
+  font-weight:400;
 }
 
 @mixin sans-serif($size) {
-      font-size: 10px * ($size / $doc-font-size);
-      font-size: 0rem + $size / $doc-font-size;
-      line-height: ceil($size / $doc-line-height) * ($doc-line-height / $size);
-      margin-bottom: 0px + ($doc-line-height / 2);
-      font-family:$sans-serif;
-      font-weight:400;
+  font-size: (1px * ($size));
+  line-height: (1px * ($size * $base-line-height));
+  margin-bottom: ($base-line-height / 2);
+  font-family:$sans-serif;
+  font-weight:400;
+  letter-spacing: (0.5px * ($size / 100));
+}
+
+@mixin trans { transition: all .27s; }
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }

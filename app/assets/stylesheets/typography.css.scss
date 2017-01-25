@@ -4,127 +4,76 @@
 // h1, h2, h3, h4, h5, h6
 h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
   color:$brand-primary;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+  a {
+    color:$accent-primary;
+    &:hover,
+    &:focus,
+    &:active {
+      color:$accent-secondary;
+      text-decoration: none;
+    }
+  }
 }
 
 h1 {
-  @include sans-serif(42);
-  font-weight:400;
-  text-align: center;
-  letter-spacing: -0.005em;
-}
-
-h2.page-title {
-  @include sans-serif(48);
-  font-weight:600;
-  text-align: center;
-  letter-spacing: -0.005em;
+  @include sans-serif(32);
 }
 
 h2 {
-  @include sans-serif(34);
-  a {
-    &:visited {
-      color:$brand-secondary;
-    }
-    &:hover {
-      text-decoration: none;
-      color:$accent-primary;
-    }
-  }
+  @include sans-serif(22);
 }
 
 h3 {
-  @include sans-serif(32);
-  font-weight:600;
-  a {
-    &:hover {
-      text-decoration: none;;
-      color:$accent-primary;
-    }
-  }
+  @include sans-serif(19);
 }
 
 h4 {
-  @include sans-serif(29);
+  @include sans-serif(18);
 }
 
 h5 {
-  @include sans-serif(24);
+  @include sans-serif(17);
 }
 
 h6 {
-  @include sans-serif(18);
-  color:$brand-secondary;
+  @include sans-serif(16);
 }
 
 p {
-  @include sans-serif(29);
+  @include sans-serif(16);
   color:$brand-secondary;
-  letter-spacing:.015rem;
   margin-bottom: 1.566666em;
   .italic {
    font-style: italic;
   }
-    a {
-      text-decoration: none;
-      color:$brand-secondary;
-      text-decoration: underline;
-      &:hover {
-        color:$accent-primary;
-        text-decoration: underline;
-      }
-      &:visited {
-        color:$accent-secondary !important;
-        text-decoration: underline;
-      }
-      &:focus,
-      &:active {
-        text-decoration: none;
-      }
-    }
-  }
-  .sm {
-  @include sans-serif(20);
-  a {
-    text-decoration: none;
-    text-decoration: underline;
-    &:hover {
-      color:$accent-primary;
-      text-decoration: underline;
-    }
-    &:visited,
-    &:focus,
-    &:active {
-      text-decoration: underline;
-    }
-  }
 }
+  
+.xs { @include sans-serif(14); }
+.sm { @include sans-serif(16); }
+.md { @include sans-serif(20); }
+.lg { @include sans-serif(22); }
 
 sup {
   color:$brand-secondary;
   a {
     color:$accent-primary;
     border:0px;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       border-bottom:1px solid $accent-primary;
     }
   }
 }
 
 ul, ol {
-  @include sans-serif(29);
+  @include sans-serif(16);
   margin-bottom: 1.566666em;
-  margin-left:-20px;
+  margin-left:-30px;
   li {
     color:$brand-secondary;
-    a {
-      color:$brand-secondary;
-      text-decoration: underline;
-      &:hover {
-        color:$accent-primary;
-        text-decoration: underline;
-      }
-    }
     ul, ol {
       li {
         font-size:inherit;
@@ -148,11 +97,12 @@ ul.none {
   }
 }
 pre {
-  @include sans-serif(20);
   font-family: "Courier New";
+  @include sans-serif(16);
   @include border-radius(5px);
   border:1px solid $border;
-  background: $grey !important;
+  color:$brand-primary;
+  background: $light !important;
   display:block;
   padding:12px;
   margin:0 0 24px 0;
@@ -160,26 +110,33 @@ pre {
   word-wrap:break-word;
 }
 
+code {
+  font-family: "Courier New";
+  color:$brand-primary;
+  background-color: $light !important;
+}
+
 hr {
   border-top:1px solid $light;
   margin-bottom: 12px;
 }
 hr.sm {
-  margin:36px auto;
+  border-top:3px solid $light;
+  width: 5%;
+  display: inline-block;
 }
 
 label, figurecaption {
-  @include sans-serif(23);
+  @include sans-serif(16);
   color:$brand-secondary;
   margin:0px;
 }
 
 blockquote.center {
-  @include serif(32);
+  @include serif(18);
   text-align: center;
   color:$brand-secondary;
   font-style: italic;
-
   margin-top:1.5em;
   margin-left: 0px;
   margin-bottom:1.5em;
@@ -189,7 +146,7 @@ blockquote.center {
 }
 
 blockquote.left {
-  @include serif(29);
+  @include serif(18);
   color:$brand-secondary;
   font-style: italic;
   padding:0.75em 1.5em;
@@ -200,88 +157,85 @@ blockquote.left {
 .footnotes {
   margin-top: 24px;
   ol {
-    @include sans-serif(20);
+    @include sans-serif(12);
     li {
       color:$brand-secondary;
-      a {
-        color:$brand-secondary;
-      }
     }
   }
 }
-.block {
-  margin-bottom:24px;
-  display: inline-block;
+.swatch {
+  text-align: center;
   .brand-primary {
-    padding:2em 2em;
     background-color: $brand-primary;
-    height: 10.0em;
-    p {
-      color:$border;
-      @include sans-serif(20);
-    }
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
   }
   .brand-secondary {
-    padding:2em 2em;
     background-color: $brand-secondary;
-    height: 10.0em;
-    p {
-      color:$white;
-      @include sans-serif(20);
-    }
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
   }
   .light {
-    padding:2em 2em;
     background-color: $light;
-    height: 10.0em;
-    p {
-      color:$brand-secondary;
-      @include sans-serif(20);
-    }
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
   }
   .grey {
-    padding:2em 2em;
     background-color: $grey;
-    height: 10.0em;
-    p {
-      color:$brand-secondary;
-      @include sans-serif(20);
-    }
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
   }
   .eggshell {
-    padding:2em 2em;
     background-color: $eggshell;
-    height: 10.0em;
-    p {
-      color:$brand-secondary;
-      @include sans-serif(20);
-    }  
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
   }
   .border {
-    padding:2em 2em;
     background-color: $border;
-    height: 10.0em;
-    p {
-      color:$brand-secondary;
-      @include sans-serif(20);
-    }  
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
   }
   .accent-primary {
-    padding:2em 2em;
     background-color: $accent-primary;
-    height: 10.0em;
-    p {
-      color:$white;
-      @include sans-serif(20);
-    }
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
   }
   .accent-secondary {
-    padding:2em 2em;
     background-color: $accent-secondary;
-    height: 10.0em;
-    p {
-      color:$white;
-      @include sans-serif(20);
-    }
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  
+  .tiny-notes-brand-primary {
+    background-color: #5944ff;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .tiny-notes-brand-secondary {
+    background-color: #4031D2;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px; 
+  }
+  .tiny-notes-medium {
+    background-color: #636161;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .tiny-notes-light {
+    background-color: #E6ECF0;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px; 
   }
 }

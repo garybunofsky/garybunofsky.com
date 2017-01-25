@@ -1,9 +1,9 @@
 @import "variables";
-// graphs.css.scss
+// changelog.css.scss
 
 .graph-container {
 	border:1px solid $border;
-	background: $grey;
+	background: $light;
 	@include border-radius(5px);
 	width: auto;
   overflow-x: auto;

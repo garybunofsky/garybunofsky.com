@@ -1,84 +1,85 @@
 <% content_for :page_title, "Changelog" %>
 <% content_for :page_description, "This page lists the past 30 commits made to this site. It's built in Ruby with Rails and hosted on Heroku." %>
 
-<p>This page lists the past 30 commits made to this site. I am responsible for all design, development and maintenance. It's written in <%= link_to "Ruby", "https://www.ruby-lang.org/en/", :target => "_blank" %> on <%= link_to "Rails", "http://rubyonrails.org/", :target => "_blank" %> and hosted by <%= link_to "Heroku", "http://heroku.com/", :target => "_blank" %>. Typography is set in Georgia and Helvetica Neue. If you want to learn more you can check out the <%= link_to "style guide", static_path('style-guide') %>, view the <%= link_to "git repo", "https://github.com/garybunofsky/garybunofsky.com/", :target => "_blank" %>  or take a look at the <%= link_to "source", "view-source:http://www.garybunofsky.com/", :target => "_blank" %>.</p>
-<h3>Commits</h3>
+<div class="col-md-6 offset-md-3 mt-12">
+	<h2><strong><%= yield :page_title %></strong></h2>
+	<p>This page lists the latest changes made to my site. I am responsible for all design, development and maintenance. It's written in <%= link_to "Ruby", "https://www.ruby-lang.org/en/", :target => "_blank" %> on <%= link_to "Rails", "http://rubyonrails.org/", :target => "_blank" %> and hosted by <%= link_to "Heroku", "http://heroku.com/", :target => "_blank" %>. Typography is set in Libre Franklin and Georgia. If you want to learn more you can check out the <%= link_to "style guide", static_path('style-guide') %>, view the <%= link_to "git repo", "https://github.com/garybunofsky/garybunofsky.com/", :target => "_blank" %>.</p>
+	<h3>Commits</h3>
 
-<div class="graph-container">
-		<div id="graph"></div>
+	<div class="graph-container">
+			<div id="graph"></div>
+	</div>
+	<div class="mt-5">
+	<% @data.each do |item| %>
+	  <section>
+	    <h4><%= item['commit']['message'] %></h4>
+	    <p><a href="https://github.com/garybunofsky/garybunofsky.com/commit/<%= item['sha'] %>">View</a> | <%= Time.parse(item['commit']['author']['date']).strftime("%B %d, %Y")%></p>
+	  </section>
+	<% end %>
+	</div>
+	<script>
+	var arrData = <%= @counts %>;
+
+	var margin = {top: 32, right: 32, bottom: 32, left: 32},
+	    width = 726 - margin.left - margin.right,
+	    height = 178 - margin.top - margin.bottom;
+
+	var parseDate = d3.time.format("%Y-%m-%d").parse;
+
+	var x = d3.time.scale()
+	    .range([0, width])
+
+	var y = d3.scale.linear()
+	    .range([height, 0]);
+
+	var xAxis = d3.svg.axis()
+	    .scale(x)
+	    .orient("bottom");
+
+	var yAxis = d3.svg.axis()
+	    .scale(y)
+	    .orient("left");
+
+	var line = d3.svg.line()
+			.interpolate("bundle")
+	    .x(function(d) { return x(d.date); })
+	    .y(function(d) { return y(d.close); });
+
+	var svg = d3.select("#graph").append("svg")
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	  var data = arrData.map(function(d) {
+	      return {
+	         date: parseDate(d[0]),
+	         close: d[1]
+	      };
+
+	  });
+
+	  x.domain(d3.extent(data, function(d) { return d.date; }));
+	  y.domain(d3.extent(data, function(d) { return d.close; }));
+
+	  svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis);
+
+	  svg.append("g")
+	      .attr("class", "y axis")
+	      .call(yAxis)
+	    .append("text")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 6)
+	      .attr("dy", ".71em")
+	      .style("text-anchor", "end")
+	      .text("Commits");
+
+	  svg.append("path")
+	      .datum(data)
+	      .attr("class", "line")
+	      .attr("d", line);
+	</script>
 </div>
-<div class="pt24">
-<% @data.each do |item| %>
-  <section>
-    <h3><%= Time.parse(item['commit']['author']['date']).strftime("%B %d, %Y")%></h3>
-    <p>SHA: <%= item['sha'] %><br />
-    Message: <%= item['commit']['message'] %><br />
-    <a href="https://github.com/garybunofsky/garybunofsky.com/commit/<%= item['sha'] %>">View Commit</a></p>
-  </section>
-<% end %>
-</div>
-<script>
-var arrData = <%= @counts %>;
-
-var margin = {top: 32, right: 32, bottom: 32, left: 32},
-    width = 726 - margin.left - margin.right,
-    height = 178 - margin.top - margin.bottom;
-
-var parseDate = d3.time.format("%Y-%m-%d").parse;
-
-var x = d3.time.scale()
-    .range([0, width])
-
-var y = d3.scale.linear()
-    .range([height, 0]);
-
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left");
-
-var line = d3.svg.line()
-		.interpolate("bundle")
-    .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.close); });
-
-var svg = d3.select("#graph").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-  var data = arrData.map(function(d) {
-      return {
-         date: parseDate(d[0]),
-         close: d[1]
-      };
-
-  });
-
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain(d3.extent(data, function(d) { return d.close; }));
-
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Commits");
-
-  svg.append("path")
-      .datum(data)
-      .attr("class", "line")
-      .attr("d", line);
-</script>

@@ -1,90 +1,66 @@
 @import "variables";
 // nav.css.scss
-
 nav.navbar {
-  background:$white;
-  border-bottom: 1px solid $light;
-  padding:18px 0px 14px;
+  padding: 0 15px;
+  background: $white;
   h1.brand {
-    @include sans-serif(23);
-    font-family:$sans-serif;
-    margin:0;
-    text-align: left;
+    width: 100%;
     a {
+      @include sans-serif(16);
+      @include trans;
+      float:left;
+      padding:12px 0;
       text-decoration: none;
-      color:$brand-primary;
-      &:hover {
+      color:$grey;
+      &:hover,
+      &:focus,
+      &:active {
         color:$accent-primary;
-        span {
-          color:$accent-primary;
-        }
-      }
-      span {
-        &:hover {
-          color:$accent-primary;
-        }
       }
     }
   }
   button {
-    float:right;
-    color:$brand-secondary;
-    font-size: 15px;
-    padding: 6px 12px;
-    font-weight: 700;
-    border-radius:0;
-		.line {
-			width: 24px;
-			height: 8px;
-			margin:6px 0 2px 0;
-			border-top:2px solid $brand-secondary;
-			border-bottom:2px solid $brand-secondary;
-		}
-    &:hover {
-      .line {
-        border-top:2px solid $accent-primary;
-        border-bottom:2px solid $accent-primary;
-      }
-    }
-    &:focus {
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      background-image: none;
-      outline: 0;
-    }
+    @include sans-serif(16);
+    color:$grey;
+    margin:10px 0 0 0;
+    border:none;
   }
   ul.navbar-nav {
-    //text-align: center;
+    display: inline-block;
+    width: 100%;
     text-align: right;
-    margin-top:-23px;
     li.nav-item {
-      float:none;
-      @include sans-serif(23);
-      margin:0 -3px 12px 0;
-      display:inline;
+      display: inline;
+      @include sans-serif(16);
       a {
-				@include trans;
-				width: 100%;
-        display: inline;
+        padding:12px 6px;
+        margin-left: 12px;
         text-decoration: none;
-        border-bottom:none;
-        color:$brand-secondary;
-        padding:20px 13px;
+        color:$grey;
         &:hover,
         &:focus,
         &:active {
           color:$accent-primary;
-          background-color: $grey;
         }
       }
-      a.btn, button.btn, .btn { 
-        margin-left:4px;
-        color:$white;
-        padding:10px 6px;
-        &:hover,
-        &:active,
-        &:focus {
-          background: $accent-secondary;
+      a.active {
+        color:$accent-primary;
+      }
+    }
+  }
+}
+
+@media (max-width:991px){
+  nav.navbar {
+    ul.navbar-nav {
+      margin: 0;
+      li.nav-item {
+        display: block;  
+        text-align: center;
+        margin:30px 6px;
+        a {
+          width: 100%;
+          padding: 15px 40%;
         }
       }
     }

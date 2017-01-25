@@ -1,58 +1,71 @@
 <% content_for :page_title, "Style Guide" %>
 <% content_for :page_description, "This page's purpose is to demonstrate the various style of elements that make up this site." %>
+<div class="col-md-6 offset-md-3 mt-12">
+  <h2><strong><%= yield :page_title %></strong></h2>
+    
+  <p>This page's purpose is to demonstrate the various style of elements that make up this site. It not only helps to aid in maintenance, but is also present to satisfy the curiosity of others who are interested in such things.</p>
+  <p>At the time of writing the type was set in Georgia and Helvetia Neue. Heading one is only to be used to display the page's title. Therefore, should not be used more than once on each page.</p>
 
-<p>This page's purpose is to demonstrate the various style of elements that make up this site. It not only helps to aid in maintenance, but is also present to satisfy the curiosity of others who are interested in such things.</p>
-<p>At the time of writing the type was set in Georgia and Helvetia Neue. Heading one is only to be used to display the page's title. Therefore, should not be used more than once on each page.</p>
+  <h2>Heading Two</h2>
+  <p>Second level headings are used organize content into sections. They commonly denote subjects, projects, articles or topics. Second level headings can also be used to show importance or emphasis, however the strong or emphasis tag can create a similar a result that is much more tasteful. In order to remain consistent, only one space should be between the ending punctuation mark and the character of the next sentence.</p>
 
-<h2>Heading Two</h2>
-<p>Second level headings are used organize content into sections. They commonly denote subjects, projects, articles or topics. Second level headings can also be used to show importance or emphasis, however the strong or emphasis tag can create a similar a result that is much more tasteful. In order to remain consistent, only one space should be between the ending punctuation mark and the character of the next sentence.</p>
+  <h3>Heading Three</h3>
+  <p>Naturally, the third level heading is slightly less important to that of second level headings. It's slightly smaller in size. Links can be created from plain text, such as what you're reading.</p>
 
-<h3>Heading Three</h3>
-<p>Naturally, the third level heading is slightly less important to that of second level headings. It's slightly smaller in size. Links can be created from plain text, such as what you're reading.</p>
+  <blockquote class="left">This is a blockquote. It's primarily used to emphasis text. It is best to have at least 140 characters inside this element due to it's attributes.</blockquote>
 
-<blockquote class="left">This is a blockquote. It's primarily used to emphasis text. It is best to have at least 140 characters inside this element due to it's attributes.</blockquote>
-
-<h3>Colors</h3>
-<p>These are the six colors that are used along with their corresponding Hex codes.</p>
-<div class="block">
-  <div class="col-sm-6 brand-primary">
-    <p>Brand Primary</p>
-  	<p>Hex: #121212</p>
+  <h3>Colors</h3>
+  <p>These are the six colors that are used along with their corresponding Hex codes.</p>
+  
+  <div class="row">
+    <div class="col-sm-6 swatch mb-4">
+      <div class="brand-primary mx-auto">
+      </div>
+    </div>
+    <div class="col-sm-6 swatch mb-4">
+      <div class="brand-secondary mx-auto">
+      </div>
+    </div>
   </div>
-  <div class="col-sm-6 brand-secondary">
-    <p>Brand Secondary</p>
-  	 <p>Hex: #484646</p>
+  
+  <div class="row">
+    <div class="col-sm-6 swatch mb-4">
+      <div class="grey mx-auto">
+      </div>
+    </div>
+    <div class="col-sm-6 swatch mb-4">
+      <div class="light mx-auto">
+      </div>
+    </div>
   </div>
-  <div class="col-sm-6 grey">
-    <p>Grey</p>
-    <p>Hex: #FCFCFC</p>
+  
+  <div class="row">
+    <div class="col-sm-6 swatch mb-4">
+      <div class="border mx-auto">
+      </div>
+    </div>
+    <div class="col-sm-6 swatch mb-4">
+      <div class="eggshell mx-auto">
+      </div>
+    </div>
   </div>
-  <div class="col-sm-6 light">
-    <p>Light</p>
-  	 <p>Hex: #F3F0EC</p>
+  
+  <div class="row mb-4">
+    <div class="col-sm-6 swatch">
+      <div class="accent-primary mx-auto">
+      </div>
+    </div>
+    <div class="col-sm-6 swatch">
+      <div class="accent-secondary mx-auto">
+      </div>
+    </div>
   </div>
-  <div class="col-sm-6 border">
-    <p>Border</p>
-    <p>Hex: #E3E3E3</p>
-  </div>
-  <div class="col-sm-6 eggshell">
-    <p>Eggshell</p>
-    <p>Hex: #FFFEFC</p>
-  </div>
-  <div class="col-sm-6 accent-primary">
-    <p>Accent Primary</p>
-  	 <p>Hex: #F27C7C</p>
-  </div>
-  <div class="col-sm-6 accent-secondary">
-    <p>Accent Secondary</p>
-  	 <p>Hex: #D06969</p>
-  </div>
-</div>
-
-<h3>Buttons</h3>
-<p>Buttons can be used as a way to link to pages, documents and websites. Since they are fairly large in size, buttons should be used sparingly. Links, when styled as a button, should not use a target attribute to open in a new tab.</p>
-<div class="row">
-  <div class="col-md-4">
-		<%= link_to "Button example", "#", :class => "btn" %>
+  
+  <h3>Buttons</h3>
+  <p>Buttons can be used as a way to link to pages, documents and websites. Since they are fairly large in size, buttons should be used sparingly. Links, when styled as a button, should not use a target attribute to open in a new tab.</p>
+  <div class="row">
+    <div class="col-md-4">
+  		<%= link_to "Button example", "#", :class => "btn" %>
+    </div>
   </div>
 </div>

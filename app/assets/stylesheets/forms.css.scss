@@ -2,7 +2,7 @@
 // forms.css.scss
 
 .form-control {
-  @include sans-serif(21);
+  @include sans-serif(16);
   @include border-radius(5px);
   color:$brand-secondary;
   border:1px solid $border;
@@ -27,16 +27,20 @@
   -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125, 90, 173,.1);
   box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125, 90, 173,.1);
 }
-a.btn, button.btn, .btn {
-  @include sans-serif(21);
+
+
+.btn {
   @include border-radius(5px);
-  @include trans;
-  font-weight: 600;
-  border:1px solid $accent-primary;
-  color:$white;
-  background:$accent-primary;
-  padding:9px 8px;
-  width:100%;
+  @include sans-serif(16);
+	font-weight: 600;
+  padding:7px 18px;
+	text-decoration: none;
+}
+
+.btn-primary {
+	background: $accent-primary;
+	color:$white;
+	border-color: $accent-primary;
   &:hover,
   &:focus {
     background:$accent-secondary;
@@ -49,16 +53,21 @@ a.btn, button.btn, .btn {
     background-image: none;
     outline: 0;
   }
+  &:visited {
+    color:$white;
+  }
 }
 
-a.btn.outline, button.btn.outline, .btn.outline {
-  color:$accent-primary;
-  background:$white;
+.btn-outline {
+	background: $white;
+	color:$accent-primary;
+	border-color: $accent-primary;
   &:hover,
   &:focus {
+    color: $white;
+    background:$accent-secondary;
     border:1px solid $accent-secondary;
     cursor:pointer;
-    color:$accent-secondary;
   }
   &:focus {
     -webkit-box-shadow: none;
