@@ -1,23 +1,6 @@
 <% content_for :page_title, "Introduction" %>
 <% content_for :page_description, "My name is Gary Bunofsky. I’m a designer and developer with a love for systems, typography and applications. I enjoy designing user interfaces and writing clean, sustainable code." %>
 
-<p>My name is Gary Bunofsky (<%= link_to "Boon-ov-ski", "/bunofsky.mp3", :target => "_blank" %>). I’m a designer and developer with a love for systems, typography and applications. I enjoy designing user interfaces and writing clean, sustainable code.</p>
-
-<p>I'm currently a Software Developer for <%= link_to "EmployStream", "http://employstream.com/", :target => "_blank" %> where we automate the hiring process. More specifically, I work with a team of developers to continuously integrate features into our current codebase.</p>
-
-<p>Outside of EmployStream, I work on a few side projects. Most of those are what you see in my <%= link_to "portfolio", static_path(:portfolio) %>. I also started <%= link_to "Web Machine", "http://webmachine.io/", :target => "_blank" %>, a small design and development company. When not <%= link_to "writing", static_path(:blog) %> or writing code, I enjoy practicing yoga, trading stocks and <%= link_to "reading", static_path(:library) %>.</p>
-
-<%= link_to "/resume.pdf", :target => "blank" do %>
-  <div class="card">
-    <div class="row">
-      <div class="col-xs-2">
-        <svg width="100%" height="100%" viewBox="0 0 30 30" style="fill: #ADADAD; display: block; opacity: 0.375; width: 42px; height: 36px; flex-shrink: 0; margin: 4px;"><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></svg>
-      </div>
-      <div class="col-xs-10">
-        <h4 class="pull-right mb0">Résumé</h4>
-        <p class="sm pull-right mb0">59KB</span>
-      </div>
-    </div>
-  </div>
-<% end %>
-<p class="pt24">Feel free to look at my résumé. I'm also on <%= link_to "Github",  "https://github.com/garybunofsky", :target => "_blank" %>, <%= link_to "Instagram",  "https://instagram.com/garybunofsky", :target => "_blank" %>, <%= link_to "Linkedin",  "https://linkedin.com/in/garybunofsky", :target => "_blank" %>, and <%= link_to "Twitter",  "https://twitter.com/garybunofsky", :target => "_blank" %>.</p>
+<div class="col-md-6 offset-md-3 full-height">
+  <h2 class="pt-24">Hi, my name is Gary Bunofsky. I am a designer and developer who enjoys building applications, websites, and products. Welcome to my <%= link_to "portfolio", static_path(:portfolio) %>.</h2>
+</div>
