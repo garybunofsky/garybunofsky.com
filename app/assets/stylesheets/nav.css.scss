@@ -11,7 +11,7 @@ nav.navbar {
       float:left;
       padding:12px 0;
       text-decoration: none;
-      color:$grey;
+      color:$grey !important;
       &:hover,
       &:focus,
       &:active {
@@ -19,10 +19,12 @@ nav.navbar {
       }
     }
   }
-  button {
+  button.navbar-toggler.navbar-toggler-right {
     @include sans-serif(16);
-    color:$grey;
-    margin:10px 0 0 0;
+    @include border-radius(3px);
+    color:$white;
+    background:$accent-primary;
+    margin:9px 0 0 0;
     border:none;
   }
   ul.navbar-nav {
