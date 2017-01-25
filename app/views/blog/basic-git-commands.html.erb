@@ -1,118 +1,121 @@
 <% content_for :page_title, "Basic Git Commands" %>
 <% content_for :page_description, "Features are added. Files are refactored. Bugs are removed. Sourcecode changes often. For this reason the good developers use version control." %>
 <% content_for :date_posted, "July 29th, 2015" %>
+<div class="col-md-6 offset-md-3 mt-12">
+  <h2><strong><%= yield :page_title %></strong></h2>
+		
+	<figure class="center">
+			<img src="https://s3.amazonaws.com/garybunofsky.com/code.jpg" alt="code" />
+	</figure>
 
-<figure class="center">
-		<img src="https://s3.amazonaws.com/garybunofsky.com/code.jpg" alt="code" />
-</figure>
+	<p>Features are added, files are refactored and bugs are removed. For this reason seasoned developers use version control. There are plenty of benefits to using version control. Below you can find the main reasons I, as well as many others, love it.</p>
+	<h4>Benefits of version control</h4>
+	<ul>
+		<li>
+			Revert back to previous versions.
+		</li>
+		<li>
+			Simultaneously work on the same file with others.
+		</li>
+		<li>
+			Maintain multiple versions of code.
+		</li>
+		<li>
+			See the difference between versions of &nbsp;code.
+		</li>
+		<li>
+			Prove a particular change broke or fixed a feature.
+		</li>
+		<li>
+			Examine the history of your project.
+		</li>
+		<li>
+			Submit a change on a collaborative project.
+		</li>
+		<li>
+			Share code.
+		</li>
+		<li>
+			Allow others to work on your code
+		</li>
+		<li>
+			View when work is being done and by whom.
+		</li>
+		<li>
+			Test a feature without interfering with working code.
+		</li>
+	</ul>
 
-<p>Features are added, files are refactored and bugs are removed. For this reason seasoned developers use version control. There are plenty of benefits to using version control. Below you can find the main reasons I, as well as many others, love it.</p>
-<h4>Benefits of version control</h4>
-<ul>
-	<li>
-		Revert back to previous versions.
-	</li>
-	<li>
-		Simultaneously work on the same file with others.
-	</li>
-	<li>
-		Maintain multiple versions of code.
-	</li>
-	<li>
-		See the difference between versions of &nbsp;code.
-	</li>
-	<li>
-		Prove a particular change broke or fixed a feature.
-	</li>
-	<li>
-		Examine the history of your project.
-	</li>
-	<li>
-		Submit a change on a collaborative project.
-	</li>
-	<li>
-		Share code.
-	</li>
-	<li>
-		Allow others to work on your code
-	</li>
-	<li>
-		View when work is being done and by whom.
-	</li>
-	<li>
-		Test a feature without interfering with working code.
-	</li>
-</ul>
+	<p>As much as I love Git. It never fails that I forget a command or two. It doesn't help that there's many ways to do the same thing. Regardless, when I forget one command I reference the list below.</p>
 
-<p>As much as I love Git. It never fails that I forget a command or two. It doesn't help that there's many ways to do the same thing. Regardless, when I forget one command I reference the list below.</p>
+	<h2>Creating Repositories</h2>
+	<h5>Create a local repo</h5>
+	<pre>git init</pre>
 
-<h2>Creating Repositories</h2>
-<h5>Create a local repo</h5>
-<pre>git init</pre>
+	<h5>Download a repository and its history</h5>
+	<pre>git clone https://github.com/user/repo</pre>
 
-<h5>Download a repository and its history</h5>
-<pre>git clone https://github.com/user/repo</pre>
+	<h5>Change the URI or URL for a remote repo</h5>
+	<pre>git remote set-url origin https://your.new.url</pre>
 
-<h5>Change the URI or URL for a remote repo</h5>
-<pre>git remote set-url origin https://your.new.url</pre>
+	<h2>Making Changes</h2>
+	<h5>List all files to be committed</h5>
+	<pre>git status</pre>
 
-<h2>Making Changes</h2>
-<h5>List all files to be committed</h5>
-<pre>git status</pre>
+	<h5>View file differences that are unstaged</h5>
+	<pre>git diff</pre>
 
-<h5>View file differences that are unstaged</h5>
-<pre>git diff</pre>
+	<h5>Stage single file</h5>
+	<pre>git add path/of/file</pre>
 
-<h5>Stage single file</h5>
-<pre>git add path/of/file</pre>
+	<h5>Stage all files</h5>
+	<pre>git add .</pre>
 
-<h5>Stage all files</h5>
-<pre>git add .</pre>
+	<h5>Unstage single file, but retains contents</h5>
+	<pre>git reset path/of/file</pre>
 
-<h5>Unstage single file, but retains contents</h5>
-<pre>git reset path/of/file</pre>
+	<h5>Commit changes to repository</h5>
+	<pre>git commit -m "message"</pre>
 
-<h5>Commit changes to repository</h5>
-<pre>git commit -m "message"</pre>
+	<h2>Managing Branches</h2>
+	<h5>View local branches</h5>
+	<pre>git branch</pre>
 
-<h2>Managing Branches</h2>
-<h5>View local branches</h5>
-<pre>git branch</pre>
+	<h5>View remote branches</h5>
+	<pre>git branch -r</pre>
 
-<h5>View remote branches</h5>
-<pre>git branch -r</pre>
+	<h5>View all local and remote branches</h5>
+	<pre>git branch -a</pre>
 
-<h5>View all local and remote branches</h5>
-<pre>git branch -a</pre>
+	<h5>Switch branches</h5>
+	<pre>git checkout your-branch-name</pre>
 
-<h5>Switch branches</h5>
-<pre>git checkout your-branch-name</pre>
+	<h5>Merge specific commit to current branch</h5>
+	<pre>git cherry-pick your-sha</pre>
 
-<h5>Merge specific commit to current branch</h5>
-<pre>git cherry-pick your-sha</pre>
+	<h5>Merge a range of commits to current branch</h5>
+	<pre>git cherry-pick your-first-sha^..your-second-sha</pre>
 
-<h5>Merge a range of commits to current branch</h5>
-<pre>git cherry-pick your-first-sha^..your-second-sha</pre>
+	<h2>Stashing and Unstashing</h2>
+	<h5>Save changes as stash</h5>
+	<pre>git stash save "message"</pre>
 
-<h2>Stashing and Unstashing</h2>
-<h5>Save changes as stash</h5>
-<pre>git stash save "message"</pre>
+	<h5>Apply stash</h5>
+	<pre>git stash apply stash@{#}</pre>
 
-<h5>Apply stash</h5>
-<pre>git stash apply stash@{#}</pre>
+	<h5>View all stashes</h5>
+	<pre>git stash list</pre>
 
-<h5>View all stashes</h5>
-<pre>git stash list</pre>
+	<h2>Others</h2>
+	<h5>Change URL for remote git repository</h5>
+	<pre>git remote set-url origin https://github.com/user/repo</pre>
 
-<h2>Others</h2>
-<h5>Change URL for remote git repository</h5>
-<pre>git remote set-url origin https://github.com/user/repo</pre>
+	<h5>View existing remotes</h5>
+	<pre>git remote -v</pre>
 
-<h5>View existing remotes</h5>
-<pre>git remote -v</pre>
+	<h5>Remove cached files</h5>
+	<pre>git rm -r --cached .</pre>
 
-<h5>Remove cached files</h5>
-<pre>git rm -r --cached .</pre>
-
-<h5>Overwrite all local files and update to latest commit<h5>
-<pre>git reset --hard origin/master</pre>
+	<h5>Overwrite all local files and update to latest commit<h5>
+	<pre>git reset --hard origin/master</pre>
+</div>
