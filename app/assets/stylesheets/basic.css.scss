@@ -16,12 +16,15 @@ body {
 }
 
 a.portfolio-link {
-  @include border-radius(7px);
+  @include border-radius(8px);
   width: 100%;
   height: 100%;
   display: block;
   padding:24px;
-  &:hover {
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
     @include trans;
     background-color: $light;
     text-decoration: none !important;
