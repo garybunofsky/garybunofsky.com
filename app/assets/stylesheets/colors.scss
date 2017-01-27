@@ -8,3 +8,8 @@
 .background-accent-primary { background: $accent-primary; }
 .color-accent-primary { color: $accent-primary; }
 .color-accent-secondary { color: $accent-secondary; }
+
+.shadow {
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+}
