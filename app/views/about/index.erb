@@ -4,13 +4,8 @@
 	<h2><strong><%= yield :page_title %></strong></h2>
 	
 	<h3 class="sm">Skills &amp; Languages</h3>
-	<p>HTML, CSS, LESS, SCSS, PHP, Javascript, Ruby, Rails, Command line, SQL, Postgres, Git, APIs, TDD, responsive frameworks, Sketch, Adobe CC, Vagrant.</p>
+	<p>HTML, CSS, LESS, SCSS, PHP, Javascript, Ruby, Rails, Angular, React.js, Command line, SQL, Postgres, Git, APIs, TDD, responsive frameworks, Sketch, Adobe CC, Vagrant.</p>
 
-	<h3 class="sm mt-6">Email</h3>
-	<ul class="none">
-		<li><%= mail_to "gary@garybunofsky.com", "gary@garybunofsky.com" %></li>
-	</ul>
-		
 	<h3 class="sm mt-6">Currently</h3>
 	<p>Software Developer at <%= link_to "EmployStream", "http://employstream.com" %><br />Designer at <%= link_to "Web Machine", "http://webmachine.io" %><br />Mentor at <%= link_to "Thinkful", "http://thinkful.com" %></p>
 
@@ -27,6 +22,11 @@
 	<h3 class="sm mt-6">Résumé (Updated <%= Time.current.strftime("%B %Y") %>)</h3>
 	<ul class="none">
 		<li><%= link_to "View", "/resume.pdf", :target => "blank" %> or <%= link_to "download résumé", "/resume.pdf", :download=>"Gary-Bunofsky-Resume.pdf" %></li>
+	</ul>
+	
+	<h3 class="sm mt-6">Email</h3>
+	<ul class="none">
+		<li><%= mail_to "gary@garybunofsky.com", "gary@garybunofsky.com" %></li>
 	</ul>
 
 	<h3 class="sm mt-6">Things I Like </h3>
