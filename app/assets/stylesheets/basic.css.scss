@@ -27,11 +27,14 @@ a.portfolio-link {
   height: 100%;
   display: block;
   padding:24px;
+  border: 1px solid $accent-primary;
+  @include trans;
   &:hover,
   &:focus,
   &:visited,
   &:active {
-    @include trans;
+    background: -webkit-linear-gradient(135deg, rgba(119,149,248, 0.2) 0, $white 100%);
+    background: linear-gradient(135deg, rgba(119,149,248, 0.2) 0, $white 100%);
     background-color: $light;
     text-decoration: none !important;
   }
