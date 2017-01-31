@@ -7,6 +7,9 @@ footer {
     height: 100%;
     background: url("/bkg.svg") center;
   }
+  .gradient {
+    background: linear-gradient(136deg, $accent-primary 0, rgba(255,255,255,0.2) 100%);
+  }
   background: $accent-primary;
   background: -webkit-linear-gradient(135deg, $accent-primary 0, $accent-secondary 100%);
   background: linear-gradient(135deg, $accent-primary 0, $accent-secondary 100%);
@@ -17,16 +20,26 @@ footer {
     color: $white;
     a {
       color: $white !important;
-      font-weight: 600;
-      padding: 5px 4px;
-      margin: -2px -4px;
+      padding: 5px 0px 5px 4px;
+      margin: -2px -2px;
       @include border-radius(3px);
-      @include trans;
       &:active,
       &:focus,
       &:hover {
+        @include trans;
         background-color: $white;
         color: $accent-primary !important;  
+        -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        &:after {
+          @include trans;
+          content: url("/caret-forward-hover.svg");
+          margin: 0 8px;
+        }
+      }
+      &:after {
+        content: url("/caret-forward.svg");
+        margin: 0 4px;
       }
     }  
   }
