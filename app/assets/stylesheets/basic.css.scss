@@ -23,17 +23,17 @@ body {
 
 a.portfolio-link {
   @include border-radius(8px);
+  @include trans;
   width: 100%;
   height: 100%;
   display: block;
   padding:24px;
-  @include trans;
-  border: 1px solid $white;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
   &:hover,
   &:focus {
-    border: 1px solid $accent-primary;
-    background: -webkit-linear-gradient(135deg, rgba(119,149,248, 0.2) 0, $white 100%);
-    background: linear-gradient(135deg, rgba(119,149,248, 0.2) 0, $white 100%);
+    transform: translateY(-2px);
+    background: -webkit-linear-gradient(135deg, rgba(119,149,248, 0.12) 0, $white 100%);
+    background: linear-gradient(135deg, rgba(119,149,248, 0.2) 12, $white 100%);
     background-color: $light;
     text-decoration: none !important;
   }

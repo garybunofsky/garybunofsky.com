@@ -54,6 +54,7 @@ p {
 .sm { @include sans-serif(16); }
 .md { @include sans-serif(20); }
 .lg { @include sans-serif(22); }
+.xl { @include sans-serif(24); }
 
 sup {
   color:$brand-secondary;
