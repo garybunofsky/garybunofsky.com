@@ -1,0 +1,33 @@
+@import "variables";
+// modal.css.scss
+
+.modal {
+  .modal-content {
+    @include border-radius(6px);
+  }
+  .modal-body {
+    padding:24px;
+    ul {
+      margin-left: -40px !important;
+      li {
+        list-style: none;
+        margin:0px 0 32px 0;
+        width: 100%;
+        a {
+          @include sans-serif(19);
+          padding:32px 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border-radius: 0 0 6px 6px;
+    display: inline-block;
+  }
+}
+
+.modal-open .container-fluid,
+.modal-open  .container {
+  -webkit-filter: blur(5px);
+}

@@ -26,6 +26,7 @@ nav.navbar {
     background:$accent-primary;
     margin:9px 0 0 0;
     border:none;
+    padding: .25rem 2.75rem;
     &:hover,
     &:focus,
     &:active {
@@ -34,9 +35,9 @@ nav.navbar {
     }
   }
   ul.navbar-nav {
-    display: inline-block;
-    width: 100%;
-    text-align: right;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
     li.nav-item {
       display: inline;
       @include sans-serif(16);
@@ -50,9 +51,6 @@ nav.navbar {
         &:active {
           color:$accent-primary;
         }
-      }
-      a.active {
-        color:$accent-primary;
       }
     }
   }

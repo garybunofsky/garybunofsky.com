@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <nav class="navbar navbar-toggleable-md navbar-light fixed-top" id="navigation">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="modal" data-target="#myModal" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         Menu
       </button>
       <h1 class="brand"><%= link_to root_url do %>Gary Bunofsky<% end %></h1>
@@ -11,16 +11,17 @@
             <%= link_to "About", static_path(:about), :class => (current_page?(static_path(:about)) ? "active" : "") %>
           </li>
           <li class="nav-item">
-          </li>
-          <li class="nav-item">
             <%= link_to "Blog", static_path(:blog), :class => (current_page?(static_path(:blog)) ? "active" : "") %>
           </li>
           <li class="nav-item">
             <%= link_to "Portfolio", static_path(:portfolio), :class => (current_page?(static_path(:portfolio)) ? "active" : "") %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Résumé", "/resume.pdf", :target => "blank" %>
           </li>
         </ul>
       </div>
     </nav>
   </div>
 </div>
-
+<%= render 'layouts/modal' %>
