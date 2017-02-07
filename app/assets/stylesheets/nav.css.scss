@@ -23,7 +23,9 @@ nav.navbar {
     @include sans-serif(16);
     @include border-radius(3px);
     color:$white;
-    background:$accent-primary;
+    background:$accent-secondary;
+    background: -webkit-linear-gradient($accent-secondary,$accent-primary);
+    background: linear-gradient($accent-secondary,$accent-primary);
     margin:9px 0 0 0;
     border:none;
     padding: .25rem 2.75rem;
@@ -32,6 +34,8 @@ nav.navbar {
     &:active {
       cursor: pointer;
       background:$accent-secondary;
+      background: -webkit-linear-gradient($accent-primary,$accent-primary);
+      background: linear-gradient($accent-primary,$accent-primary);
     }
   }
   ul.navbar-nav {
