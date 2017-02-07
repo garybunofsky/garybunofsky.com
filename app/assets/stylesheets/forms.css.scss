@@ -13,6 +13,10 @@
   -webkit-appearance: none;
   outline: none;
 }
+select.form-control:not([size]):not([multiple]) {
+  height: 46px;
+}
+
 .form-group {
   margin:0 0 18px 0;
 }
@@ -23,11 +27,10 @@
 .comment-form input[type=url]:focus,
 .comment-form textarea:focus {
   border-color:$accent-primary;
+  -webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 5px rgba(0,0,0,0.06);
   outline:0;
-  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125, 90, 173,.1);
-  box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125, 90, 173,.1);
 }
-
 
 .btn {
   @include border-radius(5px);
@@ -38,13 +41,17 @@
 }
 
 .btn-primary {
+  @include trans;
 	background: $accent-primary;
-	color:$white;
+  color:$white;
 	border-color: $accent-primary;
+  background: -webkit-linear-gradient($accent-secondary,$accent-primary);
+  background: linear-gradient($accent-secondary,$accent-primary);
   &:hover,
   &:focus {
-    background:$accent-secondary;
-    border:1px solid $accent-secondary;
+    background: -webkit-linear-gradient($accent-primary,$accent-primary);
+    background: linear-gradient($accent-primary,$accent-primary);
+    border:1px solid $accent-primary;
     cursor:pointer;
   }
   &:focus {
@@ -65,7 +72,8 @@
   &:hover,
   &:focus {
     color: $white;
-    background:$accent-secondary;
+    background: -webkit-linear-gradient(135deg, $accent-primary 0, $accent-secondary 70%);
+    background: linear-gradient(135deg, $accent-primary 0, $accent-secondary 70%);
     border:1px solid $accent-secondary;
     cursor:pointer;
   }
@@ -74,5 +82,18 @@
     box-shadow: none;
     background-image: none;
     outline: 0;
+  }
+}
+
+.back {
+  &:before {
+    content: url("/caret-back.svg");
+    margin-right: 3px;
+  }
+  &:hover {
+    &:before {
+      content: url("/caret-back-hover.svg");
+      margin-right: 3px;
+    }
   }
 }

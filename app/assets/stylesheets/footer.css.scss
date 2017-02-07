@@ -20,6 +20,7 @@ footer {
     color: $white;
     a {
       color: $white !important;
+      white-space: nowrap;
       padding: 5px 0px 5px 4px;
       margin: -2px -2px;
       @include border-radius(3px);
