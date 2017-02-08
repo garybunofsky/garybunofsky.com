@@ -28,9 +28,14 @@
 		
 	<hr class="sm mb-8"/>
 	
+	<div class="row mb-6 ">
+		<div class="col-sm-6">
+			<h3 class="lg mb-5">Brainstorming and Prototyping</h3>
+			<p>Drawing a control flow graph yielded the established series of actions. There were a total of two outcomes, either the API call succedded or failed. The content of the text message was determined by the outcome of the API call.</p>
+		</div>
+	</div>
 	<div class="row mb-6">
 		<div class="col-sm-12">
-			<h3 class="lg mb-5">Brainstorming and Prototyping</h3>
 			<figure class="center mb-6">
 				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-prototype.jpg" alt="veronica-prototype" />
 			</figure>
@@ -39,106 +44,46 @@
 	
 	<hr class="sm mb-6" />
 	
-	<div class="row mb-6">
+	<div class="row mb-7">
 		<div class="col-xs-12 col-md-6">
-			<h3>Structural overview of primary function</h3>
-			<p>
-			<pre>if inbound message is sent to Veronica
-	make api call to newsapi.org
-	if response is successful
-		reply with a headline and article link
-	else
-		reply with a list of commands
-	end
-end</pre>
-		</div>
-	</div>
-
-	<div class="row mb-5">
-		<div class="col-sm-12 col-md-6 offset-md-3">
-			<h3 class="lg">All news sources and commands</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<ul class="xs">
-				<li>ABC News (AU), <code>abc-news-au</code></li>
-				<li>Ars Technica, <code>ars-technica</code></li>
-				<li>Associated Press, <code>associated-press</code></li>
-				<li>BBC News, <code>bbc-news</code></li>
-				<li>BBC Sport, <code>bbc-sport</code></li>
-				<li>Bloomberg, <code>bloomberg</code></li>
-				<li>Business Insider, <code>business-insider</code></li>
-				<li>Business Insider (UK), <code>business-insider-uk</code></li>
-				<li>Buzzfeed, <code>buzzfeed</code></li>
-				<li>CNBC, <code>cnbc</code></li>
-				<li>CNN, <code>cnn</code></li>
-				<li>Daily Mail, <code>daily-mail</code></li>
-				<li>Engadget, <code>engadget</code></li>
-				<li>Entertainment Weekly, <code>entertainment-weekly</code></li>
-				<li>ESPN, <code>espn</code></li>
-				<li>ESPN Cric Info, <code>espn-cric-info</code></li>
-				<li>Financial Times, <code>financial-times</code></li>
-				<li>Football Italia, <code>football-italia</code></li>
-				<li>Fortune, <code>fortune</code></li>
-				<li>FourFourTwo, <code>four-four-two</code></li>
-				<li>Fox Sports, <code>fox-sports</code></li>
-				<li>Google News, <code>google-news</code></li>
-				<li>Hacker News, <code>hacker-news</code></li>
-				<li>IGN, <code>ign</code></li>
-				<li>Independent, <code>independent</code></li>
-				<li>Mashable, <code>mashable</code></li>
-				<li>Metro, <code>metro</code></li>
-				<li>Mirror, <code>mirror</code></li>
-				<li>MTV News, <code>mtv-news</code></li>
-				<li>MTV News (UK), <code>mtv-news-uk</code></li>
-			</ul>
-		</div>
-		<div class="col-md-6 mb-6">
-			<ul class="xs">
-				<li>National Geographic, <code>national-geographic</code></li>
-				<li>Newsweek, <code>newsweek</code></li>
-				<li>New York Magazine, <code>new-york-magazine</code></li>
-				<li>NFL News, <code>nfl-news</code></li>
-				<li>Polygon, <code>polygon</code></li>
-				<li>Recode, <code>recode</code></li>
-				<li>Reddit /r/all, <code>reddit-r-all</code></li>
-				<li>Reuters, <code>reuters</code></li>
-				<li>Sky News, <code>sky-news</code></li>
-				<li>Sky Sports News, <code>sky-sports-news</code></li>
-				<li>TalkSport, <code>talksport</code></li>
-				<li>TechCrunch, <code>techcrunch</code></li>
-				<li>TechRadar, <code>techradar</code></li>
-				<li>The Economist, <code>the-economist</code></li>
-				<li>The Guardian (AU), <code>the-guardian-au</code></li>
-				<li>The Guardian (UK), <code>the-guardian-uk</code></li>
-				<li>The Hindu, <code>the-hindu</code></li>
-				<li>The Huffington Post, <code>the-huffington-post</code></li>
-				<li>The Lad Bible, <code>the-lad-bible</code></li>
-				<li>The New York Times, <code>the-new-york-times</code></li>
-				<li>The Next Web, <code>the-next-web</code></li>
-				<li>The Sport Bible, <code>the-sport-bible</code></li>
-				<li>The Telegraph, <code>the-telegraph</code></li>
-				<li>The Times of India, <code>the-times-of-india</code></li>
-				<li>The Verge, <code>the-verge</code></li>
-				<li>The Wall Street Journal, <code>the-wall-street-journal</code></li>
-				<li>The Washington Post, <code>the-washington-post</code></li>
-				<li>Time, <code>time</code></li>
-				<li>USA Today, <code>usa-today</code></li>
-			</ul>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-xs-12 col-md-8 offset-md-2">
 			<figure class="center">
 				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-iphone-1.png" alt="veronica-iphone-1" />
 			</figure>
 		</div>
+		<div class="col-xs-12 col-md-6">
+			<h3>Determining what to send</h3>
+			<p>The original intention was to have Veronica only respond with the article's headline. Upon further investigation, headlines did not communicate enough value. Sending the headline along with the article link was the proper solution. This enabled Veronica to transfer a short description while also giving the user the option to read more.<p>
+		</div>
 	</div>
-	
+
+
+	<div class="row mb-6">
+		<div class="col-xs-12 col-md-5 offset-md-1">
+			<h3>Examples of commands</h3>
+			<ul class="xs">
+				<li>Bloomberg, <code>bloomberg</code></li>
+				<li>Buzzfeed, <code>buzzfeed</code></li>
+				<li>CNBC, <code>cnbc</code></li>
+				<li>CNN, <code>cnn</code></li>
+				<li>ESPN, <code>espn</code></li>
+				<li>Hacker News, <code>hacker-news</code></li>
+				<li>Mashable, <code>mashable</code></li>
+				<li>The Economist, <code>the-economist</code></li>
+				<li>The New York Times, <code>the-new-york-times</code></li>
+				<li>The Wall Street Journal, <code>the-wall-street-journal</code></li>
+				<li>Time, <code>time</code></li>
+				<li>USA Today, <code>usa-today</code></li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<figure class="center">
+				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-iphone-2.png" alt="veronica-iphone-1" />
+			</figure>
+		</div>
+	</div>
+
 	<hr class="sm mb-8" />
-	
+		
 	<div class="row mb-6">
 		<div class="col-sm-12 col-md-6">
 			<p>The desire to build Veronica came from wanting to get news without an app. If you want the latest news, just text <em>CNN</em>, <em>Time</em>, or something else to (321) 233-9118</p>
