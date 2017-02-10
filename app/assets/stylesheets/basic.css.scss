@@ -44,18 +44,6 @@ a.card {
 a.blog-item {
   @include trans;
   text-decoration: none !important;
-  &:hover {
-    @include trans;
-    &:after {
-      @include trans;
-      background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
-    }
-    p,
-    h3 {
-      color: $accent-primary;
-      text-decoration: none !important;
-    }
-  }
   &:after {
     content: "";
     position: absolute;
@@ -63,9 +51,21 @@ a.blog-item {
     left: 0;
     height: 128px;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0),#fff);
+    background: linear-gradient(rgba(0,0,0,0),rgba(255,255,255,0.9));
+  }
+  &:hover {
+    &:after {
+      @include trans;
+    }
+    p,
+    h3 {
+      @include trans;
+      color: $accent-secondary;
+      text-decoration: none !important;
+    }
   }
 }
+
 // Photos
 figure.center {
   img {
