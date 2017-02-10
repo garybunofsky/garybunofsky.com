@@ -10,4 +10,9 @@ class ApplicationController < ActionController::Base
     end
   end
   
+  # Redirect to 404 not_found if template is missing
+  rescue_from ActionView::MissingTemplate do |exception|
+    redirect_to controller: 'errors', action: 'not_found'
+  end
+  
 end
