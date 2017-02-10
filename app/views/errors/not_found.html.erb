@@ -1,0 +1,7 @@
+<% content_for :page_title, "Uh Oh, Page Not Found." %>
+<% content_for :page_description, "Uh Oh, Page Not Found." %>
+<div class="col-md-6 offset-md-3 mt-12 mb-12 text-center">
+  <h2><strong><%= yield :page_title %></strong></h2>
+  <p>We couldn't find the page that you're looking for. Sorry about that. Please use the navigation above or <%= link_to "return home", root_url %>.</p>
+  <%= link_to "Return to Home Page", root_url, class: "btn btn-primary" %>
+</div>

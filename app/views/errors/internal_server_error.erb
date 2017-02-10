@@ -1,0 +1,9 @@
+<% content_for :page_title, "Oops, Internal Server Error." %>
+<% content_for :page_description, "Oops, Internal Server Error." %>
+<div class="col-md-6 offset-md-3 mt-12 mb-12 text-center">
+  <h2><strong><%= yield :page_title %></strong></h2>
+  <p>Apparently something went wrong on our end. Please use the navigation above or <%= link_to "return home", root_url %>.</p>
+  <%= link_to "Return to Home Page", root_url, class: "btn btn-primary" %>
+</div>
+
+
