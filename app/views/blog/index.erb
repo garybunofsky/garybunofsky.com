@@ -3,21 +3,60 @@
 <div class="col-md-6 offset-md-3 mt-12">
   <h2><strong><%= yield :page_title %></strong></h2>
   <p>The primary purpose of this blog is to share my thoughts with others. Topics often cover design, development and things of that nature. These are compositions, lists, references and resources that I feel are valuable enough to pass along.</p>
+  
+  
+  <h4 class="xs mt-6">February 29th, 2017</h4>
+  <%= link_to subpage_path(:blog, 'a-month-without-coffee'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">A Month Without Coffee</h3>
+    <p>I remember having my first cup of coffee at my grandma's house. I wasn't allowed to pour my own coffee, but I could pour my own cream – and did I ever. My coffee tasted like straight cream and was nearly the same color. I was only 11 years old, who thought this was a good idea? Ever since that pleasant Saturday morning I've been drinking coffee every morning.</p>
+    
+  <% end %>
+  
+  
   <h4 class="xs mt-6">November 22nd, 2016</h4>
-  <h3><%= link_to "Facebook's New Job", subpage_path(:blog, 'facebooks-new-job') %></h3>
-
+  <%= link_to subpage_path(:blog, 'facebooks-new-job'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">Facebook's New Job</h3>
+    <p>People are mad. And rightfully so. Many believe the fake news on Facebook altered the results of the 2016 election. And it probably did, but Facebook shouldn't be held responsible.</p>
+    
+  <% end %>
+  
+  
   <h4 class="xs mt-6">November 17th, 2016</h4>
-  <h3><%= link_to "Not the Same", subpage_path(:blog, 'not-the-same') %></h3>
+  <%= link_to subpage_path(:blog, 'not-the-same'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">Not the Same</h3>
+    <p>Library and frameworks both allow you to do more and write less. They share other similarities but shouldn't be used synonymously – although they often are. This creates confusion, so I'll try my best to clear things up.</p>
+    
+  <% end %>
 
+  
   <h4 class="xs mt-6">July 29th, 2015</h4>
-  <h3><%= link_to "Basic Git Commands", subpage_path(:blog, 'basic-git-commands') %></h3>
+  <%= link_to subpage_path(:blog, 'basic-git-commands'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">Basic Git Commands</h3>
+    <p>Features are added, files are refactored and bugs are removed. For this reason seasoned developers use version control. There are plenty of benefits to using version control. Below you can find the main reasons I, as well as many others, love it.</p>
+    
+  <% end %>
 
+  
   <h4 class="xs mt-6">November 18, 2015</h4>
-  <h3><%= link_to "Finding Photos", subpage_path(:blog, 'finding-photos') %></h3>
+  <%= link_to subpage_path(:blog, 'finding-photos'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">Finding Photos</h3>
+    <p>Finding stock photos can be a hassle. Luckily there are websites that host free high-quality images. I curated a list of some of my favorites here. It will be updated frequently so only good links are present.</p>
+    
+  <% end %>
 
+  
   <h4 class="xs mt-6">June 18th, 2015</h4>
-  <h3><%= link_to "Website Deployment Checklist", subpage_path(:blog, 'website-deployment-checklist') %></h3>
+  <%= link_to subpage_path(:blog, 'website-deployment-checklist'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">Website Deployment Checklist</h3>
+    <p>There are many things to focus on when the time comes to launch a website. Concentration is imperative during this time. Forgetting to complete a small procedure could be detrimental. I have composed this Website Deployment Checklist. When used it can mitigate the risk of unforeseen things happening. It has proven itself valuable time and time again.</p>
+    
+  <% end %>
+    
   
   <h4 class="xs mt-6">October 14th, 2014</h4>
-  <h3><%= link_to "The Hamburger Icon", subpage_path(:blog, 'the-hamburger-icon') %></h3>
+  <%= link_to subpage_path(:blog, 'the-hamburger-icon'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">The Hamburger Button</h3>
+    <p>Traditionally, global navigation is applied to every page of a website. Recently, sites have begun to house drop-down menu often to as a hamburger icon. This minimized menu is often displayed as a button with three lines stacked horizontally, referred to by some as a hamburger icon. The unique benefits to each navigational approach will be further explained.</p>
+    
+  <% end %>
 </div>
