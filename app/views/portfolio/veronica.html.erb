@@ -1,4 +1,4 @@
-<% content_for :page_title, "Case Study: Veronica" %>
+<% content_for :page_title, "Veronica" %>
 <% content_for :page_description, "Veronica is a chatbot that can text you the news." %>
 <div class="col-md-12 col-lg-10 offset-lg-1 mt-12">
 	<div class="row mb-5">
@@ -84,10 +84,30 @@
 
 	<hr class="sm mb-8" />
 		
-	<div class="row mb-6">
+	<div class="row mb-12">
 		<div class="col-sm-12 col-md-6">
 			<p>The desire to build Veronica came from wanting to get news without an app. If you want the latest news, just text <em>CNN</em>, <em>Time</em>, or something else to (321) 233-9118</p>
 			<%= link_to "Back to Portfolio", static_path(:portfolio), class: "btn btn-outline" %>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mb-6">
+			<%= link_to "/portfolio/tiny-notes", class: "card shadow" do %>
+				<div class="text-center">
+					<p class="mb-0">Previous project</p>
+					<h3 class="md">Tiny Notes</h4>
+				</div>
+			<% end %>
+		</div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mb-6">
+			<%= link_to "/portfolio/passjs", class: "card shadow" do %>
+				<div class="text-center">
+					<p class="mb-0">Next project</p>
+					<h3 class="md">Pass.js</h4>
+				</div>
+			<% end %>
 		</div>
 	</div>
 	

@@ -1,10 +1,10 @@
-<% content_for :page_title, "Case Study: Tiny Notes" %>
+<% content_for :page_title, "Tiny Notes" %>
 <% content_for :page_description, "Tiny Notes is a note taking app that allows you to share your writing in .json format." %>
-<div class="col-md-12 col-lg-10 offset-lg-1 mt-12">
+<div class="col-md-12 col-lg-10 offset-lg-1 mt-12" itemscope itemtype="http://schema.org/Article">
 	<div class="row mb-6">
 		<div class="col-sm-6">
-			<h2 class=""><strong><%= yield :page_title %></strong></h2>
-			<p>Tiny Notes is a note taking app that allows you to share your writing in <code>.json</code> format.</p>
+			<h2 itemprop="name"><strong><%= yield :page_title %></strong></h2>
+			<p itemprop="description">Tiny Notes is a note taking app that allows you to share your writing in <code>.json</code> format.</p>
 		</div>
 	</div>
 	
@@ -33,13 +33,13 @@
 		<div class="col-sm-12">
 			<h3 class="lg mb-5">Brainstorming and Prototyping</h3>
 			<figure class="center mb-6">
-				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-prototype-1.jpg" alt="tiny-notes-prototype" />
+				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-prototype-1.jpg" alt="Brainstorming sketches of tinynot.es." itemprop="photo" />
 			</figure>
 			<figure class="center mb-6">
-				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-prototype-2.jpg" alt="tiny-notes-prototype" />
+				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-prototype-2.jpg" alt="Sketch of the tinynot.es user interface." itemprop="photo" />
 			</figure>
 			<figure class="center">
-				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-prototype-3.jpg" alt="tiny-notes-prototype" />
+				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-prototype-3.jpg" alt="Notes of the iconography of tinynot.es." itemprop="photo" />
 			</figure>
 		</div>
 	</div>
@@ -76,7 +76,7 @@
 		</div>
 		<div class="col-sm-12 col-md-6">
 			<figure class="center">
-				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-iphone-1.png" alt="tiny-notes-iphone-1" />
+				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-iphone-1.png" alt="Mobile version of the tinynot.es application." itemprop="photo" />
 			</figure>
 		</div>
 	</div>
@@ -114,19 +114,40 @@
 		<div class="col-sm-12">
 			<h3>Typography</h3>
 			<figure class="center">
-				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-typography.png" alt="tiny-notes-typography" />
+				<img src="https://s3.amazonaws.com/garybunofsky.com/tiny-notes-typography.png" alt="Typography for the tinynot.es application." itemprop="photo" />
 			</figure>
 		</div>
 	</div>
 	
 	<hr class="sm mb-8" />
 	
-	<div class="row mb-6">
+	<div class="row mb-12">
 		<div class="col-sm-12 col-md-6">
 			<p>The motivation beind this application came out out of my desire to have a clean space to write, and make those writings publicly accessible.</p>
 			<%= link_to "Back to Portfolio".html_safe , static_path(:portfolio), class: "btn btn-outline back" %>
 			<%= link_to "View Application", "http://tinynot.es", target: "_blank", class: "btn btn-primary" %>
 		</div>
 	</div>
+	
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mb-6">
+			<%= link_to "/portfolio/passjs", class: "card shadow" do %>
+				<div class="text-center">
+					<p class="mb-0">Previous project</p>
+					<h3 class="md">Pass.js</h4>
+				</div>
+			<% end %>
+		</div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mb-6">
+			<%= link_to "/portfolio/tiny-notes", class: "card shadow" do %>
+				<div class="text-center">
+					<p class="mb-0">Next project</p>
+					<h3 class="md">Tiny Notes</h4>
+				</div>
+			<% end %>
+		</div>
+	</div>
+		
 	
 </div>
