@@ -99,6 +99,39 @@ figure.center {
   }
 }
 
+.browser {
+  border-radius: 4px;
+  border: 1px solid $border;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  
+  .browser_header {
+    background: $border;
+    border-radius: 4px 4px 0 0;  
+    padding: 12px 0px 9px 0px;
+    
+    ul.spotlights {
+      list-style: none;
+      margin-bottom: 12px;
+      
+      li.spotlights_item {
+        background: $light;
+        border-radius: 60%;
+        display: block;
+        float: left;
+        height: 10px;
+        margin-bottom: 0;
+        margin-right: .3rem;
+        width: 10px;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 figure.over {
     img {
       overflow: hidden;
