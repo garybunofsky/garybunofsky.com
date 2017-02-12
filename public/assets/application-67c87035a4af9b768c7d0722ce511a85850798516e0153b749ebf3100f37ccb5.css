@@ -1155,12 +1155,47 @@ figure.center figcaption {
   margin-bottom: 24px;
 }
 
-/* line 103, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+/* line 102, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+.browser {
+  border-radius: 4px;
+  border: 1px solid #E3E3E3;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+/* line 108, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+.browser .browser_header {
+  background: #E3E3E3;
+  border-radius: 4px 4px 0 0;
+  padding: 12px 0px 9px 0px;
+}
+/* line 113, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+.browser .browser_header ul.spotlights {
+  list-style: none;
+  margin-bottom: 12px;
+}
+/* line 117, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+.browser .browser_header ul.spotlights li.spotlights_item {
+  background: #f1f4f7;
+  border-radius: 60%;
+  display: block;
+  float: left;
+  height: 10px;
+  margin-bottom: 0;
+  margin-right: .3rem;
+  width: 10px;
+}
+/* line 129, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+.browser img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 136, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 figure.over img {
   overflow: hidden;
   margin: 0 -25% 6px -25%;
 }
-/* line 107, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+/* line 140, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 figure.over figcaption {
   font-size: 12px;
   line-height: 18px;
@@ -1173,20 +1208,20 @@ figure.over figcaption {
   margin-bottom: 24px;
 }
 
-/* line 115, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+/* line 148, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 figure.circle img {
   width: 100%;
   border-radius: 50%;
 }
 
-/* line 121, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+/* line 154, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 .video-iphone {
   background: url(/veronica-iphone-1.png) no-repeat;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
-/* line 127, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
+/* line 160, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 .video-iphone video {
   margin-left: 269px;
   margin-top: 76px;
