@@ -1,0 +1,115 @@
+<% content_for :page_title, "Make a Payment" %>
+<% content_for :page_description, "Pay" %>
+<div class="col-md-6 offset-md-3 mt-12">
+	<h2><strong><%= yield :page_title %></strong></h2>
+	<p>Please use this page pay your invoice, bill or anything else. All major credit cards are accepted and all transactions are encrypted.</p>
+	<script>
+		Stripe.setPublishableKey("<%= ENV['stripe_publishable_key'] %>");
+		function stripeResponseHandler(status, response) {
+			 if (response.error) {
+				 alert(response.error.message + " Please refresh the page and try again.");
+			 		$(".payment-errors").text(response.error.message);
+			 }
+			 else {
+				 var form$ = $("#stripe-form");
+				 var token = response['id'];
+				 form$.append("<input type='hidden' name='stripeToken' value='" + token + "'/>");
+				 form$.get(0).submit();
+			 }
+		}
+		$(document).ready(function() {
+				$("#stripe-form").submit(function(event) {
+		  		$('.submit').attr("disabled", "disabled");
+
+		    Stripe.createToken({
+		        number: $('.credit-number').val(),
+		        cvc: $('.credit-security').val(),
+		        exp_month: $('.card-expiry-month').val(),
+		        exp_year: $('.card-expiry-year').val()
+		    }, stripeResponseHandler);
+		    return false;
+		  });
+		});
+	</script>
+	<form action="/pay/create" method="post" id="stripe-form" class="pt24">
+		<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+		
+		<h3 class="sm"><strong>Contact</strong></h3>
+		<div class="mb-4">
+		  <fieldset class="form-group">
+				<label>Full Name<sup>*</sup></label>
+				<input class="form-control" type="text" size="20" data-stripe="fname" name="fname" autocomplete="off" required />
+		  </fieldset>
+		  <fieldset class="form-group">
+				<label>Email Address<sup>*</sup></label>
+				<input class="form-control" type="text" size="20" data-stripe="email" name="email" autocomplete="off" required />
+		  </fieldset>
+		</div>
+		
+		<hr class="sm mb-5"/>
+		<div class="mb-5">
+			<h3 class="sm"><strong>Card Information</strong></h3>
+			  <fieldset class="form-group">
+					<label>Card Number<sup>*</sup></label>
+					<input type="text" size="20" name="credit-number" class="credit-number form-control" required autocomplete="off" required />
+			  </fieldset>
+			  <fieldset class="form-group">
+					<label>Security Code (CVC)<sup>*</sup></label>
+					<input type="text" size="4" class="credit-security form-control" autocomplete="off" required />
+			  </fieldset>
+				
+			  <fieldset class="form-group">
+					<label>Expiration Month<sup>*</sup></label>
+			    <select type="text" class="card-expiry-month form-control" required />
+			      <option value="01">01</option>
+			      <option value="02">02</option>
+			      <option value="03">03</option>
+			      <option value="04">04</option>
+			      <option value="05">05</option>
+			      <option value="06">06</option>
+			      <option value="07">07</option>
+			      <option value="08">08</option>
+			      <option value="09">09</option>
+			      <option value="10">10</option>
+			      <option value="11">11</option>
+			      <option value="12">12</option>
+			    </select>
+			  </fieldset>
+		  	<fieldset class="form-group">
+					<label>Expiration Year<sup>*</sup></label>
+			  	<select type="text" class="card-expiry-year form-control" autocomplete="off" required/>
+					   <option value="2017">2017</option>
+					   <option value="2018">2018</option>
+					   <option value="2019">2019</option>
+					   <option value="2020">2020</option>
+					   <option value="2021">2021</option>
+					   <option value="2022">2022</option>
+					   <option value="2023">2023</option>
+					   <option value="2024">2024</option>
+					   <option value="2025">2025</option>
+					   <option value="2026">2026</option>
+					   <option value="2027">2027</option>
+					   <option value="2028">2028</option>
+						 <option value="2029">2029</option>
+						 <option value="2030">2030</option>
+			    </select>
+			  </fieldset>
+			</div>
+		
+		
+		<hr class="sm mb-5"/>
+		<h3 class="sm"><strong>Payment Information</strong></h3>
+		<fieldset class="form-group">
+			<label>Payment Amount<sup>*</sup></label>
+		 	<input class="form-control" type="number" size="20" data-stripe="amount" name="amount" autocomplete="off" required />
+		</fieldset>
+
+	  <fieldset class="form-group">
+			<label>Invoice number or description</label>
+			<input type="textarea" size="200" class="description form-control" name="description" autocomplete="off" />
+	  </fieldset>
+
+		<button type="submit" class="submit btn btn-primary">Checkout</button>
+		<div class="payment_errors"></div>
+	</form>
+</div>

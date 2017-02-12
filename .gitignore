@@ -3,16 +3,6 @@ tmp/*
 log/development.log
 log/*
 config/secrets.yml
-
-
-
-app/views/contact/
-app/views/payments/
-app/views/process/
-app/controllers/process_controller.rb
-app/controllers/pay_controller.rb
-app/controllers/helpers/charges_helper.rb
-app/helpers/charges_helper.rb
 design-files/*
 
 

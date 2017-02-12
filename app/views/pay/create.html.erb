@@ -1,0 +1,12 @@
+<% content_for :page_title, "Payment was Successful" %>
+<% content_for :page_description, "Pay" %>
+<div class="col-sm-12 col-md-6 offset-md-3 mt-12">
+	<h2><strong><%= yield :page_title %></strong></h2>
+  <p><%= @fname %>, thank you for your payment of $<%= @amount %>. Please print this page for your records.</p>
+		<ul class="none">
+			<li>Full Name: <%= @fname %></li>
+			<li>Email Address: <%= @email %></li>
+			<li>Payment Amount: $<%= @amount %></li>
+			<li>Invoice number or description: <%= @description %></li>
+		</ul>
+</div>
