@@ -19,36 +19,49 @@
 		</div>
 	</div>
 		
-	
-	<hr class="sm mb-8"/>
-	
-	<div class="row mb-8">
-		<div class="col-xs-12 col-md-8 offset-md-2">
-			<figure class="center">
-				<img src="https://s3.amazonaws.com/garybunofsky.com/pass-prototype-1.jpg" alt="tiny-notes-iphone-3" />
+	<div class="row mb-3">
+		<div class="col-sm-6">
+			<h3 class="lg">Brainstorming and Prototyping</h3>
+		</div>
+	</div>
+	<div class="row mb-6">
+		<div class="col-sm-12">
+			<figure class="center mb-6">
+				<img src="https://s3.amazonaws.com/garybunofsky.com/pass-brainstorm-1.jpg" alt="veronica-prototype" />
 			</figure>
 		</div>
 	</div>
 	
-	<div class="row mb-10">
+	<hr class="sm mb-8"/>
+	
+	<div class="row mb-6">
+		<div class="col-sm-12">
+			<h3 class="lg">How Pass.js Works</h3>
+		</div>
+		<div class="col-sm-12 col-md-6">
+				<h4>1. Someone visits the website.</h4>
+				<p>A person visits the page through a link. Appended to the link are url parameters, which look something like this <code>?utm_source=google</code>. These parameters need to be recorded if a the visitor completes the web to lead form.</p>
+				<h4>2. The parameters are saved as cookies.</h4>
+				<p>As soon as the webpage loads, the parameters are saved as cookies. Cookies allow Pass.js to be more accurate. Wondering why they are saved as cookies? <%= link_to "Find out", "#fn:1" %>.</p>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<h4>3. The cookie values are sent to hidden form fields.</h4>
+			<p>The cookies are injected into hidden form fields. When this form is submitted, we know exactly where the lead came from. Knowing the source of the lead determine marketing spend.</p>
+			<h4>4. Conversion data is successfully captured.</h4>
+			<p>Once a visitor submits the form we know what campaign segement the lead can be attributed to. This information is vital in making future spending decisions. With this data we can separate the wheat from the chaff.</p>
+		</div>
+	</div>
+	
+	<hr class="sm mb-8"/>
+	
+	<div class="row mb-10" id="fn:1">
 		<div class="col-sm-12 col-md-6 offset-md-3">
 			<h3 class="lg">Why save the params as cookies?</h3>
 			<p class="md">Without cookies, if a user were to revisit the site, the campaign would recieve no attribution. Cookies were used to keep the results intact. Each and every value was stored as a cookie with a default expiration of 30 days.</p>	
 		</div>
 	</div>
 	
-	<div class="row mb-6">
-		<div class="col-sm-12 col-md-6">
-			<h3>User Flow</h3>
-			<ol>
-				<li>User visits website 💻</li>
-				<li>Url params are saved as cookies 🍪</li>
-				<li>Cookies values are passed into hidden form fields 🏈</li>
-				<li>Campaign params are tracked in Google Analytics 📈</li>
-			</ol>
-		</div>
-	</div>
-	
+
 	<hr class="sm mb-8" />
 	
 	<div class="row mb-12">
