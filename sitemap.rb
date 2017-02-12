@@ -17,8 +17,10 @@ SitemapGenerator::Sitemap.create do
   add '/portfolio/magenda', :changefreq => 'weekly', :priority => 0.8
   add '/portfolio/tiny-notes', :changefreq => 'weekly', :priority => 0.8
   add '/portfolio/veronica', :changefreq => 'weekly', :priority => 0.8
+  add '/portfolio/pass', :changefreq => 'weekly', :priority => 0.8
 	add '/library', :changefreq => 'weekly', :priority => 0.5
 	add '/resume.pdf', :changefreq => 'weekly', :priority => 0.9
 	add '/style-guide', :changefreq => 'weekly', :priority => 0.3
+  add '/pay', :changefreq => 'monthly', :priority => 0.3
 end
 SitemapGenerator::Sitemap.ping_search_engines # Not needed if you use the rake tasks
