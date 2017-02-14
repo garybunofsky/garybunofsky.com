@@ -37,9 +37,9 @@ $base-line-height:1.5;
 
 @mixin trans { transition: all .27s; }
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
+@mixin border-radius($top, $right, $bottom, $left) {
+  -webkit-border-radius: $top, $right, $bottom, $left;
+  -moz-border-radius: $top, $right, $bottom, $left;
+  -ms-border-radius: $top, $right, $bottom, $left;
+  border-radius: $top, $right, $bottom, $left;
 }

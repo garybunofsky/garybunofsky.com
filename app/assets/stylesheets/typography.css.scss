@@ -100,7 +100,7 @@ ul.none {
 pre {
   font-family: "Courier New";
   @include sans-serif(16);
-  @include border-radius(5px);
+  @include border-radius(5px,5px,5px,5px);
   border:1px solid $border;
   color:$brand-primary;
   background: $light !important;

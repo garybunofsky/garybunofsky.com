@@ -3,7 +3,7 @@
 
 .form-control {
   @include sans-serif(16);
-  @include border-radius(5px);
+  @include border-radius(5px,5px,5px,5px);
   color:$brand-secondary;
   border:1px solid $border;
   background:transparent;
@@ -33,7 +33,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn {
-  @include border-radius(5px);
+  @include border-radius(5px,5px,5px,5px);
   @include sans-serif(16);
 	font-weight: 600;
   padding:7px 18px;

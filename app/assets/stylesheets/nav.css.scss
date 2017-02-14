@@ -21,7 +21,7 @@ nav.navbar {
   }
   button.navbar-toggler.navbar-toggler-right {
     @include sans-serif(16);
-    @include border-radius(3px);
+    @include border-radius(3px,3px,3px,3px);
     color:$white;
     background:$accent-secondary;
     background: -webkit-linear-gradient($accent-secondary,$accent-primary);
