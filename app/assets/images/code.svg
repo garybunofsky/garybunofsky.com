@@ -11,7 +11,7 @@
                 <path d="M11,26 L23,26" id="Line" stroke-width="2"></path>
                 <path d="M-3.55271368e-15,14 L34,14" id="Line-Copy"></path>
             </g>
-            <rect id="Rectangle-6" stroke-width="2" stroke-linejoin="round" fill="#6772E5" x="22" y="32" width="4" height="6"></rect>
+            <rect id="Rectangle-6" stroke-width="2" stroke-linejoin="round" fill="#87b7ef" x="22" y="32" width="4" height="6"></rect>
         </g>
     </g>
 </svg>

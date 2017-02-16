@@ -6,12 +6,11 @@ $serif:"Georgia", Times, serif;
 $brand-primary:         #3a3838;
 $brand-secondary:       #737171;
 $light:                 #f1f4f7;
-$grey:                  #696969;
 $white:                 #ffffff;
-$eggshell:              #fdfbf8;
 $border:                #E3E3E3;
-$accent-primary:        #6772e5;
-$accent-secondary:      #7795f8;
+$accent-primary:        #4f97ea;
+$accent-secondary:      #7be7d7;
+$accent-tertiary:       #87b7ef;
 
 // Font size and line-height
 $base-font-size:16;
@@ -38,8 +37,8 @@ $base-line-height:1.5;
 @mixin trans { transition: all .27s; }
 
 @mixin border-radius($top, $right, $bottom, $left) {
-  -webkit-border-radius: $top, $right, $bottom, $left;
-  -moz-border-radius: $top, $right, $bottom, $left;
-  -ms-border-radius: $top, $right, $bottom, $left;
-  border-radius: $top, $right, $bottom, $left;
+  -webkit-border-radius: $top $right $bottom $left;
+  -moz-border-radius: $top $right $bottom $left;
+  -ms-border-radius: $top $right $bottom $left;
+  border-radius: $top $right $bottom $left;
 }

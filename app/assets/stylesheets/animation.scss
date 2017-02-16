@@ -34,3 +34,12 @@
     opacity: 1;
   }
 }
+
+@keyframes rainAnimation {
+  0% {
+      -webkit-transform: translateY(-2000px);
+  }
+  100% {
+      -webkit-transform: translateY(0px);
+  }
+}

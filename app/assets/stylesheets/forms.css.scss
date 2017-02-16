@@ -45,8 +45,8 @@ select.form-control:not([size]):not([multiple]) {
 	background: $accent-primary;
   color:$white;
 	border-color: $accent-primary;
-  background: -webkit-linear-gradient($accent-secondary,$accent-primary);
-  background: linear-gradient($accent-secondary,$accent-primary);
+  background: -webkit-linear-gradient($accent-tertiary, $accent-primary);
+  background: linear-gradient($accent-tertiary, $accent-primary);
   &:hover,
   &:focus {
     background: -webkit-linear-gradient($accent-primary,$accent-primary);
@@ -54,7 +54,11 @@ select.form-control:not([size]):not([multiple]) {
     border:1px solid $accent-primary;
     cursor:pointer;
   }
-  &:focus {
+  &:visited {
+    color:$white;
+  	border-color: $accent-primary;
+    background: -webkit-linear-gradient($accent-tertiary, $accent-primary);
+    background: linear-gradient($accent-tertiary, $accent-primary);
     -webkit-box-shadow: none;
     box-shadow: none;
     background-image: none;
@@ -72,9 +76,8 @@ select.form-control:not([size]):not([multiple]) {
   &:hover,
   &:focus {
     color: $white;
-    background: -webkit-linear-gradient(135deg, $accent-primary 0, $accent-secondary 70%);
-    background: linear-gradient(135deg, $accent-primary 0, $accent-secondary 70%);
-    border:1px solid $accent-secondary;
+    background: $accent-primary;
+    border:1px solid $accent-primary;
     cursor:pointer;
   }
   &:focus {

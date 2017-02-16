@@ -5,7 +5,7 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <g id="building" stroke="#6772E5">
+        <g id="building" stroke="#87b7ef">
             <g transform="translate(4.000000, 4.000000)">
                 <g id="floor-1" transform="translate(4.000000, 24.000000)">
                     <path d="M0,1.5 L2,1.5" id="Line"></path>
@@ -39,7 +39,7 @@
                     <path d="M12,9.5 L14,9.5" id="Line"></path>
                 </g>
                 <rect id="Rectangle-6" stroke-width="2" stroke-linejoin="round" x="0" y="5" width="22" height="32" rx="4"></rect>
-                <rect id="Rectangle-6" stroke-width="2" stroke-linejoin="round" fill="#6772E5" x="10" y="31" width="2" height="6"></rect>
+                <rect id="Rectangle-6" stroke-width="2" stroke-linejoin="round" fill="#87b7ef" x="10" y="31" width="2" height="6"></rect>
             </g>
             <g id="garage" transform="translate(26.000000, 21.000000)">
                 <g id="floor-1" transform="translate(4.000000, 7.000000)">

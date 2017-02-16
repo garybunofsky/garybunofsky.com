@@ -21,14 +21,14 @@
 			fill: none;
 		}
 		.x.axis line {
-			stroke: $grey;
+			stroke: $brand-secondary;
 		}
 		.x.axis path {
 			display: none;
 		}
 		.y.axis line, .y.axis path {
 			fill: none;
-			stroke: $grey;
+			stroke: $brand-secondary;
 		}
 	}
 }

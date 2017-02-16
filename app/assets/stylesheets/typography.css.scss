@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
     &:hover,
     &:focus,
     &:active {
-      color:$accent-secondary;
+      color:$accent-tertiary;
       text-decoration: none;
     }
   }
@@ -183,19 +183,7 @@ blockquote.left {
     border-radius: 50%;
     width: 72px;
     height: 72px;
-  }
-  .grey {
-    background-color: $grey;
-    border-radius: 50%;
-    width: 72px;
-    height: 72px;
-  }
-  .eggshell {
-    background-color: $eggshell;
-    border-radius: 50%;
-    width: 72px;
-    height: 72px;
-  }
+  }  
   .border {
     background-color: $border;
     border-radius: 50%;
@@ -214,7 +202,13 @@ blockquote.left {
     width: 72px;
     height: 72px;
   }
-  
+  .accent-tertiary {
+    background-color: $accent-tertiary;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  // Tiny Notes Swatches
   .tiny-notes-brand-primary {
     background-color: #5944ff;
     border-radius: 50%;

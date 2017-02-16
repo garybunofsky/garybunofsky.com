@@ -60,7 +60,7 @@ a.blog-item {
     p,
     h3 {
       @include trans;
-      color: $accent-secondary;
+      color: $accent-tertiary;
       text-decoration: none !important;
     }
   }
