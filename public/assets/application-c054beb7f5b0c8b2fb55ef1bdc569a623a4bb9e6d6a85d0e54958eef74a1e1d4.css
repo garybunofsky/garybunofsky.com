@@ -1035,6 +1035,14 @@
     opacity: 1;
   }
 }
+@keyframes rainAnimation {
+  0% {
+    -webkit-transform: translateY(-2000px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
 /* line 4, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 html {
   font-size: 62.5% !important;
@@ -1061,10 +1069,10 @@ body {
 
 /* line 24, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 a.card {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -ms-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
   transition: all .27s;
   border: 1px solid #f1f4f7;
   width: 100%;
@@ -1082,7 +1090,7 @@ a.card:hover, a.card:focus {
 a.card:hover h3,
 a.card:hover p, a.card:focus h3,
 a.card:focus p {
-  color: #6772e5;
+  color: #4f97ea;
 }
 
 /* line 44, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
@@ -1108,7 +1116,7 @@ a.blog-item:hover:after {
 a.blog-item:hover p,
 a.blog-item:hover h3 {
   transition: all .27s;
-  color: #7795f8;
+  color: #87b7ef;
   text-decoration: none !important;
 }
 
@@ -1128,16 +1136,16 @@ figure.center a img:hover {
 }
 /* line 82, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 figure.center img.project {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   border: 1px solid #E3E3E3;
 }
 /* line 85, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 figure.center img.project:hover {
   transition: all .27s;
-  border: 1px solid #6772e5;
+  border: 1px solid #4f97ea;
 }
 /* line 91, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 figure.center img.no-link:hover {
@@ -1158,15 +1166,18 @@ figure.center figcaption {
 /* line 102, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 .browser {
   border-radius: 4px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #f1f4f7;
   margin-bottom: 1.5rem;
   overflow: hidden;
 }
 /* line 108, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 .browser .browser_header {
-  background: #E3E3E3;
-  border-radius: 4px 4px 0 0;
-  padding: 12px 0px 9px 0px;
+  background: #f1f4f7;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  -ms-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  padding: 0.8rem .5rem;
 }
 /* line 113, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 .browser .browser_header ul.spotlights {
@@ -1175,13 +1186,13 @@ figure.center figcaption {
 }
 /* line 117, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
 .browser .browser_header ul.spotlights li.spotlights_item {
-  background: #f1f4f7;
+  background: #E3E3E3;
   border-radius: 60%;
   display: block;
   float: left;
   height: 10px;
   margin-bottom: 0;
-  margin-right: .3rem;
+  margin-right: .6rem;
   width: 10px;
 }
 /* line 129, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
@@ -1237,10 +1248,10 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 .graph-container {
   border: 1px solid #E3E3E3;
   background: #f1f4f7;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   width: auto;
   overflow-x: auto;
   overflow-y: hidden;
@@ -1262,7 +1273,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 }
 /* line 23, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/changelog.scss */
 .graph-container #graph .x.axis line {
-  stroke: #696969;
+  stroke: #737171;
 }
 /* line 26, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/changelog.scss */
 .graph-container #graph .x.axis path {
@@ -1271,7 +1282,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 /* line 29, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/changelog.scss */
 .graph-container #graph .y.axis line, .graph-container #graph .y.axis path {
   fill: none;
-  stroke: #696969;
+  stroke: #737171;
 }
 /* line 4, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
 .background-light {
@@ -1279,36 +1290,31 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 }
 
 /* line 5, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
-.background-grey {
-  background: #696969;
-}
-
-/* line 6, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
 .background-white {
   background: #ffffff;
 }
 
-/* line 7, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
+/* line 6, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
 .background-neutral {
   background: #E3E3E3;
 }
 
-/* line 8, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
+/* line 7, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
 .background-accent-primary {
-  background: #6772e5;
+  background: #4f97ea;
+}
+
+/* line 8, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
+.color-accent-primary {
+  color: #4f97ea;
 }
 
 /* line 9, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
-.color-accent-primary {
-  color: #6772e5;
-}
-
-/* line 10, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
 .color-accent-secondary {
-  color: #7795f8;
+  color: #7be7d7;
 }
 
-/* line 12, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
+/* line 11, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/colors.scss */
 .shadow {
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
@@ -1316,57 +1322,49 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 }
 /* line 4, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
 footer {
-  background: #6772e5;
-  background: -webkit-linear-gradient(135deg, #6772e5 0, #7795f8 100%);
-  background: linear-gradient(135deg, #6772e5 0, #7795f8 100%);
-}
-/* line 5, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
-footer .bkg {
   width: 100%;
   height: 100%;
-  background: url("/bkg.svg") center;
+  background: #4f97ea;
+  background: -webkit-linear-gradient(45deg, #7be7d7 1%, #7be7d7 10%, #87b7ef 75%, #87b7ef 100%);
+  background: -webkit-linear-gradient(45deg, #7be7d7 1%, #7be7d7 10%, #87b7ef 75%, #87b7ef 100%);
+  background: linear-gradient(45deg, #7be7d7 1%, #7be7d7 10%, #87b7ef 75%, #87b7ef 100%);
+  overflow: hidden;
 }
-/* line 10, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
-footer .gradient {
-  background: linear-gradient(136deg, #6772e5 0, rgba(255, 255, 255, 0.2) 100%);
+/* line 12, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
+footer .raindrops {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  opacity: 0.70;
+  box-shadow: 892px 1646px #FFF, 907px 1531px #FFF, 1950px 1965px #FFF, 1907px 152px #FFF, 947px 1632px #FFF, 1603px 1116px #FFF, 1705px 663px #FFF, 1471px 799px #FFF, 1376px 864px #FFF, 450px 532px #FFF, 256px 1025px #FFF, 1303px 746px #FFF, 155px 1637px #FFF, 1998px 1378px #FFF, 931px 1972px #FFF, 1713px 341px #FFF, 917px 85px #FFF, 316px 1102px #FFF, 1607px 56px #FFF, 1329px 136px #FFF, 535px 415px #FFF, 506px 921px #FFF, 1777px 875px #FFF, 96px 1038px #FFF, 988px 1800px #FFF, 759px 1788px #FFF, 381px 756px #FFF, 1451px 1993px #FFF, 750px 263px #FFF, 715px 1458px #FFF, 279px 845px #FFF, 1127px 937px #FFF, 690px 1044px #FFF, 116px 429px #FFF, 1814px 1518px #FFF, 1434px 891px #FFF, 1041px 591px #FFF, 155px 904px #FFF, 821px 367px #FFF, 687px 1175px #FFF, 694px 322px #FFF, 1538px 959px #FFF, 1792px 868px #FFF, 746px 668px #FFF, 991px 776px #FFF, 930px 1587px #FFF, 1640px 63px #FFF, 308px 221px #FFF, 701px 157px #FFF, 911px 1082px #FFF, 1644px 1348px #FFF, 986px 1421px #FFF, 1899px 721px #FFF, 1055px 201px #FFF, 71px 1811px #FFF, 74px 1144px #FFF, 533px 1204px #FFF, 129px 580px #FFF, 1700px 1517px #FFF, 1415px 1266px #FFF, 821px 2px #FFF, 1344px 128px #FFF, 1538px 734px #FFF, 1374px 353px #FFF, 1874px 507px #FFF, 1949px 1367px #FFF, 116px 729px #FFF, 480px 584px #FFF, 1240px 15px #FFF, 1266px 269px #FFF, 895px 1408px #FFF, 1106px 857px #FFF, 573px 1823px #FFF, 485px 825px #FFF, 362px 658px #FFF, 582px 1397px #FFF, 1813px 1619px #FFF, 822px 892px #FFF, 1691px 1612px #FFF, 1324px 1343px #FFF, 540px 1842px #FFF, 1275px 411px #FFF, 379px 817px #FFF, 1300px 289px #FFF, 785px 1353px #FFF, 669px 1390px #FFF, 1985px 1158px #FFF, 602px 444px #FFF, 2000px 720px #FFF, 993px 1396px #FFF, 629px 1445px #FFF, 537px 963px #FFF, 1487px 522px #FFF, 8px 1247px #FFF, 621px 76px #FFF, 409px 393px #FFF, 184px 248px #FFF, 6px 396px #FFF, 386px 1656px #FFF, 344px 507px #FFF, 695px 572px #FFF, 926px 474px #FFF, 1365px 841px #FFF, 538px 1834px #FFF, 811px 1018px #FFF, 941px 184px #FFF, 931px 59px #FFF, 1981px 1945px #FFF, 1830px 1171px #FFF, 790px 1215px #FFF, 1705px 1262px #FFF, 875px 776px #FFF, 165px 1846px #FFF, 756px 161px #FFF, 1542px 1226px #FFF, 1554px 996px #FFF, 685px 702px #FFF, 1019px 1384px #FFF, 1239px 733px #FFF, 937px 1883px #FFF, 1832px 1359px #FFF, 1721px 114px #FFF, 583px 428px #FFF, 1226px 1802px #FFF, 444px 1192px #FFF, 671px 1427px #FFF, 900px 271px #FFF, 1008px 958px #FFF, 1987px 1943px #FFF, 891px 551px #FFF, 816px 1779px #FFF, 965px 1365px #FFF, 1059px 1984px #FFF, 1920px 705px #FFF, 1537px 1344px #FFF, 582px 139px #FFF, 1320px 742px #FFF, 503px 1389px #FFF, 1004px 1994px #FFF, 913px 734px #FFF, 508px 1763px #FFF, 1538px 235px #FFF, 64px 605px #FFF, 913px 992px #FFF, 349px 1897px #FFF, 1164px 1569px #FFF, 635px 339px #FFF, 1238px 110px #FFF, 769px 994px #FFF, 1713px 1899px #FFF, 1598px 330px #FFF, 1353px 926px #FFF, 474px 992px #FFF, 575px 420px #FFF, 1514px 996px #FFF, 157px 1893px #FFF, 393px 1741px #FFF, 1851px 1318px #FFF, 1130px 1607px #FFF, 815px 1253px #FFF, 1001px 1096px #FFF, 1527px 1590px #FFF, 738px 233px #FFF, 491px 1743px #FFF, 1662px 378px #FFF, 446px 1068px #FFF, 488px 1484px #FFF, 1027px 1200px #FFF, 1518px 401px #FFF, 818px 1992px #FFF, 82px 1938px #FFF, 1883px 549px #FFF, 1879px 122px #FFF, 1163px 710px #FFF, 1904px 580px #FFF, 1068px 1561px #FFF, 1622px 1051px #FFF, 1753px 705px #FFF, 113px 490px #FFF, 1966px 1710px #FFF, 1490px 947px #FFF, 265px 395px #FFF, 651px 256px #FFF, 1387px 922px #FFF, 1678px 1699px #FFF, 955px 238px #FFF, 501px 1212px #FFF, 243px 1431px #FFF, 1396px 988px #FFF, 1457px 1584px #FFF, 838px 157px #FFF, 586px 638px #FFF, 332px 1142px #FFF, 1088px 790px #FFF, 569px 1415px #FFF, 622px 68px #FFF, 932px 330px #FFF, 1275px 1526px #FFF, 1294px 1076px #FFF, 1454px 210px #FFF, 1230px 1563px #FFF, 521px 780px #FFF, 1204px 1207px #FFF, 380px 646px #FFF, 624px 1216px #FFF, 1341px 821px #FFF, 912px 1629px #FFF, 232px 1479px #FFF, 1038px 1291px #FFF, 1663px 719px #FFF, 1808px 881px #FFF, 1487px 645px #FFF, 533px 1337px #FFF, 1111px 1538px #FFF, 1220px 395px #FFF, 157px 622px #FFF, 1244px 1911px #FFF, 1839px 626px #FFF, 1818px 495px #FFF, 1459px 1915px #FFF, 252px 832px #FFF, 95px 464px #FFF, 553px 486px #FFF, 889px 306px #FFF, 1159px 108px #FFF, 1185px 902px #FFF, 594px 1478px #FFF, 830px 839px #FFF, 1322px 950px #FFF, 1588px 1635px #FFF, 190px 1537px #FFF, 1544px 1776px #FFF, 1542px 863px #FFF, 1554px 406px #FFF, 1176px 1774px #FFF, 678px 546px #FFF, 116px 1498px #FFF, 1430px 923px #FFF, 937px 1470px #FFF, 818px 1840px #FFF, 371px 1457px #FFF, 577px 600px #FFF, 1331px 1493px #FFF, 1993px 1521px #FFF, 55px 901px #FFF, 1261px 1813px #FFF, 796px 1940px #FFF, 173px 980px #FFF, 27px 1482px #FFF, 503px 215px #FFF, 573px 711px #FFF, 725px 361px #FFF, 476px 369px #FFF, 1098px 417px #FFF, 1569px 204px #FFF, 798px 749px #FFF, 1814px 1257px #FFF, 1652px 257px #FFF, 547px 1037px #FFF, 790px 172px #FFF, 1967px 1798px #FFF, 1394px 1412px #FFF, 1185px 589px #FFF, 1863px 235px #FFF, 894px 48px #FFF, 1494px 1648px #FFF, 1010px 518px #FFF, 1207px 1568px #FFF, 1600px 1526px #FFF, 1994px 314px #FFF, 609px 1991px #FFF, 1936px 1578px #FFF, 1842px 695px #FFF, 782px 312px #FFF, 1974px 1088px #FFF, 260px 1609px #FFF, 783px 686px #FFF, 614px 1555px #FFF, 641px 1636px #FFF, 1137px 1017px #FFF, 273px 164px #FFF, 770px 652px #FFF, 1193px 1287px #FFF, 295px 1066px #FFF, 1239px 1721px #FFF, 1262px 1173px #FFF, 1127px 864px #FFF, 1497px 481px #FFF, 289px 1763px #FFF, 1615px 1996px #FFF, 371px 876px #FFF, 1778px 1674px #FFF, 1861px 288px #FFF, 41px 1246px #FFF, 189px 1208px #FFF, 294px 219px #FFF, 565px 1695px #FFF, 1841px 1543px #FFF, 1471px 35px #FFF, 1398px 1611px #FFF, 624px 900px #FFF, 463px 1299px #FFF, 1349px 1365px #FFF, 455px 545px #FFF, 416px 846px #FFF, 1231px 973px #FFF, 1213px 1558px #FFF, 79px 947px #FFF, 45px 126px #FFF, 342px 1458px #FFF, 871px 452px #FFF, 767px 609px #FFF, 1188px 870px #FFF, 1199px 1575px #FFF, 941px 1092px #FFF, 1018px 216px #FFF, 1564px 947px #FFF, 311px 1987px #FFF, 1556px 715px #FFF, 1959px 1816px #FFF, 1750px 1366px #FFF, 31px 404px #FFF, 883px 773px #FFF, 786px 403px #FFF, 676px 1499px #FFF, 1701px 1225px #FFF, 443px 1080px #FFF, 838px 222px #FFF, 263px 1384px #FFF, 1492px 387px #FFF, 440px 1020px #FFF, 1344px 1283px #FFF, 232px 1625px #FFF, 711px 892px #FFF, 1627px 1512px #FFF, 932px 809px #FFF, 1012px 1591px #FFF, 97px 457px #FFF, 1090px 798px #FFF, 274px 640px #FFF, 1001px 369px #FFF, 1857px 78px #FFF, 1312px 1843px #FFF, 821px 224px #FFF, 1551px 67px #FFF, 1825px 98px #FFF, 1986px 783px #FFF, 949px 820px #FFF, 109px 91px #FFF, 750px 1620px #FFF, 60px 1353px #FFF, 1412px 1610px #FFF, 64px 1616px #FFF, 737px 1679px #FFF, 1415px 690px #FFF, 1298px 1944px #FFF, 720px 476px #FFF, 61px 1577px #FFF, 1421px 626px #FFF, 1242px 1700px #FFF, 1563px 1743px #FFF, 1895px 79px #FFF, 704px 1172px #FFF, 1747px 1517px #FFF, 931px 1581px #FFF, 172px 711px #FFF, 807px 777px #FFF, 514px 1471px #FFF, 1071px 726px #FFF, 743px 1701px #FFF, 1908px 728px #FFF, 1272px 881px #FFF, 795px 1108px #FFF, 1409px 957px #FFF, 23px 296px #FFF, 1171px 192px #FFF, 863px 1080px #FFF, 1173px 311px #FFF, 1044px 952px #FFF, 1933px 888px #FFF, 243px 1198px #FFF, 949px 248px #FFF, 762px 1010px #FFF, 159px 1821px #FFF, 577px 378px #FFF, 965px 769px #FFF, 159px 1320px #FFF, 8px 1957px #FFF, 817px 590px #FFF, 1679px 155px #FFF, 1879px 1954px #FFF, 1622px 1639px #FFF, 1188px 87px #FFF, 640px 180px #FFF, 615px 1455px #FFF, 1127px 1733px #FFF, 231px 394px #FFF, 1638px 1345px #FFF, 172px 104px #FFF, 775px 1556px #FFF, 382px 1159px #FFF, 1123px 964px #FFF, 1833px 1618px #FFF, 243px 1179px #FFF, 106px 188px #FFF, 632px 314px #FFF, 597px 181px #FFF, 542px 484px #FFF, 156px 1919px #FFF, 1287px 1599px #FFF, 497px 226px #FFF, 1252px 671px #FFF, 749px 1084px #FFF, 1546px 1732px #FFF, 682px 833px #FFF, 1126px 189px #FFF, 680px 1053px #FFF, 677px 1087px #FFF, 285px 1475px #FFF, 382px 825px #FFF, 666px 1961px #FFF, 528px 1524px #FFF, 312px 528px #FFF, 1766px 596px #FFF, 804px 1055px #FFF, 68px 228px #FFF, 797px 168px #FFF, 1779px 865px #FFF, 1489px 1421px #FFF, 1835px 1586px #FFF, 1657px 15px #FFF, 1684px 119px #FFF, 1977px 1622px #FFF, 1237px 1491px #FFF, 1105px 1203px #FFF, 737px 1888px #FFF, 1582px 1719px #FFF, 723px 211px #FFF, 89px 790px #FFF, 256px 1625px #FFF, 1698px 1201px #FFF, 155px 563px #FFF, 913px 1225px #FFF, 1096px 883px #FFF, 1118px 321px #FFF, 1515px 1048px #FFF, 180px 1251px #FFF, 1668px 899px #FFF, 665px 1244px #FFF, 466px 1580px #FFF, 1109px 1615px #FFF, 272px 515px #FFF, 352px 603px #FFF, 1340px 962px #FFF, 1995px 938px #FFF, 1117px 961px #FFF, 625px 1840px #FFF, 398px 1835px #FFF, 1026px 974px #FFF, 884px 377px #FFF, 692px 1449px #FFF, 1552px 154px #FFF, 759px 948px #FFF, 1289px 1251px #FFF, 1952px 1848px #FFF, 1331px 1732px #FFF, 1452px 1593px #FFF, 17px 1919px #FFF, 285px 856px #FFF, 1473px 284px #FFF, 1572px 1900px #FFF, 1175px 682px #FFF, 1340px 1040px #FFF, 642px 826px #FFF, 1294px 1583px #FFF, 1872px 84px #FFF, 599px 927px #FFF, 48px 856px #FFF, 1260px 1156px #FFF, 1061px 986px #FFF, 1365px 1072px #FFF, 830px 1816px #FFF, 1014px 329px #FFF, 1330px 1205px #FFF, 1816px 1998px #FFF, 1613px 62px #FFF, 246px 703px #FFF, 199px 1534px #FFF, 744px 528px #FFF, 1808px 4px #FFF, 628px 883px #FFF, 208px 1591px #FFF, 1399px 1511px #FFF, 1133px 16px #FFF, 1861px 37px #FFF, 1958px 1731px #FFF, 1531px 1320px #FFF, 1985px 1382px #FFF, 1200px 1995px #FFF, 947px 1812px #FFF, 1903px 432px #FFF, 1269px 730px #FFF, 549px 1385px #FFF, 1346px 658px #FFF, 718px 1671px #FFF, 158px 628px #FFF, 1112px 1355px #FFF, 1917px 1556px #FFF, 601px 171px #FFF, 441px 1718px #FFF, 439px 566px #FFF, 894px 227px #FFF, 1171px 1821px #FFF, 1721px 1910px #FFF, 381px 1112px #FFF, 1000px 513px #FFF, 1600px 971px #FFF, 1035px 1676px #FFF, 1978px 874px #FFF, 271px 672px #FFF, 1960px 421px #FFF, 1040px 1018px #FFF, 1929px 574px #FFF, 1086px 568px #FFF, 1787px 1552px #FFF, 1068px 812px #FFF, 1821px 1585px #FFF, 617px 1115px #FFF, 767px 671px #FFF, 1618px 1644px #FFF, 1605px 1168px #FFF, 150px 1457px #FFF, 562px 4px #FFF, 1819px 1529px #FFF, 1375px 279px #FFF, 1670px 1307px #FFF, 580px 586px #FFF, 1802px 818px #FFF, 459px 1990px #FFF, 736px 960px #FFF, 481px 1725px #FFF, 404px 750px #FFF, 510px 683px #FFF, 1129px 540px #FFF, 1313px 408px #FFF, 1041px 840px #FFF, 144px 1407px #FFF, 1152px 1305px #FFF, 1124px 1752px #FFF, 1290px 1983px #FFF, 125px 19px #FFF, 1035px 1986px #FFF, 1547px 829px #FFF, 16px 1868px #FFF, 1347px 795px #FFF, 960px 756px #FFF, 32px 910px #FFF, 576px 1402px #FFF, 502px 1916px #FFF, 647px 650px #FFF, 1167px 1096px #FFF, 861px 1146px #FFF, 1888px 306px #FFF, 1442px 815px #FFF, 1355px 805px #FFF, 1675px 1673px #FFF, 796px 885px #FFF, 576px 1000px #FFF, 806px 1047px #FFF, 36px 483px #FFF, 941px 1630px #FFF, 168px 220px #FFF, 1178px 1330px #FFF, 1465px 1090px #FFF, 1098px 1145px #FFF, 1521px 1090px #FFF, 905px 520px #FFF, 593px 1486px #FFF, 1271px 1126px #FFF, 429px 90px #FFF, 146px 598px #FFF, 387px 1789px #FFF, 797px 584px #FFF, 388px 1109px #FFF, 571px 1864px #FFF, 279px 769px #FFF, 838px 470px #FFF, 1592px 213px #FFF, 1655px 254px #FFF, 691px 307px #FFF, 1409px 668px #FFF, 1824px 1601px #FFF, 932px 253px #FFF, 21px 555px #FFF, 246px 314px #FFF, 278px 271px #FFF, 1034px 374px #FFF, 677px 1796px #FFF, 396px 1819px #FFF, 1849px 1744px #FFF, 711px 292px #FFF, 67px 207px #FFF, 1690px 1336px #FFF, 1173px 1533px #FFF, 344px 1802px #FFF, 1394px 315px #FFF, 181px 1819px #FFF, 446px 87px #FFF, 822px 492px #FFF, 1279px 680px #FFF, 1049px 1774px #FFF, 925px 435px #FFF, 1229px 496px #FFF, 1238px 1598px #FFF, 95px 380px #FFF, 1928px 912px #FFF, 1197px 232px #FFF, 1145px 476px #FFF, 1245px 189px #FFF, 485px 335px #FFF, 1690px 1608px #FFF, 1643px 744px #FFF, 1648px 277px #FFF, 400px 974px #FFF, 870px 1189px #FFF, 33px 549px #FFF, 583px 70px #FFF, 1141px 805px #FFF, 1660px 1663px #FFF, 729px 1980px #FFF, 908px 279px #FFF, 183px 1552px #FFF, 209px 752px #FFF, 912px 465px #FFF, 840px 347px #FFF, 1151px 1942px #FFF, 1709px 1149px #FFF, 22px 886px #FFF, 1639px 757px #FFF, 1931px 1095px #FFF, 1627px 1289px #FFF, 1776px 1381px #FFF, 1069px 948px #FFF, 1179px 876px #FFF, 273px 402px #FFF, 1741px 419px #FFF, 815px 1414px #FFF, 1538px 619px #FFF, 1456px 1527px #FFF, 579px 881px #FFF, 260px 832px #FFF, 628px 665px #FFF, 1416px 126px #FFF, 28px 616px #FFF, 1960px 1289px #FFF, 403px 1187px #FFF, 854px 274px #FFF, 1339px 796px #FFF, 1138px 1643px #FFF, 1276px 1772px #FFF, 1520px 1490px #FFF, 342px 662px #FFF, 209px 728px #FFF, 325px 1624px #FFF, 557px 640px #FFF, 1869px 79px #FFF, 471px 945px #FFF, 102px 1777px #FFF, 1709px 1304px #FFF, 1519px 968px #FFF, 465px 1924px #FFF, 1145px 1292px #FFF, 1617px 1156px #FFF, 820px 647px #FFF, 754px 574px #FFF, 1376px 1251px #FFF, 1923px 1734px #FFF, 1754px 115px #FFF, 1754px 747px #FFF, 710px 1534px #FFF, 1436px 1484px #FFF, 521px 1082px #FFF, 1003px 334px #FFF, 214px 439px #FFF, 619px 1928px #FFF, 577px 334px #FFF, 966px 831px #FFF, 53px 1223px #FFF, 7px 334px #FFF, 1756px 479px #FFF, 246px 1275px #FFF, 1888px 1434px #FFF, 1142px 1813px #FFF, 578px 1px #FFF, 339px 165px #FFF, 523px 1478px #FFF, 1953px 1612px #FFF, 1109px 1522px #FFF, 1429px 1598px #FFF, 1818px 1251px #FFF;
+  -webkit-animation: rainAnimation 50s linear infinite;
 }
-/* line 16, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
+/* line 20, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
 footer h3 {
   color: #ffffff;
 }
-/* line 19, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
+/* line 23, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
 footer h4 {
   color: #ffffff;
 }
-/* line 21, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
+/* line 25, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
 footer h4 a {
   color: #ffffff !important;
   white-space: nowrap;
-  padding: 5px 0px 5px 4px;
-  margin: -2px -2px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
+  padding: 5px 4px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -ms-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
 }
-/* line 27, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
+/* line 30, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
 footer h4 a:active, footer h4 a:focus, footer h4 a:hover {
+  border-radius: 3px,3px,3px,3px;
   transition: all .27s;
   background-color: #ffffff;
-  color: #6772e5 !important;
+  color: #87b7ef !important;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
-}
-/* line 35, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
-footer h4 a:active:after, footer h4 a:focus:after, footer h4 a:hover:after {
-  transition: all .27s;
-  content: url("/caret-forward-hover.svg");
-  margin: 0 8px;
-}
-/* line 41, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/footer.css.scss */
-footer h4 a:after {
-  content: url("/caret-forward.svg");
-  margin: 0 4px;
 }
 /* line 4, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .form-control {
@@ -1376,10 +1374,10 @@ footer h4 a:after {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 400;
   letter-spacing: 0.08px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   color: #737171;
   border: 1px solid #E3E3E3;
   background: transparent;
@@ -1406,7 +1404,7 @@ select.form-control:not([size]):not([multiple]) {
 .comment-form input[type=email]:focus,
 .comment-form input[type=url]:focus,
 .comment-form textarea:focus {
-  border-color: #6772e5;
+  border-color: #4f97ea;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.06);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.06);
   outline: 0;
@@ -1414,10 +1412,10 @@ select.form-control:not([size]):not([multiple]) {
 
 /* line 35, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .btn {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 0.75;
@@ -1432,46 +1430,49 @@ select.form-control:not([size]):not([multiple]) {
 /* line 43, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .btn-primary {
   transition: all .27s;
-  background: #6772e5;
+  background: #4f97ea;
   color: #ffffff;
-  border-color: #6772e5;
-  background: -webkit-linear-gradient(#7795f8, #6772e5);
-  background: linear-gradient(#7795f8, #6772e5);
+  border-color: #4f97ea;
+  background: -webkit-linear-gradient(#87b7ef, #4f97ea);
+  background: linear-gradient(#87b7ef, #4f97ea);
 }
 /* line 50, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .btn-primary:hover, .btn-primary:focus {
-  background: -webkit-linear-gradient(#6772e5, #6772e5);
-  background: linear-gradient(#6772e5, #6772e5);
-  border: 1px solid #6772e5;
+  background: -webkit-linear-gradient(#4f97ea, #4f97ea);
+  background: linear-gradient(#4f97ea, #4f97ea);
+  border: 1px solid #4f97ea;
   cursor: pointer;
 }
 /* line 57, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
-.btn-primary:focus {
+.btn-primary:visited {
+  color: #ffffff;
+  border-color: #4f97ea;
+  background: -webkit-linear-gradient(#87b7ef, #4f97ea);
+  background: linear-gradient(#87b7ef, #4f97ea);
   -webkit-box-shadow: none;
   box-shadow: none;
   background-image: none;
   outline: 0;
 }
-/* line 63, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
+/* line 67, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .btn-primary:visited {
   color: #ffffff;
 }
 
-/* line 68, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
+/* line 72, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .btn-outline {
   background: #ffffff;
-  color: #6772e5;
-  border-color: #6772e5;
+  color: #4f97ea;
+  border-color: #4f97ea;
 }
-/* line 72, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
+/* line 76, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .btn-outline:hover, .btn-outline:focus {
   color: #ffffff;
-  background: -webkit-linear-gradient(135deg, #6772e5 0, #7795f8 70%);
-  background: linear-gradient(135deg, #6772e5 0, #7795f8 70%);
-  border: 1px solid #7795f8;
+  background: #4f97ea;
+  border: 1px solid #4f97ea;
   cursor: pointer;
 }
-/* line 80, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
+/* line 83, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .btn-outline:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1479,12 +1480,12 @@ select.form-control:not([size]):not([multiple]) {
   outline: 0;
 }
 
-/* line 89, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
+/* line 92, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .back:before {
   content: url("/caret-back.svg");
   margin-right: 3px;
 }
-/* line 94, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
+/* line 97, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/forms.css.scss */
 .back:hover:before {
   content: url("/caret-back-hover.svg");
   margin-right: 3px;
@@ -1509,10 +1510,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 /* line 5, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-content {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -ms-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
 }
 /* line 8, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-body {
@@ -1571,11 +1572,11 @@ nav.navbar h1.brand a {
   float: left;
   padding: 12px 0;
   text-decoration: none;
-  color: #696969;
+  color: #737171;
 }
 /* line 15, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/nav.css.scss */
 nav.navbar h1.brand a:hover, nav.navbar h1.brand a:focus, nav.navbar h1.brand a:active {
-  color: #6772e5;
+  color: #4f97ea;
 }
 /* line 22, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/nav.css.scss */
 nav.navbar button.navbar-toggler.navbar-toggler-right {
@@ -1585,14 +1586,14 @@ nav.navbar button.navbar-toggler.navbar-toggler-right {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 400;
   letter-spacing: 0.08px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -ms-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
   color: #ffffff;
-  background: #7795f8;
-  background: -webkit-linear-gradient(#7795f8, #6772e5);
-  background: linear-gradient(#7795f8, #6772e5);
+  background: #7be7d7;
+  background: -webkit-linear-gradient(#87b7ef, #4f97ea);
+  background: linear-gradient(#87b7ef, #4f97ea);
   margin: 9px 0 0 0;
   border: none;
   padding: .25rem 2.75rem;
@@ -1600,9 +1601,9 @@ nav.navbar button.navbar-toggler.navbar-toggler-right {
 /* line 32, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/nav.css.scss */
 nav.navbar button.navbar-toggler.navbar-toggler-right:hover, nav.navbar button.navbar-toggler.navbar-toggler-right:focus, nav.navbar button.navbar-toggler.navbar-toggler-right:active {
   cursor: pointer;
-  background: #7795f8;
-  background: -webkit-linear-gradient(#6772e5, #6772e5);
-  background: linear-gradient(#6772e5, #6772e5);
+  background: #7be7d7;
+  background: -webkit-linear-gradient(#4f97ea, #4f97ea);
+  background: linear-gradient(#4f97ea, #4f97ea);
 }
 /* line 41, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/nav.css.scss */
 nav.navbar ul.navbar-nav {
@@ -1625,11 +1626,11 @@ nav.navbar ul.navbar-nav li.nav-item a {
   padding: 12px 6px;
   margin-left: 12px;
   text-decoration: none;
-  color: #696969;
+  color: #737171;
 }
 /* line 53, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/nav.css.scss */
 nav.navbar ul.navbar-nav li.nav-item a:hover, nav.navbar ul.navbar-nav li.nav-item a:focus, nav.navbar ul.navbar-nav li.nav-item a:active {
-  color: #6772e5;
+  color: #4f97ea;
 }
 
 @media (max-width: 991px) {
@@ -1657,11 +1658,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, span {
 }
 /* line 9, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, ul a, ol a, li a, span a {
-  color: #6772e5;
+  color: #4f97ea;
 }
 /* line 11, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 h1 a:hover, h1 a:focus, h1 a:active, h2 a:hover, h2 a:focus, h2 a:active, h3 a:hover, h3 a:focus, h3 a:active, h4 a:hover, h4 a:focus, h4 a:active, h5 a:hover, h5 a:focus, h5 a:active, h6 a:hover, h6 a:focus, h6 a:active, p a:hover, p a:focus, p a:active, ul a:hover, ul a:focus, ul a:active, ol a:hover, ol a:focus, ol a:active, li a:hover, li a:focus, li a:active, span a:hover, span a:focus, span a:active {
-  color: #7795f8;
+  color: #87b7ef;
   text-decoration: none;
 }
 
@@ -1797,12 +1798,12 @@ sup {
 }
 /* line 61, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 sup a {
-  color: #6772e5;
+  color: #4f97ea;
   border: 0px;
 }
 /* line 64, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 sup a:hover, sup a:focus, sup a:active {
-  border-bottom: 1px solid #6772e5;
+  border-bottom: 1px solid #4f97ea;
 }
 
 /* line 72, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
@@ -1853,10 +1854,10 @@ pre {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 400;
   letter-spacing: 0.08px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   border: 1px solid #E3E3E3;
   color: #3a3838;
   background: #f1f4f7 !important;
@@ -1975,62 +1976,55 @@ blockquote.left {
   height: 72px;
 }
 /* line 187, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
-.swatch .grey {
-  background-color: #696969;
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
-}
-/* line 193, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
-.swatch .eggshell {
-  background-color: #fdfbf8;
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
-}
-/* line 199, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 .swatch .border {
   background-color: #E3E3E3;
   border-radius: 50%;
   width: 72px;
   height: 72px;
 }
-/* line 205, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
+/* line 193, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 .swatch .accent-primary {
-  background-color: #6772e5;
+  background-color: #4f97ea;
   border-radius: 50%;
   width: 72px;
   height: 72px;
 }
-/* line 211, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
+/* line 199, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 .swatch .accent-secondary {
-  background-color: #7795f8;
+  background-color: #7be7d7;
   border-radius: 50%;
   width: 72px;
   height: 72px;
 }
-/* line 218, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
+/* line 205, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
+.swatch .accent-tertiary {
+  background-color: #87b7ef;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+/* line 212, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 .swatch .tiny-notes-brand-primary {
   background-color: #5944ff;
   border-radius: 50%;
   width: 72px;
   height: 72px;
 }
-/* line 224, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
+/* line 218, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 .swatch .tiny-notes-brand-secondary {
   background-color: #4031D2;
   border-radius: 50%;
   width: 72px;
   height: 72px;
 }
-/* line 230, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
+/* line 224, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 .swatch .tiny-notes-medium {
   background-color: #636161;
   border-radius: 50%;
   width: 72px;
   height: 72px;
 }
-/* line 236, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
+/* line 230, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/typography.css.scss */
 .swatch .tiny-notes-light {
   background-color: #E6ECF0;
   border-radius: 50%;
