@@ -5,9 +5,9 @@ footer {
   width: 100%;
   height: 100%;
   background: $accent-primary;
-  background: -webkit-linear-gradient(45deg,$accent-secondary 1%,$accent-secondary 10%, $accent-tertiary 75%, $accent-tertiary 100%);
-  background: -webkit-linear-gradient(45deg, $accent-secondary 1%, $accent-secondary 10%, $accent-tertiary 75%, $accent-tertiary 100%);
-  background: linear-gradient(45deg,$accent-secondary 1%,$accent-secondary 10%, $accent-tertiary 75%, $accent-tertiary 100%);
+  background: -webkit-linear-gradient(45deg,$accent-secondary 1%,$accent-secondary 10%, $accent-tertiary 75%, $accent-primary 100%);
+  background: -webkit-linear-gradient(45deg, $accent-secondary 1%, $accent-secondary 10%, $accent-tertiary 75%, $accent-primary 100%);
+  background: linear-gradient(45deg,$accent-secondary 1%,$accent-secondary 10%, $accent-tertiary 75%, $accent-primary 100%);
   overflow: hidden;
   .raindrops {
     width: 1px;
