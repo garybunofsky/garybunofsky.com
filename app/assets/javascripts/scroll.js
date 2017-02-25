@@ -1,8 +1,4 @@
-$(function() {
-  initPage();
-});
-
-$(window).bind('page:change', function() {
+$(document).on('page:change', function() {
   initPage();
 });
 
