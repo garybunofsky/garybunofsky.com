@@ -4,6 +4,12 @@
   <h2><strong><%= yield :page_title %></strong></h2>
   <p>The primary purpose of this blog is to share my thoughts with others. Topics often cover design, development and things of that nature. These are compositions, lists, references and resources that I feel are valuable enough to pass along.</p>
   
+    
+  <h4 class="xs mt-6">March 6th, 2017</h4>
+  <%= link_to subpage_path(:blog, 'a-month-without-coffee'), class: "blog-item" do %>
+    <h3 class="color-accent-primary">A Month Without Coffee</h3>
+    <p>My first cup of coffee was at my grandma's. I wasn't allowed to pour my own. But was heavy handed with the sugar. My coffee tasted of cream and was nearly the same color. Ever since that  morning I've been drinking coffee almost daily. Shout out to my Grandma.</p>
+  <% end %>
   
   <h4 class="xs mt-6">November 22nd, 2016</h4>
   <%= link_to subpage_path(:blog, 'facebooks-new-job'), class: "blog-item" do %>

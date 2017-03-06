@@ -6,6 +6,7 @@ SitemapGenerator::Sitemap.create do
   add '/',                                     :changefreq => 'monthly', :priority => 0.9
   add '/about',                                :changefreq => 'monthly', :priority => 0.5
   add '/blog',                                 :changefreq => 'monthly', :priority => 0.7
+  add '/blog/a-month-without-coffee',          :changefreq => 'monthly', :priority => 0.6
   add '/blog/facebooks-new-job',               :changefreq => 'monthly', :priority => 0.6
   add '/blog/not-the-same',                    :changefreq => 'monthly', :priority => 0.6
 	add '/blog/basic-git-commands',              :changefreq => 'monthly', :priority => 0.6
