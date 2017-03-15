@@ -134,10 +134,9 @@ label, figurecaption {
 }
 
 blockquote.center {
-  @include serif(18);
+  @include sans-serif(18);
   text-align: center;
   color:$brand-secondary;
-  font-style: italic;
   margin-top:1.5em;
   margin-left: 0px;
   margin-bottom:1.5em;
@@ -147,9 +146,8 @@ blockquote.center {
 }
 
 blockquote.left {
-  @include serif(18);
+  @include sans-serif(18);
   color:$brand-secondary;
-  font-style: italic;
   padding:0.75em 1.5em;
   margin:2.0em 0em;
   border-left: 1px solid $border;
