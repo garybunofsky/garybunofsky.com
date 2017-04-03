@@ -1,6 +1,9 @@
 <% content_for :page_title, "Introduction" %>
 <% content_for :page_description, "Hi, my name is Gary Bunofsky. I am a designer and developer who enjoys building applications, websites, and products. Welcome to my portfolio." %>
 
-<div class="col-md-6 offset-md-3 full-height vertically-centered pb-7">
-  <h2>Hi, my name is Gary Bunofsky. I am a designer and developer who enjoys building applications, websites, and products. Welcome to my <%= link_to "portfolio", static_path(:portfolio) %>.</h2>
+<div class="col-md-6 offset-md-3 full-height vertically-centered text-center pb-7">
+  <h2 class="mb-4">Hi, my name is Gary Bunofsky. <br />I am a designer and developer who enjoys building applications, websites, and products.</h2>
+  <div class="row mx-auto">
+    <%= link_to "View my portfolio", static_path(:portfolio), class: "btn btn-primary" %>
+  </div>
 </div>
