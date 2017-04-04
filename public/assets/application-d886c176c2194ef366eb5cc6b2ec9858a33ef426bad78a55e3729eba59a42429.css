@@ -1646,7 +1646,7 @@ nav.navbar button.navbar-toggler.navbar-toggler-right {
   background: #7be7d7;
   background: -webkit-linear-gradient(#87b7ef, #4f97ea);
   background: linear-gradient(#87b7ef, #4f97ea);
-  margin: 9px 0 0 0;
+  margin: 9px 8px 0 0;
   border: none;
   padding: .25rem 2.75rem;
 }
