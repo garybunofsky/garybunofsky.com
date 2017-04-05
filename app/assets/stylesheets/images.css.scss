@@ -1,0 +1,35 @@
+@import "variables";
+// footer.css.scss
+
+// Photos
+figure.center {
+  img {
+   width: 100%;
+   overflow: hidden;
+   margin-bottom: 6px;
+  }
+  a img {
+    @include trans;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+  img.project {
+  @include border-radius(5px,5px,5px,5px);
+  border:1px solid $border;
+    &:hover {
+      @include trans;
+      border:1px solid $accent-primary;
+    }
+  }
+  img.no-link {
+  &:hover {
+    border:1px solid $border;
+   }
+  }
+  figcaption {
+    @include sans-serif(12);
+    color:$brand-secondary;
+    margin-bottom: 24px;
+  }
+}
