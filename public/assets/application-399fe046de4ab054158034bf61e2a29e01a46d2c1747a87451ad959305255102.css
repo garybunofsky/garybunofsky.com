@@ -1113,124 +1113,6 @@ a.blog-item:hover h3 {
   color: #87b7ef;
   text-decoration: none !important;
 }
-
-/* line 67, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.center img {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 6px;
-}
-/* line 72, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.center a img {
-  transition: all .27s;
-}
-/* line 74, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.center a img:hover {
-  opacity: 0.75;
-}
-/* line 78, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.center img.project {
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -ms-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  border: 1px solid #E3E3E3;
-}
-/* line 81, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.center img.project:hover {
-  transition: all .27s;
-  border: 1px solid #4f97ea;
-}
-/* line 87, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.center img.no-link:hover {
-  border: 1px solid #E3E3E3;
-}
-/* line 91, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.center figcaption {
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 0.75;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.06px;
-  color: #737171;
-  margin-bottom: 24px;
-}
-
-/* line 98, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-.browser {
-  border-radius: 4px;
-  border: 1px solid #f1f4f7;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-}
-/* line 104, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-.browser .browser_header {
-  background: #f1f4f7;
-  -webkit-border-radius: 6px 6px 0px 0px;
-  -moz-border-radius: 6px 6px 0px 0px;
-  -ms-border-radius: 6px 6px 0px 0px;
-  border-radius: 6px 6px 0px 0px;
-  padding: 0.8rem .5rem;
-}
-/* line 109, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-.browser .browser_header ul.spotlights {
-  list-style: none;
-  margin-bottom: 12px;
-}
-/* line 113, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-.browser .browser_header ul.spotlights li.spotlights_item {
-  background: #E3E3E3;
-  border-radius: 60%;
-  display: block;
-  float: left;
-  height: 10px;
-  margin-bottom: 0;
-  margin-right: .6rem;
-  width: 10px;
-}
-/* line 125, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-.browser img {
-  width: 100%;
-  height: auto;
-}
-
-/* line 132, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.over img {
-  overflow: hidden;
-  margin: 0 -25% 6px -25%;
-}
-/* line 136, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.over figcaption {
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 0.75;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.06px;
-  color: #737171;
-  margin: 0 -25% 0 -25%;
-  margin-bottom: 24px;
-}
-
-/* line 144, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-figure.circle img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-/* line 150, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-.video-iphone {
-  background: url(/veronica-iphone-1.png) no-repeat;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-/* line 156, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/basic.css.scss */
-.video-iphone video {
-  margin-left: 269px;
-  margin-top: 76px;
-}
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -1490,19 +1372,15 @@ figure.center img {
   overflow: hidden;
   margin-bottom: 6px;
 }
-/* line 10, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
-figure.center img:hover {
-  cursor: zoom-in;
-}
-/* line 14, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+/* line 11, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
 figure.center a img {
   transition: all .27s;
 }
-/* line 16, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+/* line 13, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
 figure.center a img:hover {
   opacity: 0.75;
 }
-/* line 20, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+/* line 17, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
 figure.center img.project {
   -webkit-border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
@@ -1510,16 +1388,16 @@ figure.center img.project {
   border-radius: 5px 5px 5px 5px;
   border: 1px solid #E3E3E3;
 }
-/* line 23, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+/* line 20, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
 figure.center img.project:hover {
   transition: all .27s;
   border: 1px solid #4f97ea;
 }
-/* line 29, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+/* line 26, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
 figure.center img.no-link:hover {
   border: 1px solid #E3E3E3;
 }
-/* line 33, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+/* line 30, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
 figure.center figcaption {
   font-size: 12px;
   line-height: 18px;
@@ -1529,6 +1407,117 @@ figure.center figcaption {
   letter-spacing: 0.06px;
   color: #737171;
   margin-bottom: 24px;
+}
+
+/* line 37, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser {
+  border-radius: 4px;
+  border: 1px solid #f1f4f7;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+/* line 43, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header {
+  background: #ffffff;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  -ms-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  padding: 1.1rem .25rem 0.9rem;
+}
+/* line 47, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header .search {
+  width: 50%;
+  background: #f1f4f7;
+  padding: .6rem 1.0rem;
+  text-align: left;
+  margin: -0.75rem auto 0 auto;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -ms-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+/* line 54, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header .search span {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0.75;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.06px;
+}
+/* line 58, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header ul.spotlights {
+  list-style: none;
+  margin-top: .5rem;
+  width: 25%;
+  margin-bottom: 0;
+}
+/* line 63, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header ul.spotlights li.spotlights_item {
+  background: #E3E3E3;
+  border-radius: 60%;
+  display: block;
+  float: left;
+  height: 10px;
+  margin-bottom: 0;
+  margin-right: .6rem;
+  width: 10px;
+}
+/* line 72, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header ul.spotlights li.spotlights_item:first-child {
+  background: #ff5f57;
+}
+/* line 75, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header ul.spotlights li.spotlights_item:nth-child(2) {
+  background: #ffbd2e;
+}
+/* line 78, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser .browser_header ul.spotlights li.spotlights_item:last-child {
+  background: #2ace42;
+}
+/* line 84, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.browser img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 91, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+figure.over img {
+  overflow: hidden;
+  margin: 0 -25% 6px -25%;
+}
+/* line 95, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+figure.over figcaption {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0.75;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.06px;
+  color: #737171;
+  margin: 0 -25% 0 -25%;
+  margin-bottom: 24px;
+}
+
+/* line 104, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+figure.circle img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* line 110, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.video-iphone {
+  background: url(/veronica-iphone-1.png) no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* line 115, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/images.css.scss */
+.video-iphone video {
+  margin-left: 269px;
+  margin-top: 76px;
 }
 @media (max-width: 1199px) {
   /* line 5, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/media-query.css.scss */
@@ -1549,27 +1538,35 @@ figure.center figcaption {
   }
 }
 /* line 5, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+.modal .modal-dialog {
+  max-width: 100%;
+}
+/* line 8, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-content {
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   -ms-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
 }
-/* line 8, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 10, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+.modal .modal-content img {
+  width: 100%;
+}
+/* line 14, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-body {
   padding: 0 0 0 0;
 }
-/* line 10, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 16, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-body ul {
   margin-left: -40px !important;
 }
-/* line 12, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 18, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-body ul li {
   list-style: none;
   width: 100%;
   border-bottom: 1px solid #f1f4f7;
 }
-/* line 16, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 22, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-body ul li a {
   font-size: 14px;
   line-height: 21px;
@@ -1584,21 +1581,21 @@ figure.center figcaption {
   padding: 15px;
   width: 100%;
 }
-/* line 24, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 30, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-body ul li a:hover, .modal .modal-body ul li a:focus, .modal .modal-body ul li a:active {
   background-color: #f1f4f7;
 }
-/* line 30, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 36, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-body ul li:last-of-type {
   border-bottom: none;
 }
-/* line 36, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 42, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 6px 6px;
   display: inline-block;
 }
 
-/* line 42, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
+/* line 48, /Users/garybunofsky/Documents/sites/garybunofsky.com/app/assets/stylesheets/modal.scss */
 .modal-open .container-fluid,
 .modal-open .container {
   -webkit-filter: blur(5px);
