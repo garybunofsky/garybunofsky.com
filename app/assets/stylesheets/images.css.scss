@@ -33,3 +33,86 @@ figure.center {
     margin-bottom: 24px;
   }
 }
+
+.browser {
+  border-radius: 4px;
+  border: 1px solid $light;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  .browser_header {
+    background: $white;
+    @include border-radius(6px,6px,0px,0px);
+    padding: 1.1rem .25rem 0.9rem;
+    .search {
+      width: 50%;
+      background: $light;
+      padding: .6rem 1.0rem;
+      text-align: left;
+      margin: -0.75rem auto 0 auto;
+      @include border-radius(3px,3px,3px,3px);
+      span {
+        @include sans-serif(12);
+      }
+    }
+    ul.spotlights {
+      list-style: none;
+      margin-top:.5rem;
+      width: 25%;
+      margin-bottom: 0;
+      li.spotlights_item {
+        background: $border;
+        border-radius: 60%;
+        display: block;
+        float: left;
+        height: 10px;
+        margin-bottom: 0;
+        margin-right: .6rem;
+        width: 10px;
+        &:first-child {
+          background: #ff5f57;
+        }
+        &:nth-child(2) {
+          background: #ffbd2e;
+        }
+        &:last-child {
+          background: #2ace42
+        }
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+figure.over {
+    img {
+      overflow: hidden;
+      margin: 0 -25% 6px -25%;
+    }
+    figcaption {
+      @include sans-serif(12);
+      color:$brand-secondary;
+      margin: 0 -25% 0 -25%;
+      margin-bottom: 24px;
+    }
+}
+
+figure.circle {
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+}
+
+.video-iphone {
+  background:url(/veronica-iphone-1.png) no-repeat;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  video {
+    margin-left: 269px;
+    margin-top: 76px;
+  }
+}
