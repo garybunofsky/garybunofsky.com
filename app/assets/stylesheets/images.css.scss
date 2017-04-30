@@ -4,19 +4,22 @@
 // Photos
 figure.center {
   img {
-   width: 100%;
-   overflow: hidden;
-   margin-bottom: 6px;
+    background: $border;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 6px;
   }
   a img {
+    background: $border;
     @include trans;
     &:hover {
       opacity: 0.75;
     }
   }
   img.project {
-  @include border-radius(5px,5px,5px,5px);
-  border:1px solid $border;
+    background: $border;
+    @include border-radius(5px,5px,5px,5px);
+    border:1px solid $border;
     &:hover {
       @include trans;
       border:1px solid $accent-primary;
