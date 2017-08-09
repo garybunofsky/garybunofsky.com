@@ -24,6 +24,5 @@ SitemapGenerator::Sitemap.create do
 	add '/resume.pdf',                           :changefreq => 'weekly',  :priority => 0.9
 	add '/style-guide',                          :changefreq => 'weekly',  :priority => 0.3
 	add '/tools',                                :changefreq => 'weekly',  :priority => 0.3
-  add '/404',                                  :changefreq => 'weekly',  :priority => 0.1
 end
 SitemapGenerator::Sitemap.ping_search_engines # Not needed if you use the rake tasks
