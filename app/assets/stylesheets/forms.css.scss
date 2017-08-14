@@ -7,7 +7,7 @@
   color:$brand-secondary;
   border:1px solid $border;
   background:transparent;
-  margin:2px 0 0 0;
+  margin:2px 0 8px 0;
   padding:11px 12px;
   height:auto;
   -webkit-appearance: none;
@@ -36,7 +36,7 @@ select.form-control:not([size]):not([multiple]) {
   @include border-radius(5px,5px,5px,5px);
   @include sans-serif(16);
 	font-weight: 600;
-  padding:7px 18px;
+  padding:11px 18px;
 	text-decoration: none;
 }
 
