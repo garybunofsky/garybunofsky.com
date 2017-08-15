@@ -1,5 +1,7 @@
 class ChangelogController < ApplicationController
   def index
+    require 'net/http'
+    require 'net/https'
 		request_uri = 'https://api.github.com/repos/garybunofsky/garybunofsky.com/commits'
 		uri = URI(request_uri)
 		response = Net::HTTP.get(uri)
