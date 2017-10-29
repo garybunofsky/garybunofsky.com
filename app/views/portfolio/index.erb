@@ -3,9 +3,19 @@
 <div class="col-md-6 offset-md-3 mt-12">
   <h2><strong><%= yield :page_title %></strong></h2>
 	<p>Applications, sites, and chatbots are a few of the things you can find me working on in my spare time. If you like anything you see here, feel free to <%= mail_to "gary@garybunofsky.com", "get in touch" %>.</p>
-  
+
   <div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
+      <%= link_to "http://blouse.garybunofsky.com", class: "card shadow" do %>
+        <div class="text-center mb-3">
+          <img src="../assets/heart.svg" class="center mb-5 mt-5" />
+        </div>
+        <h4 class="md">Blouse</h4>
+        <p>Blouse is A collection of simple, subtle icons.</p>
+        <div class="btn btn-primary">View Project</div>
+      <% end %>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
 			<%= link_to "/portfolio/tiny-notes", class: "card shadow" do %>
 				<div class="text-center mb-3">
 					<img src="../assets/note.svg" class="center mb-5 mt-5" />
@@ -15,8 +25,10 @@
         <div class="btn btn-primary">View Project</div>
 			<% end %>
     </div>
-		
-		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
+  </div>
+
+	<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
 			<%= link_to "http://leaselightning.com", target: "_blank", class: "card shadow" do %>
 				<div class="text-center mb-3">
 					<img src="../assets/building.svg" class="center mb-5 mt-5" />
@@ -26,9 +38,6 @@
         <div class="btn btn-primary">Visit Site</div>
 			<% end %>
     </div>
-  </div>
-	
-	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
 			<%= link_to "/portfolio/veronica", class: "card shadow" do %>
 				<div class="text-center mb-3">
@@ -39,18 +48,19 @@
         <div class="btn btn-primary">View Project</div>
 			<% end %>
 		</div>
-		
-		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
-			<%= link_to "/portfolio/pass", class: "card shadow" do %>
-				<div class="text-center mb-3">
-					<img src="../assets/code.svg" class="center mb-5 mt-5" />
-				</div>
-        <h4 class="md">Pass.js</h4>
-				<p>Pass.js tracks referral traffic. It helps analyze conversion funnels by capturing URL parameters through hidden form fields. It’s very small and easy to install.</p>
-        <div class="btn btn-primary">View Project</div>
-			<% end %>
-		</div>
 	</div>
-	
-</div>
 
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-6">
+      <%= link_to "/portfolio/pass", class: "card shadow" do %>
+        <div class="text-center mb-3">
+          <img src="../assets/code.svg" class="center mb-5 mt-5" />
+        </div>
+        <h4 class="md">Pass.js</h4>
+        <p>Pass.js tracks referral traffic. It helps analyze conversion funnels by capturing URL parameters through hidden form fields. It’s very small and easy to install.</p>
+        <div class="btn btn-primary">View Project</div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
