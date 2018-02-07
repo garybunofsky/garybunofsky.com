@@ -4,6 +4,4 @@ log/development.log
 log/*
 config/secrets.yml
 design-files/*
-
-
-
+node_modules
