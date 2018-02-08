@@ -19,9 +19,9 @@ export default {
 
 /* Html */
 html {
-  font-weight: 400;
   color: #353e44;
   font: 400 1em/1.4 'Lato', sans-serif;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -33,7 +33,7 @@ a {
 }
 /* Layout */
 .wrapper {
-  width:50%;
+  width:100%;
 }
 .margin--center {
   margin:0 auto;
@@ -57,9 +57,8 @@ a {
 }
 .vertically-center {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
 }
 
 /* Font */
@@ -98,5 +97,10 @@ a {
   margin: 0;
   padding: 10px 24px;
   transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width:768px) {
+  .wrapper {
+    width:50%;
+  }
 }
 </style>
