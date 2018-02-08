@@ -24,13 +24,18 @@ html {
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
+body {
+  margin:0;
+}
 h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
   color: #353e44;
 }
 a {
+  color:#367aea;
   text-decoration: none;
 }
+
 /* Layout */
 .wrapper {
   width:100%;
