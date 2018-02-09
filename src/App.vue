@@ -29,16 +29,18 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
-  color: #353e44;
 }
 a {
   color:#367aea;
   text-decoration: none;
 }
+ul {
+  margin:0 0 0 -40px;
+}
 
 /* Layout */
 .wrapper {
-  width:100%;
+  width:90%;
 }
 .margin--center {
   margin:0 auto;
@@ -67,14 +69,17 @@ a {
 }
 
 /* Font */
-.font-size--4 {
+.font-size--2 {
   font-size: .75em;
 }
-.font-size--4 {
+.font-size--3 {
   font-size: .875em;
 }
-.font-size--5 {
+.font-size--4 {
   font-size: 1em;
+}
+.font-size--5 {
+  font-size: 1.1875em;
 }
 .font-size--6 {
   font-size: 1.25em;
@@ -87,6 +92,9 @@ a {
 }
 .font-weight--400 {
   font-weight: 400;
+}
+.no-bullets {
+  list-style: none;
 }
 
 /* Button */
@@ -103,9 +111,9 @@ a {
   padding: 10px 24px;
   transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:960px) {
   .wrapper {
-    width:50%;
+    width:33%;
   }
 }
 </style>
