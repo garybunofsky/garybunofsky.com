@@ -1,7 +1,7 @@
 <template>
   <div class="vertically-center vh100 wrapper margin--center">
     <div>
-      <h1 class="font-size--8">{{ msg }}</h1>
+      <h1 class="font-size--7">{{ msg }}</h1>
       <p class="font-size--5">I currently live in Cleveland, Ohio where I spend a lot of time writing code. I specialize in building scalable web solutions for businesses and startups. When I am not coding, I’m probably reading, listening to jazz, cooking, or walking my dog.</p>
 
       <h2 class="font-size--7">Background</h2>
