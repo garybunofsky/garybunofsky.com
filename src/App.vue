@@ -14,12 +14,11 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #5e6d77;
+  color: #6b7c93;
 }
 
 /* Html */
 html {
-  color: #353e44;
   font: 400 1em/1.4 'Lato', sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -28,6 +27,7 @@ body {
   margin:0;
 }
 h1,h2,h3,h4,h5,h6 {
+  color:#474b5a;
   font-weight: 600;
 }
 a {
@@ -61,10 +61,10 @@ ul {
   flex:1;
 }
 .grid--gutters {
-  margin: -1em 0 0 -1em;
+  margin: -1.5em 0 0 -1.5em;
 }
 .grid--gutters > .grid--item {
-  padding: 1em 0 0 1em;
+  padding: 1.5em 0 0 1.5em;
 }
 .vertically-center {
   display: flex;
@@ -92,7 +92,7 @@ ul {
   font-size: 1.5em;
 }
 .font-size--8 {
-  font-size: 1.75em;
+  font-size: 1.5625em;
 }
 .font-weight--400 {
   font-weight: 400;
@@ -122,7 +122,7 @@ ul {
   transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
-  background:#4582e6;
+  background:#71a3f5;
 }
 @media screen and (min-width:960px) {
   .grid {
