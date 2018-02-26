@@ -47,7 +47,7 @@ module.exports = {
   <p>Once you’ve added your database config values we can create our first migration. Let’s run a command to create a table. In this example, we will set up a users table. Run the following from the command line.</p>
   <pre>knex migrate:make create_users_table</pre>
 
-  <p>You should see a new folder called migrations. Inside this folder you’’ll have a file named <em>create_users_table</em>. We’ll specify our columns in this file shortly. But first I’d like to point out the long number at the end of the file name. In short, this number allows the files to be run in the order they were generated, which prevents nasty foreign key errors. Yay!</p>
+  <p>You should see a new folder called migrations. Inside this folder you’’ll have a file named <em>create_users_table</em>. We’ll specify our columns in this file shortly. But first I’d like to point out the long number at the beginning of the file name. In short, this number allows the files to be run in the order they were generated, which prevents nasty foreign key errors. Yay!</p>
 
   <p>Let’s take a look inside the new create_users_table file we just generated. You’ll notice an exports up and exports down. The exports up will hold the code that creates the table and the exports down will house the code that deletes the table. Now let’s write some code inside these sections.</p>
 <pre>
