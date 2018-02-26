@@ -3,8 +3,13 @@
 <div class="col-md-6 offset-md-3 mt-12">
   <h2><strong><%= yield :page_title %></strong></h2>
   <p>The primary purpose of this blog is to share my thoughts with others. Topics often cover design, development and things of that nature. These are compositions, lists, references and resources that I feel are valuable enough to pass along.</p>
-  
     
+  <h4 class="xs mt-6">February 23rd, 2018</h4>
+  <%= link_to subpage_path(:blog, 'seeding-a-database-with-knex'), class: "blog-item" do %>
+    <h3Seeding a Database with Knex</h3>
+    <p>I was looking for a way to put data in my database. I wanted something that was organized and simple like Rake, but also agreed with Node. To my suprise, NPM didn’t have many of packages to choose from. I considered Serialize, but wound up using Knex which made migrations a piece of cake.</p>
+  <% end %>
+  
   <h4 class="xs mt-6">March 6th, 2017</h4>
   <%= link_to subpage_path(:blog, 'a-month-without-coffee'), class: "blog-item" do %>
     <h3>A Month Without Coffee</h3>
