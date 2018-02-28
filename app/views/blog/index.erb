@@ -4,6 +4,13 @@
   <h2><strong><%= yield :page_title %></strong></h2>
   <p>The primary purpose of this blog is to share my thoughts with others. Topics often cover design, development and things of that nature. These are compositions, lists, references and resources that I feel are valuable enough to pass along.</p>
     
+
+  <h4 class="xs mt-6">February 27th, 2018</h4>
+  <%= link_to subpage_path(:blog, 'free-fonts-that-arent-google-fonts'), class: "blog-item" do %>
+    <h3>Free Fonts that Aren't Google Fonts</h3>
+    <p>Google Fonts truly changed the web font game. It’s fantastic to have access to a variety of superb typography. And everyone else seems to think so too. Visit any website and you’re likely to find a Google Font.</p>
+  <% end %>
+  
   <h4 class="xs mt-6">February 23rd, 2018</h4>
   <%= link_to subpage_path(:blog, 'seeding-a-database-with-knex'), class: "blog-item" do %>
     <h3>Seeding a Database with Knex</h3>
