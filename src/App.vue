@@ -1,5 +1,15 @@
 <template>
   <div id="app">
+    <div class="toggle-nav" @click="showNav = !showNav">
+      Menu
+    </div>
+    <nav v-if="showNav">
+      <router-link to="About">About</router-link>
+      <a href="#">Portfolio</a>
+      <a href="#">Blog</a>
+      <router-link to="Pricing">Pricing</router-link>
+      <a href="#">Contact</a>
+    </nav>
     <router-view/>
     <footer>
       <div class="grid margin--center wrapper--lg">
@@ -69,7 +79,12 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      showNav: false
+    }
+  }
 }
 </script>
 
@@ -99,7 +114,7 @@ p {
   margin:0;
 }
 a {
-  color:#367aea;
+  color:#0C71F3;
   text-decoration: none;
 }
 ul {
@@ -160,7 +175,7 @@ ul {
   background:#f6faff;
 }
 .background--blue--500 {
-  background: #367aea;
+  background: #0C71F3;
 }
 
 /* Color */
@@ -208,7 +223,7 @@ ul {
   font-weight: 400;
 }
 .font--blue--500 {
-  color:#367aea;
+  color:#0C71F3;
 }
 
 .text--center {
@@ -223,7 +238,7 @@ ul {
 
 /* Button */
 .button {
-  background: #367aea;
+  background: #0C71F3;
   border: 0;
   border-radius: 3px;
   box-sizing: border-box;
@@ -236,21 +251,60 @@ ul {
   transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
-  background:#71a3f5;
+  background:#318bff;
 }
 .button--white {
   background: #fff;
-  color: #367aea;
+  color: #0C71F3;
 }
 .button--white:hover {
   background:rgba(255,255,255,0.8);
 }
 .button--lg {
   font-size:1em;
-  padding: 16px 24px;
+  padding: 16px 32px;
 }
 
-
+/* Nav */
+nav {
+  align-items: center;
+  background:rgba(255,255,255,0.95);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5625em;
+  height: 100%;
+  justify-content: center;
+  position:fixed;
+  padding:0;
+  width: 100%;
+}
+nav a {
+  color:#6b7c93;
+  font-weight: 600;
+  font-size:1.1875em;
+  padding:1em;
+}
+nav a:hover {
+  color:#318bff;
+}
+.toggle-nav {
+  background: #fff;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 0 4px 6px rgba(71, 75, 90, 0.05), 0 1px 3px rgba(71, 75, 90, 0.025);
+  color:#474b5a;
+  cursor: pointer;
+  display: flex;
+  font-size:1.1875em;
+  font-weight: 600;
+  justify-content: center;
+  padding:0.75em 0;
+  position: fixed;
+  width:100%;
+  z-index: 1000;
+}
+.toggle-nav:hover {
+  background: #f6faff;
+}
 /* Footer */
 footer {
   align-items: center;
@@ -269,7 +323,7 @@ footer {
 .footer--link:active,
 .footer--link:focus,
 .footer--link:hover {
-  color:#367aea;
+  color:#0C71F3;
 }
 @media screen and (min-width:960px) {
   .grid {
