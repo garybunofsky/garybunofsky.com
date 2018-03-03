@@ -1,16 +1,23 @@
 <template>
   <div id="app">
     <div class="toggle-nav" @click="showNav = !showNav">
-      Menu
+      <img src="./assets/icons/menu.svg" alt="">
     </div>
+
+    <!-- navigation -->
     <nav v-if="showNav">
-      <router-link to="About">About</router-link>
+      <router-link :to="{name: 'Home'}">Home</router-link>
+      <router-link :to="{name: 'About'}">About</router-link>
       <a href="#">Portfolio</a>
       <a href="#">Blog</a>
-      <router-link to="Pricing">Pricing</router-link>
+      <router-link :to="{name: 'Pricing'}">Pricing</router-link>
       <a href="#">Contact</a>
     </nav>
+    <!-- end navigation -->
+
     <router-view/>
+
+    <!--  footer -->
     <footer>
       <div class="grid margin--center wrapper--lg">
         <div class="grid--item">
@@ -51,16 +58,16 @@
           <span class="font-size--5">
             Social
           </span>
-          <a class="footer--link" href="#">
+          <a class="footer--link" href="https://github.com/garybunofsky" rel="noopener" target="_blank">
             Github
           </a>
-          <a class="footer--link" href="#">
+          <a class="footer--link" href="https://linkedin.com/in/garybunofsky" rel="noopener" target="_blank">
             LinkedIn
           </a>
-          <a class="footer--link" href="#">
+          <a class="footer--link" href="https://instagram.com/garybunofsky" rel="noopener" target="_blank">
             Instagram
           </a>
-          <a class="footer--link" href="#">
+          <a class="footer--link" href="https://twitter.com/garybunofsky" rel="noopener" target="_blank">
             Twitter
           </a>
         </div>
@@ -69,11 +76,13 @@
             Need a Site?
           </span>
           <a class="footer--link" href="#">
-            Pricing
+            <router-link to="Pricing">Pricing</router-link>
           </a>
         </div>
       </div>
     </footer>
+    <!-- end footer -->
+
   </div>
 </template>
 
@@ -83,6 +92,11 @@ export default {
   data () {
     return {
       showNav: false
+    }
+  },
+  watch:{
+    $route (to, from){
+        this.showNav = false;
     }
   }
 }
@@ -132,6 +146,10 @@ ul {
   padding:3em 0;
 }
 
+/* margin */
+.margin--t-12 {
+  margin-top: 12rem;
+}
 
 /* Layout */
 .wrapper {
@@ -287,6 +305,7 @@ nav a {
 nav a:hover {
   color:#318bff;
 }
+
 .toggle-nav {
   background: #fff;
   border-bottom: 1px solid #f2f2f2;
