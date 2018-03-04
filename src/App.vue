@@ -9,9 +9,9 @@
       <router-link :to="{name: 'Home'}">Home</router-link>
       <router-link :to="{name: 'About'}">About</router-link>
       <a href="#">Portfolio</a>
-      <a href="#">Blog</a>
+      <router-link :to="{name: 'Blog'}">Blog</router-link>
       <router-link :to="{name: 'Pricing'}">Pricing</router-link>
-      <a href="#">Contact</a>
+      <router-link :to="{name: 'Contact'}">Contact</router-link>
     </nav>
     <!-- end navigation -->
 
@@ -94,19 +94,40 @@ export default {
       showNav: false
     }
   },
-  watch:{
-    $route (to, from){
-        this.showNav = false;
+  watch: {
+    $route (to, from) {
+      this.showNav = false
     }
   }
 }
 </script>
 
-<style>
+<style lang="sass?outputStyle=expanded">
+// Colors
+$blue--700: #0C71F3;
+$blue--600: #318bff;
+$blue--500: #5ba3ff;
+$blue--400: #7fb7ff;
+$blue--300: #a2cbff;
+$blue--200: #c9e1ff;
+
+$green--700: #37cfdb;
+$green--600: #4ce0eb;
+$green--500: #7dedf6;
+$green--400: #9ef1f8;
+$green--300: #b7f3f8;
+$green--200: #cafbff;
+
+$gray--700: #2a3338;
+$gray--600: #434a53;
+$gray--500: #63686e;
+$gray--400: #d1d5d9;
+$gray--300: #e5e7e9;
+$gray--200: #f2f2f2;
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #6b7c93;
 }
 
 /* Html */
@@ -119,17 +140,21 @@ body {
   margin:0;
 }
 h1,h2,h3,h4,h5,h6 {
-  color:#474b5a;
+  color: $gray--700;
   font-weight: 600;
   margin:0;
 }
 p {
+  color: $gray--500;
   font-weight: 400;
   margin:0;
 }
 a {
-  color:#0C71F3;
+  color: $blue--500;
   text-decoration: none;
+}
+a:hover {
+  color: $blue--600;
 }
 ul {
   margin:0 0 0 -40px;
@@ -147,6 +172,9 @@ ul {
 }
 
 /* margin */
+.margin--b-4 {
+  margin-bottom: 4rem;
+}
 .margin--t-12 {
   margin-top: 12rem;
 }
@@ -233,7 +261,7 @@ ul {
   margin-bottom: .59375em;
 }
 .font-size--8 {
-  font-size: 1.5625em;
+  font-size: 1.8125em;
   line-height: 1.1875em;
   margin-bottom: .59375em;
 }
@@ -241,7 +269,7 @@ ul {
   font-weight: 400;
 }
 .font--blue--500 {
-  color:#0C71F3;
+  color: $blue--500;
 }
 
 .text--center {
@@ -256,11 +284,11 @@ ul {
 
 /* Button */
 .button {
-  background: #0C71F3;
+  background: $blue--600;
   border: 0;
   border-radius: 3px;
   box-sizing: border-box;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   font-size: .875em;
   font-weight: 600;
@@ -273,7 +301,7 @@ ul {
 }
 .button--white {
   background: #fff;
-  color: #0C71F3;
+  color: $blue--500;
 }
 .button--white:hover {
   background:rgba(255,255,255,0.8);
@@ -294,23 +322,23 @@ nav {
   justify-content: center;
   position:fixed;
   padding:0;
+  top: 0;
   width: 100%;
 }
 nav a {
-  color:#6b7c93;
+  color: $blue--500;
   font-weight: 600;
   font-size:1.1875em;
   padding:1em;
 }
 nav a:hover {
-  color:#318bff;
+  color: $blue--600;
 }
 
 .toggle-nav {
   background: #fff;
-  border-bottom: 1px solid #f2f2f2;
-  box-shadow: 0 4px 6px rgba(71, 75, 90, 0.05), 0 1px 3px rgba(71, 75, 90, 0.025);
-  color:#474b5a;
+  border-bottom: 1px solid $gray--300;
+  color: $blue--500;
   cursor: pointer;
   display: flex;
   font-size:1.1875em;
@@ -322,28 +350,28 @@ nav a:hover {
   z-index: 1000;
 }
 .toggle-nav:hover {
-  background: #f6faff;
+  background: $gray--200;
 }
 /* Footer */
 footer {
   align-items: center;
-  background: #f6faff;
-  color:#474b5a;
+  background: $gray--200;
+  color: $gray--600;
   display: flex;
   min-height:50vh;
   padding: 4em 0;
 }
 .footer--link {
-  color:#6b7c93;
+  color: $gray--500;
   display: block;
   margin:1em 0;
 }
-
 .footer--link:active,
 .footer--link:focus,
 .footer--link:hover {
-  color:#0C71F3;
+  color:$blue--500;
 }
+
 @media screen and (min-width:960px) {
   .grid {
     flex-direction: row;

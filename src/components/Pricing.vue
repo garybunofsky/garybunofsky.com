@@ -166,9 +166,33 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-a {
-  color: #6b7c93;
+<style lang="sass?outputStyle=expanded">
+// Colors
+$blue--700: #0C71F3;
+$blue--600: #318bff;
+$blue--500: #5ba3ff;
+$blue--400: #7fb7ff;
+$blue--300: #a2cbff;
+$blue--200: #c9e1ff;
+
+$green--700: #37cfdb;
+$green--600: #4ce0eb;
+$green--500: #7dedf6;
+$green--400: #9ef1f8;
+$green--300: #b7f3f8;
+$green--200: #cafbff;
+
+$gray--700: #2a3338;
+$gray--600: #434a53;
+$gray--500: #63686e;
+$gray--400: #d1d5d9;
+$gray--300: #e5e7e9;
+$gray--200: #f2f2f2;
+a,
+a:hover,
+a:active,
+a:visited {
+  color: $gray--500;
 }
 .icon {
   align-items: center;
@@ -185,7 +209,7 @@ a {
   width:28px;
 }
 .key-value {
-  border:1px solid #f2f2f2;
+  border:1px solid $gray--200;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgb(241, 246, 255), 0 1px 3px rgb(219, 232, 255);
   padding:4em 1em 2em 1em;
@@ -196,7 +220,7 @@ a {
 }
 .row {
   align-items: center;
-  border-bottom:1px solid #f2f2f2;
+  border-bottom:1px solid $gray--200;
   display: flex;
   padding:.875em 0;
 }

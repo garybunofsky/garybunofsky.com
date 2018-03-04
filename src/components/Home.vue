@@ -4,7 +4,7 @@
       <div class="wrapper margin--center">
         <h1 class="font-size--8">{{ msg }}</h1>
         <h2 class="font-size--6 font-weight--400">Welcome to my site. Here you can learn <router-link :to="{ name: 'About' }">about me</router-link>, the projects I build, and read some of the things I write.</h2>
-        <a href="/" class="button">What I've Built</a>
+        <a href="/" class="button">See What I've Built</a>
       </div>
     </div>
 
@@ -73,7 +73,7 @@ export default {
           name: 'Tiny Notes',
           icon: '',
           link: ''
-        },
+        }
       ]
     }
   }
