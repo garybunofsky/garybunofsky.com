@@ -66,10 +66,9 @@ export default {
         })
         this.projects.map(function (project) {
           project.name = helpers.capitalize(project.name)
-          project.icon = project.description.slice(0,2)
-          project.description = project.description.substr(2);
+          project.icon = project.description.slice(0, 2)
+          project.description = project.description.substr(2)
         })
-
       }, response => {})
     }
   },
