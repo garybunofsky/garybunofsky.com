@@ -19,66 +19,14 @@
 
     <!--  footer -->
     <footer>
-      <div class="grid margin--center wrapper--lg">
-        <div class="grid--item">
-          <span class="font-size--5">
-            Projects
-          </span>
-          <a class="footer--link" href="#">
-            Insights
-          </a>
-          <a class="footer--link" href="#">
-            Blouse
-          </a>
-          <a class="footer--link" href="#">
-            Pass.js
-          </a>
-        </div>
-        <div class="grid--item">
-          <span class="font-size--5">
-            Blog
-          </span>
-          <a class="footer--link" href="/blog/a-month-without-coffee">
-            A Month Without Coffee
-          </a>
-          <a class="footer--link" href="/blog/facebooks-new-job">
-            Facebook's New Job
-          </a>
-          <a class="footer--link" href="/blog/not-the-same">
-            Not the Same
-          </a>
-          <a class="footer--link" href="/blog/basic-git-commands">
-            Basic Git Commands
-          </a>
-          <a class="footer--link" href="/blog/finding-photos">
-            Finding Photos
-          </a>
-        </div>
-        <div class="grid--item">
-          <span class="font-size--5">
-            Social
-          </span>
-          <a class="footer--link" href="https://github.com/garybunofsky" rel="noopener" target="_blank">
-            Github
-          </a>
-          <a class="footer--link" href="https://linkedin.com/in/garybunofsky" rel="noopener" target="_blank">
-            LinkedIn
-          </a>
-          <a class="footer--link" href="https://instagram.com/garybunofsky" rel="noopener" target="_blank">
-            Instagram
-          </a>
-          <a class="footer--link" href="https://twitter.com/garybunofsky" rel="noopener" target="_blank">
-            Twitter
-          </a>
-        </div>
-        <div class="grid--item">
-          <span class="font-size--5">
-            Need a Site?
-          </span>
-          <a class="footer--link" href="#">
-            <router-link to="Pricing">Pricing</router-link>
-          </a>
-        </div>
+      <div class="grid wrapper--lg">
+        <router-link :to="{name: 'Home'}" class="grid--item font-size--3">Home</router-link>
+        <router-link :to="{name: 'About'}" class="grid--item font-size--3">About</router-link>
+        <a href="#" class="grid--item font-size--3">Portfolio</a>
+        <router-link :to="{name: 'Blog'}" class="grid--item font-size--3">Blog</router-link>
+        <router-link :to="{name: 'Pricing'}" class="grid--item font-size--3">Pricing</router-link>
+        <router-link :to="{name: 'Contact'}" class="grid--item font-size--3">Contact</router-link>
+        <p class="grid--item font-size--3">Copyright 2018</p>
       </div>
     </footer>
     <!-- end footer -->
@@ -108,8 +56,8 @@ $blue--700: #0C71F3;
 $blue--600: #318bff;
 $blue--500: #5ba3ff;
 $blue--400: #7fb7ff;
-$blue--300: #a2cbff;
-$blue--200: #c9e1ff;
+$blue--300: #eef5fd;
+$blue--200: #f3f8ff;
 
 $green--700: #37cfdb;
 $green--600: #4ce0eb;
@@ -170,13 +118,36 @@ ul {
 .padding-y--3 {
   padding:3em 0;
 }
+.padding-y--8 {
+  padding:8em 0;
+}
 
 /* margin */
+.margin--b-1 {
+  margin-bottom: 1em;
+}
 .margin--b-4 {
   margin-bottom: 4rem;
 }
 .margin--t-12 {
   margin-top: 12rem;
+}
+
+/* card */
+a .card {
+  display: block;
+  color:#6b7c93;
+}
+.card {
+  background: #fff;
+  border:1px solid #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(241, 246, 255), 0 1px 3px rgb(219, 232, 255);
+  padding:2em;
+  transition: all .25s ease-out;
+}
+.card:hover {
+  transform: translateY(-4px);
 }
 
 /* Layout */
@@ -190,7 +161,10 @@ ul {
   margin:0 auto;
 }
 .vh100 {
-  height:100vh;
+  min-height:100vh;
+}
+.width--100 {
+  width:100%;
 }
 
 /* Grid */
@@ -217,11 +191,21 @@ ul {
 }
 
 /* Background */
+.background--blue--200 {
+  background: $blue--200;
+}
 .background--blue--300 {
-  background:#f6faff;
+  background: $blue--300;
 }
 .background--blue--500 {
-  background: #0C71F3;
+  background: $blue--500;
+}
+.background--blue--600 {
+  background: $blue--600;
+}
+
+.background--gray--200 {
+  background: $gray--200;
 }
 
 /* Color */
@@ -257,12 +241,12 @@ ul {
 }
 .font-size--7 {
   font-size: 1.5em;
-  line-height: 1.1875em;
+  line-height: 1.25em;
   margin-bottom: .59375em;
 }
 .font-size--8 {
   font-size: 1.8125em;
-  line-height: 1.1875em;
+  line-height: 1.25em;
   margin-bottom: .59375em;
 }
 .font-weight--400 {
@@ -290,6 +274,7 @@ ul {
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
+  display: inline-block;
   font-size: .875em;
   font-weight: 600;
   margin: 0;
@@ -297,18 +282,19 @@ ul {
   transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
-  background:#318bff;
+  background:$blue--700;
 }
 .button--white {
   background: #fff;
-  color: $blue--500;
+  color: $blue--500 !important;
 }
 .button--white:hover {
-  background:rgba(255,255,255,0.8);
+  background: #fff;
+  color: $blue--700 !important;
 }
 .button--lg {
   font-size:1em;
-  padding: 16px 32px;
+  padding: 13px 26px;
 }
 
 /* Nav */
@@ -355,21 +341,18 @@ nav a:hover {
 /* Footer */
 footer {
   align-items: center;
+  justify-content: center;
   background: $gray--200;
   color: $gray--600;
   display: flex;
-  min-height:50vh;
-  padding: 4em 0;
+  flex-direction: row;
 }
-.footer--link {
+footer .font-size--3,
+footer p {
   color: $gray--500;
-  display: block;
-  margin:1em 0;
-}
-.footer--link:active,
-.footer--link:focus,
-.footer--link:hover {
-  color:$blue--500;
+  text-align: center;
+  margin-bottom:0;
+  padding: 1em 0;
 }
 
 @media screen and (min-width:960px) {
@@ -381,9 +364,6 @@ footer {
   }
   .wrapper--lg {
     width: 66%;
-  }
-  footer {
-    padding:0;
   }
 }
 </style>

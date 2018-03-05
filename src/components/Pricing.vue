@@ -172,8 +172,8 @@ $blue--700: #0C71F3;
 $blue--600: #318bff;
 $blue--500: #5ba3ff;
 $blue--400: #7fb7ff;
-$blue--300: #a2cbff;
-$blue--200: #c9e1ff;
+$blue--300: #eef5fd;
+$blue--200: #f3f8ff;
 
 $green--700: #37cfdb;
 $green--600: #4ce0eb;
