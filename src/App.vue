@@ -92,7 +92,8 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
   margin:0;
 }
-p {
+p,
+ul {
   color: $gray--500;
   font-weight: 400;
   margin:0;
