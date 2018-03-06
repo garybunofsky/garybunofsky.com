@@ -19,6 +19,15 @@
     <router-view/>
 
     <!--  footer -->
+    <a href="mailto:gary@garybunofsky.com" class="cta--bar">
+      <div class="margin--center wrapper--lg">
+        <div class="margin--b-1">
+          <span class="font-size--8">📨</span>
+        </div>
+        <h4 class="font-size--7 font-weight--400 color--white">Have a project, question, or just want to say hello?</h4>
+        <span class="button button--lg button--white">Shoot me a email</span>
+      </div>
+    </a>
     <footer>
       <div class="grid wrapper--lg">
         <router-link :to="{name: 'Home'}" class="grid--item font-size--3">Home</router-link>
@@ -94,7 +103,9 @@ h1,h2,h3,h4,h5,h6 {
   margin:0;
 }
 p,
-ul {
+ul,
+ol,
+span {
   color: $gray--500;
   font-weight: 400;
   margin:0;
@@ -131,8 +142,8 @@ ul {
 .margin--b-4 {
   margin-bottom: 4rem;
 }
-.margin--t-12 {
-  margin-top: 12rem;
+.margin--t-7 {
+  margin-top: 7em;
 }
 
 /* card */
@@ -150,6 +161,18 @@ a .card {
 }
 .card:hover {
   transform: translateY(-4px);
+}
+
+/* cta-bar */
+.cta--bar {
+  background: $blue--600;
+  display: block;
+  text-align: center;
+  padding: 1.5em 0;
+  width:100%;
+}
+.cta--bar:hover {
+  background: $blue--700;
 }
 
 /* Layout */
@@ -334,6 +357,7 @@ nav a:hover {
   justify-content: center;
   padding:0.75em 0;
   position: fixed;
+  top: 0;
   width:100%;
   z-index: 1000;
 }
@@ -349,8 +373,10 @@ footer {
   display: flex;
   flex-direction: row;
 }
-footer .font-size--3,
-footer p {
+footer a:hover {
+  color: $blue--600;
+}
+footer .font-size--3 {
   color: $gray--500;
   text-align: center;
   margin-bottom:0;

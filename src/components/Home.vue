@@ -9,7 +9,6 @@
         </div>
       </div>
     </div>
-
     <!-- portfolio -->
     <div class="portfolio background--blue--200 vertically-center vh100" id="portfolio">
       <div class="margin--center wrapper--lg">
@@ -33,16 +32,6 @@
         </div>
       </div>
     </div>
-
-    <a href="mailto:gary@garybunofsky.com" class="cta--bar">
-      <div class="margin--center wrapper--lg">
-        <div class="margin--b-1">
-          <span class="font-size--8">📨</span>
-        </div>
-        <h4 class="font-size--7 font-weight--400 color--white">Have a project, question, or just want to say hello?</h4>
-        <span class="button button--lg button--white">Shoot me a email</span>
-      </div>
-    </a>
   </div>
 </template>
 <script>
@@ -59,7 +48,6 @@ export default {
   methods: {
     getProjects: function () {
       return this.$http.get('https://api.github.com/users/garybunofsky/repos').then(response => {
-        console.log(response.body)
         var projectsIds = [77171025, 107911630, 37658188, 53368074]
         this.projects = response.body.filter(function (project) {
           return projectsIds.includes(project.id)
@@ -124,16 +112,6 @@ $gray--200: #f2f2f2;
 }
 .card {
   padding:4em 1em 2em 1em;
-}
-.cta--bar {
-  background: $blue--600;
-  display: block;
-  text-align: center;
-  padding: 1.5em 0;
-  width:100%;
-}
-.cta--bar:hover {
-  background: $blue--700;
 }
 .portfolio {
   padding: 4em 0;

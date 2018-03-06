@@ -1,13 +1,14 @@
 <template>
-  <div class="vertically-center vh100 wrapper margin--center">
-    <h1 class="font-size--7 margin--t-12">{{ msg }}</h1>
+  <div class="wrapper margin--center">
+    <h1 class="font-size--7 margin--t-7">{{ msg }}</h1>
 
     <div v-for="post in posts">
-      <div class="margin--b-4 card">
+      <div class="margin--b-4">
         <router-link :to="'/blog/' + post.slug ">
           <span class="font-size--3">{{post.date}}</span>
           <h3 class="font-size--6">{{post.title}}</h3>
           <h4 class="font-size--5 font-weight--400">{{post.intro | truncate}}</h4>
+          <span class="button">Continue reading</span>
         </router-link>
       </div>
     </div>
@@ -89,4 +90,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.font-size--5 {
+  margin-bottom: 0.5em;
+}
 </style>
