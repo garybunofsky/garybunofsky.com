@@ -13,6 +13,7 @@
       <router-link :to="{name: 'Blog'}">Blog</router-link>
       <router-link :to="{name: 'Pricing'}">Pricing</router-link>
       <router-link :to="{name: 'Contact'}">Contact</router-link>
+      <router-link :to="{name: 'Contact'}">My Resume</router-link>
     </nav>
     <!-- end navigation -->
 
@@ -138,6 +139,9 @@ ul {
 /* margin */
 .margin--b-1 {
   margin-bottom: 1em;
+}
+.margin--b-2 {
+  margin-bottom: 2em;
 }
 .margin--b-4 {
   margin-bottom: 4rem;
@@ -317,6 +321,10 @@ a .card {
   background: #fff;
   color: $blue--700 !important;
 }
+.button--sm {
+  font-size: .875em;
+  padding: 5px 10px;
+}
 .button--lg {
   font-size:1em;
   padding: 13px 26px;
@@ -382,6 +390,12 @@ footer .font-size--3 {
   margin-bottom:0;
   padding: 1em 0;
 }
+.circle img {
+  border-radius:50%;
+  height:7em;
+  width:7em;
+}
+
 
 @media screen and (min-width:960px) {
   .grid {

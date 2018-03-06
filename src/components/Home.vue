@@ -2,10 +2,12 @@
   <div>
     <div class="vertically-center vh100">
       <div class="wrapper margin--center">
-        <div class="text--center font-size--8">👨‍💻</div>
-        <h1 class="font-size--8 font-weight--400">{{ msg }}</h1>
-        <div class="margin--center">
-          <a href="#portfolio" class="button button--lg">See What I've Built</a>
+        <div class="text--center">
+          <img class="profile margin--b-1" src="https://avatars3.githubusercontent.com/u/8431853" alt="Gary Bunofsky Designer & Developer">
+          <h1 class="font-size--8 font-weight--400">{{ msg }}</h1>
+          <div class="margin--center">
+            <a href="#portfolio" class="button button--lg">See What I've Built</a>
+          </div>
         </div>
       </div>
     </div>
@@ -41,7 +43,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Hey, I’m Gary. I am a developer and designer living in Cleveland, Ohio. I specialize in website and application development.',
+      msg: 'Hey, I’m Gary. I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.',
       projects: ''
     }
   },
@@ -94,8 +96,15 @@ $gray--500: #63686e;
 $gray--400: #d1d5d9;
 $gray--300: #e5e7e9;
 $gray--200: #f2f2f2;
+
 .portfolio .grid {
   flex-direction: row;
+}
+
+.profile {
+  border-radius:50%;
+  height:6em;
+  width:6em;
 }
 .circle {
   align-items: center;

@@ -7,7 +7,7 @@
         <router-link :to="'/blog/' + post.slug ">
           <span class="font-size--3">{{post.date}}</span>
           <h3 class="font-size--6">{{post.title}}</h3>
-          <h4 class="font-size--5 font-weight--400">{{post.intro | truncate}}</h4>
+          <p class="font-size--5 font-weight--400">{{post.intro | truncate}}</p>
           <span class="button">Continue reading</span>
         </router-link>
       </div>
