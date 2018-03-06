@@ -14,7 +14,7 @@
     <!-- portfolio -->
     <div class="portfolio background--blue--200 vertically-center vh100" id="portfolio">
       <div class="margin--center wrapper--lg">
-        <h2 class="font-size--8 text--center">Side Projects</h2>
+        <h2 class="font-size--8 text--center">Portfolio projects</h2>
         <div class="grid grid--gutters">
           <div v-for="project in projects" class="grid--item">
             <a href="#" target="_blank">
