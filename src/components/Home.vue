@@ -60,7 +60,7 @@ export default {
     getProjects: function () {
       return this.$http.get('https://api.github.com/users/garybunofsky/repos').then(response => {
         console.log(response.body)
-        var projectsIds = [98641551, 107911630, 37658188, 53368074, 70201592]
+        var projectsIds = [77171025, 107911630, 37658188, 53368074]
         this.projects = response.body.filter(function (project) {
           return projectsIds.includes(project.id)
         })

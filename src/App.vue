@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div class="toggle-nav" @click="showNav = !showNav">
-      <img src="./assets/icons/menu.svg" alt="">
+      <img v-if="!showNav" src="./assets/icons/menu.svg" alt="open menu">
+      <img v-else src="./assets/icons/close.svg" alt="close menu">
     </div>
 
     <!-- navigation -->
