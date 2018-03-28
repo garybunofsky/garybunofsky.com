@@ -203,6 +203,7 @@ a .card {
 .grid {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .grid--item {
   flex:1;
@@ -215,6 +216,13 @@ a .card {
 }
 .grid--center {
   align-items: center;
+}
+.grid--wrap-mobile {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.grid--2-col-mobile > .grid--item {
+  flex: 25% !important;
 }
 .vertically-center {
   display: flex;
