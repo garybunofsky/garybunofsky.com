@@ -21,7 +21,7 @@ export default {
   name: 'Blog',
   data () {
     return {
-      msg: 'Blog',
+      msg: 'The Latest Posts from My Blog',
       posts: [
         {
           date: 'February 27th, 2018',
@@ -70,12 +70,6 @@ export default {
           intro: 'There are many things to focus on when the time comes to launch a website. Concentration is imperative during this time. Forgetting to complete a small procedure could be detrimental. I have composed this Website Deployment Checklist. When used it can mitigate the risk of unforeseen things happening. It has proven itself valuable time and time again.',
           slug: 'website-deployment-checklist',
           title: 'Website Deployment Checklist'
-        },
-        {
-          date: 'October 14th, 2014',
-          intro: 'Traditionally, global navigation is applied to every page of a website. Recently, sites have begun to house drop-down menu often to as a hamburger icon. This minimized menu is often displayed as a button with three lines stacked horizontally, referred to by some as a hamburger icon. The unique benefits to each navigational approach will be further explained.',
-          slug: 'the-hamburger-icon',
-          title: 'The Hamburger Icon'
         }
       ]
     }

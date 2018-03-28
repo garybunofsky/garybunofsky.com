@@ -137,6 +137,9 @@ ul {
 }
 
 /* margin */
+.margin--b-0 {
+  margin-bottom: 0 !important;
+}
 .margin--b-1 {
   margin-bottom: 1em;
 }
@@ -232,7 +235,6 @@ a .card {
 .background--blue--600 {
   background: $blue--600;
 }
-
 .background--gray--200 {
   background: $gray--200;
 }
@@ -294,7 +296,30 @@ a .card {
 .no-bullets {
   list-style: none;
 }
+pre {
+  background: $gray--200;
+  border: 1px solid $gray--300;
+  border-radius: 4px;
+  padding: 0.25em;
+  font-family: monospace;
+  font-size: 1.1875em;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
 
+code {
+  background: $gray--200;
+  border: 1px solid $gray--300;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1.1875em;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
 /* Button */
 .button {
   background: $blue--600;
