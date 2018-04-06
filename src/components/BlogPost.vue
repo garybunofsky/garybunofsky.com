@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper margin--center">
-    <h1>alsasdfasdfjdf</h1>
     <div v-html="template">{{ template }}</div>
   </div>
 </template>

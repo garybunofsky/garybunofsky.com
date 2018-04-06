@@ -1,18 +1,23 @@
 <template>
-  <div class="wrapper margin--center">
-    <h1 class="font-size--7 margin--t-7">{{ msg }}</h1>
-
-    <div v-for="post in posts">
-      <div class="margin--b-4">
-        <router-link :to="'/blog/' + post.slug ">
-          <span class="font-size--3">{{post.date}}</span>
-          <h3 class="font-size--6">{{post.title}}</h3>
-          <p class="font-size--5 font-weight--400">{{post.intro | truncate}}</p>
-          <span class="button">Continue reading</span>
-        </router-link>
+  <div>
+    <div class="background--gray--200 nav-space padding-y--4 margin--b-4">
+      <div class="wrapper margin--center">
+        <h1 class="text--center font-size--9">{{ msg }}</h1>
+        <h2 class="text--center font-size--6 font-weight--400">The Latest Posts from My Blog.</h2>
       </div>
     </div>
-
+    <div class="wrapper margin--center">
+      <div v-for="post in posts">
+        <div class="margin--b-4">
+          <router-link :to="'/blog/' + post.slug ">
+            <span class="font-size--3">{{post.date}}</span>
+            <h3 class="font-size--6">{{post.title}}</h3>
+            <p class="font-size--5 font-weight--400">{{post.intro | truncate}}</p>
+            <span class="button">Continue reading</span>
+          </router-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -21,7 +26,7 @@ export default {
   name: 'Blog',
   data () {
     return {
-      msg: 'The Latest Posts from My Blog',
+      msg: 'Blog',
       posts: [
         {
           date: 'February 27th, 2018',

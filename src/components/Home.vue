@@ -87,9 +87,9 @@ export default {
           project.name = helpers.capitalize(project.name)
           project.icon = project.description.slice(0, 2)
           project.description = project.description.substr(2)
-          if (project.homepage == null || project.name === "veronica") {
-            project.url = project.url
-            console.log("- " + project.name + ": " + project.url)
+          if (project.homepage == null || project.id !== 53368074) {
+            project.url = project.homepage
+            console.log("- " + project.name + ": " + project.homepage)
           } else {
             project.url = project.html_url
             console.log("- " + project.name + ": " + project.html_url)

@@ -3,7 +3,7 @@
     <div class="background--gray--200 nav-space padding-y--4 margin--b-4">
       <div class="wrapper margin--center">
         <h1 class="text--center font-size--9">{{ msg }}</h1>
-        <h2 class="text--center font-size--6 font-weight--400">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
+        <h2 class="text--center font-size--6 font-weight--400">Website packages for any business and every budget.</h2>
       </div>
     </div>
 

@@ -9,7 +9,6 @@
     <nav v-if="showNav">
       <router-link :to="{name: 'Home'}">Home</router-link>
       <router-link :to="{name: 'About'}">About</router-link>
-      <a href="#">Portfolio</a>
       <router-link :to="{name: 'Blog'}">Blog</router-link>
       <router-link :to="{name: 'Pricing'}">Pricing</router-link>
       <router-link :to="{name: 'Contact'}">Contact</router-link>
@@ -114,7 +113,8 @@ a:hover {
   color: $blue--600;
 }
 ul {
-  margin:0 0 0 -40px;
+  margin-bottom: 1.5625em;
+  margin-left: -20px;
 }
 
 /* Padding */
@@ -315,30 +315,34 @@ a .card {
 }
 .no-bullets {
   list-style: none;
+  margin-left: -40px;
 }
 pre {
   background: $gray--200;
   border: 1px solid $gray--300;
   border-radius: 4px;
-  padding: 0.25em;
+  padding: 0.25em 1.25em;
   font-family: monospace;
-  font-size: 1.1875em;
+  font-size: 17px;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
-
 code {
   background: $gray--200;
   border: 1px solid $gray--300;
   border-radius: 4px;
   font-family: monospace;
-  font-size: 1.1875em;
+  font-size: 17px;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
+}
+pre code {
+  border: none;
+  font-size: 17px;
 }
 /* Button */
 .button {
