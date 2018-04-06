@@ -13,7 +13,6 @@
       <router-link :to="{name: 'Blog'}">Blog</router-link>
       <router-link :to="{name: 'Pricing'}">Pricing</router-link>
       <router-link :to="{name: 'Contact'}">Contact</router-link>
-      <router-link :to="{name: 'Contact'}">My Resume</router-link>
     </nav>
     <!-- end navigation -->
 
@@ -22,11 +21,7 @@
     <!--  footer -->
     <a href="mailto:gary@garybunofsky.com" class="cta--bar">
       <div class="margin--center wrapper--lg">
-        <div class="margin--b-1">
-          <span class="font-size--8">📨</span>
-        </div>
-        <h4 class="font-size--7 font-weight--400 color--white">Have a project, question, or just want to say hello?</h4>
-        <span class="button button--lg button--white">Shoot me a email</span>
+        <h4 class="font-size--7 color--white margin--b-0">Have a project, question, or just want to say hello? Send me a email.</h4>
       </div>
     </a>
     <footer>
@@ -70,19 +65,19 @@ $blue--400: #7fb7ff;
 $blue--300: #eef5fd;
 $blue--200: #f3f8ff;
 
-$green--700: #37cfdb;
-$green--600: #4ce0eb;
-$green--500: #7dedf6;
-$green--400: #9ef1f8;
-$green--300: #b7f3f8;
-$green--200: #cafbff;
+$green--700: #303f4d;
+$green--600: #586471;
+$green--500: #7f8a94;
+$green--400: #a7afb8;
+$green--300: #ced5db;
+$green--200: #f6faff;
 
 $gray--700: #2a3338;
 $gray--600: #434a53;
 $gray--500: #63686e;
 $gray--400: #d1d5d9;
 $gray--300: #e5e7e9;
-$gray--200: #f2f2f2;
+$gray--200: #fafafa;
 
 #app {
   -webkit-font-smoothing: antialiased;
@@ -132,6 +127,9 @@ ul {
 .padding-y--3 {
   padding:3em 0;
 }
+.padding-y--4 {
+  padding:4em 0;
+}
 .padding-y--8 {
   padding:8em 0;
 }
@@ -175,7 +173,7 @@ a .card {
   background: $blue--600;
   display: block;
   text-align: center;
-  padding: 1.5em 0;
+  padding: 2em 0;
   width:100%;
 }
 .cta--bar:hover {
@@ -194,6 +192,9 @@ a .card {
 }
 .vh100 {
   min-height:100vh;
+}
+.vh50 {
+  min-height:50vh;
 }
 .width--100 {
   width:100%;
@@ -246,6 +247,9 @@ a .card {
 .background--gray--200 {
   background: $gray--200;
 }
+.background--gray--300 {
+  background: $gray--300;
+}
 
 /* Color */
 .color--white {
@@ -288,13 +292,23 @@ a .card {
   line-height: 1.25em;
   margin-bottom: .59375em;
 }
+.font-size--9 {
+  font-size: 2.1875em;
+  line-height: 1.25em;
+  margin-bottom: .59375em;
+}
 .font-weight--400 {
   font-weight: 400;
 }
 .font--blue--500 {
   color: $blue--500;
 }
-
+.font--gray--500 {
+  color: $gray--500;
+}
+.nav-space {
+  margin-top: 43px;
+}
 .text--center {
   text-align: center;
 }

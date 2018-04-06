@@ -1,9 +1,13 @@
 <template>
   <div>
+    <div class="background--gray--200 nav-space padding-y--4 margin--b-4">
+      <div class="wrapper margin--center">
+        <h1 class="text--center font-size--9">{{ msg }}</h1>
+        <h2 class="text--center font-size--6 font-weight--400">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
+      </div>
+    </div>
     <div class="wrapper margin--center">
-      <h1 class="font-size--8 margin--t-7">{{ msg }}</h1>
-      <p class="font-size--5">I currently live in Cleveland, Ohio where I spend a lot of time writing code. I specialize in building scalable web solutions for businesses and startups. When I am not coding, I’m probably reading, listening to jazz, cooking, or walking my dog.</p>
-
+      <p class="font-size--5">I specialize in building scalable web solutions for businesses and startups. When I am not coding, I’m probably reading, listening to jazz, cooking, or walking my dog</p>
       <div class="margin--b-2">
         <img src="https://s3.amazonaws.com/garybunofsky.com/gary-bunofsky-loading-dock.jpg" alt="Gary Bunofsky">
       </div>
@@ -12,8 +16,8 @@
       <p class="font-size--5">I wrote my first lines of code in 2010. I co-founded Web Machine, a web development shop, after writing a few more. We designed plenty of custom sites and never used a theme. A few years later I joined Fathom as a Web Developer, while continuing to code for Web Machine during the nights and weekends.</p>
 
       <div class="card margin--center text--center">
-        <p class="font-size--6">Have a look at my resume</p>
-        <router-link to="/resume.pdf" class="button">View resume</router-link>
+        <p class="font-size--6">Want to work together?</p>
+        <router-link to="/resume.pdf" class="button">View my resume</router-link>
       </div>
 
       <h3 class="font-size--6">Skills &amp; Languages</h3>

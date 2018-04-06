@@ -1,31 +1,22 @@
 <template>
-  <div class="vh100 wrapper margin--center">
-    <h1 class="font-size--7 margin--t-7">{{ msg }}</h1>
-    <div class="margin--b-1">
-      <h4 class="font-size--6">📱 Send me a text</h4>
-      <p class="font-size--5">
-        <a href="sms://3305061300" rel="noopener" target="_blank">
-          Write a message
-        </a>
-      </p>
+  <div class="margin--b-4">
+    <div class="background--gray--200 nav-space padding-y--4 margin--b-4">
+      <div class="margin--center">
+        <h1 class="text--center font-size--9">{{ msg }}</h1>
+        <h2 class="text--center font-size--6 font-weight--400">Need some code? Hit me up.</h2>
+      </div>
     </div>
-    <div class="margin--b-1">
-      <h4 class="font-size--6">📨 Send Me an Email</h4>
-      <p class="font-size--5">
-        <a href="mailto:gary@garybunofsky.com?subject=Yo%20what%20up">gary@garybunofsky.com</a>
-      </p>
-    </div>
-    <div class="margin--b-1">
-      <h4 class="font-size--6">📞 Give Me a Call</h4>
-      <p class="font-size--5">
-        <a href="tel:3305061300">(330) 506-1300</a>
-      </p>
-    </div>
-    <div class="margin--b-1">
-      <h4 class="font-size--6">💬 Set up a Meeting</h4>
-      <p class="font-size--5">
-        <a href="https://calendly.com/garybunofsky" target="_blank" rel="noopener">Schedule something</a>
-      </p>
+    <div class="wrapper margin--center">
+      <div class="card margin--b-1">
+        <a class="font-size--6 mobile" href="sms://3305061300" rel="noopener" target="_blank">Text me</a>
+      </div>
+      <div class="card margin--b-1">
+        <a class="font-size--6 envelope" href="mailto:gary@garybunofsky.com?subject=Yo%20what%20up">gary@garybunofsky.com</a>
+      </div>
+      <div class="card margin--b-1">
+        <a class="font-size--6 meeting" href="https://calendly.com/garybunofsky" target="_blank" rel="noopener">Schedule something</a>
+        </p>
+      </div>
     </div>
   </div>
 </template>

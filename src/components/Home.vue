@@ -1,43 +1,43 @@
 <template>
   <div>
-    <div class="vertically-center vh100">
+    <div class="vertically-center vh50">
       <div class="wrapper margin--center">
-        <div class="text--center">
-          <img class="profile margin--b-1" src="https://avatars3.githubusercontent.com/u/8431853" alt="Gary Bunofsky Designer & Developer">
-          <h1 class="font-size--8 font-weight--400">{{ msg }}</h1>
+          <h1 class="font-size--9 font-weight--700">Hey, I'm Gary.</h1>
+          <h2 class="font-size--7 font--gray--500 font-weight--400">I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.</h2>
           <div class="margin--center">
             <a href="#portfolio" class="button button--lg">See What I've Built</a>
           </div>
-        </div>
       </div>
     </div>
     <!-- portfolio -->
-    <div class="portfolio background--blue--200 vertically-center vh100" id="portfolio">
-      <div class="margin--center wrapper--lg">
-        <h2 class="font-size--8 text--center">Here's some project I've built</h2>
+    <div class="portfolio background--gray--200 vertically-center" id="portfolio">
+      <div class="margin--center wrapper">
+        <h2 class="font-size--8 padding-y--1 font-weight--700 text--center">I've built a few cool projects.</h2>
         <div class="grid grid--gutters">
+
           <div v-for="project in projects" class="grid--item">
-            <a href="#" target="_blank">
-              <div class="card">
-                <div class="circle grid grid--center">
+            <a :href="project.url" target="_blank">
+              <div class="card text--center">
+                <div class="circle grid">
                   <span class="font-size--6">{{project.icon}}</span>
                 </div>
-                <h3 class="font-size--6 text--center">
+                <h3 class="font-size--7 margin--b-0">
                   {{project.name}}
-                  <p class="font-size--2">{{project.language}}</p>
                 </h3>
+                <p class="font-size--2">{{project.language}}</p>
                 <p class="font-size--5">{{project.description}}</p>
                 <span class="button">View project</span>
               </div>
             </a>
           </div>
+
         </div>
       </div>
     </div>
 
-    <div class="padding-y--8">
+    <!--div class="padding-y--8">
       <div class="wrapper--lg margin--center">
-        <h2 class="font-size--8 margin--b-4 text--center">I've written code for companies like</h2>
+        <h2 class="font-size--8 margin--b-4 text--center">And I've written code for nice companies.</h2>
 
         <div class="grid margin--center grid--gutters grid--wrap-mobile">
           <div class="grid--item grid grid--center">
@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
 
   </div>
 </template>
@@ -71,7 +71,6 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Hey, I’m Gary. I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.',
       projects: ''
     }
   },
@@ -86,6 +85,12 @@ export default {
           project.name = helpers.capitalize(project.name)
           project.icon = project.description.slice(0, 2)
           project.description = project.description.substr(2)
+          console.log(project.name)
+          if (project.homepage == null || project.name === "veronica") {
+            project.url = project.url
+          } else {
+            project.url = project.homepage
+          }
         })
       }, response => {})
     }
@@ -123,7 +128,7 @@ $gray--600: #434a53;
 $gray--500: #63686e;
 $gray--400: #d1d5d9;
 $gray--300: #e5e7e9;
-$gray--200: #f2f2f2;
+$gray--200: #fafafa;
 
 .portfolio .grid {
   flex-direction: row;
@@ -136,7 +141,7 @@ $gray--200: #f2f2f2;
 }
 .circle {
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
   background:$blue--200;
   border-radius: 50%;
   display: flex;
@@ -148,7 +153,7 @@ $gray--200: #f2f2f2;
   margin-bottom: 0;
 }
 .card {
-  padding:4em 1em 2em 1em;
+  padding:4em 1.5em 2em 1.5em;
 }
 .portfolio {
   padding: 4em 0;
@@ -156,20 +161,16 @@ $gray--200: #f2f2f2;
 .portfolio .grid {
   flex-direction: column;
 }
-
+.portfolio .grid .grid--item:last-child {
+  margin-bottom: 4em;
+}
 .companies img {
   max-width: 120px;
   height: auto;
-}
-@media screen and (min-width:768px) {
-  .portfolio .grid {
-    flex-direction: row;
-  }
 }
 @media screen and (min-width:960px) {
   .portfolio {
     padding: 0;
   }
 }
-
 </style>

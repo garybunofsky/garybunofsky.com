@@ -1,17 +1,17 @@
 <template>
   <div>
-  <div class="vertically-center vh100">
-    <div class="wrapper margin--center text--center">
-      <h1 class="font-size--8">{{ msg }}</h1>
-      <h2 class="font-size--5 font-weight--400">Choose the right website package for you.</h2>
+    <div class="background--gray--200 nav-space padding-y--4 margin--b-4">
+      <div class="wrapper margin--center">
+        <h1 class="text--center font-size--9">{{ msg }}</h1>
+        <h2 class="text--center font-size--6 font-weight--400">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
+      </div>
     </div>
-  </div>
 
-    <div class="wrapper--lg margin--center">
+    <div class="wrapper--lg margin--center margin--b-4">
       <div class="grid grid--gutters">
 
         <div class="grid--item">
-          <a href="#" target="_blank">
+          <a href="mailto:gary@garybunofsky.com?subject=Hi%20,%20need%20a%20website" target="_blank">
             <div class="key-value">
               <div class="icon">
                 <img src="./../assets/icons/website-medium-blue.svg">
@@ -34,7 +34,7 @@
         </div>
 
         <div class="grid--item">
-          <a href="#" target="_blank">
+          <a href="mailto:gary@garybunofsky.com?subject=Hi%20I,%20need%20a%20website">
             <div class="key-value">
               <div class="icon">
                 <img src="./../assets/icons/website-medium-blue.svg">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="grid--item">
-          <a href="#" target="_blank">
+          <a href="mailto:gary@garybunofsky.com?subject=Hi%20,%20need%20a%20website" target="_blank">
             <div class="key-value">
               <div class="icon">
                 <img src="./../assets/icons/website-medium-blue.svg">
@@ -103,8 +103,8 @@
       </div>
     </div>
 
-    <div class="wrapper--lg margin--center">
-      <h4 class="font-size--7 text--center">So what's this really mean?</h4>
+    <div class="wrapper--lg margin--center padding-y--4">
+      <h4 class="font-size--7 text--center">So what's this stuff really mean?</h4>
 
       <div class="grid grid--gutters">
         <div class="grid--item">
@@ -175,12 +175,12 @@ $blue--400: #7fb7ff;
 $blue--300: #eef5fd;
 $blue--200: #f3f8ff;
 
-$green--700: #37cfdb;
-$green--600: #4ce0eb;
-$green--500: #7dedf6;
-$green--400: #9ef1f8;
-$green--300: #b7f3f8;
-$green--200: #cafbff;
+$green--700: #303f4d;
+$green--600: #586471;
+$green--500: #7f8a94;
+$green--400: #a7afb8;
+$green--300: #ced5db;
+$green--200: #f6faff;
 
 $gray--700: #2a3338;
 $gray--600: #434a53;
@@ -188,6 +188,7 @@ $gray--500: #63686e;
 $gray--400: #d1d5d9;
 $gray--300: #e5e7e9;
 $gray--200: #f2f2f2;
+
 a,
 a:hover,
 a:active,
