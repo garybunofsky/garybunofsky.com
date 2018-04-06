@@ -10,6 +10,9 @@
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
+  "engines": {
+    "node": "9.7.1"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "path": "^0.12.7",
