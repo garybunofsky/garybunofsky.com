@@ -81,15 +81,18 @@ export default {
         this.projects = response.body.filter(function (project) {
           return projectsIds.includes(project.id)
         })
+        console.log("Hi, it's Gary.")
+        console.log("Here are some of the things I've made:")
         this.projects.map(function (project) {
           project.name = helpers.capitalize(project.name)
           project.icon = project.description.slice(0, 2)
           project.description = project.description.substr(2)
-          console.log(project.name)
           if (project.homepage == null || project.name === "veronica") {
             project.url = project.url
+            console.log("- " + project.name + ": " + project.url)
           } else {
-            project.url = project.homepage
+            project.url = project.html_url
+            console.log("- " + project.name + ": " + project.html_url)
           }
         })
       }, response => {})
