@@ -193,9 +193,7 @@ a .card {
 .vh100 {
   min-height:100vh;
 }
-.vh50 {
-  min-height:50vh;
-}
+
 .width--100 {
   width:100%;
 }

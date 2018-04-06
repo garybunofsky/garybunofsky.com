@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="vertically-center vh50">
+    <div class="vertically-center vh100">
       <div class="wrapper margin--center">
           <h1 class="font-size--9 font-weight--700">Hey, I'm Gary.</h1>
           <h2 class="font-size--7 font--gray--500 font-weight--400">I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.</h2>
