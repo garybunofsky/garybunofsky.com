@@ -1,9 +1,9 @@
 .DS_Store
 node_modules/
-/dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/assets/client-logos/logos.sketch
 
 # Editor directories and files
 .idea
@@ -12,4 +12,3 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-src/assets/client-logos/logos.sketch
