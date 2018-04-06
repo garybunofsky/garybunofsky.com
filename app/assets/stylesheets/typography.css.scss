@@ -1,0 +1,235 @@
+@import "variables";
+// typography.css.scss
+
+// h1, h2, h3, h4, h5, h6
+h1,h2,h3,h4,h5,h6,p, ul, ol, li, span {
+  color:$brand-primary;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+  a {
+    color:$accent-primary;
+    &:hover,
+    &:focus,
+    &:active {
+      color:$accent-tertiary;
+      text-decoration: none;
+    }
+  }
+}
+
+h1 {
+  @include sans-serif(32);
+}
+
+h2 {
+  @include sans-serif(22);
+}
+
+h3 {
+  @include sans-serif(19);
+}
+
+h4 {
+  @include sans-serif(18);
+}
+
+h5 {
+  @include sans-serif(17);
+}
+
+h6 {
+  @include sans-serif(16);
+}
+
+p {
+  @include sans-serif(16);
+  color:$brand-secondary;
+  margin-bottom: 1.566666em;
+  .italic {
+   font-style: italic;
+  }
+}
+
+.xs { @include sans-serif(14); }
+.sm { @include sans-serif(16); }
+.md { @include sans-serif(20); }
+.lg { @include sans-serif(22); }
+.xl { @include sans-serif(24); }
+
+sup {
+  color:$brand-secondary;
+  a {
+    color:$accent-primary;
+    border:0px;
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom:1px solid $accent-primary;
+    }
+  }
+}
+
+ul, ol {
+  @include sans-serif(16);
+  margin-bottom: 1.566666em;
+  margin-left:-20px;
+  li {
+    color:$brand-secondary;
+    ul, ol {
+      li {
+        font-size:inherit;
+      }
+    }
+  }
+}
+ul.checkbox {
+ li {
+   list-style-type: none;
+   input[type='checkbox'] {
+     margin-left: -1.75rem;
+     margin-right: 1rem;
+     margin-top: 8px;
+   }
+ }
+}
+ul.none {
+  margin-left:-40px;
+  li {
+    list-style-type: none !important;
+  }
+}
+pre {
+  @include sans-serif(16);
+  @include border-radius(5px,5px,5px,5px);
+  font-family: "Courier New";
+  border:1px solid $border;
+  color:$brand-primary;
+  background: $light !important;
+  display:block;
+  padding:12px;
+  margin:0 0 24px 0;
+  word-break:break-all;
+  word-wrap:break-word;
+}
+
+code {
+  font-family: "Courier New";
+  color:$brand-primary;
+  background-color: $light !important;
+}
+
+hr {
+  border-top:1px solid $light;
+  margin-bottom: 12px;
+}
+hr.sm {
+  border-top:3px solid $light;
+  width: 5%;
+  display: inline-block;
+}
+
+label, figurecaption {
+  @include sans-serif(16);
+  color:$brand-secondary;
+  margin:0px;
+}
+
+blockquote.center {
+  @include sans-serif(18);
+  text-align: center;
+  color:$brand-secondary;
+  margin-top:1.5em;
+  margin-left: 0px;
+  margin-bottom:1.5em;
+  margin-right: -25%;
+  width: 150%;
+  float: right;
+}
+
+blockquote.left {
+  @include sans-serif(18);
+  color:$brand-secondary;
+  padding:0.75em 1.5em;
+  margin:2.0em 0em;
+  border-left: 1px solid $border;
+}
+
+.footnotes {
+  margin-top: 24px;
+  ol {
+    @include sans-serif(12);
+    li {
+      color:$brand-secondary;
+    }
+  }
+}
+.swatch {
+  text-align: center;
+  .brand-primary {
+    background-color: $brand-primary;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .brand-secondary {
+    background-color: $brand-secondary;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .light {
+    background-color: $light;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .border {
+    background-color: $border;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .accent-primary {
+    background-color: $accent-primary;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .accent-secondary {
+    background-color: $accent-secondary;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .accent-tertiary {
+    background-color: $accent-tertiary;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  // Tiny Notes Swatches
+  .tiny-notes-brand-primary {
+    background-color: #5944ff;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .tiny-notes-brand-secondary {
+    background-color: #4031D2;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .tiny-notes-medium {
+    background-color: #636161;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .tiny-notes-light {
+    background-color: #E6ECF0;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+}
