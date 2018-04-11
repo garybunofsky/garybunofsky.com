@@ -8,10 +8,5 @@ app.use(
   serveStatic(path.join(__dirname, 'public'))
 )
 
-// // Prevent 404 error on refresh
-// app.use('*', function (req, res) {
-//   res.redirect('/')
-// })
-
 app.listen(port)
 console.log('Server started on port ' + port)
