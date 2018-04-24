@@ -1,2 +1,0 @@
-# robots.txt for https://garybunofsky.com/
-User-agent: *
