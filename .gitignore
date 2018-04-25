@@ -1,8 +1,3 @@
 .DS_Store
 node_modules/
 npm-debug.log*
-
-src/about.html
-src/blog.html
-src/contact.html
-src/index.html
