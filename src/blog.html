@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700" rel=stylesheet>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../script.js"></script>
+    <title>Blog | Gary Bunofsky</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83866226-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-83866226-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Gary Bunofsky</title>
+    <meta name=description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta itemprop=name content="Gary Bunofsky | Developer & Designer">
+    <meta itemprop=description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta itemprop=image content=https://garybunofsky.com/meta-image.png>
+    <meta property=og:url content=https://garybunofsky.com>
+    <meta property=og:type content=website>
+    <meta property=og:title content="Gary Bunofsky | Developer & Designer">
+    <meta property=og:description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta property=og:image content=https://garybunofsky.com/meta-image.png>
+    <!-- twitter  -->
+    <meta name=twitter:card content=summary_large_image>
+    <meta name=twitter:title content="Gary Bunofsky | Developer & Designer">
+    <meta name=twitter:description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta name=twitter:image content="https://garybunofsky.com/images/og-image.png">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div id="menu" class="button menu">
@@ -16,62 +54,81 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="blog.html">Blog</a>
-      <a href="pricing.html">Pricing</a>
+      <a href="portfolio/index.html">Portfolio</a>
       <a href="contact.html">Contact</a>
     </nav>
     <main>
       <div class="content wrapper-md">
-        <h1 class="text--xl">Blog</h1>
-        <h2 class="text--md">Some of the latest posts from my blog.</h2>
+        <div class="mb-4">
+          <h1 class="text--xl">Blog Posts</h1>
+          <h2 class="text--md">Some of the latest posts from my blog.</h2>
+        </div>
         <div class="mb-4">
           <span class="text--xs">February 27th, 2018</span>
           <h3 class="text--md text--bold">Free Fonts that Aren’t Google Fonts</h3>
           <p class="text--sm mb-1">Google Fonts truly changed the web font game. It’s fantastic to have access to a variety of superb typography. And everyone else seems to think so too. Visi...</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/free-fonts-that-arent-google-fonts.html" class="button">Continue reading</a>
         </div>
         <div class="mb-4">
           <span class="text--xs">February 23rd, 2018</span>
           <h3 class="text--md text--bold">Seeding a Database with Knex</h3>
           <p class="text--sm mb-1">I was looking for a way to put data in my database. I wanted something that was organized and simple like Rake, but also agreed with Node. To my suprise, np...</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/seeding-a-database-with-knex.html" class="button">Continue reading</a>
         </div>
         <div class="mb-4">
           <span class="text--xs">March 6th, 2017</span>
           <h3 class="text--md text--bold">A Month Without Coffee</h3>
           <p class="text--sm mb-1">My first cup of coffee was at my grandma's. I wasn't allowed to pour my own. But was heavy handed with the sugar. My coffee tasted of cream and was nearly t...</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/a-month-without-coffee.html" class="button">Continue reading</a>
         </div>
         <div class="mb-4">
           <span class="text--xs">November 22nd, 2016</span>
           <h3 class="text--md text--bold">Facebook's New Job</h3>
           <p class="text--sm mb-1">People are mad. And rightfully so. Many believe the fake news on Facebook altered the results of the 2016 election. And it probably did, but Facebook should...</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/facebooks-new-job.html" class="button">Continue reading</a>
         </div>
         <div class="mb-4">
           <span class="text--xs">November 17th, 2016</span>
           <h3 class="text--md text--bold">Not the Same</h3>
           <p class="text--sm mb-1">Library and frameworks both allow you to do more and write less. They share other similarities but shouldn't be used synonymously – although they often are....</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/not-the-same.html" class="button">Continue reading</a>
         </div>
         <div class="mb-4">
           <span class="text--xs">July 29th, 2015</span>
           <h3 class="text--md text--bold">Basic Git Commands</h3>
           <p class="text--sm mb-1">Features are added, files are refactored and bugs are removed. For this reason seasoned developers use version control. There are plenty of benefits to usin...</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/basic-git-commands.html" class="button">Continue reading</a>
         </div>
         <div class="mb-4">
           <span class="text--xs">November 18, 2015</span>
           <h3 class="text--md text--bold">Finding Photos</h3>
           <p class="text--sm mb-1">Finding stock photos can be a hassle. Luckily there are websites that host free high-quality images. I curated a list of some of my favorites here. It will ...</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/finding-photos.html" class="button">Continue reading</a>
         </div>
         <div class="mb-4">
           <span class="text--xs">June 18th, 2015</span>
           <h3 class="text--md text--bold">Website Deployment Checklist</h3>
           <p class="text--sm mb-1">There are many things to focus on when the time comes to launch a website. Concentration is imperative during this time. Forgetting to complete a small proc...</p>
-          <a href="#" class="button">Continue reading</a>
+          <a href="blog/website-deployment-checklist.html" class="button">Continue reading</a>
         </div>
       </div>
-    </main>
+    <footer class="wrapper-md">
+  <div class="gradient-border"></div>
+  <ul class="grid text--code mt-1 grid--space-between text--xs">
+    <li>
+      <a href="mailto:gary@garybunofsky.com" class="text--gray--500 caret">Email</a>
+    </li>
+    <li>
+      <a href="/resume.pdf" class="text--gray--500 caret">Resume</a>
+    </li>
+    <li>
+      <a href="/privacy-policy.html" class="text--gray--500 caret">Privacy Policy</a>
+    </li>
+    <li>
+      <a href="/contact.html" class="text--gray--500">Questions?</a>
+    </li>
+  </ul>
+</footer>
+</main>
   </body>
 </html>

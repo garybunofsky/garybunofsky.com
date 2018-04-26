@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>A Month Without Coffee | Gary Bunofsky</title>
+    <title>Basic Git Commands | Gary Bunofsky</title>
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83866226-1"></script>
@@ -59,28 +59,73 @@
     </nav>
     <main>
       <div class="content wrapper-md">
-        <h1 class="text--xl">A Month Without Coffee</h1>
-        <p class="text--sm">My first cup of coffee was at my grandma's. I wasn't allowed to pour my own. But was heavy handed with the sugar. My coffee tasted of cream and was nearly the same color. Ever since that  morning I've been drinking coffee almost daily. Shout out to my Grandma.</p>
-        <p class="text--sm">I'm much older now. And while trying to reassess what I actually <em>need</em>, I began to question coffee. Does it do me any good, or is it just a habit? How would the day be if I were to abstain from drinking this productivity potion? I decided to try an experiment.</p>
-        <blockquote class="text--lg text--light mb-1">TLDR; I stopped drinking coffee for a month and my energy was much more consistent. I also felt more tranquil and positive.</blockquote>
-        <h3 class="text--md text--bold">The First Morning</h3>
-        <p class="text--sm">I awoke in a haze on a Monday morning. Resisting the temptation to brew a cup of joe, I reached for water – the same water that waiters hate to hear you order. Needless to say it was dull and rather underwhelming.</p>
-        <p class="text--sm">It was the first of February and I just wanted a warm beverage. For a second, I thought about ending the experiment. Forgoing coffee wasn't difficult, but not having a warm drink was. I planned to stock up on some tea to get me through the month.</p>
-        <h3 class="text--md text--bold">All Day Energy</h3>
-        <p class="text--sm">I didn't crash after lunch, which means I didn't have the lull in productivity. I began to notice that I felt lighter and more present. While working my mind focused on the task at hand, not the three other things I had to do. This yielded better results on whatever I was working on, whether that be an some code, or just typing up an email. My mind wasn't wandering, and I was focusing on one thing at a time.</p>
-        <p class="text--sm">It was an unexpected, but I also noticed I was in a better mood. I don't know why. I wasn't the only one to noticed that I was much more cheerful.</p>
-        <h3 class="text--md text--bold" class="text--md text--bold">Times I Really Wanted a Cup O' Joe:</h3>
-        <ul class="text--sm">
-          <li>In the morning</li>
-          <li>When I smelled coffee</li>
-          <li>After hearing a Keurig </li>
-          <li>When seeing a coffee ad</li>
-        </ul>
-        <h3 class="text--md text--bold">Tea</h3>
-        <p class="text--sm">Prior to my coffee abstinence, I began to explore tea. The types I tried didn't provide the same satisfaction. However they were tasty and fulfilling in their own way. I'd typically have a cup of Assam or Silver Leaf in the mid morning. The mental effect wasn't the same – a more mellow, yet focused, state of mind. I'd say tea was a good subsitute, but not at all replacement.</p>
-        <h3 class="text--md text--bold">Now What?</h3>
-        <p class="text--sm">I still love coffee. I don't plan to stop drinking it. I just don't want to have it deeply embedded into my routine. Having a cup or two when I am feeling sluggish sounds good to me. When I'm not I'll stick with water or tea.</p>
-      </div>
+      <h1 class="text--xl">Basic Git Commands</h1>
+
+      <p class="text--sm">Features are added, files are refactored and bugs are removed. For this reason seasoned developers use version control. There are plenty of benefits to using version control. Below you can find the main reasons I, as well as many others, love it.</p>
+      <h2 class="text--md text--bold">Benefits of version control</h2>
+      <ul class="text--sm">
+        <li>Revert back to previous versions.</li>
+        <li>Simultaneously work on the same file with others.</li>
+        <li>Maintain multiple versions of code.</li>
+        <li>See the difference between versions of  code.</li>
+        <li>Prove a particular change broke or fixed a feature.</li>
+        <li>Examine the history of your project.</li>
+        <li>Submit a change on a collaborative project.</li>
+        <li>Share code.</li>
+        <li>Allow others to work on your code</li>
+        <li>View when work is being done and by whom.</li>
+        <li>Test a feature without interfering with working code.</li>
+      </ul>
+      <p class="text--sm">As much as I love Git. It never fails that I forget a command or two. It doesn't help that there's many ways to do the same thing. Regardless, when I forget one command I reference the list below.</p>
+      <h2 class="text--md text--bold">Creating Repositories</h2>
+      <h4 class="text--sm">Create a local repo</h4>
+      <pre>git init</pre>
+      <h4 class="text--sm">Download a repository and its history</h4>
+      <pre>git clone https://github.com/user/repo</pre>
+      <h4 class="text--sm">Change the URI or URL for a remote repo</h4>
+      <pre>git remote set-url origin https://your.new.url</pre>
+      <h2>Making Changes</h2>
+      <h4 class="text--sm">List all files to be committed</h4>
+      <pre>git status</pre>
+      <h4 class="text--sm">View file differences that are unstaged</h4>
+      <pre>git diff</pre>
+      <h4 class="text--sm">Stage single file</h4>
+      <pre>git add path/of/file</pre>
+      <h4 class="text--sm">Stage all files</h4>
+      <pre>git add .</pre>
+      <h4 class="text--sm">Unstage single file, but retains contents</h4>
+      <pre>git reset path/of/file</pre>
+      <h4 class="text--sm">Commit changes to repository</h4>
+      <pre>git commit -m "message"</pre>
+        <h2>Managing Branches</h2>
+        <h4 class="text--sm">View local branches</h4>
+        <pre>git branch</pre>
+        <h4 class="text--sm">View remote branches</h4>
+        <pre>git branch -r</pre>
+        <h4 class="text--sm">View all local and remote branches</h4>
+        <pre>git branch -a</pre>
+        <h4 class="text--sm">Switch branches</h4>
+        <pre>git checkout your-branch-name</pre>
+        <h4 class="text--sm">Merge specific commit to current branch</h4>
+        <pre>git cherry-pick your-sha</pre>
+        <h4 class="text--sm">Merge a range of commits to current branch</h4>
+        <pre>git cherry-pick your-first-sha^..your-second-sha</pre>
+        <h2>Stashing and Unstashing</h2>
+        <h4 class="text--sm">Save changes as stash</h4>
+        <pre>git stash save "message"</pre>
+        <h4 class="text--sm">Apply stash</h4>
+        <pre>git stash apply stash@{#}</pre>
+        <h4 class="text--sm">View all stashes</h4>
+        <pre>git stash list</pre>
+        <h2 class="text--md text--bold">Others</h2>
+        <h4 class="text--sm">Change URL for remote git repository</h4>
+        <pre>git remote set-url origin https://github.com/user/repo</pre>
+        <h4 class="text--sm">View existing remotes</h4>
+        <pre>git remote -v</pre>
+        <h4 class="text--sm">Remove cached files</h4>
+        <pre>git rm -r --cached .</pre>
+        <h4 class="text--sm">Overwrite all local files and update to latest commit</h4><h4>
+        <pre>git reset --hard origin/master</pre>
     <footer class="wrapper-md">
   <div class="gradient-border"></div>
   <ul class="grid text--code mt-1 grid--space-between text--xs">
