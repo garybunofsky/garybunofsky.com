@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>About | Gary Bunofsky</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <title>Portfolio | Gary Bunofsky</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83866226-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -51,47 +51,56 @@
       Menu
     </div>
     <nav id="nav" class="hide">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="portfolio/index.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../portfolio/index.html">Portfolio</a>
+      <a href="../contact.html">Contact</a>
     </nav>
     <main>
       <div class="content wrapper-md">
-        <section>
-          <h1 class="text--xl">About Me</h1>
-          <h2 class="text--md">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
-          <p class="text--sm">I specialize in building scalable web solutions for businesses and startups. When I am not coding, I’m probably reading, listening to jazz, cooking, or walking my dog, Ruby.</p>
-          <p class="text--sm">I wrote my first lines of code in 2010. I co-founded Web Machine, a web development shop, after writing a few more. We designed plenty of custom sites and never used a theme. A few years later I joined Fathom as a Web Developer, while continuing to code for Web Machine during the nights and weekends.</p>
+        <section class="mb-4">
+          <h1 class="text--xl">Veronica</h1>
+          <h2 class="text--md">Veronica is a chatbot that can text you the news.</h2>
         </section>
+  			<h3 class="text--md text--bold">The Challenge</h3>
+  			<p class="text--sm">Create a chatbot that will text the latest news from various sources. The chatbot that will text headlines and articles. News sources vary based on the command sent to Veronica.</p>
+  			<h4 class="text--md text--bold">Watch a short preview.</h4>
+  			<video loop autoplay controls="true" width="100%" src="https://s3.amazonaws.com/garybunofsky.com/veronica-app-preview.mp4" type="video/mp4"></video>
 
-        <section>
-          <h3 class="text--md text--bold">Skills & Languages</h3>
-          <ul class="text--sm">
-            <li class="check">Javascript (Node, Vue & Angular)</li>
-            <li class="check">Ruby (Rails & Sinatra)</li>
-            <li class="check">PHP</li>
-            <li class="check">CSS (SCSS & LESS)</li>
-            <li class="check">HTML</li>
-            <li class="check">SQL</li>
-            <li class="check">Postgres</li>
-            <li class="check">Mongo</li>
-            <li class="check">TDD (Jest, Jasmine & Rspec)</li>
-            <li class="check">Git</li>
-            <li class="check">Flexbox</li>
-            <li class="check">Command Line</li>
-            <li class="check">Sketch</li>
-            <li class="check">Adobe Creative Cloud</li>
-          </ul>
-        </section>
+  			<h3 class="text--md text--bold">Brainstorming and Prototyping</h3>
+  			<p class="text--sm">Drawing a control flow graph yielded the established series of actions. There were a total of two outcomes, either the API call succedded or failed. The content of the text message was determined by the outcome of the API call.</p>
 
-        <section>
-          <h3 class="text--md text--bold">Education</h3>
-          <h4 class="text--sm">Kent State University<br />
-              B.A. Communication Studies<br />
-              2008-2012</h4>
-        </section>
+  			<figure>
+  				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-prototype.jpg" alt="veronica-prototype" />
+  			</figure>
+
+  			<figure>
+  				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-iphone-1.png" alt="veronica-iphone-1" />
+  			</figure>
+
+  			<h3 class="text--md text--bold">Determining what to send</h3>
+  			<p class="text--sm">The original intention was to have Veronica only respond with the article's headline. Upon further investigation, headlines did not communicate enough value. Sending the headline along with the article link was the proper solution. This enabled Veronica to transfer a short description while also giving the user the option to read more.<p>
+
+  			<h3 class="text--md text--bold">Examples of commands</h3>
+  			<ul class="text--sm">
+  				<li>Bloomberg, <code>bloomberg</code></li>
+  				<li>Buzzfeed, <code>buzzfeed</code></li>
+  				<li>CNBC, <code>cnbc</code></li>
+  				<li>CNN, <code>cnn</code></li>
+  				<li>ESPN, <code>espn</code></li>
+  				<li>Hacker News, <code>hacker-news</code></li>
+  				<li>Mashable, <code>mashable</code></li>
+  				<li>The Economist, <code>the-economist</code></li>
+  				<li>The New York Times, <code>the-new-york-times</code></li>
+  				<li>The Wall Street Journal, <code>the-wall-street-journal</code></li>
+  				<li>Time, <code>time</code></li>
+  				<li>USA Today, <code>usa-today</code></li>
+  			</ul>
+  			<figure class="center">
+  				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-iphone-2.png" alt="veronica-iphone-1" />
+  			</figure>
+  			<p class="text--sm">The desire to build Veronica came from wanting to get news without an app. If you want the latest news, just text <em>CNN</em>, <em>Time</em>, or something else to (321) 233-9118</p>
       </div>
     <footer class="wrapper-md">
   <div class="gradient-border"></div>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>About | Gary Bunofsky</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <title>Portfolio | Gary Bunofsky</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83866226-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -51,47 +51,70 @@
       Menu
     </div>
     <nav id="nav" class="hide">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="portfolio/index.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../portfolio/index.html">Portfolio</a>
+      <a href="../contact.html">Contact</a>
     </nav>
     <main>
       <div class="content wrapper-md">
-        <section>
-          <h1 class="text--xl">About Me</h1>
-          <h2 class="text--md">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
-          <p class="text--sm">I specialize in building scalable web solutions for businesses and startups. When I am not coding, I’m probably reading, listening to jazz, cooking, or walking my dog, Ruby.</p>
-          <p class="text--sm">I wrote my first lines of code in 2010. I co-founded Web Machine, a web development shop, after writing a few more. We designed plenty of custom sites and never used a theme. A few years later I joined Fathom as a Web Developer, while continuing to code for Web Machine during the nights and weekends.</p>
+        <section class="mb-4">
+          <h1 class="text--xl">Portfolio</h1>
+          <h2 class="text--md">Below you can find some projects I've made.</h2>
         </section>
 
         <section>
-          <h3 class="text--md text--bold">Skills & Languages</h3>
-          <ul class="text--sm">
-            <li class="check">Javascript (Node, Vue & Angular)</li>
-            <li class="check">Ruby (Rails & Sinatra)</li>
-            <li class="check">PHP</li>
-            <li class="check">CSS (SCSS & LESS)</li>
-            <li class="check">HTML</li>
-            <li class="check">SQL</li>
-            <li class="check">Postgres</li>
-            <li class="check">Mongo</li>
-            <li class="check">TDD (Jest, Jasmine & Rspec)</li>
-            <li class="check">Git</li>
-            <li class="check">Flexbox</li>
-            <li class="check">Command Line</li>
-            <li class="check">Sketch</li>
-            <li class="check">Adobe Creative Cloud</li>
-          </ul>
+          <div class="grid grid--gutters mb-1">
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=377e356cce015c363d123504857f8137&auto=format&fit=crop&w=2022&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Blouse Icons</h4>
+                <span class="text--xs text--code">HTML</span>
+                <p class="text--sm">An open-sourced collection of simple, subtle icons. To install just run npm install blouse.</p>
+                <a target="_blank" rel="noopener" href="http://blouse.garybunofsky.com/" class="button" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1511978360799-4149696253a1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e13e3365ee2ce28decd1962f271314d2&auto=format&fit=crop&w=1050&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Veronica</h4>
+                <span class="text--xs text--code">Ruby</span>
+                <p class="text--sm">An SMS bot that can text you the news. Just text CNN or Bloomberg to (321)-233-9118.</p>
+                <a href="/portfolio/veronica.html" class="button" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid--gutters mb-1">
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4f1da47f1719d705e90d8624cd45a6e0&auto=format&fit=crop&w=1650&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Pass.js Library</h4>
+                <span class="text--xs text--code">JavaScript</span>
+                <p class="text--sm">Very simple parameter passing. Easily track query strings through form fields - great for PPC campaigns.</p>
+                <a href="#" class="button" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1470290032981-3371c20736f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=850130918b6df688bf4aa309cd1e15c1&auto=format&fit=crop&w=1350&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Peak Website</h4>
+                <span class="text--xs text--code">JavaScript, PHP, SCSS</span>
+                <p class="text--sm">I designed and developed Peak's website using modern web frameworks.</p>
+                <a href="http://peakdryiceblasting.com" class="button" target="_blank" rel="noopener">View site</a>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section>
-          <h3 class="text--md text--bold">Education</h3>
-          <h4 class="text--sm">Kent State University<br />
-              B.A. Communication Studies<br />
-              2008-2012</h4>
-        </section>
       </div>
     <footer class="wrapper-md">
   <div class="gradient-border"></div>
