@@ -51,56 +51,70 @@
       Menu
     </div>
     <nav id="nav" class="hide">
-      <a href="../index.html">Home</a>
-      <a href="../about.html">About</a>
-      <a href="../blog.html">Blog</a>
-      <a href="../portfolio/index.html">Portfolio</a>
-      <a href="../contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="../about/">About</a>
+      <a href="../blog/">Blog</a>
+      <a href="../portfolio">Portfolio</a>
+      <a href="../contact/">Contact</a>
     </nav>
     <main>
       <div class="content wrapper-md">
         <section class="mb-4">
-          <h1 class="text--xl">Veronica</h1>
-          <h2 class="text--md">Veronica is a chatbot that can text you the news.</h2>
+          <h1 class="text--xl">Portfolio</h1>
+          <h2 class="text--md">Below you can find some projects I've made.</h2>
         </section>
-  			<h3 class="text--md text--bold">The Challenge</h3>
-  			<p class="text--sm">Create a chatbot that will text the latest news from various sources. The chatbot that will text headlines and articles. News sources vary based on the command sent to Veronica.</p>
-  			<h4 class="text--md text--bold">Watch a short preview.</h4>
-  			<video loop autoplay controls="true" width="100%" src="https://s3.amazonaws.com/garybunofsky.com/veronica-app-preview.mp4" type="video/mp4"></video>
 
-  			<h3 class="text--md text--bold">Brainstorming and Prototyping</h3>
-  			<p class="text--sm">Drawing a control flow graph yielded the established series of actions. There were a total of two outcomes, either the API call succedded or failed. The content of the text message was determined by the outcome of the API call.</p>
+        <section>
+          <div class="grid grid--gutters mb-1">
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=377e356cce015c363d123504857f8137&auto=format&fit=crop&w=2022&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Blouse Icons</h4>
+                <span class="text--xs text--code">HTML</span>
+                <p class="text--sm">An open-sourced collection of simple, subtle icons. To install just run npm install blouse.</p>
+                <a target="_blank" rel="noopener" href="http://blouse.garybunofsky.com/" class="button" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1511978360799-4149696253a1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e13e3365ee2ce28decd1962f271314d2&auto=format&fit=crop&w=1050&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Veronica</h4>
+                <span class="text--xs text--code">Ruby</span>
+                <p class="text--sm">An SMS bot that can text you the news. Just text CNN or Bloomberg to (321)-233-9118.</p>
+                <a href="https://github.com/garybunofsky/veronica" target="_blank" rel="noopener" class="button" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid--gutters mb-1">
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4f1da47f1719d705e90d8624cd45a6e0&auto=format&fit=crop&w=1650&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Pass.js Library</h4>
+                <span class="text--xs text--code">JavaScript</span>
+                <p class="text--sm">Very simple parameter passing. Easily track query strings through form fields - great for PPC campaigns.</p>
+                <a href="http://garybunofsky.github.io/pass.js/" target="_blank" rel="noopener" class="button" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+            <div class="card grid--item">
+              <div class="card--image">
+                <img src="https://images.unsplash.com/photo-1470290032981-3371c20736f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=850130918b6df688bf4aa309cd1e15c1&auto=format&fit=crop&w=1350&q=80" alt="">
+              </div>
+              <div class="card--content">
+                <h4 class="text--md text--bold">Peak Website</h4>
+                <span class="text--xs text--code">JavaScript, PHP, SCSS</span>
+                <p class="text--sm">I designed and developed Peak's website using modern web frameworks.</p>
+                <a href="http://peakdryiceblasting.com" class="button" target="_blank" rel="noopener">View site</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  			<figure>
-  				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-prototype.jpg" alt="veronica-prototype" />
-  			</figure>
-
-  			<figure>
-  				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-iphone-1.png" alt="veronica-iphone-1" />
-  			</figure>
-
-  			<h3 class="text--md text--bold">Determining what to send</h3>
-  			<p class="text--sm">The original intention was to have Veronica only respond with the article's headline. Upon further investigation, headlines did not communicate enough value. Sending the headline along with the article link was the proper solution. This enabled Veronica to transfer a short description while also giving the user the option to read more.<p>
-
-  			<h3 class="text--md text--bold">Examples of commands</h3>
-  			<ul class="text--sm">
-  				<li>Bloomberg, <code>bloomberg</code></li>
-  				<li>Buzzfeed, <code>buzzfeed</code></li>
-  				<li>CNBC, <code>cnbc</code></li>
-  				<li>CNN, <code>cnn</code></li>
-  				<li>ESPN, <code>espn</code></li>
-  				<li>Hacker News, <code>hacker-news</code></li>
-  				<li>Mashable, <code>mashable</code></li>
-  				<li>The Economist, <code>the-economist</code></li>
-  				<li>The New York Times, <code>the-new-york-times</code></li>
-  				<li>The Wall Street Journal, <code>the-wall-street-journal</code></li>
-  				<li>Time, <code>time</code></li>
-  				<li>USA Today, <code>usa-today</code></li>
-  			</ul>
-  			<figure class="center">
-  				<img src="https://s3.amazonaws.com/garybunofsky.com/veronica-iphone-2.png" alt="veronica-iphone-1" />
-  			</figure>
-  			<p class="text--sm">The desire to build Veronica came from wanting to get news without an app. If you want the latest news, just text <em>CNN</em>, <em>Time</em>, or something else to (321) 233-9118</p>
       </div>
     <footer class="wrapper-md">
   <div class="gradient-border"></div>
@@ -112,10 +126,10 @@
       <a href="/resume.pdf" class="text--gray--500 caret">Resume</a>
     </li>
     <li>
-      <a href="/privacy-policy.html" class="text--gray--500 caret">Privacy Policy</a>
+      <a href="/privacy-policy/" class="text--gray--500 caret">Privacy Policy</a>
     </li>
     <li>
-      <a href="/contact.html" class="text--gray--500">Questions?</a>
+      <a href="/contact/" class="text--gray--500">Questions?</a>
     </li>
   </ul>
 </footer>
