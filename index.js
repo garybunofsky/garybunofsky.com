@@ -16,5 +16,5 @@ app.use(
   express.static(__dirname + '/src/', {extensions: ['html']})
 );
 
-app.listen(process.env.PORT)
-console.log('Server started on port ' + process.env.PORT)
+app.listen(process.env.PORT || port)
+console.log('Server started on port ' + process.env.PORT || port)
