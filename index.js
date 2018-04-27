@@ -2,6 +2,7 @@ var express = require('express')
 var app = express()
 var path = require('path')
 var serveStatic = require('serve-static')
+var port = 3000
 app.use(
   (req, res, next) => {
     const test = /\?[^]*\//.test(req.url)
@@ -15,5 +16,5 @@ app.use(
   express.static(__dirname + '/src/', {extensions: ['html']})
 );
 
-app.listen(3000)
-console.log('Server started on port 3000')
+app.listen(process.env.PORT)
+console.log('Server started on port ' + process.env.PORT)
