@@ -207,7 +207,7 @@ pre code {
   background-image: -webkit-linear-gradient(135deg, #3589F5 0%, #0C71F3 100%);
   background-image: -o-linear-gradient(135deg, #3589F5 0%, #0C71F3 100%);
   background-image: linear-gradient(-45deg, #3589F5 0%, #0C71F3 100%);
-  border: 0;
+  border: 1px solid #3589F5;
   border-radius: 4px;
   -webkit-box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.18);
           box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.18);
@@ -230,11 +230,23 @@ pre code {
     background: #5DA0F7;
     -webkit-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
-        transform: translateY(-1px);
+    transform: translateY(-1px);
     -webkit-box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
-            box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
+    box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
 }
-
+.button--o {
+  background: none;
+  border: 1px solid #3589F5;
+  color: #3589F5 !important;
+}
+.button--o:hover {
+  background: rgba(53, 137, 245, 0.23);
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
+  box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
+}
 
 /* Nav */
 nav {
@@ -326,6 +338,9 @@ nav a:after {
 }
 .mt-1 {
   margin-top: 1em;
+}
+.p-2 {
+  padding: 2em
 }
 
 /* Footer */
