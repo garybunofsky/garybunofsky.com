@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (i % 2 !== 0) {
       menu.innerHTML = "Menu";
     } else {
-      menu.innerHTML = "Close";
+      menu.innerHTML = "×";
     }
     i++
   }
