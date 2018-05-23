@@ -107,6 +107,7 @@ a:hover {
 img.responsive {
   width: 100%;
   height: auto;
+  border: 1px solid #f2f2f2;
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
   box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
@@ -405,6 +406,6 @@ footer {
 }
 .wrapper-lg {
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0 auto;
 }
