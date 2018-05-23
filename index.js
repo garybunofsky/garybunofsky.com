@@ -6,7 +6,7 @@ var port = 3000
 app.use(
   (req, res, next) => {
     const test = /\?[^]*\//.test(req.url)
-    if (req.url.substr(-1) === '/' && req.url.length > 1 && !test && !req.url.includes('blog')) {
+    if (req.url.substr(-1) === '/' && req.url.length > 1 && !test && !req.url.includes('blog') && !req.url.includes('portfolio')) {
       res.redirect(301, req.url.slice(0, -1))
     }
     else {

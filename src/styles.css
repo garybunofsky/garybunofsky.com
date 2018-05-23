@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;padding: 0; border: 0; font-size: 100%; font: inherit;vertical-align: baseline;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote,q{quotes: none;}blockquote:before, blockquote:after,q:before,q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ul {list-style: none;}blockquote,q{quotes: none;}blockquote:before, blockquote:after,q:before,q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
 
 body {
   font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -24,13 +24,16 @@ main {
 .green--300 { background: #BCEFF3; }
 .green--200 { background: #DEF7F9; }
 .gray--700 { background: #2a3338; }
-.gray--600 { background: #4E5559; }
+.gray--600 { background: #3e474c; }
 .gray--500 { background: #71777A; }
 .gray--400 { background: #95999C; }
 .gray--300 { background: #B8BBBD; }
 .gray--200 { background: #DCDDDE; }
 
-
+hr {
+  border-color: #DCDDDE;
+  margin: 3em 0;
+}
 /* Fonts */
 .text--xl {
   color: #2a3338;
@@ -40,14 +43,14 @@ main {
   font-weight: 700;
 }
 .text--lg {
-  color: #4E5559;
+  color: #3e474c;
   font-size: 1.875em;
   line-height: 1.15em;
   margin-bottom: .25em;
   font-weight: 700;
 }
 .text--md {
-  color: #4E5559;
+  color: #3e474c;
   font-size: 1.5em;
   line-height: 1.2em;
   margin-bottom: .5em;
@@ -67,8 +70,9 @@ main {
 .text--code {
   font-family: 'Menlo', 'Courier', monospace;
 }
+
 .bulleted li:before {
-  color: #86B8F9;
+  color: #B8BBBD;
   content: "•";
   margin-right: 0.25em;
 }
@@ -85,12 +89,28 @@ main {
   margin: 0 0.5em 0.125em 0;
   width: 10px;
 }
+ol {
+  margin: 0 0 0 1em;
+}
 a {
   text-decoration: none;
   color: #0C71F3;
 }
+strong {
+  font-weight: 600;
+}
 a:hover {
   color: #86B8F9;
+}
+
+/* image styles */
+img.responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+  margin-bottom: 4em;
 }
 
 
@@ -106,6 +126,9 @@ a:hover {
 }
 
 /* Font Color */
+.text--blue--500 {
+  color: #5DA0F7;
+}
 .text--gray--500 {
   color: #71777A;
 }
@@ -116,8 +139,9 @@ code, pre {
     border: 1px solid #e5e7e9;
     border-radius: 4px;
     color: rgb(140, 140, 140);
-    font-family: 'Menlo', 'Courier', monospace;
-    font-size: 1.15em;
+    font-family: 'Courier New', 'Courier', monospace !important;
+    font-size: 0.875em;
+    padding: 0.125em 0.5em;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -o-pre-wrap;
@@ -127,10 +151,13 @@ pre {
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
             box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
     padding: .5em .75em;
+    font-size: 0.875em;
     margin-bottom: 1em;
 }
 pre code {
     border: none;
+    font-size: 0.875em;
+    padding: 0;
     font-size: 17px;
 }
 
@@ -374,5 +401,10 @@ footer {
 .wrapper-md {
   width: 100%;
   max-width: 580px;
+  margin: 0 auto;
+}
+.wrapper-lg {
+  width: 100%;
+  max-width: 768px;
   margin: 0 auto;
 }

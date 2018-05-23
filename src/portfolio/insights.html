@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Portfolio | Gary Bunofsky</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83866226-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-83866226-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta itemprop=name content="Gary Bunofsky | Developer & Designer">
+    <meta itemprop=description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta itemprop=image content="https://garybunofsky.com/images/meta.png">
+    <meta property=og:url content=https://garybunofsky.com>
+    <meta property=og:type content=website>
+    <meta property=og:title content="Gary Bunofsky | Developer & Designer">
+    <meta property=og:description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta property=og:image content="https://garybunofsky.com/images/meta.png">
+    <!-- twitter  -->
+    <meta name=twitter:card content=summary_large_image>
+    <meta name=twitter:title content="Gary Bunofsky | Developer & Designer">
+    <meta name=twitter:description content="I am a developer and designer living in Cleveland, Ohio. I make sites and applications on the internet.">
+    <meta name=twitter:image content="https://garybunofsky.com/images/og-image.png">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div id="menu" class="button menu">
+      Menu
+    </div>
+    <nav id="nav" class="hide">
+      <a href="/">Home</a>
+      <a href="../about/">About</a>
+      <a href="../blog/">Blog</a>
+      <a href="../portfolio">Portfolio</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+    <main>
+      <div class="content wrapper-md">
+        <section class="mb-4">
+          <h1 class="text--xl">Insights</h1>
+          <h2 class="text--md">Insights is a Vue app that helps Amazon Sellers analyze trends.</h2>
+        </section>
+        <p class="text--sm">Marketplace Strategy works with a variety of clients to sustainably increase Amazon sales.  They needed an application that would allow them to analyze competing products, find trends and identify opportunities within the Amazon marketplace. I designed and developed Insights, a proprietary application built in <strong>Vue</strong>, <strong>Node</strong> and <strong>PostgreSql</strong>.</p>
+      </div>
+      <div class="wrapper-lg">
+        <img src="../images/insights/client.png" alt="" class="responsive">
+      </div>
+      <div class="wrapper-md">
+        <h3 class="text--md text--bold">Client Requirements</h3>
+        <ul class="text--sm bulleted">
+          <li>Users can create <span class="text--blue--500">searches</span> and associate them with <span class="text--blue--500">clients</span></li>
+          <li>Schedule searches and <span class="text--blue--500">send results via email</span></li>
+          <li>Track results to identify product ranking over time</li>
+          <li>Search for <span class="text--blue--500">multiple keywords</span> at once</li>
+          <li>Optionally filter duplicates from search results</li>
+          <li>Download results to a <span class="text--blue--500">csv file</span></li>
+        </ul>
+
+        <h3 class="text--md text--bold">Technological Requirements</h3>
+        <ul class="text--sm bulleted">
+          <li>Authentication</li>
+          <li>Database that supports one-to-one and one-to-many relationships</li>
+          <li>Ability to send email</li>
+          <li>Ability to run cron jobs</li>
+          <li>Protected resource server</li>
+        </ul>
+
+
+        <h3 class="text--md text--bold">Getting Data</h3>
+        <p class="text--sm">After reviewing the requirements I knew we needed to get product listings. There were a few similar products, like Jungle Scout that might be worth reverse engineering. However since most scrape product data through browser extensions they were not viable solutions. First off, they wouldn't work on mobile. Second, our IPs would eventually be blacklisted from Amazon since this approch is frowned upon. We needed an sustainable way to query results, not something that would work for a few months. After a little more research I found an API that worked perfectly. I used express to make requests to the api endpoints in order to fetch the data we needed.</p>
+        <hr>
+        <h4 class="text--md text--bold">Filtering</h4>
+        <p class="text--sm">Each product has a number of data points. These were not always important, so I made a reusable filter component. It’s a child component takes a list of properties as arguments. When a checkbox is clicked, the filter component passes the updated state to the parent, which in turn hides the property’s column.</p>
+      </div>
+      <div class="wrapper-lg">
+        <img src="../images/insights/filter.png" alt="" class="responsive">
+      </div>
+      <div class="wrapper-md">
+        <hr>
+        <h4 class="text--md text--bold">Authentication</h4>
+        <p class="text--sm">Getting the search feature in front of users was the primary goal for v1. Thus, I set up Okta for authentication since it was, lightweight, simple and faster than coding my own. I was able to focus entirely on the search feature by delegating authentication to Okta. While I knew we would eventually outgrow Okta, it allowed users to provide feedback on v1 while I focused on more important features.
+        <p class="text--sm">I built custom authentication with JWT and bCrypt when we needed to secure the resource server. While writing the auth I began to love the versatility of JavaScript promises. I was able to set up some reusable functions like <code>isLoggedIn()</code> and <code>findUserByEmail()</code>. Here is a high level overview of the sign-in flow.</p>
+      </div>
+      <div class="wrapper-lg">
+        <img src="../images/insights/login.png" alt="" class="responsive">
+      </div>
+      <div class="wrapper-md">
+        <h5 class="text--md text--bold">Step by Step Auth Flow</h4>
+          <ol class="text--sm">
+            <li>A users tries to log-in by providing an email and password</li>
+            <li>A post request is sent to the login endpoint</li>
+            <li>The submitted email is passed to the <code>findUserByEmail()</code> function.</li>
+            <li>If we don’t find a user we display an error message on the form</li>
+            <li>If we find a user we send the provided password is passed to the isPasswordValid function.</li>
+            <li>Bcrypt unhashes the password stored in the database then compares it to the submitted password. </li>
+            <li>If the passwords don’t match we display an error message.</li>
+            <li>If the passwords match we create a JWT token and redirect to the Dashboard</li>
+          </ol>
+          <hr>
+      </div>
+      <div class="wrapper-md">
+        <h4 class="text--md text--bold">What's Next?</h4>
+        <p class="text--sm">The first phase of Insights has been successful. I was able to automate searches, which reduces manual queries, in turn making the business more productive. In addition I gained experience by generating CSV from Json data, saving files to AWS, and run migrations on Postgresql. I am excited to present the next features that are currently in development.</p>
+      </div>
+    <footer class="wrapper-md">
+  <div class="gradient-border"></div>
+  <ul class="grid text--code mt-1 grid--space-between text--xs">
+    <li>
+      <a href="mailto:gary@garybunofsky.com" class="text--gray--500 caret">Email</a>
+    </li>
+    <li>
+      <a href="/resume.pdf" class="text--gray--500 caret">Resume</a>
+    </li>
+    <li>
+      <a href="/privacy-policy/" class="text--gray--500 caret">Privacy Policy</a>
+    </li>
+    <li>
+      <a href="/contact/" class="text--gray--500">Questions?</a>
+    </li>
+  </ul>
+</footer>
+</main>
+  </body>
+</html>
