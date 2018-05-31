@@ -3,18 +3,10 @@ var app = express()
 var path = require('path')
 var serveStatic = require('serve-static')
 var port = 3000
-app.use(
-  (req, res, next) => {
-    const test = /\?[^]*\//.test(req.url)
-    if (req.url.substr(-1) === '/' && req.url.length > 1 && !test && !req.url.includes('blog') && !req.url.includes('portfolio')) {
-      res.redirect(301, req.url.slice(0, -1))
-    }
-    else {
-      next();
-    }
-  },
-  express.static(__dirname + '/src/', {extensions: ['html']})
-);
-
+app.set('view engine', 'ejs')
+app.get('/', (req, res) => {
+  res.render('index')
+})
+app.use(express.static('public'))
 app.listen(process.env.PORT || port)
 console.log('Server started on port ' + process.env.PORT || port)
