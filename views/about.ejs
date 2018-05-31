@@ -4,7 +4,7 @@
   <body>
     <%- include('components/nav.ejs') %>
     <main class="content wrapper-md">
-      <section class="mb-4 text--center">
+      <section class="mb-4">
         <h1 class="text--xl">About Me.</h1>
         <h2 class="text--md">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
       </section>
@@ -37,13 +37,7 @@
             B.A. Communication Studies<br />
             2008-2012</h4>
       </section>
-      <section>
-        <div class="card text--center p-2">
-            <h5 class="text--md mb-1">Need a website, app or have an idea?</h5>
-            <a href="/resume.pdf" target="_blank" class="mb-1 button">View my resume</a>
-            <a href="/contact" class="mb-1 button button--o">Contact me</a>
-        </div>
-      </section>
+      <%- include('components/callout.ejs') %>
     </main>
     <%- include('components/footer.ejs') %>
   </body>
