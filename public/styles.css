@@ -40,14 +40,14 @@ hr {
   font-size: 2.5em;
   line-height: 1.15em;
   margin-bottom: .25em;
-  font-weight: 500;
+  font-weight: 400;
 }
 .text--lg {
   color: #3e474c;
   font-size: 1.875em;
   line-height: 1.15em;
   margin-bottom: .25em;
-  font-weight: 700;
+  font-weight: 400;
 }
 .text--md {
   color: #3e474c;
@@ -190,6 +190,37 @@ pre code {
   padding:1em;
 }
 
+/* website */
+.browser {
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 32px 10px rgba(0,0,0,0.05);
+          box-shadow: 0px 10px 32px 10px rgba(0,0,0,0.05);
+  -webkit-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  border-top: 2em solid #f2f2f2;
+  position: relative;
+}
+.browser:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #DCDDDE;
+  box-shadow: 0 0 0 2px #DCDDDE, 1.5em 0 0 2px #DCDDDE, 3em 0 0 2px #DCDDDE;
+}
+.browser img {
+  border-radius: 0 0 10px 10px;
+  width: auto;
+  border-top: 1px solid #DCDDDE;
+  overflow: hidden;
+  max-width: 100%;
+}
 
 /* Grid */
 .grid {
@@ -363,6 +394,9 @@ nav a:after {
 .mb-4 {
   margin-bottom: 4em;
 }
+.mb-6 {
+  margin-bottom: 6em;
+}
 .mt-1 {
   margin-top: 1em;
 }
@@ -406,6 +440,6 @@ footer {
 }
 .wrapper-lg {
   width: 100%;
-  max-width: 768px;
+  max-width: 960px;
   margin: 0 auto;
 }
