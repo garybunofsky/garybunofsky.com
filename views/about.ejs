@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('components/head.ejs') %>
+  <body>
+    <%- include('components/nav.ejs') %>
+    <main class="content wrapper-md">
+      <section class="mb-4 text--center">
+        <h1 class="text--xl">About Me.</h1>
+        <h2 class="text--md">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
+      </section>
+      <section>
+        <p class="text--sm">I specialize in building scalable web solutions for businesses and startups. When I am not coding, I’m probably reading, listening to jazz, cooking, or walking my dog, Ruby.</p>
+        <p class="text--sm">I wrote my first lines of code in 2010. I co-founded Web Machine, a web development shop, after writing a few more. We designed plenty of custom sites and never used a theme. A few years later I joined Fathom as a Web Developer, while continuing to code for Web Machine during the nights and weekends.</p>
+      </section>
+      <section>
+        <h3 class="text--md text--bold">Skills & Languages</h3>
+        <ul class="text--sm">
+          <li class="check">Javascript (Node, Vue & Angular)</li>
+          <li class="check">Ruby (Rails & Sinatra)</li>
+          <li class="check">PHP</li>
+          <li class="check">CSS (SCSS & LESS)</li>
+          <li class="check">HTML</li>
+          <li class="check">SQL</li>
+          <li class="check">Postgres</li>
+          <li class="check">Mongo</li>
+          <li class="check">TDD (Jest, Jasmine & Rspec)</li>
+          <li class="check">Git</li>
+          <li class="check">Flexbox</li>
+          <li class="check">Command Line</li>
+          <li class="check">Sketch</li>
+          <li class="check">Adobe Creative Cloud</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="text--md text--bold">Education</h3>
+        <h4 class="text--sm">Kent State University<br />
+            B.A. Communication Studies<br />
+            2008-2012</h4>
+      </section>
+      <section>
+        <div class="card text--center p-2">
+            <h5 class="text--md mb-1">Need a website, app or have an idea?</h5>
+            <a href="/resume.pdf" target="_blank" class="mb-1 button">View my resume</a>
+            <a href="/contact" class="mb-1 button button--o">Contact me</a>
+        </div>
+      </section>
+    </main>
+    <%- include('components/footer.ejs') %>
+  </body>
+</html>
