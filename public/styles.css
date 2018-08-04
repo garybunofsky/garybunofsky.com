@@ -2,7 +2,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ul {list-style: none;}blockquote,q{quotes: none;}blockquote:before, blockquote:after,q:before,q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
 
 body {
-  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:  "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-animation: fadein .37s;
   animation: fadein .37s;
 }
@@ -45,7 +45,7 @@ hr {
 .text--lg {
   color: #3e474c;
   font-size: 1.675em;
-  line-height: 1.15em;
+  line-height: 1.3em;
   margin-bottom: .25em;
   font-weight: 400;
 }
@@ -53,11 +53,11 @@ hr {
   color: #3e474c;
   font-size: 1.5em;
   line-height: 1.2em;
-  margin-bottom: .5em;
+  margin-bottom: .3em;
 }
 .text--sm {
   color: #71777A;
-  font-size: 1.25em;
+  font-size: 1.125em;
   line-height: 1.55em;
   margin-bottom: 1.55em;
 }
@@ -99,6 +99,16 @@ a {
 strong {
   font-weight: 600;
 }
+.project-list section a:visited h3:after {
+  background-image: url('images/check.svg');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  margin: 0.5em 0 0 0.125em;
+  width: 20px;
+}
 a:hover {
   color: #86B8F9;
 }
@@ -129,8 +139,8 @@ img.responsive {
 .text--blue--500 {
   color: #5DA0F7;
 }
-.text--gray--500 {
-  color: #71777A;
+.text--gray--600 {
+  color: #3e474c;
 }
 
 /* Code and Pre  */
@@ -140,7 +150,7 @@ code, pre {
     border-radius: 4px;
     color: rgb(140, 140, 140);
     font-family: 'Courier New', 'Courier', monospace !important;
-    font-size: 0.875em;
+    margin-bottom: 0.25em;
     padding: 0.125em 0.5em;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
@@ -192,7 +202,7 @@ pre code {
 
 /* website */
 .browser {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #DCDDDE;
   border-radius: 10px;
   -webkit-box-shadow: 0px 10px 32px 10px rgba(0,0,0,0.05);
           box-shadow: 0px 10px 32px 10px rgba(0,0,0,0.05);
@@ -248,7 +258,9 @@ pre code {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
+.grid--column-reverse {
+  flex-direction: column-reverse;
+}
 @media all and (min-width: 60em) {
   .grid {
     -webkit-box-orient: horizontal;
@@ -276,7 +288,7 @@ pre code {
   display: inline-block;
   font-size: .875em;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 0.5em 0;
   padding: 11px 26px;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.15);
@@ -397,6 +409,9 @@ nav a:after {
 .mb-6 {
   margin-bottom: 6em;
 }
+.mb-8 {
+  margin-bottom: 8em;
+}
 .mt-1 {
   margin-top: 1em;
 }
@@ -435,11 +450,11 @@ footer {
 }
 .wrapper-md {
   width: 100%;
-  max-width: 580px;
+  max-width: 640px;
   margin: 0 auto;
 }
 .wrapper-lg {
   width: 100%;
-  max-width: 960px;
+  max-width: 768px;
   margin: 0 auto;
 }
