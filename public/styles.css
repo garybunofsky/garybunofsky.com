@@ -37,14 +37,14 @@ hr {
 /* Fonts */
 .text--xl {
   color: #2a3338;
-  font-size: 2.5em;
+  font-size: 2.125em;
   line-height: 1.15em;
   margin-bottom: .25em;
   font-weight: 400;
 }
 .text--lg {
   color: #3e474c;
-  font-size: 1.875em;
+  font-size: 1.675em;
   line-height: 1.15em;
   margin-bottom: .25em;
   font-weight: 400;
