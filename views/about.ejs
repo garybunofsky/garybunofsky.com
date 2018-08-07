@@ -3,17 +3,14 @@
   <%- include('components/head.ejs') %>
   <body>
     <%- include('components/nav.ejs') %>
+    <%- include('components/hero.ejs', {head: 'About Me', sub: 'I currently live in Cleveland, Ohio where I spend a lot of time writing code.' }) %>
     <main class="content wrapper-md">
-      <section class="mb-4">
-        <h1 class="text--xl">About Me.</h1>
-        <h2 class="text--md text--gray--600">I currently live in Cleveland, Ohio where I spend a lot of time writing code.</h2>
-      </section>
       <section>
         <p class="text--sm">I specialize in building scalable web solutions for businesses and startups. When I am not coding, I’m probably reading, listening to jazz, cooking, or walking my dog, Ruby.</p>
         <p class="text--sm">I wrote my first lines of code in 2010. I co-founded Web Machine, a web development shop, after writing a few more. We designed plenty of custom sites and never used a theme. A few years later I joined Fathom as a Web Developer, while continuing to code for Web Machine during the nights and weekends.</p>
       </section>
       <section>
-        <h3 class="text--md text--bold">Skills & Languages</h3>
+        <h3 class="text--md">Skills & Languages</h3>
         <ul class="text--sm">
           <li class="check">Javascript (Node, Vue & Angular)</li>
           <li class="check">Ruby (Rails & Sinatra)</li>
@@ -32,7 +29,7 @@
         </ul>
       </section>
       <section>
-        <h3 class="text--md text--bold">Education</h3>
+        <h3 class="text--md">Education</h3>
         <h4 class="text--sm">Kent State University<br />
             B.A. Communication Studies<br />
             2008-2012</h4>

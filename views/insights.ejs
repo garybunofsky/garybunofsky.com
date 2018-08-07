@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('components/head.ejs') %>
+  <body>
+    <%- include('components/nav.ejs') %>
+    <%- include('components/hero.ejs', {head: 'Insights', sub: 'Insights is a Vue app that helps Amazon Sellers analyze trends.'  }) %>
+    <main class="content wrapper-md">
+      <section>
+        <h3 class="text--md">Requirements</h3>
+        <ul class="text--sm bulleted">
+          <li>Users can create <span class="text--blue--500">searches</span> and associate them with <span class="text--blue--500">clients</span></li>
+          <li>Schedule searches and <span class="text--blue--500">send results via email</span></li>
+          <li>Track results to identify product ranking over time</li>
+          <li>Search for <span class="text--blue--500">multiple keywords</span> at once</li>
+          <li>Optionally filter duplicates from search results</li>
+          <li>Download results to a <span class="text--blue--500">csv file</span></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="text--md">Technological Requirements</h3>
+        <ul class="text--sm bulleted">
+          <li>Authentication</li>
+          <li>Database that supports one-to-one and one-to-many relationships</li>
+          <li>Ability to send email</li>
+          <li>Ability to run cron jobs</li>
+          <li>Protected resource server</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="text--md">Getting Data</h3>
+        <p class="text--sm">After reviewing the requirements I knew we needed to get product listings. There were a few similar products, like Jungle Scout that might be worth reverse engineering. However since most scrape product data through browser extensions they were not viable solutions. First off, they wouldn't work on mobile. Second, our IPs would eventually be blacklisted from Amazon since this approch is frowned upon. We needed an sustainable way to query results, not something that would work for a few months. After a little more research I found an API that worked perfectly. I used express to make requests to the api endpoints in order to fetch the data we needed.</p>
+      </section>
+      <section>
+        <div class="wrapper-lg">
+          <img src="../images/insights/filter.png" alt="" class="responsive">
+        </div>
+        <h4 class="text--md">Filtering</h4>
+        <p class="text--sm">Each product has a number of data points. These were not always important, so I made a reusable filter component. It’s a child component takes a list of properties as arguments. When a checkbox is clicked, the filter component passes the updated state to the parent, which in turn hides the property’s column.</p>
+      </section>
+      <section>
+        <h4 class="text--md">Authentication</h4>
+        <p class="text--sm">Getting the search feature in front of users was the primary goal for v1. Thus, I set up Okta for authentication since it was, lightweight, simple and faster than coding my own. I was able to focus entirely on the search feature by delegating authentication to Okta. While I knew we would eventually outgrow Okta, it allowed users to provide feedback on v1 while I focused on more important features.
+        <p class="text--sm">I built custom authentication with JWT and bCrypt when we needed to secure the resource server. While writing the auth I began to love the versatility of JavaScript promises. I was able to set up some reusable functions like <code>isLoggedIn()</code> and <code>findUserByEmail()</code>. Here is a high level overview of the sign-in flow.</p>
+        <h5 class="text--md">Step by Step Auth Flow</h4>
+          <ol class="text--sm">
+            <li>A users tries to log-in by providing an email and password</li>
+            <li>A post request is sent to the login endpoint</li>
+            <li>The submitted email is passed to the <code>findUserByEmail()</code> function.</li>
+            <li>If we don’t find a user we display an error message on the form</li>
+            <li>If we find a user we send the provided password is passed to the isPasswordValid function.</li>
+            <li>Bcrypt unhashes the password stored in the database then compares it to the submitted password. </li>
+            <li>If the passwords don’t match we display an error message.</li>
+            <li>If the passwords match we create a JWT token and redirect to the Dashboard</li>
+          </ol>
+      </section>
+    </main>
+    <%- include('components/footer.ejs') %>
+  </body>
+</html>
