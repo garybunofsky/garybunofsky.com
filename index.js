@@ -6,6 +6,7 @@ var port = 3000
 app.set('view engine', 'ejs')
 app.get('/', (req, res) => { res.render('index') })
 app.get('/about', (req, res) => { res.render('about') })
+app.get('/blog', (req, res) => { res.render('blog') })
 app.get('/contact', (req, res) => { res.render('contact') })
 app.get('/portfolio', (req, res) => { res.render('portfolio') })
 app.get('/portfolio/insights', (req, res) => { res.render('insights') })

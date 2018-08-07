@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('components/head.ejs') %>
+  <body>
+    <%- include('components/nav.ejs') %>
+    <%- include('components/hero.ejs', {head: 'Blog', sub: 'Some of the latest posts from my blog.' }) %>
+    <main class="content wrapper-md">
+      <article class="mb-4">
+        <span class="text--xs">February 27th, 2018</span>
+        <h3 class="text--md">Free Fonts that Aren’t Google Fonts</h3>
+        <p class="text--sm mb-1">Google Fonts truly changed the web font game. It’s fantastic to have access to a variety of superb typography. And everyone else seems to think so too. Visi...</p>
+        <a href="free-fonts-that-arent-google-fonts" class="button">Continue reading</a>
+      </article>
+      <article class="mb-4">
+        <span class="text--xs">February 23rd, 2018</span>
+        <h3 class="text--md">Seeding a Database with Knex</h3>
+        <p class="text--sm mb-1">I was looking for a way to put data in my database. I wanted something that was organized and simple like Rake, but also agreed with Node. To my suprise, np...</p>
+        <a href="seeding-a-database-with-knex" class="button">Continue reading</a>
+      </article>
+      <article class="mb-4">
+        <span class="text--xs">March 6th, 2017</span>
+        <h3 class="text--md">A Month Without Coffee</h3>
+        <p class="text--sm mb-1">My first cup of coffee was at my grandma's. I wasn't allowed to pour my own. But was heavy handed with the sugar. My coffee tasted of cream and was nearly t...</p>
+        <a href="a-month-without-coffee" class="button">Continue reading</a>
+      </article>
+      <article class="mb-4">
+        <span class="text--xs">November 22nd, 2016</span>
+        <h3 class="text--md">Facebook's New Job</h3>
+        <p class="text--sm mb-1">People are mad. And rightfully so. Many believe the fake news on Facebook altered the results of the 2016 election. And it probably did, but Facebook should...</p>
+        <a href="facebooks-new-job" class="button">Continue reading</a>
+      </article>
+      <article class="mb-4">
+        <span class="text--xs">November 17th, 2016</span>
+        <h3 class="text--md">Not the Same</h3>
+        <p class="text--sm mb-1">Library and frameworks both allow you to do more and write less. They share other similarities but shouldn't be used synonymously – although they often are....</p>
+        <a href="not-the-same" class="button">Continue reading</a>
+      </article>
+      <article class="mb-4">
+        <span class="text--xs">July 29th, 2015</span>
+        <h3 class="text--md">Basic Git Commands</h3>
+        <p class="text--sm mb-1">Features are added, files are refactored and bugs are removed. For this reason seasoned developers use version control. There are plenty of benefits to usin...</p>
+        <a href="basic-git-commands" class="button">Continue reading</a>
+      </article>
+      <article class="mb-4">
+        <span class="text--xs">November 18, 2015</span>
+        <h3 class="text--md">Finding Photos</h3>
+        <p class="text--sm mb-1">Finding stock photos can be a hassle. Luckily there are websites that host free high-quality images. I curated a list of some of my favorites here. It will ...</p>
+        <a href="finding-photos" class="button">Continue reading</a>
+      </article>
+      <article class="mb-4">
+        <span class="text--xs">June 18th, 2015</span>
+        <h3 class="text--md">Website Deployment Checklist</h3>
+        <p class="text--sm mb-1">There are many things to focus on when the time comes to launch a website. Concentration is imperative during this time. Forgetting to complete a small proc...</p>
+        <a href="website-deployment-checklist" class="button">Continue reading</a>
+      </article>
+      <%- include('components/callout.ejs') %>
+    </main>
+    <%- include('components/footer.ejs') %>
+  </body>
+</html>
