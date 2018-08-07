@@ -13,5 +13,9 @@ app.get('/portfolio/insights', (req, res) => { res.render('insights') })
 app.get('/portfolio/pass', (req, res) => { res.render('pass') })
 app.get('/tools', (req, res) => { res.render('tools') })
 app.use(express.static('public'))
+app.use(function(req, res, next) {
+    res.status(404);
+    res.render('404');
+});
 app.listen(process.env.PORT || port)
 console.log('Server started on port ' + process.env.PORT || port)
