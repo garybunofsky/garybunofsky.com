@@ -32,7 +32,8 @@ body {
   animation: fadein .37s;
 }
 
-main section {
+main section,
+main article {
   padding: 0 1em;
 }
 
