@@ -178,7 +178,7 @@ img.responsive {
 .hero .wrapper-md {
   margin: 54px auto 0 auto;
 }
-@media all and (60em) {
+@media all and (min-width:60em) {
   .hero {
     height: 50vh;
     margin: 56px 0 0 0;
