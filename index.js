@@ -38,8 +38,15 @@ app.get('/sitemap.xml', function(req, res) {
 })
 app.use(express.static('public'))
 app.use(function(req, res, next) {
-    res.status(404)
-    res.render('404')
+  if (process.env.NODE_ENV === 'production') {
+    if (req.secure) {
+      next()
+    } else {
+      res.redirect('https://' + req.headers.host + req.url)
+    }
+  }
+  res.status(404)
+  res.render('404')
 })
 app.listen(process.env.PORT || port)
 console.log(colors.cyan('Server started on port ' + process.env.PORT || port))
