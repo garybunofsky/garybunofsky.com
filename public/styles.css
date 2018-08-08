@@ -393,7 +393,7 @@ pre code {
   color: #3589F5 !important;
 }
 .button--o:hover {
-  background: rgba(53, 137, 245, 0.23);
+  background: rgba(53, 137, 245, 0.1);
   -webkit-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
   transform: translateY(-1px);
