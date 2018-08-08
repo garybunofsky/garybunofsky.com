@@ -27,13 +27,20 @@
         </ul>
       </section>
       <section>
+        <div class="browser mb-2">
+          <img src="https://s3.amazonaws.com/garybunofsky.com/insights/client.png" alt="">
+        </div>
+      </section>
+      <section>
         <h3 class="text--md">Getting Data</h3>
         <p class="text--sm">After reviewing the requirements I knew we needed to get product listings. There were a few similar products, like Jungle Scout that might be worth reverse engineering. However since most scrape product data through browser extensions they were not viable solutions. First off, they wouldn't work on mobile. Second, our IPs would eventually be blacklisted from Amazon since this approch is frowned upon. We needed an sustainable way to query results, not something that would work for a few months. After a little more research I found an API that worked perfectly. I used express to make requests to the api endpoints in order to fetch the data we needed.</p>
       </section>
       <section>
-        <div class="wrapper-lg">
-          <img src="../images/insights/filter.png" alt="" class="responsive">
+        <div class="browser mb-2">
+          <img src="https://s3.amazonaws.com/garybunofsky.com/insights/filter.png" alt="">
         </div>
+      </section>
+      <section>
         <h4 class="text--md">Filtering</h4>
         <p class="text--sm">Each product has a number of data points. These were not always important, so I made a reusable filter component. It’s a child component takes a list of properties as arguments. When a checkbox is clicked, the filter component passes the updated state to the parent, which in turn hides the property’s column.</p>
       </section>
