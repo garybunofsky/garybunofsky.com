@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <%- include('components/head.ejs') %>
+  <%- include('../components/head.ejs') %>
   <body>
-    <%- include('components/nav.ejs') %>
-    <%- include('components/hero.ejs', {head: 'Blog', sub: 'Some of the latest posts from my blog.' }) %>
+    <%- include('../components/nav.ejs') %>
+    <%- include('../components/hero.ejs', {head: 'Blog', sub: 'Some of the latest posts from my blog.' }) %>
     <main class="content wrapper-md">
       <article class="mb-4">
         <span class="text--xs">February 27th, 2018</span>
@@ -53,8 +53,8 @@
         <p class="text--sm mb-1">There are many things to focus on when the time comes to launch a website. Concentration is imperative during this time. Forgetting to complete a small proc...</p>
         <a href="website-deployment-checklist" class="button">Continue reading</a>
       </article>
-      <%- include('components/callout.ejs') %>
+      <%- include('../components/callout.ejs') %>
     </main>
-    <%- include('components/footer.ejs') %>
+    <%- include('../components/footer.ejs') %>
   </body>
 </html>
