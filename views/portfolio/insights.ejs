@@ -6,6 +6,13 @@
     <%- include('../components/hero.ejs', {head: 'Insights', sub: 'Insights is a Vue app that helps Amazon Sellers analyze trends.'  }) %>
     <main class="content wrapper-md">
       <section>
+        <h2 class="text--md">Introduction</h2>
+        <p class="text--sm">Marketplace Strategy works with a variety of clients to sustainably increase Amazon sales.  They needed an application that would allow them to analyze competing products, find trends and identify opportunities within the Amazon marketplace. I designed and developed Insights, a proprietary application built in <strong>Vue</strong>, <strong>Node</strong> and <strong>PostgreSql</strong>.</p>
+      </section>
+      <section>
+        <div class="browser mb-2">
+          <img src="https://s3.amazonaws.com/garybunofsky.com/insights/client.png" alt="">
+        </div>
         <h3 class="text--md">Requirements</h3>
         <ul class="text--sm bulleted">
           <li>Users can create <span class="text--blue--500">searches</span> and associate them with <span class="text--blue--500">clients</span></li>
@@ -25,11 +32,6 @@
           <li>Ability to run cron jobs</li>
           <li>Protected resource server</li>
         </ul>
-      </section>
-      <section>
-        <div class="browser mb-2">
-          <img src="https://s3.amazonaws.com/garybunofsky.com/insights/client.png" alt="">
-        </div>
       </section>
       <section>
         <h3 class="text--md">Getting Data</h3>
