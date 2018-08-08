@@ -378,7 +378,7 @@ a.button {
   transition: all .25s ease-out;
 }
 .button:hover,
-a.button {
+a.button:hover {
   background: #5DA0F7;
   -webkit-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
@@ -389,12 +389,14 @@ a.button {
   -o-transition: all .25s ease-out;
   transition: all .25s ease-out;
 }
-.button--o {
+.button--o,
+a.button--o {
   background: none;
   border: 1px solid #3589F5;
   color: #3589F5 !important;
 }
-.button--o:hover {
+.button--o:hover,
+a.button--o:hover {
   background: rgba(53, 137, 245, 0.1);
   -webkit-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
