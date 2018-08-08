@@ -1,8 +1,19 @@
+require('dotenv').config()
 var express = require('express')
 var app = express()
+var colors = require('colors')
+var dotenv = require('dotenv')
 var path = require('path')
-var serveStatic = require('serve-static')
 var port = 3000
+var serveStatic = require('serve-static')
+var urls = require('./sitemap')
+var sm = require('sitemap')
+var sitemap = sm.createSitemap ({
+  hostname: 'https://garybunofsky.com',
+  cacheTime: 600000,
+  urls: urls.data
+})
+
 app.set('view engine', 'ejs')
 app.get('/', (req, res) => { res.render('index') })
 app.get('/about', (req, res) => { res.render('about') })
@@ -21,10 +32,14 @@ app.get('/portfolio/insights', (req, res) => { res.render('portfolio/insights') 
 app.get('/portfolio/pass', (req, res) => { res.render('portfolio/pass') })
 app.get('/privacy-policy', (req, res) => { res.render('privacy-policy') })
 app.get('/tools', (req, res) => { res.render('tools') })
+app.get('/sitemap.xml', function(req, res) {
+  res.header('Content-Type', 'application/xml')
+  res.send( sitemap.toString() );
+})
 app.use(express.static('public'))
 app.use(function(req, res, next) {
-    res.status(404);
-    res.render('404');
-});
+    res.status(404)
+    res.render('404')
+})
 app.listen(process.env.PORT || port)
-console.log('Server started on port ' + process.env.PORT || port)
+console.log(colors.cyan('Server started on port ' + process.env.PORT || port))
