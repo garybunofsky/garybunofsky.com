@@ -38,12 +38,10 @@ app.get('/sitemap.xml', function(req, res) {
 })
 app.use(express.static('public'))
 app.use(function(req, res, next) {
-  if (process.env.NODE_ENV === 'production') {
-    if (req.secure) {
-      next()
-    } else {
-      res.redirect('https://' + req.headers.host + req.url)
-    }
+  if (req.secure) {
+    next()
+  } else {
+    res.redirect('https://' + req.headers.host + req.url)
   }
   res.status(404)
   res.render('404')
