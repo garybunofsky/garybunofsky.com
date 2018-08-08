@@ -158,7 +158,7 @@ img.responsive {
   box-shadow: 0 11px 42px rgba(124,146,169,.5);
   color: #fff;
   display: flex;
-  height: 50vh;
+  height: 90vh;
   justify-content: center;
   padding: 0 1em;
   text-shadow: 0 2px rgba(0, 0, 0, 0.15);
@@ -179,6 +179,7 @@ img.responsive {
 }
 @media all and (60em) {
   .hero {
+    height: 50vh;
     margin: 56px 0 0 0;
   }
 }
