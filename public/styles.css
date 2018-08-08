@@ -207,6 +207,9 @@ img.responsive {
 .text--gray--600 {
   color: #3e474c;
 }
+.text--gray--400 {
+  color: #95999C;
+}
 
 /* Code and Pre  */
 code, pre {
