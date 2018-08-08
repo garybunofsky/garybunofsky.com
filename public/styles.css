@@ -510,17 +510,25 @@ nav a:after {
 /* Footer */
 footer {
   padding: 4em 0 3em 0;
+  background: #f2f2f2;
+}
+footer .grid {
   margin: 0 1em;
 }
-.gradient-border {
-  height: 1px;
-  width: 100%;
-  background-color: #4ce0eb;
-  background-image: -webkit-linear-gradient(71deg, #0C71F3 0%, #7dedf6 100%);
-  background-image: -o-linear-gradient(71deg, #0C71F3 0%, #7dedf6 100%);
-  background-image: linear-gradient(19deg, #0C71F3 0%, #7dedf6 100%);
+footer .grid .grid--item {
+  margin-bottom: 2em;
 }
-
+footer .grid .grid--item:first-of-type {
+  -webkit-box-flex: 2.5;
+  -ms-flex: 2.5;
+  flex: 2.5;
+}
+footer .grid ul {
+  line-height: 2.5em;
+}
+footer a {
+  color: #71777A;
+}
 
 /* Animations */
 @keyframes fadein {
@@ -543,6 +551,6 @@ footer {
 }
 .wrapper-lg {
   width: 100%;
-  max-width: 768px;
+  max-width: 1024px;
   margin: 0 auto;
 }
