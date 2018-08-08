@@ -354,7 +354,8 @@ pre code {
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 1em;
+  font-family: bold;
+  font-size: 1.125em;
   font-weight: 600;
   margin: 0 0 0.5em 0;
   padding: 13px 26px;
