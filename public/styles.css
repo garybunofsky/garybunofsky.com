@@ -541,7 +541,7 @@ footer .copyright {
 }
 @media all and (min-width: 60em) {
   footer .grid .grid--item {
-    margin-bottom: 2em;
+    margin-bottom: 5em;
   }
 }
 
