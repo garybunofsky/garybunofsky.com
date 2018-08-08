@@ -31,7 +31,8 @@ body {
   -webkit-animation: fadein .37s;
   animation: fadein .37s;
 }
-main {
+
+main section {
   padding: 0 1em;
 }
 
