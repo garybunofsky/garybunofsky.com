@@ -1,8 +1,35 @@
+/* Fontface */
+@font-face {
+  font-family: 'Light';
+  src: url('font/Light.eot');
+  src: url('font/Light.woff2') format('woff2'), url('font/Light.woff') format('woff'), url('font/Light.ttf') format('truetype'), url('font/Light.svg#Light') format('svg'), url('font/Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Book';
+  src: url('font/Book.eot');
+  src: url('font/Book.woff2') format('woff2'), url('font/Book.woff') format('woff'), url('font/Book.ttf') format('truetype'), url('font/Book.svg#Book') format('svg'), url('font/Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('font/Bold.eot');
+  src: url('font/Bold.woff2') format('woff2'), url('font/Bold.woff') format('woff'), url('font/Bold.ttf') format('truetype'), url('font/Bold.svg#Bold') format('svg'), url('font/Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;padding: 0; border: 0; font-size: 100%; font: inherit;vertical-align: baseline;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ul {list-style: none;}blockquote,q{quotes: none;}blockquote:before, blockquote:after,q:before,q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
 
 body {
-  font-family:  "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:  "Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-animation: fadein .37s;
   animation: fadein .37s;
 }
@@ -34,6 +61,7 @@ hr {
   border-color: #DCDDDE;
   margin: 3em 0;
 }
+
 /* Fonts */
 .text--xl {
   color: #2a3338;
@@ -146,6 +174,14 @@ img.responsive {
   background-repeat: no-repeat;
   opacity: .75;
   z-index: 2;
+}
+.hero .wrapper-md {
+  margin: 54px auto 0 auto;
+}
+@media all and (60em) {
+  .hero {
+    margin: 56px 0 0 0;
+  }
 }
 
 /* Font Weight */
@@ -313,10 +349,10 @@ pre code {
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: .875em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 600;
   margin: 0 0 0.5em 0;
-  padding: 11px 26px;
+  padding: 13px 26px;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .25s ease-out;
