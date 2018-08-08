@@ -380,9 +380,9 @@ a.button {
 .button:hover,
 a.button:hover {
   background: #5DA0F7;
-  -webkit-transform: translateY(-1px);
-  -ms-transform: translateY(-1px);
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
   -webkit-box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
   box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
   -webkit-transition: all .25s ease-out;
@@ -528,6 +528,21 @@ footer .grid ul {
 }
 footer a {
   color: #71777A;
+}
+footer a:hover {
+  color: #2a3338;
+}
+footer .copyright {
+  text-align: center;
+  color: #B8BBBD;
+  font-size: 0.875em;
+  display: block;
+  bottom: 1em;
+}
+@media all and (min-width: 60em) {
+  footer .grid .grid--item {
+    margin-bottom: 2em;
+  }
 }
 
 /* Animations */
