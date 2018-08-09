@@ -169,14 +169,14 @@ img.responsive {
   box-shadow: 0 11px 42px rgba(124,146,169,.5);
   color: #fff;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   justify-content: center;
   padding: 0 1em;
   text-shadow: 0 2px rgba(0, 0, 0, 0.15);
 }
 .hero--overlay {
   position: absolute;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image:url('images/hero.svg');
   background-size: cover;
