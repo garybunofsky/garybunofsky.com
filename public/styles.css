@@ -124,6 +124,10 @@ a {
   text-decoration: none;
   color: #0C71F3;
 }
+p a:hover {
+  text-decoration: none;
+  color: #0C71F3;
+}
 strong {
   font-weight: 600;
 }
@@ -619,7 +623,7 @@ footer .copyright {
 
 /* layout */
 .content {
-  margin: 7em auto !important;
+  margin: 4em auto !important;
 }
 .wrapper-md {
   width: 100%;
