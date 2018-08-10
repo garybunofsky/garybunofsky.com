@@ -12,11 +12,13 @@ module.exports = {
     { url: '/blog/not-the-same', changefreq: 'monthly', priority: 0.6 },
     { url: '/blog/seeding-a-database-with-knex', changefreq: 'monthly', priority: 0.6 },
     { url: '/blog/website-deployment-checklist', changefreq: 'monthly', priority: 0.6 },
+    { url: '/books/',  changefreq: 'monthly',  priority: 0.7 },
     { url: '/contact', changefreq: 'monthly', priority: 0.6 },
-    { url: '/portfolio', changefreq: 'monthly', priority: 0.6 },
-    { url: '/portfolio/insights', changefreq: 'monthly', priority: 0.6 },
+    { url: '/i-need-a-website/',  changefreq: 'monthly',  priority: 0.7 },
+    { url: '/portfolio', changefreq: 'monthly', priority: 0.9 },
+    { url: '/portfolio/insights', changefreq: 'monthly', priority: 0.8 },
     { url: '/portfolio/pass', changefreq: 'monthly', priority: 0.6 },
-    { url: '/privacy-policy', changefreq: 'monthly', priority: 0.6 },
-    { url: '/tools', changefreq: 'monthly', priority: 0.6 }
+    { url: '/privacy-policy', changefreq: 'monthly', priority: 0.1 },
+    { url: '/tools', changefreq: 'monthly', priority: 0.2 }
   ]
 }
