@@ -515,8 +515,9 @@ a span {
   padding:4em 1em 2em 1em;
   transition: all .25s ease-out;
 }
-.key-value:hover {
-  transform: translateY(-4px);
+.pricing--tiers .grid--item a:hover .key-value {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgb(241, 246, 255), -6px 6px 15px rgb(219, 232, 255);
 }
 .row {
   align-items: center;
