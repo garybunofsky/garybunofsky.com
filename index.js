@@ -26,6 +26,7 @@ app.get('/blog/free-fonts-that-arent-google-fonts', (req, res) => { res.render('
 app.get('/blog/not-the-same', (req, res) => { res.render('blog/not-the-same') })
 app.get('/blog/seeding-a-database-with-knex', (req, res) => { res.render('blog/seeding-a-database-with-knex') })
 app.get('/blog/website-deployment-checklist', (req, res) => { res.render('blog/website-deployment-checklist') })
+app.get('/books', (req, res) => { res.render('books') })
 app.get('/contact', (req, res) => { res.render('contact') })
 app.get('/i-need-a-website', (req, res) => { res.render('i-need-a-website') })
 app.get('/portfolio', (req, res) => { res.render('portfolio/index') })
