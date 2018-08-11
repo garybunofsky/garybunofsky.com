@@ -1,12 +1,14 @@
 require('dotenv').config()
 var express = require('express')
 var app = express()
+var bodyParser = require('body-parser')
 var colors = require('colors')
 var dotenv = require('dotenv')
 var path = require('path')
 var port = 3000
 var serveStatic = require('serve-static')
 var urls = require('./sitemap')
+var mailer = require('./mailer')
 var sm = require('sitemap')
 var sitemap = sm.createSitemap ({
   hostname: 'https://garybunofsky.com',
@@ -14,6 +16,7 @@ var sitemap = sm.createSitemap ({
   urls: urls.data
 })
 
+app.use(bodyParser.urlencoded({ extended: false }))
 app.set('view engine', 'ejs')
 app.get('/', (req, res) => { res.render('index') })
 app.get('/about', (req, res) => { res.render('about') })
@@ -28,6 +31,14 @@ app.get('/blog/seeding-a-database-with-knex', (req, res) => { res.render('blog/s
 app.get('/blog/website-deployment-checklist', (req, res) => { res.render('blog/website-deployment-checklist') })
 app.get('/books', (req, res) => { res.render('books') })
 app.get('/contact', (req, res) => { res.render('contact') })
+app.get('/quote', (req, res) => {
+  res.render('quote')
+})
+app.get('/quote/send', (req, res) => { res.render('thank-you') })
+app.post('/quote/send', (req, res) => {
+  mailer.sendMail(req.body)
+  res.render('thank-you')
+})
 app.get('/i-need-a-website', (req, res) => { res.render('i-need-a-website') })
 app.get('/portfolio', (req, res) => { res.render('portfolio/index') })
 app.get('/portfolio/insights', (req, res) => { res.render('portfolio/insights') })

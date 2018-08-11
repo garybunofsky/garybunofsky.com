@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="quote">
+  <%- include('components/head.ejs') %>
+  <body>
+    <div class="card">
+      <h1 class="text--lg text--center text--bold">Get a Free Quote</h1>
+      <h2 class="text--sm mb-1 text--center">Complete the form below to receive your quote.</h2>
+      <form action="/quote/send" method="post">
+        <div class="mb-1">
+          <label class="text--sm text--bold" for="name">Full Name</label>
+          <input class="form-field" type="text" name="name" value="Real Name" placeholder="Your name" required>
+        </div>
+        <div class="mb-1">
+          <label class="text--sm text--bold" for="email">Email</label>
+          <input class="form-field" type="email" name="email" value="example@gmail.com" placeholder="Your email" required>
+        </div>
+        <div class="mb-1">
+          <label class="text--sm text--bold" for="description">Describe your project</label>
+          <textarea class="form-field" name="description"></textarea>
+        </div>
+        <button type="submit" name="button" class="button">Get a Quote</button>
+      </form>
+    </div>
+  </body>
+</html>
