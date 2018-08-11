@@ -26,14 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.head = document.head || document.getElementsByTagName('head')[0]
 window.onblur = function () {
-  console.log('onblur')
-  document.title="bye"
-  changeFavicon('http://localhost:3000/images/favicon-left.png')
+  changeFavicon('https://garybunofsky.com/images/favicon-left.png')
 }
 window.onfocus = function () {
-  console.log('onfocus')
-  document.title="hello"
-  changeFavicon('http://localhost:3000/images/favicon.png')
+  changeFavicon('https://garybunofsky.com/images/favicon.png')
 }
 
 function changeFavicon(src) {
