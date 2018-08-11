@@ -22,4 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     i++
   }
-});
+})
+
+document.head = document.head || document.getElementsByTagName('head')[0]
+window.onblur = function () {
+  changeFavicon('http://localhost:3000/images/favicon-left.png')
+}
+
+window.onfocus = function () {
+  changeFavicon('http://localhost:3000/images/favicon.png')
+}
+
+function changeFavicon(src) {
+  var favicon = document.createElement('link')
+  var oldFavicon = document.getElementById('favicon')
+  link.id = 'favicon'
+  link.rel = 'icon'
+  link.type = 'image/png'
+  link.href = src
+  if (oldFavicon) {
+    document.head.removeChild(oldFavicon)
+  }
+  document.head.appendChild(favicon)
+}
