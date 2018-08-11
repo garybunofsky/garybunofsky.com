@@ -18,6 +18,7 @@ module.exports = {
     { url: '/portfolio/insights/', changefreq: 'monthly', priority: 0.8 },
     { url: '/portfolio/pass/', changefreq: 'monthly', priority: 0.8 },
     { url: '/privacy-policy/', changefreq: 'monthly', priority: 0.1 },
+    { url: '/quote/', changefreq: 'monthly', priority: 0.9 },
     { url: '/tools/', changefreq: 'monthly', priority: 0.2 }
   ]
 }
