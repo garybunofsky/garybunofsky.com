@@ -26,22 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.head = document.head || document.getElementsByTagName('head')[0]
 window.onblur = function () {
+  console.log('onblur')
+  document.title="bye"
   changeFavicon('http://localhost:3000/images/favicon-left.png')
 }
-
 window.onfocus = function () {
+  console.log('onfocus')
+  document.title="hello"
   changeFavicon('http://localhost:3000/images/favicon.png')
 }
 
 function changeFavicon(src) {
-  var favicon = document.createElement('link')
-  var oldFavicon = document.getElementById('favicon')
+  var link = document.createElement('link')
+  var oldLink = document.getElementById('favicon')
   link.id = 'favicon'
   link.rel = 'icon'
   link.type = 'image/png'
   link.href = src
-  if (oldFavicon) {
-    document.head.removeChild(oldFavicon)
+  if (oldLink) {
+    document.head.removeChild(oldLink)
   }
-  document.head.appendChild(favicon)
+  document.head.appendChild(link)
 }
