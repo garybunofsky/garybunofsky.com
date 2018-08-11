@@ -340,6 +340,7 @@ input.form-field {
     padding: 0 10px;
     border: 1px solid #DCDDDE;
     background: #fff;
+    font-size: 1em;
     text-overflow: ellipsis;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -359,7 +360,7 @@ textarea.form-field {
   color: #3e474c;
   height: auto;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1em;
   background-color: #fff;
   background-image: none;
