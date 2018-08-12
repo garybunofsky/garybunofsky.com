@@ -213,6 +213,7 @@ img.responsive {
   display: flex;
   justify-content: center;
   height: 100%;
+  padding:1em;
 }
 .quote .card {
   padding: 2em 1em;
