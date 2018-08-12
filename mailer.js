@@ -6,7 +6,7 @@ module.exports = {
       from: 'Website Visitor <noreply@garybunofsky.com>',
       to: 'hello@garybunofsky.com',
       subject: 'Request for Quote',
-      text: `Name: ${data.name} \n Email: ${data.email} \n Description: ${data.description}`
+      text: `Name: ${data.name} \n Email: ${data.email} \n Type: ${data.type} \n Description: ${data.description}`
     }
     mailgun.messages()
     .send(data, function (error, body) {
