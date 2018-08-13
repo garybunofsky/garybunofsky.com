@@ -508,10 +508,18 @@ nav a {
   font-size: 1.5em;
   padding: 1em;
   text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
 nav a:after {
   content:"›";
   margin-left: 0.25em;
+}
+nav a:hover {
+  color: #5DA0F7;
+  -webkit-transition: all .125s ease-out;
+  -o-transition: all .125s ease-out;
+  transition: all .125s ease-out;
 }
 .menu {
   position: fixed;
@@ -545,6 +553,7 @@ nav a:after {
     color: #71777A;
     font-size: 1.15em;
     font-weight: 400;
+    width: auto;
   }
   nav a:after {
     content: '';
