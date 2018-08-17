@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log('👋 Yo yo, thanks for checkout out what\'s under the hood.');
-  console.log('This site is built with ejs and served.');
+  console.log('This site is built with ejs and served with node.');
   var i = 0
   var menu = document.getElementById('menu')
   menu.addEventListener('click', function () {
