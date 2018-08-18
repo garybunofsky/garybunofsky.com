@@ -474,6 +474,10 @@ a.button--o:hover {
   -webkit-box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
   box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.18);
 }
+.button--lg,
+a.button--lg {
+  padding: 17px 38px;
+}
 
 /* Nav */
 nav {
