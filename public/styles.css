@@ -354,9 +354,9 @@ select.form-field {
     -moz-border-radius: 4px;
     -khtml-border-radius: 4px;
     border-radius: 4px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -webkit-box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
+    box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
     color: #3e474c;
     font-size: 1em;
 }
@@ -374,6 +374,9 @@ textarea.form-field {
   box-sizing: border-box;
   min-height: 10em;
   width: 100%;
+  -webkit-box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
+  -moz-box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
+  box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
 }
 
 /* Grid */
