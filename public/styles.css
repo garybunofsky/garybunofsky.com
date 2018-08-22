@@ -35,9 +35,19 @@ hr {
   border-color: #DCDDDE;
   margin: 3em 0;
 }
+
+/* main */
+main.homepage  {
+    margin-top: -22vh;
+}
 main section,
 main article {
   padding: 0 1em;
+}
+@media all and (min-width:60em) {
+  main.homepage  {
+    margin-top: -15vh;
+  }
 }
 
 /* Colors */
@@ -327,8 +337,8 @@ pre code {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  background-color: #DCDDDE;
-  box-shadow: 0 0 0 2px #DCDDDE, 1.5em 0 0 2px #DCDDDE, 3em 0 0 2px #DCDDDE;
+  background-color: #ff5f58;
+  box-shadow: 0 0 0 2px #ff5f58, 1.5em 0 0 2px #ffbe2f, 3em 0 0 2px #28c93f;
 }
 .browser img {
   border-radius: 0 0 10px 10px;
