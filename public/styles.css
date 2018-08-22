@@ -319,7 +319,7 @@ pre code {
 /* website */
 .browser {
   border: 1px solid #DCDDDE;
-  border-radius: 10px;
+  border-radius: 6px;
   -webkit-box-shadow: 0px 10px 32px 10px rgba(0,0,0,0.05);
           box-shadow: 0px 10px 32px 10px rgba(0,0,0,0.05);
   -webkit-transition: all .25s ease-out;
@@ -341,7 +341,7 @@ pre code {
   box-shadow: 0 0 0 2px #ff5f58, 1.5em 0 0 2px #ffbe2f, 3em 0 0 2px #28c93f;
 }
 .browser img {
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 6px 6px;
   width: auto;
   border-top: 1px solid #DCDDDE;
   overflow: hidden;
