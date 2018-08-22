@@ -44,6 +44,11 @@ main section,
 main article {
   padding: 0 1em;
 }
+@media all and (min-width:40em) {
+  main.homepage  {
+    margin-top: -33vh;
+  }
+}
 @media all and (min-width:60em) {
   main.homepage  {
     margin-top: -15vh;
