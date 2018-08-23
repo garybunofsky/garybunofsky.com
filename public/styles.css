@@ -27,7 +27,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ul {list-style: none;}blockquote,q{quotes: none;}blockquote:before, blockquote:after,q:before,q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
 
 body {
-  font-family:  "Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:  "Book", -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-animation: fadein .37s;
   animation: fadein .37s;
 }
@@ -360,6 +360,7 @@ select.form-field {
     padding: 0 10px;
     border: 1px solid #DCDDDE;
     background: #fff;
+    font-family:  "Book", -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1em;
     text-overflow: ellipsis;
     -webkit-box-sizing: border-box;
@@ -373,15 +374,15 @@ select.form-field {
     -moz-box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
     box-shadow: inset 0px 4px 10px 0 rgba(0,0,0,0.075);
     color: #3e474c;
-    font-size: 1em;
 }
 textarea.form-field {
   display: block;
   color: #3e474c;
   height: auto;
   padding: 6px 12px;
+  font-family:  "Book", -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.5666em;
   background-color: #fff;
   background-image: none;
   border: 1px solid #DCDDDE;
