@@ -348,8 +348,8 @@ pre code {
 .browser img {
   border-radius: 0 0 6px 6px;
   width: auto;
-  border-top: 1px solid #DCDDDE;
   overflow: hidden;
+  margin: -1px 0 0 0;
   max-width: 100%;
 }
 /* Forms */
