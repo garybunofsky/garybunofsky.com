@@ -161,9 +161,10 @@ strong {
 }
 .project-list a .browser:hover {
   opacity: 0.7;
-  -webkit-transition: opacity .25s ease-out;
-  -o-transition: opacity .25s ease-out;
-  transition: opacity .25s ease-out;
+  transform: translateY(-6px);
+  -webkit-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 }
 
 /* image styles */
