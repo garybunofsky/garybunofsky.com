@@ -283,7 +283,7 @@ pre {
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
             box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
     padding: .5em .75em;
-    font-size: 0.875em;
+    font-size: 1.125em;
     margin-bottom: 1em;
 }
 pre code {
