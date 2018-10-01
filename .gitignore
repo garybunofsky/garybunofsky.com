@@ -3,3 +3,4 @@ node_modules/
 npm-debug.log*
 src/sitemap.xml
 .env
+views/portfolio/insights.ejs
