@@ -696,6 +696,7 @@ footer a:hover {
 footer .copyright {
   text-align: center;
   color: #B8BBBD;
+  line-height: 1.5666em;
   font-size: 0.875em;
   display: block;
   bottom: 1em;
