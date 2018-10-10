@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('../components/head.ejs') %>
+  <body>
+    <%- include('../components/nav.ejs') %>
+    <%- include('../components/hero.ejs', {head: 'Ruby\'s Safe Navigation Operator', sub: 'A little post about the safe nav operator' }) %>
+    <main class="content wrapper-md">
+      <section>
+
+        <p class="text--sm">Ruby's safe navigation operator is used to access
+        a method on an object that might be undefined. Say we want to get the
+           full address of a user's company. It would look something like this:
+           <code>user.company.full_address</code></p>
+
+        <p class="text--sm">But what if not all users have a company? The
+        <code>user.company</code> would be nil. And then we would be trying to access
+        the method <code>full_address</code> on a nil value. Ultimately we would be
+           left with the following error: Undefined method `full_address' for
+           nil:NilClass</p>
+
+        <p class="text--sm">We can use a safe navigation operator to prevent
+        this error. We would write <code>user.company&.full_address</code>. This would
+        allow us to get the full_address, only if the user.company was not
+        nil.</p>
+
+      </section>
+    </main>
+    <%- include('../components/footer.ejs') %>
+  </body>
+</html>

@@ -29,17 +29,15 @@ app.get('/blog/finding-photos', (req, res) => { res.render('blog/finding-photos'
 app.get('/blog/free-fonts-that-arent-google-fonts', (req, res) => { res.render('blog/free-fonts-that-arent-google-fonts') })
 app.get('/blog/not-the-same', (req, res) => { res.render('blog/not-the-same') })
 app.get('/blog/seeding-a-database-with-knex', (req, res) => { res.render('blog/seeding-a-database-with-knex') })
+app.get('/blog/rubys-safe-navigation-operator', (req, res) => { res.render('blog/rubys-safe-navigation-operator') })
 app.get('/blog/website-deployment-checklist', (req, res) => { res.render('blog/website-deployment-checklist') })
 app.get('/books', (req, res) => { res.render('books') })
 app.get('/contact', (req, res) => { res.render('contact') })
-app.get('/quote', (req, res) => {
-  res.render('quote')
-})
+app.get('/quote', (req, res) => {  res.render('quote')})
 app.get('/quote/send', (req, res) => { res.render('thank-you') })
-app.post('/quote/send', (req, res) => {
-  mailer.sendMail(req.body)
-  res.render('thank-you')
-})
+app.post('/quote/send', (req, res) => { 
+  mailer.sendMail(req.body) 
+  res.render('thank-you') })
 app.get('/i-need-a-website', (req, res) => { res.render('i-need-a-website') })
 app.get('/portfolio', (req, res) => { res.render('portfolio/index') })
 app.get('/portfolio/insights', (req, res) => { res.render('portfolio/insights') })

@@ -10,6 +10,7 @@ module.exports = {
     { url: '/blog/free-fonts-that-arent-google-fonts/', changefreq: 'monthly', priority: 0.6 },
     { url: '/blog/not-the-same/', changefreq: 'monthly', priority: 0.6 },
     { url: '/blog/seeding-a-database-with-knex/', changefreq: 'monthly', priority: 0.6 },
+    { url: '/blog/rubys-safe-navigation-operator/', changefreq: 'monthly', priority: 0.6 },
     { url: '/blog/website-deployment-checklist/', changefreq: 'monthly', priority: 0.6 },
     { url: '/blog/what-to-bring-when-work-remotely/', changefreq: 'monthly', priority: 0.6 },
     { url: '/books/', changefreq: 'monthly',  priority: 0.4 },
