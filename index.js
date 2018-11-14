@@ -33,6 +33,7 @@ app.get('/blog/rubys-safe-navigation-operator', (req, res) => { res.render('blog
 app.get('/blog/website-deployment-checklist', (req, res) => { res.render('blog/website-deployment-checklist') })
 app.get('/books', (req, res) => { res.render('books') })
 app.get('/contact', (req, res) => { res.render('contact') })
+app.get('/services/hosting', (req, res) => { res.render('services/hosting') })
 app.get('/quote', (req, res) => {  res.render('quote')})
 app.get('/quote/send', (req, res) => { res.render('thank-you') })
 app.post('/quote/send', (req, res) => { 

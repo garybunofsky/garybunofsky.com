@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('../components/head.ejs') %>
+  <body>
+    <%- include('../components/nav.ejs') %>
+    <%- include('../components/hero.ejs', {head: 'Web Hosting Made Easy', sub: 'I make sure your site is fast and secure - so you can focus on your business.' }) %>
+    <main class="content wrapper-md">
+      <section class="grid grid--gutters">
+        <div class="grid--item">
+          <h3 class="text--md text--blue--500 text--bold">Fast and Reliable</h3>
+          <p class="text--sm">Your website will perform faster and more
+          reliably with solid-state technology.</p>
+        </div>
+        <div class="grid--item">
+          <h3 class="text--md text--blue--500 text--bold">Always Online</h3>
+          <p class="text--sm">My server uptime is around 99.99%, so you'll
+          never lose a visitor.</p>
+        </div>
+      </section>
+      <section class="grid grid--gutters">
+        <div class="grid--item">
+          <h3 class="text--md text--blue--500 text--bold">Be Less Busy</h3>
+          <p class="text--sm">Updates, migrations and backups are taken care
+          of, so you can focus on your business.</p>
+        </div>
+        <div class="grid--item">
+          <h3 class="text--md text--blue--500 text--bold">DDoS Mitigation</h3>
+          <p class="text--sm">Secure monitoring ensures your site is safe from
+          hackers and botnets.</p>
+        </div>
+      </section>
+    </main>
+    <%- include('../components/footer.ejs') %>
+  </body>
+</html>
