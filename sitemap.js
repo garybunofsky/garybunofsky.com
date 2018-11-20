@@ -16,7 +16,7 @@ module.exports = {
     { url: '/books/', changefreq: 'monthly',  priority: 0.4 },
     { url: '/contact/', changefreq: 'monthly', priority: 0.6 },
     { url: '/services/hosting/', changefreq: 'monthly', priority: 0.6 },
-    { url: '/i-need-a-website/', changefreq: 'monthly',  priority: 0.7 },
+    { url: '/services/website-development/', changefreq: 'monthly',  priority: 0.7 },
     { url: '/portfolio/', changefreq: 'monthly', priority: 0.9 },
     { url: '/portfolio/insights/', changefreq: 'monthly', priority: 0.8 },
     { url: '/portfolio/pass/', changefreq: 'monthly', priority: 0.8 },

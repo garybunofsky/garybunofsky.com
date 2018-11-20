@@ -659,6 +659,55 @@ a span {
 .performance:before { background-image:url('icons/plus-blue.svg'); }
 .website:before { background-image:url('icons/website-blue.svg'); }
 
+.wifi:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f1eb";
+  color: #367aea;
+  display: inline-block;
+  margin-right: 18px;
+}
+.hdd:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0a0";
+  color: #367aea;
+  display: inline-block;
+  margin-right: 18px;
+}
+.coffee:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0f4";
+  color: #367aea;
+  display: inline-block;
+  margin-right: 18px;
+}
+.globe:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0ac";
+  color: #367aea;
+  display: inline-block;
+  margin-right: 18px;
+}
+.wrench:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0ad";
+  color: #367aea;
+  display: inline-block;
+  margin-right: 18px;
+}
+.storage:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0a0";
+  color: #367aea;
+  display: inline-block;
+  margin-right: 18px;
+}
+.bug:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f188";
+  color: #367aea;
+  display: inline-block;
+  margin-right: 18px;
+}
 /* Margin */
 .mb-1 { margin-bottom: 1em; }
 .mb-2 { margin-bottom: 2em; }
