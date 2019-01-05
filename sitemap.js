@@ -18,7 +18,6 @@ module.exports = {
     { url: '/services/hosting/', changefreq: 'monthly', priority: 0.6 },
     { url: '/services/website-development/', changefreq: 'monthly',  priority: 0.7 },
     { url: '/portfolio/', changefreq: 'monthly', priority: 0.9 },
-    { url: '/portfolio/insights/', changefreq: 'monthly', priority: 0.8 },
     { url: '/portfolio/pass/', changefreq: 'monthly', priority: 0.8 },
     { url: '/privacy-policy/', changefreq: 'monthly', priority: 0.1 },
     { url: '/quote/', changefreq: 'monthly', priority: 0.7 },
