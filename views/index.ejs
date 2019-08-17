@@ -3,9 +3,38 @@
   <%- include('components/head.ejs') %>
   <body>
     <%- include('components/nav.ejs') %>
-    <%- include('components/hero.ejs', {head: 'Hi, I\'m Gary Bunofsky', sub: 'I\’m a software developer based in Cleveland, Ohio. I build sites, apps, and products on the internet.'  }) %>
-    <main class="homepage">
-      <%- include('components/projects.ejs') %>
+    <%- include('components/hero.ejs', {
+      head: "Gary Bunofsky",
+      sub: "I'm a software developer with a focus on applications and websites. I live in Cleveland, Ohio where I'm usually writing code."
+      } )
+    %>
+
+    <main class="content wrapper-md">
+      <section class="mb-2">
+        <p class="text--sm">I studied communication at Kent State University
+        before realizing sometimes the web is the best place to communicate. So
+        yeah, here I am. I've configured servers, designed apps, wrote
+        authentication, <a href="/blog/seeding-a-database-with-knex">migrated dbs</a>, and
+        plenty of stuff in between. I live with my wife, daughter, and our dog,
+        Ruby, in Cleveland, where I balance my love of eating and <a href="/books/">reading</a> with coding and deploying.</p>
+      </section>
+      <section>
+        <img class="responsive" src="/images/gary-bunofsky.png" alt="Gary Bunofsky">
+      </section>
+      <section>
+        <h3 class="text--md">Tech & Stuff I Know</h3>
+        <ul class="text--sm">
+          <li class="check">Javascript like React, Node, Vue and Express</li>
+          <li class="check">Ruby and Rails<li>
+          <li class="check">Databases like SQL and PSQL</li>
+          <li class="check">TDD like Jest, Jasmine, Rspec and Cucumber</li>
+          <li class="check">CLI</li>
+          <li class="check">SCSS</li>
+          <li class="check">HTML</li>
+          <li class="check">Git</li>
+          <li class="check">Sketch</li>
+        </ul>
+      </section>
     </main>
     <%- include('components/footer.ejs') %>
   </body>
