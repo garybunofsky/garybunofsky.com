@@ -1,27 +1,6 @@
-/* Fontface */
-/* Fontface */
-@font-face {
-  font-family: 'Light';
-  src: url('font/Light.eot');
-  src: url('font/Light.woff2') format('woff2'), url('font/Light.woff') format('woff'), url('font/Light.ttf') format('truetype'), url('font/Light.svg#Light') format('svg'), url('font/Light.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Book';
-  src: url('font/Book.eot');
-  src: url('font/Book.woff2') format('woff2'), url('font/Book.woff') format('woff'), url('font/Book.ttf') format('truetype'), url('font/Book.svg#Book') format('svg'), url('font/Book.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bold';
-  src: url('font/Bold.eot');
-  src: url('font/Bold.woff2') format('woff2'), url('font/Bold.woff') format('woff'), url('font/Bold.ttf') format('truetype'), url('font/Bold.svg#Bold') format('svg'), url('font/Bold.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+@import url('https://rsms.me/inter/inter.css');
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 html,
@@ -148,7 +127,7 @@ table {
 }
 
 body {
-  font-family: "book", -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-animation: fadein 0.37s;
   animation: fadein 0.37s;
