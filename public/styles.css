@@ -323,8 +323,8 @@ img.responsive {
 }
 @media all and (min-width: 60em) {
   .hero {
-    height: 25vh;
-    margin: 56px 0 0 0;
+    height: 33vh;
+    margin: 60px 0 0 0;
   }
   .hero--overlay {
     height: 50vh;
