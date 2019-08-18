@@ -319,7 +319,7 @@ img.responsive {
   padding: 0 1em;
 }
 .hero .wrapper-md {
-  margin: 54px auto 0 auto;
+  margin: 90px auto 0 auto;
 }
 @media all and (min-width: 60em) {
   .hero {
@@ -555,6 +555,7 @@ textarea.form-field {
 .button,
 a.button {
   background: #fff;
+  border:none;
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;
