@@ -15,10 +15,6 @@ module.exports = {
     { url: '/blog/what-to-bring-when-work-remotely/', changefreq: 'monthly', priority: 0.6 },
     { url: '/books/', changefreq: 'monthly',  priority: 0.4 },
     { url: '/contact/', changefreq: 'monthly', priority: 0.6 },
-    { url: '/services/hosting/', changefreq: 'monthly', priority: 0.6 },
-    { url: '/services/website-development/', changefreq: 'monthly',  priority: 0.7 },
-    { url: '/portfolio/', changefreq: 'monthly', priority: 0.9 },
-    { url: '/portfolio/pass/', changefreq: 'monthly', priority: 0.8 },
     { url: '/privacy-policy/', changefreq: 'monthly', priority: 0.1 },
     { url: '/quote/', changefreq: 'monthly', priority: 0.7 },
     { url: '/tools/', changefreq: 'monthly', priority: 0.4 }

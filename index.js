@@ -40,9 +40,6 @@ app.get('/quote/send', (req, res) => { res.render('thank-you') })
 app.post('/quote/send', (req, res) => { 
   mailer.sendMail(req.body) 
   res.render('thank-you') })
-app.get('/portfolio', (req, res) => { res.render('portfolio/index') })
-app.get('/portfolio/insights', (req, res) => { res.render('portfolio/insights') })
-app.get('/portfolio/pass', (req, res) => { res.render('portfolio/pass') })
 app.get('/privacy-policy', (req, res) => { res.render('privacy-policy') })
 app.get('/tools', (req, res) => { res.render('tools') })
 app.get('/sitemap.xml', function(req, res) {

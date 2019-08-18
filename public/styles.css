@@ -141,6 +141,7 @@ hr {
 main.homepage {
   margin-top: -22vh;
 }
+.hero section,
 main section,
 main article {
   padding: 0 1em;
@@ -276,7 +277,12 @@ a {
 }
 p a:hover {
   text-decoration: none;
-  color: #0c71f3;
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  color: #5da0f7;
 }
 strong {
   font-weight: 600;
@@ -559,13 +565,13 @@ textarea.form-field {
 .button,
 a.button {
   background: #fff;
-  border:none;
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #3e474c !important;
+  border: 1px solid #3e474c;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -585,6 +591,7 @@ a.button:hover {
   -ms-transform: translateY(-2px);
   transform: translateY(-2px);
   color: #3e474c !important;
+  background: rgba(0,0,0,0.1);
   -webkit-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
@@ -837,6 +844,9 @@ a span {
 }
 .mt-1 {
   margin-top: 1em;
+}
+.mt-5 {
+  margin-top: 5em;
 }
 .p-2 {
   padding: 2em;
