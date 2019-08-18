@@ -123,7 +123,7 @@ table {
 }
 
 body {
-  font-family: book, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
+  font-family: "book", -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-animation: fadein 0.37s;
   animation: fadein 0.37s;
