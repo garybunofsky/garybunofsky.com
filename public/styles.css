@@ -1,4 +1,29 @@
 /* Fontface */
+/* Fontface */
+@font-face {
+  font-family: 'Light';
+  src: url('font/Light.eot');
+  src: url('font/Light.woff2') format('woff2'), url('font/Light.woff') format('woff'), url('font/Light.ttf') format('truetype'), url('font/Light.svg#Light') format('svg'), url('font/Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Book';
+  src: url('font/Book.eot');
+  src: url('font/Book.woff2') format('woff2'), url('font/Book.woff') format('woff'), url('font/Book.ttf') format('truetype'), url('font/Book.svg#Book') format('svg'), url('font/Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('font/Bold.eot');
+  src: url('font/Bold.woff2') format('woff2'), url('font/Bold.woff') format('woff'), url('font/Bold.ttf') format('truetype'), url('font/Bold.svg#Bold') format('svg'), url('font/Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body,
 div,
