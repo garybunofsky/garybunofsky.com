@@ -123,7 +123,7 @@ table {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
+  font-family: book, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-animation: fadein 0.37s;
   animation: fadein 0.37s;
@@ -496,7 +496,7 @@ textarea.form-field {
   color: #3e474c;
   height: auto;
   padding: 6px 12px;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
+  font-family: book, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1em;
   line-height: 1.5666em;
