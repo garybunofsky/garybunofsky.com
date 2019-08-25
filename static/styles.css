@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Book";
+  src: url("/fonts/Book.woff2") format("woff2"),
+    url("/fonts/Book.woff") format("woff"),
+    url("/fonts/Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("/fonts/Bold.woff2") format("woff2"),
+    url("/fonts/Bold.woff") format("woff"),
+    url("/fonts/Bold.ttf") format("truetype");
+}
+
+h1 {
+  font-family: "Bold";
+  font-size: 2.25em;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Georgia";
+  font-size: 1.15em;
+  line-height: 1.5em;
+}
+.nav,
+header,
+.content-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.nav,
+header {
+  text-align: center;
+}
+.nav ul {
+  display: inline-flex;
+}
+.nav a {
+  margin: 0 0.125em;
+  padding: 0.25em 0.75em;
+  font-family: "Book";
+  color: #000;
+  text-decoration: none;
+}
+
+/* desktop */
+@media all and (min-width: 768px) {
+  .nav {
+    text-align: left;
+  }
+}

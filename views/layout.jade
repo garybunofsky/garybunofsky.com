@@ -1,0 +1,28 @@
+doctype
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/reset.css')
+    link(rel='stylesheet', href='/styles.css')
+  body
+    nav.nav
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/blog") Blog
+        li
+          a(href="/about") About
+    header
+      block header
+    .content-container
+      block content
+    footer
+      nav.nav
+        ul
+          li
+            a(href="/") Home
+          li
+            a(href="/blog") Blog
+          li
+            a(href="/about") About

@@ -1,0 +1,26 @@
+{
+  "name": "garybunofsky.com",
+  "version": "1.0.0",
+  "description": "Gary Bunofsky's personal site",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garybunofsky/garybunofsky.com.git"
+  },
+  "author": "gary@garybunofsky.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garybunofsky/garybunofsky.com/issues"
+  },
+  "homepage": "https://github.com/garybunofsky/garybunofsky.com#readme"
+}
