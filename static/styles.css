@@ -24,10 +24,8 @@
   margin: 0 0.125em;
   padding: 0.625em 0.375em;
   font-family: "Book";
-  color: #000;
-  text-decoration: none;
   border-bottom: 2px solid #fff;
-  transition: border 500ms ease;
+  transition: border 400ms ease;
 }
 .nav ul li a:hover {
   border-bottom: 2px solid #f78c74;
@@ -69,10 +67,24 @@
   font-size: 1em;
 }
 
+time {
+  font-family: "Book";
+  display: block;
+}
+
 p {
   font-family: "Georgia";
   font-size: 1.15em;
   line-height: 1.5em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 400ms ease;
+}
+a:hover {
+  color: #f78c74;
 }
 
 header,
@@ -1680,6 +1692,16 @@ header,
 
 .mr-50 {
   margin-right: 6.25em;
+}
+
+header {
+  text-align: left;
+}
+
+@media all and (min-width: 768px) {
+  header {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=/styles.css.map */

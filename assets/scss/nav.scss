@@ -13,10 +13,8 @@
         margin: 0 0.125em;
         padding: 0.625em 0.375em;
         font-family: "Book";
-        color: #000;
-        text-decoration: none;
         border-bottom: 2px solid #fff;
-        transition: border 500ms ease;
+        transition: border 400ms ease;
         &:hover {
           border-bottom: 2px solid $primary;
         }

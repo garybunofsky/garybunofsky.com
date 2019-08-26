@@ -1,0 +1,9 @@
+header {
+  text-align: left;
+}
+
+@media all and (min-width: $breakpoint) {
+  header {
+    text-align: center;
+  }
+}

@@ -15,5 +15,10 @@ app.get("/about", function(req, res) {
     title: "About › Gary Bunofsky"
   });
 });
+app.get("/writing", function(req, res) {
+  res.render("writing", {
+    title: "Writing › Gary Bunofsky"
+  });
+});
 app.use(express.static("static"));
 app.listen(3000);
