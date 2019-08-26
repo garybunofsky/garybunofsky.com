@@ -10,6 +10,10 @@ app.get("/", function(req, res) {
     title: "Gary Bunofsky › Developer"
   });
 });
-
+app.get("/about", function(req, res) {
+  res.render("about", {
+    title: "About › Gary Bunofsky"
+  });
+});
 app.use(express.static("static"));
 app.listen(3000);

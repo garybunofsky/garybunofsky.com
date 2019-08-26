@@ -6,11 +6,15 @@
   "dependencies": {
     "express": "^4.17.1",
     "jade": "^1.11.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "parcel": "^1.12.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.22.10"
+  },
   "scripts": {
     "start": "nodemon node app.js",
+    "sass": "parcel watch assets/scss/styles.scss -d static",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
