@@ -80,9 +80,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          <Bio />
-        </footer>
+        <footer></footer>
       </div>
     );
   }
