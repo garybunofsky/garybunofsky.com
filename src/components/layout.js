@@ -11,24 +11,41 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(0.5),
-            marginBottom: rhythm(2),
-            marginTop: 0
-          }}
-        >
-          <Link
+        <div>
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`
+              ...scale(0.75),
+              marginBottom: rhythm(2),
+              marginTop: 0
             }}
-            to={`/`}
           >
-            {title}
-          </Link>
-        </h1>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h1>
+          <h2
+            style={{
+              ...scale(0.2),
+              fontWeight: 400,
+              marginBottom: rhythm(2),
+              marginTop: 0
+            }}
+          >
+            Hi I'm Gary. I studied communication at Kent State University before
+            realizing the web is the best place to communicate. I've developed
+            apps, configured servers, wrote authentication, and broke prod.
+            Right now, I'm a software developer at{" "}
+            <a href="https://universitytees.com/">University Tees</a>, where I
+            make things with code.
+          </h2>
+        </div>
       );
     } else {
       header = (
@@ -57,7 +74,7 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(19),
+          maxWidth: rhythm(20),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
       >

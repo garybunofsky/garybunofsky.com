@@ -1,7 +1,7 @@
 ---
 title: Safe Navigation Operator in Ruby
 date: "2018-10-09T22:12:03.284Z"
-description: "Safe Navigation Operator in Ruby"
+description: "How to use a safe navigation operator in Ruby."
 ---
 
 Ruby's safe navigation operator is used to access a method on an object that
