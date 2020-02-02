@@ -54,7 +54,8 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in Cleveland.
+        I'm <strong>{author}</strong>. I'm a software developer with a focus on
+        apps and websites. I live in Cleveland, Ohio.
       </p>
     </div>
   );
