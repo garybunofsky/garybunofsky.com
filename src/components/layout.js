@@ -39,9 +39,9 @@ class Layout extends React.Component {
             }}
           >
             Hi I'm Gary. I studied communication at Kent State University before
-            realizing the web is the best place to communicate. I've developed
-            apps, configured servers, wrote authentication, and broke prod.
-            Right now, I'm a software developer at{" "}
+            realizing the future of communication is on the web. Since then I've built
+            apps, configured servers, wrote integrations, and only broke prod a few times. 
+            Currently I'm a software developer at{" "}
             <a href="https://universitytees.com/">University Tees</a>, where I
             make things with code.
           </h2>
