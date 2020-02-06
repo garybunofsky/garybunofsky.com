@@ -39,11 +39,10 @@ class Layout extends React.Component {
             }}
           >
             Hi I'm Gary. I studied communication at Kent State University before
-            realizing the future of communication is on the web. Since then I've built
-            apps, configured servers, wrote integrations, and only broke prod a few times. 
+            realizing the future of communication the web. Since then I've built
+            apps, configured servers, wrote integrations, and broke production.
             Currently I'm a software developer at{" "}
-            <a href="https://universitytees.com/">University Tees</a>, where I
-            make things with code.
+            <a href="https://universitytees.com/">University Tees</a>.
           </h2>
         </div>
       );

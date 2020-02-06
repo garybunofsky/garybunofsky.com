@@ -4,6 +4,7 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.666,
   headerFontFamily: [
+    "BlinkMacSystemFont",
     "-apple-system",
     "Helvetica Neue",
     "Segoe UI",
@@ -12,6 +13,7 @@ const typography = new Typography({
     "sans-serif"
   ],
   bodyFontFamily: [
+    "BlinkMacSystemFont",
     "-apple-system",
     "Helvetica Neue",
     "Segoe UI",

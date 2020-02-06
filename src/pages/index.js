@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { rhythm } from "../utils/typography";
+import { rhythm, scale } from "../utils/typography";
 
 class BlogIndex extends React.Component {
   render() {
@@ -20,28 +20,40 @@ class BlogIndex extends React.Component {
             <article
               key={node.fields.slug}
               style={{
-                marginBottom: rhythm(1)
+                marginBottom: rhythm(2)
               }}
             >
-              <header>
-                <h3
+              <Link
+                style={{
+                  display: `flex`,
+                  boxShadow: `none`,
+                  textDecoration: `none`,
+                  color: `inherit`,
+                  alignItems: `center`
+                }}
+                to={node.fields.slug}
+              >
+                <span
                   style={{
-                    marginBottom: rhythm(1 / 4)
+                    ...scale(1),
+                    marginRight: rhythm(3 / 4)
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt
-                  }}
-                />
-              </section>
+                  {node.frontmatter.emoji}
+                </span>
+                <div>
+                  <header>
+                    <h3
+                      style={{
+                        marginBottom: rhythm(1 / 100)
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    <small>{node.frontmatter.date}</small>
+                  </header>
+                </div>
+              </Link>
             </article>
           );
         })}
@@ -70,6 +82,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            emoji
           }
         }
       }

@@ -2,6 +2,7 @@
 title: Free Alternatives to Google Fonts
 date: "2018-02-27T23:46:37.121Z"
 description: "Free Alternatives to Google Fonts."
+emoji: "📕"
 ---
 
 - [Aileron](http://tipotype.com/aileron/)
