@@ -14,13 +14,13 @@ suffice.
 
 ```ruby
 require 'csv' # We need this since we're working with a CSV
-file = "#{Rails.root}/public/export.csv" # Now we'll define where the file will
-be saved
-header = %w[brand number_of_products]
+file = "#{Rails.root}/public/export.csv" # Now we'll define where the file will be saved
+header = %w[brand number_of_products] # Let's define the header of the file
 brands = Brand.all.map { |brand| {name: brand.name, number_of_products: brand.products.count} }
+
 CSV.open(file, 'w', write_headers: true, headers: header) do |write|
   brands.each do |b|
-    write << [b[:name], b[:number_of_products]]
+    write << [b[:name], b[:number_of_products]] # Here's where we'll write the rows
   end
 end
 ```
