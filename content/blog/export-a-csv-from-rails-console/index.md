@@ -2,7 +2,7 @@
 title: Exporting a CSV from Rails Console
 date: "2020-02-06T21:46:25.121Z"
 description: "How to export a CSV from Rails console"
-emoji: "💎"
+emoji: "📁"
 ---
 
 Every once in a while a client I'm working with needs some custom data from our
