@@ -42,7 +42,7 @@ connection data. Below you can see how mine looks.
 module.exports = {
   development: {
     client: 'postgresql',
-    connection: 'postgresql://localhost/your_database
+    connection: 'postgresql://localhost/your_database'
   },
   production: {
     client: 'postgresql',
