@@ -63,7 +63,12 @@ const Layout = ({ children }) => {
           Resume
         </h2>
         <p>
-          <a href="/resume.pdf" className="highlight">
+          <a
+            href="/resume.pdf"
+            className="highlight"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Download my resume
           </a>
         </p>
