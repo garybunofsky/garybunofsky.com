@@ -51,7 +51,11 @@ const Layout = ({ children }) => {
         >
           Resume
         </h2>
-        <p>
+        <p
+          style={{
+            ...scale(0)
+          }}
+        >
           <a
             href="/resume.pdf"
             className="highlight"
