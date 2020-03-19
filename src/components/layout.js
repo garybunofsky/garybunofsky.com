@@ -1,88 +1,79 @@
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
+
 import React from "react";
-import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+
+import "./layout.css";
+import Bio from "./bio";
+import Projects from "./projects";
 import { rhythm, scale } from "../utils/typography";
-import Bio from "../components/bio";
 
-class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    let header;
-
-    if (location.pathname === rootPath) {
-      header = (
-        <div>
-          <h1
-            style={{
-              ...scale(0.75),
-              marginBottom: rhythm(2),
-              marginTop: 0
-            }}
-          >
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`
-              }}
-              to={`/`}
-            >
-              {title}
-            </Link>
-          </h1>
-          <h2
-            style={{
-              ...scale(0.2),
-              fontWeight: 400,
-              marginBottom: rhythm(2),
-              marginTop: 0
-            }}
-          >
-            Hi I'm Gary. I studied communication at Kent State University before
-            realizing it's future lives on the web. Since then I've built
-            apps, configured servers, wrote integrations, and broke production.
-            Currently I'm a software developer at{" "}
-            <a href="https://universitytees.com/">University Tees</a>.
-          </h2>
-        </div>
-      );
-    } else {
-      header = (
-        <h3
-          style={{
-            ...scale(0.5),
-            marginBottom: rhythm(2),
-            marginTop: 0
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      );
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+          description
+        }
+      }
     }
-    return (
+  `);
+
+  return (
+    <>
+      <Bio
+        siteTitle={data.site.siteMetadata.title}
+        siteDescription={data.site.siteMetadata.description}
+      />
       <div
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(20),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+          margin: `0 auto`,
+          maxWidth: 580
         }}
       >
-        <header>{header}</header>
         <main>{children}</main>
-        <footer></footer>
+        <h2
+          style={{
+            ...scale(-0.25),
+            textTransform: `uppercase`,
+            color: `#A5AF9B`,
+            marginBottom: rhythm(0.1)
+          }}
+        >
+          Projects
+        </h2>
+
+        <Projects />
+
+        <h2
+          style={{
+            ...scale(-0.25),
+            textTransform: `uppercase`,
+            color: `#A5AF9B`,
+            marginBottom: rhythm(0.1)
+          }}
+        >
+          Resume
+        </h2>
+        <p>
+          <a href="/resume.pdf" className="highlight">
+            Download my resume
+          </a>
+        </p>
       </div>
-    );
-  }
-}
+    </>
+  );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 export default Layout;

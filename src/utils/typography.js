@@ -1,10 +1,10 @@
 import Typography from "typography";
 
 const typography = new Typography({
-  baseFontSize: "19px",
+  baseFontSize: "17px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-    "BlinkMacSystemFont",
+    "Inter",
     "-apple-system",
     "Helvetica Neue",
     "Segoe UI",
@@ -13,6 +13,7 @@ const typography = new Typography({
     "sans-serif"
   ],
   bodyFontFamily: [
+    "Inter",
     "BlinkMacSystemFont",
     "-apple-system",
     "Helvetica Neue",

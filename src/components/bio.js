@@ -1,64 +1,45 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
+import PropTypes from "prop-types";
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Image from "gatsby-image";
 
-import { rhythm } from "../utils/typography";
+import { rhythm, scale } from "../utils/typography";
 
-const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      site {
-        siteMetadata {
-          author
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `);
-
-  const { author } = data.site.siteMetadata;
-  return (
-    <div
+const Bio = ({ siteTitle, siteDescription }) => (
+  <div
+    style={{
+      margin: `0 auto`,
+      maxWidth: 580,
+      paddingBottom: rhythm(1),
+      paddingTop: rhythm(1)
+    }}
+  >
+    <h1
       style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5)
+        ...scale(1),
+        marginBottom: rhythm(0.5)
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`
-        }}
-        imgStyle={{
-          borderRadius: `50%`
-        }}
-      />
-      <p>
-        I'm <strong>{author}</strong>. I'm a software developer with a focus on
-        apps and websites. I live in Cleveland, Ohio.
-      </p>
-    </div>
-  );
+      {siteTitle}
+    </h1>
+    <p>
+      {siteDescription} <br />
+      <a
+        href="mailto:gary@garybunofsky.com?subject=Hi%20Gary"
+        className="highlight"
+      >
+        I am currently looking for a full-time role!
+      </a>
+    </p>
+  </div>
+);
+
+Bio.propTypes = {
+  siteTitle: PropTypes.string,
+  siteDescription: PropTypes.string
+};
+
+Bio.defaultProps = {
+  siteTitle: ``,
+  siteDescription: ``
 };
 
 export default Bio;
