@@ -27,7 +27,9 @@ const typography = new Typography({
     "Helvetica",
     "Arial",
     "sans-serif"
-  ]
+  ],
+  headerWeight: 500,
+  bodyWeight: 400
 });
 
 // Hot reload typography in development.
