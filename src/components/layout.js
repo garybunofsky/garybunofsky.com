@@ -9,8 +9,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header";
 import "./layout.css";
+import Bio from "./bio";
+import Projects from "./projects";
+import { rhythm, scale } from "../utils/typography";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,6 +20,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
@@ -25,20 +28,45 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Bio
+        siteTitle={data.site.siteMetadata.title}
+        siteDescription={data.site.siteMetadata.description}
+      />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 768,
-          padding: `0 1.0875rem 1.45rem`
+          maxWidth: 580
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <h2
+          style={{
+            ...scale(-0.25),
+            textTransform: `uppercase`,
+            color: `#A5AF9B`,
+            marginBottom: rhythm(0.1)
+          }}
+        >
+          Projects
+        </h2>
+
+        <Projects />
+
+        <h2
+          style={{
+            ...scale(-0.25),
+            textTransform: `uppercase`,
+            color: `#A5AF9B`,
+            marginBottom: rhythm(0.1)
+          }}
+        >
+          Resume
+        </h2>
+        <p>
+          <a href="/resume.pdf" className="highlight">
+            Download my resume
+          </a>
+        </p>
       </div>
     </>
   );
