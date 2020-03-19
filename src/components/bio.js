@@ -20,7 +20,11 @@ const Bio = ({ siteTitle, siteDescription }) => (
     >
       {siteTitle}
     </h1>
-    <p>
+    <p
+      style={{
+        ...scale(0)
+      }}
+    >
       {siteDescription} <br />
       <a
         href="mailto:gary@garybunofsky.com?subject=Hi%20Gary"
