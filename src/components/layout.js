@@ -39,17 +39,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <h2
-          style={{
-            ...scale(-0.25),
-            textTransform: `uppercase`,
-            color: `#A5AF9B`,
-            marginBottom: rhythm(0.1)
-          }}
-        >
-          Projects
-        </h2>
-
         <Projects />
 
         <h2

@@ -6,7 +6,7 @@ var plugins = [{
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
     },{
       plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":["inter","source sans pro:300,400,400i,700"],"display":"swap"},
+      options: {"plugins":[],"fonts":["inter","source sans pro:300,400,400i,500,600,700"],"display":"swap"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

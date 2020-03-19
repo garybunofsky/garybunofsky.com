@@ -1,17 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import { rhythm, scale } from "../utils/typography";
 
-const Projects = ({ projects }) =>
-  projects.map((project, index) => (
+const Projects = ({ projects }) => {
+  let heading = (
+    <h2
+      style={{
+        ...scale(-0.25),
+        textTransform: `uppercase`,
+        color: `#A5AF9B`,
+        marginBottom: rhythm(0.1)
+      }}
+    >
+      Projects
+    </h2>
+  );
+
+  let items = projects.map((project, index) => (
     <div
       key={index}
       style={{
         marginBottom: rhythm(0.5)
       }}
     >
-      <a href={project.link} target="_blank">
+      <a href={project.link} target="_blank" rel="noopener noreferrer">
         <h3
           style={{
             ...scale(0.25),
@@ -31,6 +43,13 @@ const Projects = ({ projects }) =>
     </div>
   ));
 
+  return (
+    <div>
+      {heading}
+      {items}
+    </div>
+  );
+};
 Projects.propTypes = {
   projects: PropTypes.arrayOf(
     PropTypes.shape({
