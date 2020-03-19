@@ -6,7 +6,7 @@ const typography = new Typography({
   googleFonts: [
     {
       name: "Inter",
-      styles: ["400"]
+      styles: ["300", "400", "500", "600", "700"]
     }
   ],
   headerFontFamily: [
@@ -28,8 +28,9 @@ const typography = new Typography({
     "Arial",
     "sans-serif"
   ],
-  headerWeight: 500,
-  bodyWeight: 400
+  headerWeight: 600,
+  bodyWeight: 400,
+  boldWeight: 700
 });
 
 // Hot reload typography in development.
