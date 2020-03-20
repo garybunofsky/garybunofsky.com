@@ -33,6 +33,13 @@ module.exports = {
         fonts: [`inter:300,400,400i,500,600,700`],
         display: "swap"
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-83866226-1`,
+        head: true
+      }
     }
   ]
 };
