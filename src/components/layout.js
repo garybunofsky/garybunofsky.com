@@ -28,17 +28,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Bio
-        siteTitle={data.site.siteMetadata.title}
-        siteDescription={data.site.siteMetadata.description}
-      />
-      <div
+      <main
         style={{
           margin: `0 auto`,
           maxWidth: 580
         }}
       >
-        <main>{children}</main>
+        <Bio
+          siteTitle={data.site.siteMetadata.title}
+          siteDescription={data.site.siteMetadata.description}
+        />
+
+        {children}
+
         <Projects />
 
         <h2
@@ -56,16 +58,17 @@ const Layout = ({ children }) => {
             ...scale(0)
           }}
         >
+          Take a look at{" "}
           <a
             href="/resume.pdf"
             className="highlight"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Download my resume
+            my resume
           </a>
         </p>
-      </div>
+      </main>
     </>
   );
 };

@@ -8,8 +8,7 @@ body {
   padding: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f9f7ea;
-  color: #515f44;
+  background-color: #f9f7ea;
 }
 a {
   color: #515f44;
@@ -20,7 +19,13 @@ a:hover {
   opacity: 0.75;
 }
 
+h1 {
+  letter-spacing: -0.025px;
+}
+
 .highlight {
-  background-color: #fff3a6;
-  color: #515f44;
+  background-color: #fbf1ad;
+  color: #546247;
+  padding: 1px 4px;
+  border-radius: 3px;
 }

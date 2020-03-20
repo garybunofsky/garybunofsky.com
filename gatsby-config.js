@@ -21,8 +21,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#f9f7ea`,
+        theme_color: `#f9f7ea`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
       }
@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`inter`, `source sans pro\:300,400,400i,500,600,700`],
+        fonts: [`inter:300,400,400i,500,600,700`],
         display: "swap"
       }
     }

@@ -3,10 +3,10 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
+      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#f9f7ea","theme_color":"#f9f7ea","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
     },{
       plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":["inter","source sans pro:300,400,400i,500,600,700"],"display":"swap"},
+      options: {"plugins":[],"fonts":["inter:300,400,400i,500,600,700"],"display":"swap"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

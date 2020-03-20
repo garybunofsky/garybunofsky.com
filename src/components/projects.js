@@ -23,7 +23,7 @@ const Projects = ({ projects }) => {
         marginBottom: rhythm(0.5)
       }}
     >
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
+      <a href={project.url} target="_blank" rel="noopener noreferrer">
         <h3
           style={{
             ...scale(0.25),
@@ -33,6 +33,30 @@ const Projects = ({ projects }) => {
           {project.name}
         </h3>
       </a>
+
+      {project.githubUrl ? (
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            textDecoration: `none`
+          }}
+        >
+          <span
+            style={{
+              ...scale(-0.5),
+              textTransform: `uppercase`,
+              fontFamily: `monospace`,
+              color: `#A5AF9B`,
+              marginBottom: rhythm(0.1)
+            }}
+          >
+            Source
+          </span>
+        </a>
+      ) : null}
+
       <p
         style={{
           ...scale(0)
@@ -55,7 +79,9 @@ Projects.propTypes = {
     PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string,
-      description: PropTypes.string
+      description: PropTypes.string,
+      url: PropTypes.string,
+      githubUrl: PropTypes.string
     })
   )
 };
@@ -66,13 +92,15 @@ Projects.defaultProps = {
       name: "Intel",
       description:
         "I built an app that tracks Amazon prices, content and other data to increase sales. I designed an activity feature to optimize product changes. Created an email campaign to notify employees when a product is unavailable.",
-      link: "https://intel.marketplacestrategy.com"
+      url: "https://intel.marketplacestrategy.com",
+      githubUrl: null
     },
     {
       name: "Cleveland Weather Bot",
       description:
         "I made a bot that tweets an emoji when Cleveland's weather changes. It's written in Node and Express.",
-      link: "https://twitter.com/cle_weather_bot"
+      url: "https://twitter.com/cle_weather_bot",
+      githubUrl: "https://github.com/garybunofsky/clevelandweather"
     }
   ]
 };

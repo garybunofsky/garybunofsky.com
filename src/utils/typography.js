@@ -28,9 +28,8 @@ const typography = new Typography({
     "Arial",
     "sans-serif"
   ],
-  headerWeight: 600,
-  bodyWeight: 400,
-  boldWeight: 700
+  headerColor: `#515f44`,
+  bodyColor: `#546247c7`
 });
 
 // Hot reload typography in development.

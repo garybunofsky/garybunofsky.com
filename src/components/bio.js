@@ -1,17 +1,26 @@
 import PropTypes from "prop-types";
 import React from "react";
-
+import Drawing from "../components/drawing";
 import { rhythm, scale } from "../utils/typography";
 
 const Bio = ({ siteTitle, siteDescription }) => (
   <div
     style={{
-      margin: `0 auto`,
-      maxWidth: 580,
       paddingBottom: rhythm(1),
       paddingTop: rhythm(1)
     }}
   >
+    <div
+      style={{
+        maxWidth: `320px`,
+        marginLeft: `auto`,
+        marginRight: `auto`,
+        marginBottom: rhythm(0.75)
+      }}
+    >
+      <Drawing />
+    </div>
+
     <h1
       style={{
         ...scale(1),
@@ -25,12 +34,12 @@ const Bio = ({ siteTitle, siteDescription }) => (
         ...scale(0)
       }}
     >
-      {siteDescription} <br />
+      {siteDescription}{" "}
       <a
         href="mailto:gary@garybunofsky.com?subject=Hi%20Gary"
         className="highlight"
       >
-        I am currently looking for a full-time role!
+        I am currently on the hunt for a full-time role.
       </a>
     </p>
   </div>
