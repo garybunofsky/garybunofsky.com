@@ -39,7 +39,7 @@ const Bio = ({ siteTitle, siteDescription }) => (
         href="mailto:gary@garybunofsky.com?subject=Hi%20Gary"
         className="highlight"
       >
-        I am currently on the hunt for a full-time role.
+        I am currently looking for a full-time role.
       </a>
     </p>
   </div>
