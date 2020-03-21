@@ -45,7 +45,7 @@ const Experience = ({ experiences }) => {
   ));
 
   return (
-    <div>
+    <div style={{ marginBottom: rhythm(2) }}>
       {heading}
       {items}
     </div>
