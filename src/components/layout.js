@@ -9,11 +9,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
+import "normalize.css";
 import "./layout.css";
 import Bio from "./bio";
 import Projects from "./projects";
 import Experiences from "./experiences";
-import { rhythm, scale } from "../utils/typography";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
