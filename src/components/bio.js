@@ -15,7 +15,8 @@ const Bio = ({ siteTitle, siteDescription }) => (
         maxWidth: `320px`,
         marginLeft: `auto`,
         marginRight: `auto`,
-        marginBottom: rhythm(0.75)
+        marginBottom: rhythm(0.75),
+        opacity: `0.75`
       }}
     >
       <Drawing />
