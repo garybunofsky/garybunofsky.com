@@ -37,7 +37,7 @@ const Bio = ({ siteTitle, siteDescription }) => (
     >
       {siteDescription} I am currently looking for a full-time role —{" "}
       <a
-        href="/resume.pdf"
+        href="https://docs.google.com/document/d/169vwJyUUlLRKcY-VihmY2DCSJLqQmjrw2KB42Jx8G2I/edit?usp=sharing"
         target="_blank"
         rel="noopener"
         className="highlight"
