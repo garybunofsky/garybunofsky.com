@@ -37,7 +37,9 @@ const Bio = ({ siteTitle, siteDescription }) => (
     >
       {siteDescription} I am currently looking for a full-time role —{" "}
       <a
-        href="mailto:gary@garybunofsky.com?subject=Hi%20Gary"
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener"
         className="highlight"
       >
         check out my résumé.
