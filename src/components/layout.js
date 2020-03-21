@@ -13,6 +13,7 @@ import "./layout.css";
 import Bio from "./bio";
 import Projects from "./projects";
 import Experiences from "./experiences";
+import Contact from "./contact";
 import Socials from "./socials";
 
 const Layout = ({ children }) => {
@@ -41,6 +42,7 @@ const Layout = ({ children }) => {
 
       <Projects />
       <Experiences />
+      <Contact />
       <Socials />
     </main>
   );
