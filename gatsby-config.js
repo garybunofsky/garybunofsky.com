@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hi, I'm Gary.`,
-    description: `I studied communication at Kent State before I realized everyone is talking about the web; so I learned to code. Since then, I have developed a few apps, built bots, scraped sites and many other things.`,
+    description: `I studied communication at Kent State before I realized everyone was talking about the web; so I learned to code. Since then, I have developed a few apps, built bots, scraped sites and many other things.`,
     author: `@garybunofsky`
   },
   plugins: [
