@@ -10,6 +10,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f9f7ea;
 }
+h1 {
+  letter-spacing: -0.025px;
+}
+ul {
+  margin-left: 15px;
+}
 a {
   color: #515f44;
 }
@@ -18,11 +24,6 @@ a:hover {
   outline-width: 0;
   opacity: 0.75;
 }
-
-h1 {
-  letter-spacing: -0.025px;
-}
-
 .highlight {
   background-color: #fbf1ad;
   color: #546247;

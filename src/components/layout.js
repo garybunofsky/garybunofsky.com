@@ -13,6 +13,7 @@ import "./layout.css";
 import Bio from "./bio";
 import Projects from "./projects";
 import Experiences from "./experiences";
+import Socials from "./socials";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,24 +28,21 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
-      <main
-        style={{
-          margin: `0 auto`,
-          maxWidth: 580
-        }}
-      >
-        <Bio
-          siteTitle={data.site.siteMetadata.title}
-          siteDescription={data.site.siteMetadata.description}
-        />
+    <main
+      style={{
+        margin: `0 auto`,
+        maxWidth: 580
+      }}
+    >
+      <Bio
+        siteTitle={data.site.siteMetadata.title}
+        siteDescription={data.site.siteMetadata.description}
+      />
 
-        {children}
-
-        <Projects />
-        <Experiences />
-      </main>
-    </>
+      <Projects />
+      <Experiences />
+      <Socials />
+    </main>
   );
 };
 
