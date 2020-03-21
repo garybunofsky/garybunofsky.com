@@ -28,6 +28,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`inter:300,400,400i,500,600,700`],
