@@ -68,7 +68,7 @@ const Projects = ({ projects }) => {
   ));
 
   return (
-    <div style={{ marginBottom: rhythm(2) }}>
+    <div style={{ marginBottom: rhythm(2.5) }}>
       {heading}
       {items}
     </div>

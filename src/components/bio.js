@@ -6,8 +6,8 @@ import { rhythm, scale } from "../utils/typography";
 const Bio = ({ siteTitle, siteDescription }) => (
   <div
     style={{
-      paddingBottom: rhythm(1),
-      paddingTop: rhythm(1)
+      paddingTop: rhythm(1),
+      marginBottom: rhythm(2.5)
     }}
   >
     <div
