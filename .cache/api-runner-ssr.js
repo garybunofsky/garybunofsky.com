@@ -5,6 +5,9 @@ var plugins = [{
       plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#f9f7ea","theme_color":"#f9f7ea","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
     },{
+      plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
+    },{
       plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["inter:300,400,400i,500,600,700"],"display":"swap"},
     },{

@@ -9,7 +9,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import "normalize.css";
 import "./layout.css";
 import Bio from "./bio";
 import Projects from "./projects";
