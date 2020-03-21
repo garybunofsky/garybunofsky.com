@@ -7,6 +7,9 @@ var plugins = [{
     },{
       plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["inter:300,400,400i,500,600,700"],"display":"swap"},
+    },{
+      plugin: require('/Users/garybunofsky/Documents/projects/garybunofsky.com/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-83866226-1","head":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

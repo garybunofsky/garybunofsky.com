@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import "./layout.css";
 import Bio from "./bio";
 import Projects from "./projects";
+import Experiences from "./experiences";
 import { rhythm, scale } from "../utils/typography";
 
 const Layout = ({ children }) => {
@@ -42,6 +43,7 @@ const Layout = ({ children }) => {
         {children}
 
         <Projects />
+        <Experiences />
 
         <h2
           style={{
