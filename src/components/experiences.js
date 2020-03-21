@@ -33,6 +33,16 @@ const Experience = ({ experiences }) => {
           {experience.company}
         </h3>
       </a>
+      <span
+        style={{
+          ...scale(-0.25),
+          color: `#A5AF9B`,
+          marginBottom: rhythm(0.1),
+          fontWeight: 500
+        }}
+      >
+        {experience.title}, {experience.startDate} - {experience.endDate}
+      </span>
 
       <p
         style={{
@@ -70,8 +80,8 @@ Experience.defaultProps = {
       title: "Freelance Developer",
       description:
         "I built an app that tracks Amazon prices, content and other data to increase sales. I designed an activity feature to optimize product changes. I created an automated email campaign to notify employees if a product is unavailable.",
-      startDate: "JUL 2017",
-      endDate: "PRESENT",
+      startDate: "July 2017",
+      endDate: "Present",
       location: "Cleveland & remote",
       url: "https://universitytees.com"
     },
@@ -80,8 +90,8 @@ Experience.defaultProps = {
       title: "Software Developer",
       description:
         "I lead feature lifecycles: from idea, to iteration, to deployment. I developed a job time calculator that increased production output. Similarly, I increased output by integrating the customer-facing and production apps. I also built a calendar to view planned work and aid with job scheduling. ",
-      startDate: "OCT 2018",
-      endDate: "MAR 2020",
+      startDate: "October 2018",
+      endDate: "March 2020",
       location: "Cleveland & remote",
       url: "https://universitytees.com"
     },
@@ -90,8 +100,8 @@ Experience.defaultProps = {
       title: "Design Mentor",
       description:
         "I was a one-on-one mentor for students in the JavaScript and UX courses. I helped students learn through examples, assignments and encouragement.",
-      startDate: "NOV 2016",
-      endDate: "APR 2019",
+      startDate: "November 2016",
+      endDate: "April 2019",
       location: "NYC & remote",
       url: "https://www.thinkful.com"
     },
@@ -100,8 +110,8 @@ Experience.defaultProps = {
       title: "Developer & Co-founder",
       description:
         "Designed, developed, and launched custom WordPress websites.",
-      startDate: "SEP 2012",
-      endDate: "NOV 2017",
+      startDate: "September 2012",
+      endDate: "November 2017",
       location: "Cleveland & remote",
       url: null
     },
@@ -110,8 +120,8 @@ Experience.defaultProps = {
       title: "Software Developer",
       description:
         "I developed an automated email campaign to send similar jobs to applicants. I met with and on-boarded new customers. Worked support and fixed bugs.",
-      startDate: "SEP 2015",
-      endDate: "JUL 2017",
+      startDate: "September 2015",
+      endDate: "July 2017",
       location: "Cleveland & remote",
       url: "https://www.employstream.com"
     },
@@ -120,8 +130,8 @@ Experience.defaultProps = {
       title: "Web Developer",
       description:
         "Worked closely with companies like CVS Pharmacy and Indiana University to develop high-traffic PPC websites.",
-      startDate: "SEP 2014",
-      endDate: "SEP 2015",
+      startDate: "September 2014",
+      endDate: "September 2015",
       location: "Cleveland & remote",
       url: "https://www.fathomdelivers.com"
     }

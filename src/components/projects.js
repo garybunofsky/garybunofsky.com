@@ -23,39 +23,39 @@ const Projects = ({ projects }) => {
         marginBottom: rhythm(0.5)
       }}
     >
-      <a href={project.url} target="_blank" rel="noopener noreferrer">
-        <h3
-          style={{
-            ...scale(0.25),
-            marginBottom: rhythm(0.1)
-          }}
-        >
-          {project.name}
-        </h3>
-      </a>
-
-      {project.githubUrl ? (
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            textDecoration: `none`
-          }}
-        >
-          <span
+      <div style={{ display: `flex`, justifyContent: `space-between` }}>
+        <a href={project.url} target="_blank" rel="noopener noreferrer">
+          <h3
             style={{
-              ...scale(-0.5),
-              textTransform: `uppercase`,
-              fontFamily: `monospace`,
-              color: `#A5AF9B`,
+              ...scale(0.25),
               marginBottom: rhythm(0.1)
             }}
           >
-            Source
-          </span>
+            {project.name}
+          </h3>
         </a>
-      ) : null}
+
+        {project.githubUrl ? (
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              textDecoration: `none`
+            }}
+          >
+            <span
+              style={{
+                ...scale(-0.25),
+                fontWeight: 600,
+                fontFamily: `monospace`
+              }}
+            >
+              View source
+            </span>
+          </a>
+        ) : null}
+      </div>
 
       <p
         style={{

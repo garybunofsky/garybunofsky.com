@@ -44,32 +44,6 @@ const Layout = ({ children }) => {
 
         <Projects />
         <Experiences />
-
-        <h2
-          style={{
-            ...scale(-0.25),
-            textTransform: `uppercase`,
-            color: `#A5AF9B`,
-            marginBottom: rhythm(0.1)
-          }}
-        >
-          Resume
-        </h2>
-        <p
-          style={{
-            ...scale(0)
-          }}
-        >
-          Take a look at{" "}
-          <a
-            href="/resume.pdf"
-            className="highlight"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            my resume
-          </a>
-        </p>
       </main>
     </>
   );
