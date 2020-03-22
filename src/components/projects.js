@@ -91,7 +91,7 @@ Projects.defaultProps = {
     {
       name: "Intel",
       description:
-        "I built an app that tracks Amazon prices, content and other data to increase sales. I designed an activity feature to optimize product changes. Created an email campaign to notify employees when a product is unavailable.",
+        "I built an app for Marketplace Strategy tracks Amazon prices, content and other data to increase sales. I also designed an activity feature to optimize product changes. Account reps also recieve a daily email notifying which products are unavailable.",
       url: "https://intel.marketplacestrategy.com",
       githubUrl: null
     },

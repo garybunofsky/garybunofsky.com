@@ -79,7 +79,7 @@ Experience.defaultProps = {
       company: "Marketplace Strategy",
       title: "Freelance Developer",
       description:
-        "I built an app that tracks Amazon prices, content and other data to increase sales. I designed an activity feature to optimize product changes. I created an automated email campaign to notify employees if a product is unavailable.",
+        "I built Intel; an application that is used to track product price, availability, content, and other data.",
       startDate: "July 2017",
       endDate: "Present",
       location: "Cleveland & remote",
