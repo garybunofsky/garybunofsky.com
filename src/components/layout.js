@@ -14,7 +14,7 @@ import Bio from "./bio";
 import Projects from "./projects";
 import Experiences from "./experiences";
 import Contact from "./contact";
-import Socials from "./socials";
+import Skills from "./skills";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -42,8 +42,8 @@ const Layout = ({ children }) => {
 
       <Projects />
       <Experiences />
+      <Skills />
       <Contact />
-      <Socials />
     </main>
   );
 };

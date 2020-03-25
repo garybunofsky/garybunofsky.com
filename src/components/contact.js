@@ -31,7 +31,14 @@ const Contact = ({ mediums }) => {
   return (
     <div style={{ marginBottom: rhythm(2.5) }}>
       {heading}
-      <ul>{items}</ul>
+      <ul
+        style={{
+          display: `grid`,
+          gridTemplateColumns: `1fr 1fr`
+        }}
+      >
+        {items}
+      </ul>
     </div>
   );
 };
@@ -48,12 +55,28 @@ Contact.propTypes = {
 Contact.defaultProps = {
   mediums: [
     {
-      name: "gary@garybunofsky.com",
+      name: "Email",
       url: "mailto:gary@garybunofsky.com?subject=Hi%20Gary"
     },
     {
       name: "(330) 506-1300",
       url: "tel:3305061300"
+    },
+    {
+      name: "GitHub",
+      url: "https://www.github.com/garybunofsky/"
+    },
+    {
+      name: "Twitter",
+      url: "https://www.twitter.com/garybunofsky/"
+    },
+    {
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/garybunofsky/"
+    },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/garybunofsky/"
     }
   ]
 };
