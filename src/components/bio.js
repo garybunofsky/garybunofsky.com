@@ -39,7 +39,7 @@ const Bio = ({ siteTitle, siteDescription }) => (
       <a
         href="https://docs.google.com/document/d/169vwJyUUlLRKcY-VihmY2DCSJLqQmjrw2KB42Jx8G2I/edit?usp=sharing"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         className="highlight"
       >
         check out my résumé.
