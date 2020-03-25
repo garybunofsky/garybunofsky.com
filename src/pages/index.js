@@ -33,7 +33,6 @@ const IndexPage = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://garybunofsky.com/" />
         <meta property="twitter:title" content={site.siteMetadata.title} />
-        />
         <meta
           property="twitter:description"
           content={site.siteMetadata.description}
