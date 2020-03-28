@@ -42,7 +42,7 @@ const IndexPage = () => {
           content="https://garybunofsky.com/open-graph-image.png"
         />
       </Helmet>
-      <SEO title="Home" />
+      <SEO title="Gary Bunofsky, Software Developer" />
       <Layout />
     </div>
   );
