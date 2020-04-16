@@ -16,8 +16,8 @@ h1 {
 ul {
   margin-left: 0px;
 }
-li {
-  list-style-type: none;
+ul li {
+  margin-left: 15px;
 }
 a {
   color: #515f44;
@@ -31,5 +31,16 @@ a:hover {
   background-color: #fbf1ad;
   color: #546247;
   padding: 1px 4px;
+  border-radius: 3px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 580px;
+}
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
 }

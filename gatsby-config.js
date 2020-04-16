@@ -28,6 +28,14 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown-pages`,
+        name: `markdown-pages`
+      }
+    },
+    `gatsby-transformer-remark`,
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`
