@@ -1,5 +1,5 @@
 ---
-path: "/wiki/how-to-kill-processes"
+path: "/blog/how-to-kill-processes"
 date: "2018-11-04"
 title: "How to kill processes"
 ---
