@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import "./layout.css";
+import "../components/layout.css";
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
