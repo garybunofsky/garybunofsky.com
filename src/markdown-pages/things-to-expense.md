@@ -2,6 +2,7 @@
 path: "/blog/things-to-expense"
 date: "2017-09-21"
 title: "Things to expense"
+tags: ["Business"]
 ---
 
 - Domain name renewals

@@ -2,6 +2,7 @@
 path: "/blog/how-to-kill-processes"
 date: "2018-11-04"
 title: "How to kill processes"
+tags: ["CLI"]
 ---
 
 - List all: ```lsof -wni tcp:3000```
