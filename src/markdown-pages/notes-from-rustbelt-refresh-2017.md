@@ -1,5 +1,5 @@
 ---
-path: "/wiki/notes-from-rustbelt-refresh-2017"
+path: "/blog/notes-from-rustbelt-refresh-2017"
 date: "2017-09-21"
 title: "Notes from Rustbelt Refresh 2017"
 ---
