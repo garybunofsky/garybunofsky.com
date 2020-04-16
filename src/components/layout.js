@@ -29,12 +29,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <main
-      style={{
-        margin: `0 auto`,
-        maxWidth: 580
-      }}
-    >
+    <main className="container">
       <Bio
         siteTitle={data.site.siteMetadata.title}
         siteDescription={data.site.siteMetadata.description}
