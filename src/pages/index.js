@@ -1,9 +1,13 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import Helmet from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
 import "../components/layout.css";
+import { useStaticQuery, graphql } from "gatsby";
+import SEO from "../components/seo";
+import Bio from "../components/bio";
+import Projects from "../components/projects";
+import Experiences from "../components/experiences";
+import Contact from "../components/contact";
+import Skills from "../components/skills";
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
@@ -43,8 +47,19 @@ const IndexPage = () => {
         />
       </Helmet>
       <SEO title="Gary Bunofsky, Software Developer" />
-      <Layout />
+
+      <main className="container">
+        <Bio
+          siteTitle={site.siteMetadata.title}
+          siteDescription={site.siteMetadata.description}
+        />
+        <Projects />
+        <Experiences />
+        <Skills />
+        <Contact />
+      </main>
     </div>
   );
 };
+
 export default IndexPage;

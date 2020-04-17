@@ -4,12 +4,7 @@ import Drawing from "../components/drawing";
 import { rhythm, scale } from "../utils/typography";
 
 const Bio = ({ siteTitle, siteDescription }) => (
-  <div
-    style={{
-      paddingTop: rhythm(1),
-      marginBottom: rhythm(2.5)
-    }}
-  >
+  <div>
     <div
       style={{
         maxWidth: `320px`,
