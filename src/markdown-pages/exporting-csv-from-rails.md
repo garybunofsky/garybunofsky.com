@@ -1,5 +1,5 @@
 ---
-title: Exporting a CSV from Rails
+title: "Exporting a CSV from Rails"
 date: "2020-02-06"
 path: "blog/exporting-csv-from-rails
 ---
