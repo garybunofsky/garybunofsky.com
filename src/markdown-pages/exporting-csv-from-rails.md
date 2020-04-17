@@ -1,7 +1,7 @@
 ---
 title: "Exporting a CSV from Rails"
 date: "2020-02-06"
-path: "blog/exporting-csv-from-rails
+path: "/blog/exporting-csv-from-rails"
 ---
 
 Every once in a while a client I'm working with needs some custom data from our
