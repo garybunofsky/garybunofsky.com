@@ -1,7 +1,7 @@
 ---
 path: "/blog/how-to-kill-processes"
 date: "2018-11-04"
-title: "How to kill processes"
+title: "How to Kill Processes"
 tags: ["CLI"]
 ---
 

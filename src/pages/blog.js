@@ -9,7 +9,7 @@ import Drawing from "../components/drawing";
 const BlogPage = ({ children }) => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             frontmatter {
@@ -25,28 +25,31 @@ const BlogPage = ({ children }) => {
 
   return (
     <main className="container">
+      <div
+        style={{
+          maxWidth: `320px`,
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          marginBottom: rhythm(0.75),
+          opacity: `0.75`
+        }}
+      >
+        <Drawing />
+      </div>
 
-<div
-      style={{
-        maxWidth: `320px`,
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        marginBottom: rhythm(0.75),
-        opacity: `0.75`
-      }}
-    >
-      <Drawing />
-    </div>
-
-    <h1
-      style={{
-        ...scale(1),
-        marginBottom: rhythm(0.5)
-      }}
-    >
-      Blog
-    </h1>
-    <p>This isn't really a blog; it's more of hodgepodge of half baked ideas, notes, scripts and other things I don't want to forget. Anything you see here is subject to change.</p>  
+      <h1
+        style={{
+          ...scale(1),
+          marginBottom: rhythm(0.5)
+        }}
+      >
+        Blog
+      </h1>
+      <p>
+        This isn't really a blog; it's more of hodgepodge of half baked ideas,
+        notes, scripts and other things I don't want to forget. Anything you see
+        here is subject to change.
+      </p>
 
       {data.allMarkdownRemark.edges.map(post => {
         const { title, path, date } = post.node.frontmatter;

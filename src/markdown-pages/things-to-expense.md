@@ -1,7 +1,7 @@
 ---
 path: "/blog/things-to-expense"
-date: "2017-09-21"
-title: "Things to expense"
+date: "2020-04-15"
+title: "Things to Expense"
 tags: ["Business"]
 ---
 
