@@ -8,7 +8,7 @@ const Contact = ({ mediums }) => {
       style={{
         ...scale(-0.25),
         textTransform: `uppercase`,
-        color: `#A5AF9B`,
+        color: `#aaa`,
         marginBottom: rhythm(0.1)
       }}
     >

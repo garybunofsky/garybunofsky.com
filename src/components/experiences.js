@@ -8,7 +8,7 @@ const Experience = ({ experiences }) => {
       style={{
         ...scale(-0.25),
         textTransform: `uppercase`,
-        color: `#A5AF9B`,
+        color: `#aaa`,
         marginBottom: rhythm(0.1)
       }}
     >
@@ -36,7 +36,7 @@ const Experience = ({ experiences }) => {
       <span
         style={{
           ...scale(-0.25),
-          color: `#A5AF9B`,
+          color: `#aaa`,
           marginBottom: rhythm(0.1),
           fontWeight: 500
         }}
