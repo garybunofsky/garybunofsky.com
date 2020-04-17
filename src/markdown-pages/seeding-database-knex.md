@@ -1,7 +1,7 @@
 ---
 title: "Seeding a Database with Knex"
 date: "2018-02-05"
-path: "blog/seeding-database-knex"
+path: "/blog/seeding-database-knex"
 description: "How to use Knex.js to migrate and seed a database."
 ---
 
