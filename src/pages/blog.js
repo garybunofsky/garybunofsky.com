@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import "../components/layout.css";
 import { useStaticQuery, graphql } from "gatsby";
 import { rhythm, scale } from "../utils/typography";
 import Blog from "../components/blog";
