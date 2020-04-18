@@ -19,7 +19,16 @@ export default function Template({
           marginBottom: rhythm(0.1)
         }}
       >
+      <span
+        style={{
+          ...scale(-0.25),
+          color: `#aaa`,
+          marginBottom: rhythm(0.1),
+          fontWeight: 500
+        }}
+      >
         {frontmatter.date}
+      </span>
       </h2>
       <div
         className="wiki-post-content"
