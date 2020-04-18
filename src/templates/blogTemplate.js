@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { rhythm, scale } from "../utils/typography";
 import "../components/layout.css";
-
+import moment from "moment";
 export default function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
@@ -10,7 +10,14 @@ export default function Template({
   const { frontmatter, html } = markdownRemark;
   return (
     <div className="container">
-      <h1>{frontmatter.title}</h1>
+      <h1
+        style={{
+          ...scale(1),
+          marginBottom: rhythm(0.5)
+        }}
+      >
+        {frontmatter.title}
+      </h1>
       <span
         style={{
           ...scale(-0.25),
@@ -19,7 +26,7 @@ export default function Template({
           fontWeight: 500
         }}
       >
-        {frontmatter.date}
+        {moment(frontmatter.date).format("MMMM Do, YYYY")}
       </span>
       <div
         className="wiki-post-content"

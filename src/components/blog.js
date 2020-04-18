@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import { rhythm, scale } from "../utils/typography";
+import moment from "moment";
 
 const Blog = ({ title, date, path }) => (
-  <div>
+  <div
+    style={{
+      marginBottom: rhythm(1)
+    }}
+  >
     <Link to={path}>
       <h3
         style={{
@@ -22,7 +27,7 @@ const Blog = ({ title, date, path }) => (
         fontWeight: 500
       }}
     >
-      {date}
+      {moment(date).format("MMMM Do, YYYY")}
     </span>
   </div>
 );
