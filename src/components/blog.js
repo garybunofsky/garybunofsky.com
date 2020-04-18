@@ -14,7 +14,16 @@ const Blog = ({ title, date, path }) => (
         {title}
       </h3>
     </Link>
-    <p>{date}</p>
+    <span
+      style={{
+        ...scale(-0.25),
+        color: `#aaa`,
+        marginBottom: rhythm(0.1),
+        fontWeight: 500
+      }}
+    >
+      {date}
+    </span>
   </div>
 );
 

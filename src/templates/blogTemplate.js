@@ -11,14 +11,6 @@ export default function Template({
   return (
     <div className="container">
       <h1>{frontmatter.title}</h1>
-      <h2
-        style={{
-          ...scale(-0.25),
-          textTransform: `uppercase`,
-          color: `#A5AF9B`,
-          marginBottom: rhythm(0.1)
-        }}
-      >
       <span
         style={{
           ...scale(-0.25),
@@ -29,7 +21,6 @@ export default function Template({
       >
         {frontmatter.date}
       </span>
-      </h2>
       <div
         className="wiki-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
